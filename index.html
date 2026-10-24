@@ -476,8 +476,8 @@ async function enableTilt(){try{if(typeof DeviceOrientationEvent!=="undefined"&&
 
 /* ---------- ride state ---------- */
 /* ---------- anonymous play counts (GoatCounter: no cookies, no personal data) ---------- */
-const TRK={sent:{},off:false,last:"00-menu",rides:0};
-function trk(path){if(TRK.off)return;const go=n=>{try{if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:path,title:path,event:true});}else if(n<6)setTimeout(()=>go(n+1),1000);}catch(e){}};go(0);}
+const TRK={sent:{},off:false,last:"00-menu",rides:0,ver:"v1"};/* bump ver on every content update of the ride */
+function trk(path){if(TRK.off)return;path=TRK.ver+"/"+path;const go=n=>{try{if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:path,title:path,event:true});}else if(n<6)setTimeout(()=>go(n+1),1000);}catch(e){}};go(0);}
 function trkOnce(path){if(TRK.sent[path])return;TRK.sent[path]=1;trk(path);}
 const CHECKS=[["02-town-edge","townEdge"],["03-fast-run","fast"],["04-needle","helixIn"],["05-bridge-warning","warnBridge"],["06-the-gap","gapStart"],["07-tunnel-in","tunnelIn"],["08-tunnel-out","tunnelOut"],["09-rail-end","railEnd"],["10-whale-landing","land"]];
 function trkProgress(s){for(const c of CHECKS){if(s>=MS[c[1]]&&!TRK.sent["ride/"+c[0]]){TRK.last=c[0];trkOnce("ride/"+c[0]);}}}
