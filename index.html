@@ -96,6 +96,7 @@ button.primary:hover{background:#f05a45}
 <div id="caption" aria-live="polite"></div>
 <div id="toast" hidden></div>
 
+<script data-goatcounter="https://thehush.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function(){
@@ -474,26 +475,36 @@ async function enableTilt(){try{if(typeof DeviceOrientationEvent!=="undefined"&&
   window.addEventListener("deviceorientation",onOrient);setTimeout(()=>{if(gotOrient){look.tilt=true;$("btnTilt").textContent="Tilt on";toast("Tilt on. Hold your phone in front of you.");}else{window.removeEventListener("deviceorientation",onOrient);toast("Tilt is blocked on this page. Drag to look instead.");}},900);}catch(err){toast("Tilt was not allowed. Drag to look instead.");}}
 
 /* ---------- ride state ---------- */
+/* ---------- anonymous play counts (GoatCounter: no cookies, no personal data) ---------- */
+const TRK={sent:{},off:false,last:"00-menu",rides:0};
+function trk(path){if(TRK.off)return;const go=n=>{try{if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:path,title:path,event:true});}else if(n<6)setTimeout(()=>go(n+1),1000);}catch(e){}};go(0);}
+function trkOnce(path){if(TRK.sent[path])return;TRK.sent[path]=1;trk(path);}
+const CHECKS=[["02-town-edge","townEdge"],["03-fast-run","fast"],["04-needle","helixIn"],["05-bridge-warning","warnBridge"],["06-the-gap","gapStart"],["07-tunnel-in","tunnelIn"],["08-tunnel-out","tunnelOut"],["09-rail-end","railEnd"],["10-whale-landing","land"]];
+function trkProgress(s){for(const c of CHECKS){if(s>=MS[c[1]]&&!TRK.sent["ride/"+c[0]]){TRK.last=c[0];trkOnce("ride/"+c[0]);}}}
+function trkDevice(vr){return vr?"vr":(window.matchMedia&&matchMedia("(pointer:coarse)").matches?"phone":"pc");}
+window.addEventListener("pagehide",()=>{if(st.mode==="ride"||st.mode==="xrwait")trk("quit/closed-at-"+TRK.last);});
 const st={mode:"menu",s:0,v:0,t:0,said:{},hushD:160,lo:{active:false,done:false,t:0},shake:0,landed:false,landT:0,restartT:0,orbit:0};
 function say(key,text,ms,who){if(st.said[key])return;st.said[key]=true;caption(text,ms,who);}
 function setLamps(on){lamps.forEach(l=>l.visible=on);loco.userData.head.visible=on;loco.userData.lampF.visible=on;}
 function showMenu(){st.mode="menu";HZ.arm.forEach(m=>m.visible=false);HZ.claw.visible=false;HZ.hand.rotation.x=0;HZ.hand.position.z=3.2;$("intro").hidden=false;$("ending").hidden=true;$("hud").hidden=true;$("caption").style.opacity=0;if(audio.ctx)setSound(0,false,999,0);}
-function startRide(){
+function startRide(vr){
+  TRK.rides++;if(TRK.rides===1){trkOnce("ride/01-board-"+trkDevice(vr===true));TRK.last="01-board";}else{trk("ride/again");TRK.last="replay";}
   initAudio();Object.assign(st,{mode:"ride",s:0,v:0,t:0,said:{},hushD:220,lo:{active:false,done:false,t:0},shake:0,landed:false,landT:0,restartT:0});
   st.poseT=0;st.camT=0;st.eye=1;st.armK=0;st.armDone=false;if(TOWN.win){TOWN.base.forEach((m,w)=>TOWN.win.setMatrixAt(w,m));TOWN.win.instanceMatrix.needsUpdate=true;TOWN.off=[];}st.flying=false;st.flyT=0;st.detached=false;st.carS=[0,0];st.carV=0;pose("idle");rig.add(rook);rook.position.copy(ROOK_HOME);rook.rotation.set(0,0,0);backCars.forEach(c=>c.visible=true);
   look.yaw=Math.PI*0.85;look.pitch=0;look.idle=-2;look.alpha0=null;whaleG.position.y=-95;setLamps(true);swarmM.opacity=0;
   $("intro").hidden=true;$("ending").hidden=true;$("hud").hidden=false;bell();
 }
 function finish(){
+  TRK.last="11-first-morning";trkOnce("ride/11-first-morning");
   if(renderer.xr.isPresenting){st.mode="xrwait";st.restartT=6;caption("Line 01 complete.",4000,"");return;}
   st.mode="end";$("hud").hidden=true;$("ending").hidden=false;
 }
-$("btnRide").addEventListener("click",startRide);$("btnAgain").addEventListener("click",startRide);
-$("btnBack").addEventListener("click",showMenu);$("btnExit").addEventListener("click",showMenu);
+$("btnRide").addEventListener("click",()=>startRide(false));$("btnAgain").addEventListener("click",()=>startRide(false));
+$("btnBack").addEventListener("click",showMenu);$("btnExit").addEventListener("click",()=>{if(st.mode==="ride")trk("quit/exit-at-"+TRK.last);showMenu();});
 $("btnTilt").addEventListener("click",()=>{if(look.tilt){look.tilt=false;$("btnTilt").textContent="Tilt to look";}else enableTilt();});
 $("btnSound").addEventListener("click",()=>{audio.on=!audio.on;$("btnSound").textContent=audio.on?"Sound on":"Sound off";$("btnSound").setAttribute("aria-pressed",String(audio.on));if(audio.master)audio.master.gain.value=audio.on?1:0;});
 if(navigator.xr&&navigator.xr.isSessionSupported){navigator.xr.isSessionSupported("immersive-vr").then(ok=>{if(ok)$("btnVR").hidden=false;}).catch(()=>{});}
-$("btnVR").addEventListener("click",async()=>{try{const session=await navigator.xr.requestSession("immersive-vr");await renderer.xr.setSession(session);camera.position.set(0,0,0);capPanel.visible=true;startRide();
+$("btnVR").addEventListener("click",async()=>{try{const session=await navigator.xr.requestSession("immersive-vr");await renderer.xr.setSession(session);camera.position.set(0,0,0);capPanel.visible=true;startRide(true);
   session.addEventListener("end",()=>{capPanel.visible=false;camera.position.set(0,0,0);showMenu();});}catch(err){toast("Could not start VR here. Open this page directly in your headset browser.");}});
 
 /* ---------- story beats ---------- */
@@ -543,7 +554,7 @@ function step(dt){
   const k=st.s>MS.gapStart-2&&st.s<MS.land?3.0:1.2;
   st.v+=(target-st.v)*Math.min(1,dt*k);
   if(st.lo.active)st.v=Math.min(st.v,target+0.5);
-  st.s+=st.v*dt;
+  st.s+=st.v*dt;trkProgress(st.s);
   // the Hush follows
   let dTarget=keyed(HUSHD,st.s);if(st.t<8)dTarget=220-150*THREE.MathUtils.smoothstep(st.t,0,8);if(st.lo.active)dTarget=st.lo.t>1.4?7:dTarget;
   st.hushD+=(dTarget-st.hushD)*Math.min(1,dt*(st.lo.active?0.9:(st.t<8?3:0.8)));
@@ -631,7 +642,7 @@ function frame(){
 renderer.setAnimationLoop(frame);
 (function(){let h="";try{h=(location.hash||"").slice(1);}catch(e){}
   const m=/^skip-(\d+)$/.exec(h);
-  if(h==="play"||m){setTimeout(()=>{startRide();if(m){st.t=9;st.s=Math.min(L-5,+m[1]);st.v=keyed(SPEED,st.s);st.hushD=keyed(HUSHD,st.s);}},900);}})();
+  if(h==="play"||m){TRK.off=true;setTimeout(()=>{startRide();if(m){st.t=9;st.s=Math.min(L-5,+m[1]);st.v=keyed(SPEED,st.s);st.hushD=keyed(HUSHD,st.s);}},900);}})();
 window.addEventListener("resize",()=>{camera.aspect=window.innerWidth/window.innerHeight;camera.updateProjectionMatrix();renderer.setSize(window.innerWidth,window.innerHeight,false);});
 })();
 </script>
