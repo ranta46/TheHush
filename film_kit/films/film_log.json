@@ -1,0 +1,10 @@
+[
+ {"film_no": 1, "date": "2026-10-31", "title": "The Sky Line", "duration": 131,
+  "synopsis": "The last train races the Hush to Lantern Hill. When the track ends in the dark, an old friend comes down from the sky.",
+  "clever_move": "Rook switches tracks at the last second; the Hush's hand closes on empty air.",
+  "fear": "Train stopped in total dark at the end of the line; the Hush right above, points at the passengers; 'Stay still. Please.'",
+  "surprise": "The Long Back's song; the sky whale comes down, the train rides up on its back; the Hush can't fly.",
+  "closing_line": "Next stop: wherever the light is.",
+  "places": ["open line", "Lantern Hill (town)", "end of the line", "the sky on the Long Back"],
+  "post": {"youtube_video": 412114033, "facebook": 412114045, "time_jst": "2026-10-31 21:53"}}
+]
