@@ -1,0 +1,19 @@
+{"film_no": 2, "title": "Into the Dark", "poster_t": 66,
+ "synopsis": "The lamps behind the last train die one by one. The Hush is coming. Rook's only chance is a tunnel, and total darkness.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [1.5, 4.0, "Evening, passengers. Hold the bar."],
+  [9.0, 11.6, "Clear tracks tonight. Too quiet, honestly."],
+  [15.2, 17.6, "...Wait. The lamps behind us."],
+  [20.5, 23.0, "Something is eating the light."],
+  [29.0, 31.0, "...There it is."],
+  [32.2, 34.2, "Full steam! NOW!"],
+  [38.5, 40.8, "It's gaining! Into the tunnel!"],
+  [48.5, 51.0, "Lights off. All of them."],
+  [53.0, 55.8, "...Even mine. Don't make a sound."],
+  [63.0, 65.5, "...It can't see us. Stay still."],
+  [73.0, 75.0, "...It's leaving."],
+  [77.5, 80.0, "Lights on! Full steam!"],
+  [86.5, 88.8, "Ha! We made it out!"],
+  [92.0, 95.6, "It will find us again. It always does."]
+ ]}

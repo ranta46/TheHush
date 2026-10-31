@@ -1,0 +1,17 @@
+[
+ {
+  "film_no": 2,
+  "folder": "films/film01",
+  "title": "Into the Dark",
+  "date_made": "2026-10-31",
+  "frames": 2400,
+  "status": "rendering",
+  "clever_move": "Rook dives into a tunnel and turns off every light, even his own signal eye; the Hush's eyes search the dark and give up.",
+  "places": [
+   "night plains with lamps",
+   "tunnel under a hill",
+   "lit valley"
+  ],
+  "render_started": "2026-10-31 21:51 JST (~5 s/frame, done ~02:30)"
+ }
+]

@@ -1,0 +1,3 @@
+films/*/tmp/
+films/*/out/
+__pycache__/
