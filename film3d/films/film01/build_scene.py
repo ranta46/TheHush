@@ -145,8 +145,8 @@ for i, (x, hm, lo) in enumerate(LAMPS):
 for t, loc, s in ((0, (110, 46, -90), 3.6), (25, (120, 46, -90), 3.6), (30, (160, 40, -2), 3.8), (37, (225, 24, -1), 3.8),
                   (44, (335, 22, -1), 3.4), (50, (360, 16, 4), 2.6), (62, (372, 14, 6), 2.6), (74, (372, 14, 6), 2.6), (84, (330, 50, -8), 2.4), (100, (300, 90, -40), 2.2)):
     key(H, "location", F(t), Vector(loc)); key(H, "scale", F(t), Vector((s, s, s)))
-# the mask always faces the train (damped track, -Y = front); at 74 s it lets go and turns away
-dt = H.constraints.new("DAMPED_TRACK"); dt.target = T; dt.track_axis = "TRACK_NEGATIVE_Y"
+# the mask always faces the train (locked track, upright, -Y = front); at 74 s it lets go and turns away
+dt = H.constraints.new("LOCKED_TRACK"); dt.target = T; dt.track_axis = "TRACK_NEGATIVE_Y"; dt.lock_axis = "LOCK_Z"
 for t, inf in ((0, 1.0), (74, 1.0), (76, 0.0)): dt.influence = inf; dt.keyframe_insert("influence", frame=F(t))
 for t, rz in ((0, 0), (74, math.radians(-90)), (82, math.radians(160))):
     key(H, "rotation_euler", F(t), rz, 2)
