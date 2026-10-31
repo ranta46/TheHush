@@ -107,6 +107,8 @@ for i in range(19):
 rock = newM("S_Rock", (0.03, 0.028, 0.04), rough=1)
 for y in (-3.2, 3.2): mk("S_TunWall", box(), rock, (406, y, 3), scl=(52, 2.2, 7))
 mk("S_TunRoof", box(), rock, (406, 0, 6.6), scl=(52, 8.6, 1.4))
+light("S_MouthLamp", "POINT", 150, (1, 0.6, 0.3), (378, -3.0, 5.0))
+mk("S_MouthLampHead", sph(0.2, 12, 8), newM("S_MLH", (1, 0.62, 0.25), emit=8), (378, -3.0, 5.2))
 mk("S_Hill", cyl(48, 8, 26, 24), rock, (406, 0, 13), scl=(0.52, 0.9, 1))
 # the lit valley after the tunnel
 winM = newM("S_Win", (1, 0.62, 0.25), emit=5); houseM = newM("S_House", (0.05, 0.04, 0.07), rough=1)
@@ -140,8 +142,8 @@ for i, (x, hm, lo) in enumerate(LAMPS):
         hm.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"].keyframe_insert("default_value", frame=F(t))
         lo.data.energy = 60 * e; lo.data.keyframe_insert("energy", frame=F(t))
 # the Hush: rises far behind (24-30), chases (30-44), stands over the tunnel (56-74), turns away (74-82)
-for t, loc, s in ((0, (100, 40, -70), 2.6), (24, (110, 40, -70), 2.6), (30, (150, 34, -2), 2.8), (37, (215, 30, -1), 2.8),
-                  (44, (330, 22, -1), 2.8), (50, (360, 16, 4), 2.6), (62, (372, 14, 6), 2.6), (74, (372, 14, 6), 2.6), (84, (330, 50, -8), 2.4), (100, (300, 90, -40), 2.2)):
+for t, loc, s in ((0, (110, 46, -90), 3.6), (25, (120, 46, -90), 3.6), (30, (160, 40, -2), 3.8), (37, (225, 24, -1), 3.8),
+                  (44, (335, 22, -1), 3.4), (50, (360, 16, 4), 2.6), (62, (372, 14, 6), 2.6), (74, (372, 14, 6), 2.6), (84, (330, 50, -8), 2.4), (100, (300, 90, -40), 2.2)):
     key(H, "location", F(t), Vector(loc)); key(H, "scale", F(t), Vector((s, s, s)))
 for t, rz in ((0, 0), (30, math.radians(-25)), (44, math.radians(-40)), (62, math.radians(-10)), (74, math.radians(-10)), (82, math.radians(160))):
     key(H, "rotation_euler", F(t), rz, 2)
@@ -188,9 +190,9 @@ def cam(name, start_s, loc, look, lens=28, parent=None):
     m = sc.timeline_markers.new(name, frame=F(start_s)); m.camera = c; return c
 cam("Cam_01", 0, (3.0, -15, 3.2), (2.0, 0, 1.2), 30, T)            # wide side: the night run
 cam("Cam_02", 8, (2.2, -3.0, 1.7), (0.6, 0, 1.35), 30, T)          # Rook close
-cam("Cam_03", 24, (7.0, -3.5, 2.0), "H_Mask", 24, T)          # look back: lamps die, the Hush rises
+cam("Cam_03", 27.5, (7.0, -3.5, 2.0), "H_Mask", 24, T)          # look back: lamps die, the Hush rises
 cam("Cam_04", 33, (6, -26, 3), "H_Mask", 20, T)              # side wide: the chase
-cam("Cam_05", 40, (338, -20, 3.5), (380, 0, 3), 26)                  # fixed: tunnel mouth, train dives in
+cam("Cam_05", 40, (358, -13, 2.2), (380, 0, 2.6), 22)                  # fixed: tunnel mouth, train dives in
 cam("Cam_06", 50, (2.2, -1.6, 1.7), (-6, 0, 2.2), 26, T)          # in the dark: Rook, the mouth behind him
 cam("Cam_07", 62, (318, -30, 4), "H_Mask", 22)                # outside: the Hush over the tunnel
 cam("Cam_08", 66, (2.2, -1.6, 1.7), (-6, 0, 2.2), 26, T)          # back in: eyes search
