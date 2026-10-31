@@ -145,7 +145,10 @@ for i, (x, hm, lo) in enumerate(LAMPS):
 for t, loc, s in ((0, (110, 46, -90), 3.6), (25, (120, 46, -90), 3.6), (30, (160, 40, -2), 3.8), (37, (225, 24, -1), 3.8),
                   (44, (335, 22, -1), 3.4), (50, (360, 16, 4), 2.6), (62, (372, 14, 6), 2.6), (74, (372, 14, 6), 2.6), (84, (330, 50, -8), 2.4), (100, (300, 90, -40), 2.2)):
     key(H, "location", F(t), Vector(loc)); key(H, "scale", F(t), Vector((s, s, s)))
-for t, rz in ((0, 0), (30, math.radians(-25)), (44, math.radians(-40)), (62, math.radians(-10)), (74, math.radians(-10)), (82, math.radians(160))):
+# the mask always faces the train (damped track, -Y = front); at 74 s it lets go and turns away
+dt = H.constraints.new("DAMPED_TRACK"); dt.target = T; dt.track_axis = "TRACK_NEGATIVE_Y"
+for t, inf in ((0, 1.0), (74, 1.0), (76, 0.0)): dt.influence = inf; dt.keyframe_insert("influence", frame=F(t))
+for t, rz in ((0, 0), (74, math.radians(-90)), (82, math.radians(160))):
     key(H, "rotation_euler", F(t), rz, 2)
 gm = M("H_Green").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
 for t, e in ((0, 0), (27, 0), (28.5, 60), (74, 60), (80, 6), (100, 0)): gm.default_value = e; gm.keyframe_insert("default_value", frame=F(t))
@@ -191,8 +194,8 @@ def cam(name, start_s, loc, look, lens=28, parent=None):
 cam("Cam_01", 0, (3.0, -15, 3.2), (2.0, 0, 1.2), 30, T)            # wide side: the night run
 cam("Cam_02", 8, (2.2, -3.0, 1.7), (0.6, 0, 1.35), 30, T)          # Rook close
 cam("Cam_03", 27.5, (7.0, -3.5, 2.0), "H_Mask", 24, T)          # look back: lamps die, the Hush rises
-cam("Cam_04", 33, (6, -26, 3), "H_Mask", 20, T)              # side wide: the chase
-cam("Cam_05", 40, (358, -13, 2.2), (380, 0, 2.6), 22)                  # fixed: tunnel mouth, train dives in
+cam("Cam_04", 33, (22, -30, 4), (-18, 10, 9), 20, T)              # side wide: the chase
+cam("Cam_05", 40, (330, -14, 3), (372, 0, 2.5), 26)                  # fixed: tunnel mouth, train dives in
 cam("Cam_06", 50, (2.2, -1.6, 1.7), (-6, 0, 2.2), 26, T)          # in the dark: Rook, the mouth behind him
 cam("Cam_07", 62, (318, -30, 4), "H_Mask", 22)                # outside: the Hush over the tunnel
 cam("Cam_08", 66, (2.2, -1.6, 1.7), (-6, 0, 2.2), 26, T)          # back in: eyes search
