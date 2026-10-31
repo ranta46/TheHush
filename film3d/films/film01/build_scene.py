@@ -50,7 +50,7 @@ def lin(o):
         for kp in fc.keyframe_points: kp.interpolation = "LINEAR"
 
 # ---------------- clean previous build ----------------
-for o in list(sc.collection.all_objects):
+for o in list(bpy.data.objects):
     if o.name.startswith(("S_", "L_", "Cam_", "T_", "V_", "Peek")): bpy.data.objects.remove(o, do_unlink=True)
 for o in list(sc.collection.all_objects):
     if o.animation_data: o.animation_data_clear()
