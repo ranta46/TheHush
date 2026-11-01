@@ -239,10 +239,10 @@ cam("Cam_03", 27.5, (7.0, -3.5, 2.0), "H_Mask", 24, T)             # look back: 
 cam("Cam_04", 33, (22, -30, 4), (-18, 10, 9), 20, T)               # side wide: the chase
 cam("Cam_05", 39.5, (296, -24, 5), (318, 4, 3), 24)                # fixed: the iron bridge, the train runs on
 cam("Cam_06", 43.5, (3.0, -3.4, 1.9), (-2.2, 0, 1.2), 26, T)       # Rook + the rear car falling away
-cam("Cam_07", 48, (362, -58, 6), (338, 6, 11), 20)                    # the Hush over the lit car on the bridge
+cam("Cam_07", 48, (350, -26, 3), (340, 4, 9), 18)                    # the Hush over the lit car on the bridge
 cam("Cam_08", 56.5, (9, -5, 1.4), (0.5, 0, 1.3), 28, T)            # stuck in the drift, dark
 cam("Cam_09", 63, (393, -12, 2.2), "H_Mask", 22)                   # from the train: the Hush walks over the ice
-cam("Cam_10", 70, (402, -30, 5), (360, 8, 6), 22)                  # wide: the ice breaks
+cam("Cam_10", 70, (378, -30, 4), (360, 8, 5), 22)                  # wide: the ice breaks
 cam("Cam_11", 74.5, (8, -9, 3), (0, 0, 1.4), 26, T)                # push through the drift
 cam("Cam_12", 85, (396, -8, 3.0), "H_Mask", 24)                   # chest deep, it still watches
 cam("Cam_13", 90.5, (30, -30, 10), (0, 0, 2), 24, T)               # final wide: mountain lights
