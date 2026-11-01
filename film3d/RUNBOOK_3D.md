@@ -37,3 +37,8 @@ blender_encode.py (TremenVR films/tuck/tools) encode(dir) -> raw.mp4 (wait until
 
 ## Posting (cloud, 20:13 JST): see ../film_kit/FILM_RUNBOOK.md "Posting" (brand Rook 7473995; YouTube type video,
 title "Gloamrun Film N: <title> | Rook and the Hush", thumbnail = poster; Facebook POST). Mark "posted".
+
+## If device_stage_files is refused (folder not connected)
+Pull raw.mp4 through Blender instead: execute_blender_code printing base64 of 1.5 MB slices ('CHUNKn' + data), ONE call
+at a time (parallel calls time out); the big output is saved to a tool-results file -> decode, join, check md5/ffprobe.
+Previews the same way (PNG base64). Pick poster_t on a frame where the Hush's face is lit (not a dark tunnel frame).
