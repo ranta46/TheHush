@@ -5,7 +5,7 @@
   "title": "Into the Dark",
   "date_made": "2026-10-31",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "clever_move": "Rook dives into a tunnel and turns off every light, even his own signal eye; the Hush's eyes search the dark and give up.",
   "places": [
    "night plains with lamps",
@@ -16,7 +16,10 @@
   "video": "gloamrun/films/gloamrun_film02_16x9.mp4",
   "poster": "gloamrun/films/gloamrun_film02_poster.jpg",
   "finished": "2026-11-01 10:50 JST (render done 03:05; 105 s with end card)",
-  "duration": 105.0
+  "duration": 105.0,
+  "posted": "2026-11-01 20:33 JST",
+  "youtube_post_id": 412830086,
+  "facebook_post_id": 412830107
  },
  {
   "film_no": 3,
