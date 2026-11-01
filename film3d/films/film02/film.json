@@ -1,0 +1,19 @@
+{"film_no": 3, "title": "The Last Car", "poster_t": 31,
+ "synopsis": "Snow, an iron bridge, and the Hush right behind. To save his passengers, Rook leaves something behind: the last car, and its lantern.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [1.5, 4.0, "Snow tonight, passengers. Hold the bar."],
+  [9.0, 11.6, "One bridge, then the mountain lights."],
+  [15.2, 17.6, "...The hill lamps just went out."],
+  [20.5, 23.0, "No. Not tonight. Not here."],
+  [29.0, 31.0, "...It's awake."],
+  [32.2, 34.2, "Full steam! Hold on!"],
+  [40.0, 42.4, "It's too close. Unhook the last car!"],
+  [45.0, 47.6, "The lantern stays. Look at the light!"],
+  [57.5, 60.0, "Snow on the track. We're stuck."],
+  [63.5, 66.0, "...It sees us. Don't move."],
+  [71.3, 73.3, "...The ice! It's breaking!"],
+  [75.0, 77.0, "Now! Full steam! Push!"],
+  [86.5, 89.0, "It will climb out. It always does."],
+  [92.0, 95.6, "We lost a car. Not one passenger."]
+ ]}
