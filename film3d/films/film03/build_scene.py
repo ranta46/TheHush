@@ -89,7 +89,7 @@ for n in ("R_KeyLoop-1", "R_KeyLoop1"):
 # ---------------- world: red-rock canyon (walls |y| >= 16, rim z 12), a side canyon at the fork, a stone arch, desert station ----------------
 rr = random.Random(41)
 sand = newM("S_Sand", (0.20, 0.12, 0.08), rough=0.95); O["Ground"].data.materials.clear(); O["Ground"].data.materials.append(sand)
-rock = newM("S_Rock", (0.34, 0.15, 0.09), rough=0.95); rock2 = newM("S_Rock2", (0.26, 0.11, 0.07), rough=0.95)
+rock = newM("S_Rock", (0.52, 0.24, 0.14), rough=0.95); rock2 = newM("S_Rock2", (0.40, 0.18, 0.11), rough=0.95)
 RIM = 12.0; W0 = 16.0; FORK = (318, 348); MOUTH = 470
 def wall(x0, x1, sd, depth=26):
     x = x0
@@ -144,13 +144,13 @@ for i in range(5):
 moonM = newM("S_Moon", (0.9, 0.88, 0.8), emit=3)
 mk("S_Moon", cyl(9, 9, 0.2, 48), moonM, (420, 260, 95), (math.pi / 2, 0, 0))
 w = sc.world; w.node_tree.nodes["Background"].inputs[0].default_value = (0.014, 0.016, 0.045, 1)
-O["MoonKey"].data.energy = 0.9
+O["MoonKey"].data.energy = 1.6
 # steam puffs for the long whistle (44.5-48 s)
 stk = O["Stack"].location.copy()
 puffM = newM("T_PuffM", (0.75, 0.75, 0.8), emit=0.6, rough=1)
 PUFF = [mk(f"T_Puff{i}", sph(0.35, 12, 8), puffM, (stk.x - i * 0.35, 0, stk.z + 0.5 + i * 0.4), scl=(0.01, 0.01, 0.01), parent=T, smooth=True) for i in range(4)]
 # where the echo seems to come from
-ECHO_A = empty("V_EchoA", (FORK[0] + 70, 150, 6)); ECHO_B = empty("V_EchoB", (250, 230, 6))
+ECHO_A = empty("V_EchoA", (FORK[0] + 70, 150, 6)); ECHO_B = empty("V_EchoB", (150, 120, 6))
 
 # ---------------- the Hush ----------------
 H = O["Hush"]; H.scale = (2.4, 2.4, 2.4)
@@ -171,7 +171,7 @@ FX0 = FORK[0]
 for t, loc, s in ((0, (110, 26, -80), 2.4), (25, (118, 26, -80), 2.4), (30, (150, 24, RIM), 2.4), (37, (232, 22, RIM), 2.4),
                   (44, (290, 21, RIM), 2.4), (46.5, (306, 22, RIM), 2.4), (50, (346, 40, 2.0), 2.4), (56, (370, 86, 0), 2.4),
                   (58, (370, 110, -60), 2.4), (59.5, (412, 60, -60), 2.4), (61, (412, 36, RIM), 2.4), (64, (402, 19, RIM), 2.4),
-                  (72.5, (402, 19, RIM), 2.4), (80, (392, 60, RIM), 2.4), (90, (360, 120, RIM), 2.4), (100, (330, 170, RIM), 2.4)):
+                  (72.5, (402, 19, RIM), 2.4), (80, (386, 28, RIM), 2.4), (90, (364, 32, RIM), 2.4), (100, (352, 34, RIM), 2.4)):
     key(H, "location", F(t), Vector(loc)); key(H, "scale", F(t), Vector((s, s, s)))
 dt = H.constraints.new("LOCKED_TRACK"); dt.target = T; dt.track_axis = "TRACK_NEGATIVE_Y"; dt.lock_axis = "LOCK_Z"
 da = H.constraints.new("LOCKED_TRACK"); da.target = ECHO_A; da.track_axis = "TRACK_NEGATIVE_Y"; da.lock_axis = "LOCK_Z"
@@ -194,7 +194,7 @@ for t, e in ((0, 45), (57.5, 45), (58.5, 10), (74.5, 10), (75.5, 45)): O["Fill"]
 wi = M("H_Window").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
 for t, e in ((0, 4), (57.5, 4), (58, 0.0), (74.8, 0.0), (75, 4)): wi.default_value = e; wi.keyframe_insert("default_value", frame=F(t))
 for t, rz in ((0, 0), (14, 0), (15, math.radians(-110)), (19, math.radians(-110)), (20, 0), (26, 0), (27, math.radians(160)), (31, math.radians(160)), (32, 0),
-              (39, 0), (40, math.radians(160)), (42.5, math.radians(160)), (43.5, 0), (51, 0), (52, math.radians(-110)), (55, math.radians(-110)), (56, 0),
+              (51, 0), (52, math.radians(-110)), (55, math.radians(-110)), (56, 0),
               (62, 0), (63, math.radians(-110)), (73.5, math.radians(-110)), (74.5, 0), (86, 0), (87, math.radians(150)), (90, math.radians(150)), (91, 0), (100, 0)):
     key(HP, "rotation_euler", F(t), rz, 2)
 for t, rz in ((0, math.radians(58)), (30, math.radians(58)), (31, math.radians(10)), (44, math.radians(10)), (45, math.radians(58)), (100, math.radians(58))):
@@ -225,14 +225,14 @@ cam("Cam_02", 8, (2.2, -3.0, 1.7), (0.6, 0, 1.35), 30, T)          # Rook close 
 cam("Cam_03", 27.5, (6.0, -7.0, 1.4), "H_Mask", 20, T)             # look up: the Hush rises on the rim
 cam("Cam_04", 33, (22, -12, 2.5), (-16, 16, 12), 18, T)            # chase: train + the Hush on the rim behind
 cam("Cam_05", 39.5, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)        # Rook: "let's give it a song"
-cam("Cam_06", 44, (296, -13, 2.5), (330, 26, 7), 20)               # the fork: the whistle, the Hush turns
-cam("Cam_07", 49, (338, -8, 2.0), "H_Mask", 24)                    # it climbs down into the side canyon
+cam("Cam_06", 44, (288, -14, 3.0), (322, 24, 15), 18)               # the fork: the whistle, the Hush turns
+cam("Cam_07", 49, (378, 104, 3.0), "H_Mask", 24)                    # it climbs down into the side canyon
 cam("Cam_08", 55.5, (382, -12, 2.2), (399, 0, 5), 22)              # brakes under the stone arch
 cam("Cam_09", 61, (390, -10, 1.4), "H_Mask", 18)                   # from below: it stands on the rim above
 cam("Cam_10", 65.5, (9, -5, 1.4), (0.5, 0, 1.3), 28, T)            # dark, still
 cam("Cam_11", 70, (432, -13, 4), (402, 18, 22), 20)                # the old echo: it turns away
 cam("Cam_12", 74.5, (8, -9, 3), (0, 0, 1.4), 26, T)                # quiet wheels, then full steam
-cam("Cam_13", 84, (424, -12, 2.5), "H_Mask", 24)                   # it walks away along the rim
+cam("Cam_13", 84, (300, 45, 16), "H_Mask", 26)                   # it walks away along the rim
 cam("Cam_14", 90.5, (30, -30, 10), (0, 0, 2), 24, T)               # final wide: desert station lights
 sc.camera = O["Cam_01"]
 sc.render.resolution_x = 1280; sc.render.resolution_y = 720; sc.render.resolution_percentage = 100
