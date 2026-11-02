@@ -1,0 +1,20 @@
+{"film_no": 4, "title": "The Echo Canyon", "poster_t": 54,
+ "synopsis": "A deep red canyon, and the Hush walking the rim above the last train. It hears everything, so Rook gives it something to hear.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [1.5, 4.0, "Canyon run, passengers. Hold the bar."],
+  [9.0, 11.6, "Hear that? The walls sing our wheels back."],
+  [15.2, 17.6, "...The echo stopped. And the lamps."],
+  [20.5, 23.0, "Something up there is eating the sound."],
+  [29.0, 31.0, "...It's on the rim."],
+  [32.2, 34.2, "Full steam! Stay low!"],
+  [39.5, 42.0, "It hears everything. Let's give it a song."],
+  [44.5, 47.0, "Whistle! Long and loud, into that wall!"],
+  [51.5, 54.0, "Ha! It's chasing our echo!"],
+  [55.8, 58.0, "Wait... where did it go? Under the arch!"],
+  [63.5, 66.0, "...It's right above us. Don't move."],
+  [70.8, 73.2, "...Our echo. It's still singing out there."],
+  [75.0, 77.0, "Now. Quiet wheels, then full steam."],
+  [86.5, 89.0, "It will be back. It always is."],
+  [92.0, 95.6, "Thank you, canyon. Sing for us again."]
+ ]}

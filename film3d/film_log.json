@@ -42,5 +42,23 @@
   "poster": "gloamrun/films/gloamrun_film03_poster.jpg",
   "finished": "2026-11-02 10:55 JST (render done 18:41; 105 s with end card)",
   "duration": 105.0
+ },
+ {
+  "film_no": 4,
+  "folder": "films/film03",
+  "title": "The Echo Canyon",
+  "date_made": "2026-11-02",
+  "frames": 2400,
+  "status": "rendering",
+  "clever_move": "At the fork in the canyon Rook blows one long whistle into the side canyon; the Hush hears the echo and follows it away.",
+  "fear": "The train hides dark and still under a stone arch; the Hush stands on the rim right above. 'It's right above us. Don't move.'",
+  "surprise": "The old whistle echo comes back from far away; the Hush turns and walks off after it (not defeated, it will be back).",
+  "places": [
+   "red-rock canyon",
+   "fork with a side canyon",
+   "stone arch over the track",
+   "desert station"
+  ],
+  "render_started": "2026-11-02 11:08 JST (~14 s/frame incl. rest, done ~20:30 JST)"
  }
 ]

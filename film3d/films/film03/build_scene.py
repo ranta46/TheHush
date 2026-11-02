@@ -225,7 +225,7 @@ cam("Cam_02", 8, (2.2, -3.0, 1.7), (0.6, 0, 1.35), 30, T)          # Rook close 
 cam("Cam_03", 27.5, (6.0, -7.0, 1.4), "H_Mask", 20, T)             # look up: the Hush rises on the rim
 cam("Cam_04", 33, (22, -12, 2.5), (-16, 16, 12), 18, T)            # chase: train + the Hush on the rim behind
 cam("Cam_05", 39.5, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)        # Rook: "let's give it a song"
-cam("Cam_06", 44, (288, -14, 3.0), (322, 24, 15), 18)               # the fork: the whistle, the Hush turns
+cam("Cam_06", 44, (286, -14, 2.5), (316, 24, 22), 16)               # the fork: the whistle, the Hush turns
 cam("Cam_07", 49, (378, 104, 3.0), "H_Mask", 24)                    # it climbs down into the side canyon
 cam("Cam_08", 55.5, (382, -12, 2.2), (399, 0, 5), 22)              # brakes under the stone arch
 cam("Cam_09", 61, (390, -10, 1.4), "H_Mask", 18)                   # from below: it stands on the rim above
