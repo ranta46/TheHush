@@ -27,7 +27,7 @@
   "title": "The Last Car",
   "date_made": "2026-11-01",
   "frames": 2400,
-  "status": "rendering",
+  "status": "stock",
   "clever_move": "On the iron bridge Rook unhooks the empty last car and leaves its lantern lit; the Hush stops to eat the light.",
   "fear": "Stuck in a snow drift in the dark; the Hush walks over the frozen river toward the train. 'It sees us. Don't move.'",
   "surprise": "The river ice breaks under the Hush; it sinks to its chest (not defeated, it will climb out).",
@@ -37,6 +37,10 @@
    "snow drift",
    "mountain station"
   ],
-  "render_started": "2026-11-01 11:03 JST (~11.7 s/frame incl. rest, done ~19:00 JST)"
+  "render_started": "2026-11-01 11:03 JST (~11.7 s/frame incl. rest, done ~19:00 JST)",
+  "video": "gloamrun/films/gloamrun_film03_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film03_poster.jpg",
+  "finished": "2026-11-02 10:55 JST (render done 18:41; 105 s with end card)",
+  "duration": 105.0
  }
 ]
