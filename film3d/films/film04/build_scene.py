@@ -92,7 +92,7 @@ rr = random.Random(57)
 sand = newM("S_Sand", (0.16, 0.13, 0.10), rough=0.95); O["Ground"].data.materials.clear(); O["Ground"].data.materials.append(sand)
 rock = newM("S_Rock", (0.20, 0.19, 0.21), rough=0.95); rock2 = newM("S_Rock2", (0.14, 0.13, 0.15), rough=0.95)
 seaM = newM("S_SeaM", (0.012, 0.03, 0.06), rough=0.12)
-mk("S_Sea", box(), seaM, (400, -312, -0.42), scl=(1400, 600, 0.05))
+mk("S_Sea", box(), seaM, (400, -312, 0.02), scl=(1400, 600, 0.04))
 YS, YE = 300, 440                       # the old yard
 ROWS = (-10.4, -7.8, -5.2, -2.6, 2.6, 5.2, 7.8, 10.4)
 # cliffs on the land side of the coast
@@ -104,19 +104,20 @@ while x < 290:
 for i in range(30):   # rocks on the beach and in the shallow water
     b = rr.uniform(0.6, 2.2); mk("S_Stone", box(), rock2, (rr.uniform(-40, 300), rr.uniform(-30, -6), b * 0.2 - 0.3), (rr.uniform(-.4, .4), rr.uniform(-.4, .4), rr.uniform(0, 3)), scl=(b * 1.5, b, b * 0.7))
 # lighthouse on a rock out at sea (goes dark at 9.3 s)
-mk("S_LhRock", box(), rock2, (250, -125, 1.0), (0, 0, 0.4), scl=(14, 10, 3.5))
-mk("S_LhTower", cyl(2.2, 1.4, 16, 16), newM("S_LhWhite", (0.55, 0.53, 0.5), rough=0.8), (250, -125, 10))
-mk("S_LhTop", cyl(1.9, 1.9, 0.5, 16), newM("S_LhIron", (0.05, 0.05, 0.06), rough=0.5), (250, -125, 18.2))
-LHM = newM("L_LhLamp", (1, 0.85, 0.55), emit=40); mk("L_LhLamp", sph(1.3, 14, 8), LHM, (250, -125, 19.6))
-mk("S_LhCap", cyl(1.9, 0.2, 1.6, 16), newM("S_LhRed", (0.25, 0.04, 0.03), rough=0.6), (250, -125, 21.2))
-# track lamps on the land side (they die at 14.8 s)
+LX, LY = 190, -80
+mk("S_LhRock", box(), rock2, (LX, LY, 1.0), (0, 0, 0.4), scl=(16, 12, 3.5))
+mk("S_LhTower", cyl(3.0, 1.9, 24, 16), newM("S_LhWhite", (0.55, 0.53, 0.5), rough=0.8), (LX, LY, 14))
+mk("S_LhTop", cyl(2.6, 2.6, 0.6, 16), newM("S_LhIron", (0.05, 0.05, 0.06), rough=0.5), (LX, LY, 26.3))
+LHM = newM("L_LhLamp", (1, 0.85, 0.55), emit=40); mk("L_LhLamp", sph(1.8, 14, 8), LHM, (LX, LY, 28.2))
+mk("S_LhCap", cyl(2.6, 0.3, 2.0, 16), newM("S_LhRed", (0.25, 0.04, 0.03), rough=0.6), (LX, LY, 30.3))
+# track lamps on the sea side (they die at 14.8 s)
 tie = newM("S_Tie", (0.05, 0.04, 0.035), rough=1)
 for i in range(330): mk("S_Tie", box(), tie, (-60 + i * 2.0, 0, 0.01), scl=(0.25, 1.4, 0.06))
 postM = newM("S_Post", (0.02, 0.02, 0.025), rough=0.5)
 LAMPS = []
 for i in range(6):
-    x = 112 + i * 12; mk("S_Post", cyl(0.06, 0.08, 3.0, 8), postM, (x, 3.0, 1.5))
-    hm = newM(f"L_Track{i}", (1, 0.62, 0.25), emit=12); mk(f"L_Track{i}", sph(0.22, 10, 6), hm, (x, 3.0, 3.1)); LAMPS.append(hm)
+    x = 112 + i * 12; mk("S_Post", cyl(0.06, 0.08, 3.0, 8), postM, (x, -3.0, 1.5))
+    hm = newM(f"L_Track{i}", (1, 0.62, 0.25), emit=12); mk(f"L_Track{i}", sph(0.22, 10, 6), hm, (x, -3.0, 3.1)); LAMPS.append(hm)
 # the yard: rows of sleeping trains (old box cars, flat cars and dead engines), rails, a water tower, a big shed
 rustM = newM("S_Rust", (0.16, 0.07, 0.05), rough=0.9); rust2 = newM("S_Rust2", (0.08, 0.09, 0.10), rough=0.8)
 railM = newM("S_YRail", (0.18, 0.18, 0.2), rough=0.4, metal=0.8)
@@ -233,7 +234,7 @@ for t, e in ((0, 900), (46.3, 900), (46.6, 0), (78.8, 0), (79, 900)): HL.data.en
 for t, e in ((0, 45), (46.3, 45), (47, 12), (78.5, 12), (79.5, 45)): O["Fill"].data.energy = e; O["Fill"].data.keyframe_insert("energy", frame=F(t))
 wi = M("H_Window").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
 for t, e in ((0, 4), (46.3, 4), (46.6, 0.0), (78.8, 0.0), (79, 4)): wi.default_value = e; wi.keyframe_insert("default_value", frame=F(t))
-for t, rz in ((0, 0), (9.0, 0), (9.8, math.radians(-110)), (12.5, math.radians(-110)), (13.3, 0), (14.5, 0), (15.3, math.radians(110)), (18.5, math.radians(110)), (19.3, 0),
+for t, rz in ((0, 0), (9.0, 0), (9.8, math.radians(-110)), (12.5, math.radians(-110)), (13.3, 0), (14.5, 0), (15.3, math.radians(-110)), (18.5, math.radians(-110)), (19.3, 0),
               (26, 0), (27, math.radians(-150)), (31, math.radians(-150)), (32, 0), (36, 0), (36.6, math.radians(-150)), (38.6, math.radians(-150)), (39.2, 0),
               (55, 0), (56, math.radians(-110)), (60, math.radians(-110)), (61, math.radians(-60)), (71.5, math.radians(-60)), (72.3, math.radians(-130)), (76, math.radians(-130)), (77, 0),
               (86, 0), (87, math.radians(-150)), (90, math.radians(-150)), (91, 0), (100, 0)):
@@ -261,19 +262,19 @@ def cam(name, start_s, loc, look, lens=28, parent=None):
     m = sc.timeline_markers.new(name, frame=F(start_s)); m.camera = c; return c
 cam("Cam_01", 0, (3.0, -11, 2.6), (1.0, 0, 1.6), 26, T)              # wide side: the coast run
 cam("Cam_02", 8, (-6, 6, 3.5), (120, -90, 8), 24, T)                 # over the train: the lighthouse goes dark
-cam("Cam_03", 12.5, (2.2, -3.0, 1.7), (0.6, 0, 1.35), 30, T)         # Rook close: the track lamps die
+cam("Cam_03", 12.5, (3.4, -4.4, 1.9), (0.4, 0, 1.3), 22, T)         # Rook close: the track lamps die
 cam("Cam_04", 25.5, (6.0, -6.0, 1.4), "H_Mask", 20, T)               # the Hush rises out of the sea
 cam("Cam_05", 31, (22, -12, 2.5), (-14, -20, 10), 18, T)             # chase on the beach
 cam("Cam_06", 39.5, (334, 6, 4), (305, -8, 4), 18)                    # into the old yard
 cam("Cam_07", 44, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)            # Rook: lights off
-cam("Cam_08", 48.5, (385, -28, 16), (352, -4, 1), 22)                # high: the dark train among the rows, the Hush comes
+cam("Cam_08", 48.5, (388, -30, 15), (348, -8, 4), 20)                # high: the dark train among the rows, the Hush comes
 cam("Cam_09", 55, (372, -1.3, 1.0), "H_Mask", 16)                    # low on the track: it comes closer
 cam("Cam_10", 60.5, (2.4, -3.0, 1.6), (0.6, 0, 1.35), 28, T)         # Rook in the dark
-cam("Cam_11", 66, (368, 2.5, 0.8), "H_Mask", 16)                     # from below: right over them
+cam("Cam_11", 66, (366.5, 1.3, 0.7), "H_Mask", 16)                     # from below: right over them
 cam("Cam_12", 71.5, (352, -3, 1.6), (338, -10.4, 1.2), 20)           # Old Nine wakes up
 cam("Cam_13", 76, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)            # Rook: thank you, quiet wheels
 cam("Cam_14", 80, (8, -9, 3), (0, 0, 1.4), 26, T)                    # lights on, out of the yard
-cam("Cam_15", 84.5, (300, -50, 8), "H_Mask", 24)                     # the Hush eats Old Nine's light
+cam("Cam_15", 84.5, (352, 12.5, 3.0), "H_Mask", 20)                     # the Hush eats Old Nine's light
 cam("Cam_16", 90.5, (30, -30, 10), (0, 0, 2), 24, T)                 # final wide: the harbor town lights
 sc.camera = O["Cam_01"]
 sc.render.resolution_x = 1280; sc.render.resolution_y = 720; sc.render.resolution_percentage = 100
