@@ -68,5 +68,23 @@
   "poster": "gloamrun/films/gloamrun_film04_poster.jpg",
   "finished": "2026-11-03 10:55 JST (render done 2026-11-02 20:28; 105 s with end card)",
   "duration": 105.0
+ },
+ {
+  "film_no": 5,
+  "folder": "films/film04",
+  "title": "The Sleeping Yard",
+  "date_made": "2026-11-03",
+  "frames": 2400,
+  "status": "rendering",
+  "clever_move": "Rook can't outrun the Hush, so he turns off every light and hides the train among the rows of dead trains in the old yard ('Now we are one of them').",
+  "fear": "The Hush searches the dark yard and stands right over the hidden train. 'It's looking right at us. Don't move.'",
+  "surprise": "Old Nine, a dead engine two tracks over, hisses and its old lamp flickers on; the Hush turns to it and eats its light (not defeated, it will come again).",
+  "places": [
+   "sea coast with a lighthouse",
+   "beach",
+   "old train yard",
+   "harbor town and station"
+  ],
+  "render_started": "2026-11-03 11:12 JST (~19 s/frame incl. rest, done ~00:10 JST 11-04)"
  }
 ]

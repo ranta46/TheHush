@@ -262,12 +262,12 @@ def cam(name, start_s, loc, look, lens=28, parent=None):
     m = sc.timeline_markers.new(name, frame=F(start_s)); m.camera = c; return c
 cam("Cam_01", 0, (3.0, -11, 2.6), (1.0, 0, 1.6), 26, T)              # wide side: the coast run
 cam("Cam_02", 8, (-6, 6, 3.5), (120, -90, 8), 24, T)                 # over the train: the lighthouse goes dark
-cam("Cam_03", 12.5, (3.4, -4.4, 1.9), (0.4, 0, 1.3), 22, T)         # Rook close: the track lamps die
+cam("Cam_03", 12.5, (-2.4, -4.6, 1.9), (3.0, 0, 1.5), 22, T)         # Rook close: the track lamps die
 cam("Cam_04", 25.5, (6.0, -6.0, 1.4), "H_Mask", 20, T)               # the Hush rises out of the sea
 cam("Cam_05", 31, (22, -12, 2.5), (-14, -20, 10), 18, T)             # chase on the beach
 cam("Cam_06", 39.5, (334, 6, 4), (305, -8, 4), 18)                    # into the old yard
 cam("Cam_07", 44, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)            # Rook: lights off
-cam("Cam_08", 48.5, (388, -30, 15), (348, -8, 4), 20)                # high: the dark train among the rows, the Hush comes
+cam("Cam_08", 48.5, (372, 16, 14), (340, -12, 6), 20)                # high: the dark train among the rows, the Hush comes
 cam("Cam_09", 55, (372, -1.3, 1.0), "H_Mask", 16)                    # low on the track: it comes closer
 cam("Cam_10", 60.5, (2.4, -3.0, 1.6), (0.6, 0, 1.35), 28, T)         # Rook in the dark
 cam("Cam_11", 66, (366.5, 1.3, 0.7), "H_Mask", 16)                     # from below: right over them

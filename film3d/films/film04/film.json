@@ -1,0 +1,19 @@
+{"film_no": 5, "title": "The Sleeping Yard", "poster_t": 41,
+ "synopsis": "The lighthouse goes dark, and the Hush walks out of the sea. Rook can't outrun it, so he hides the last train among a hundred sleeping ones.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [1.5, 4.0, "Harbor run, passengers. Hold the bar."],
+  [9.5, 12.0, "The lighthouse... it just went dark."],
+  [15.5, 18.0, "The track lamps too. It's coming."],
+  [27.5, 29.5, "...There. Out of the sea."],
+  [31.5, 33.5, "Full steam! Hold on tight!"],
+  [36.0, 38.5, "It's too close! We can't outrun it."],
+  [40.5, 43.0, "The old yard. So many sleeping trains."],
+  [44.5, 47.0, "Lights off. Now we are one of them."],
+  [52.0, 54.5, "...Be still. Like an old train."],
+  [62.0, 64.5, "...It's looking right at us. Don't move."],
+  [73.0, 75.5, "Old Nine? You still have steam?"],
+  [77.0, 79.5, "Thank you, old friend. Quiet wheels."],
+  [86.5, 89.0, "It will come again. We'll be ready."],
+  [92.0, 95.6, "Next stop, the harbor. Lights ahead!"]
+ ]}
