@@ -1,0 +1,19 @@
+{"film_no": 6, "title": "The Lift Bridge", "poster_t": 55,
+ "synopsis": "The mill on the hill goes dark, and the Hush comes over the pines. Rook crosses the old lift bridge and pulls the lever. But old chains don't hold forever.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [1.5, 4.0, "River line tonight. Hold the bar."],
+  [9.5, 12.0, "The mill on the hill... it went dark."],
+  [16.5, 19.0, "There. On the hill, behind us."],
+  [26.0, 28.5, "Full steam! Hold on tight!"],
+  [33.0, 35.5, "It's getting closer. Too close!"],
+  [39.0, 41.5, "The old lift bridge. I have an idea."],
+  [50.0, 52.5, "Up you go, old bridge!"],
+  [54.0, 56.5, "Deep water. It won't cross that."],
+  [58.5, 61.0, "...Our lights. It's eating them from there."],
+  [64.0, 66.5, "...Don't move. Not a sound."],
+  [73.5, 76.0, "The bridge! It's coming down!"],
+  [78.5, 81.0, "Go! Lights stay on if we move!"],
+  [86.5, 89.0, "It will cross. But we keep moving."],
+  [92.0, 95.6, "Next stop, the mill town. Lights ahead!"]
+ ]}
