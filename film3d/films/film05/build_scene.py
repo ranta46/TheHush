@@ -176,8 +176,8 @@ key(WHEEL, "rotation_euler", F(0), 0.0, 1); key(WHEEL, "rotation_euler", F(9.5),
 # the Hush: rises behind the hills (14-18), chases along the line (18-47), stops at the river bank (53-81),
 # walks onto the bridge when it comes down (82-92) and on after the train
 for t, loc in ((0, (60, 70, -40)), (13.5, (62, 66, -40)), (16, (66, 58, -14)), (18.5, (72, 50, 0)), (24, (110, 30, 0)),
-               (32, (210, 12, 0)), (38, (270, 6, 0)), (44, (325, 0, 0)), (49, (352, -2, 0)), (53, (366, -3, 0)),
-               (81.5, (366, -3, 0)), (85, (392, 0, 0)), (90, (424, 0, 0)), (100, (456, 0, 0))):
+               (32, (210, 12, 0)), (38, (270, 6, 0)), (44, (325, 0, 0)), (49, (354, -3, 0)), (53, (371, -5, 0)),
+               (81.5, (371, -5, 0)), (85, (392, 0, 0)), (90, (424, 0, 0)), (100, (456, 0, 0))):
     key(H, "location", F(t), Vector(loc)); key(H, "scale", F(t), Vector((2.4, 2.4, 2.4)))
 dt = H.constraints.new("LOCKED_TRACK"); dt.target = T; dt.track_axis = "TRACK_NEGATIVE_Y"; dt.lock_axis = "LOCK_Z"
 gm = M("H_Green").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
@@ -232,13 +232,13 @@ cam("Cam_04", 15.5, (-3.0, -5.5, 2.2), "H_Mask", 22, T)              # the Hush 
 cam("Cam_05", 25, (22, -12, 2.5), (-20, 14, 10), 18, T)              # chase along the line
 cam("Cam_06", 31, (-3.2, -2.8, 1.5), "H_Mask", 20, T)                # looking back: too close
 cam("Cam_07", 38.5, (-3.0, 1.8, 2.4), (40, 0, 5), 24, T)             # ahead: the old lift bridge
-cam("Cam_08", 43.5, (412, -48, 9), (410, 0, 4), 24)                  # wide: the train crosses the bridge
+cam("Cam_08", 43.5, (8, -14, 6.5), (0, 0, 1), 24, T)                  # wide: the train crosses the bridge
 cam("Cam_09", 49.8, (2.6, -3.4, 1.8), (0.6, -0.6, 1.2), 28, T)       # Rook pulls the lever
 cam("Cam_10", 52.5, (472, -16, 2.6), (402, 0, 10), 20)               # the bridge goes up, the Hush at the bank
-cam("Cam_11", 56.5, (452, -7, 1.2), "H_Mask", 18)                    # across the water: it eats our lights
+cam("Cam_11", 56.5, (455, -18, 1.5), "H_Mask", 26)                    # across the water: it eats our lights
 cam("Cam_12", 60.5, (2.4, -3.0, 1.6), (0.6, 0, 1.35), 28, T)         # Rook in the dark
-cam("Cam_13", 66, (447, -6.5, 0.6), "H_Mask", 16)                    # from below across the water: it towers over us
-cam("Cam_14", 71.5, (424, -34, 4), (410, 0, 9), 22)                  # the old chains slip: the bridge comes down
+cam("Cam_13", 66, (450, -14, 0.8), "H_Mask", 30)                    # from below across the water: it towers over us
+cam("Cam_14", 71.5, (410, -60, 6), (395, 0, 8), 22)                  # the old chains slip: the bridge comes down
 cam("Cam_15", 77.5, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)          # Rook: go!
 cam("Cam_16", 81, (8, -9, 3), (0, 0, 1.4), 26, T)                    # lights on, full steam
 cam("Cam_17", 85, (-4, -3.2, 2.6), "H_Mask", 26, T)                  # looking back: the Hush walks over the bridge
