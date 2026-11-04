@@ -94,5 +94,23 @@
   "poster": "gloamrun/films/gloamrun_film05_poster.jpg",
   "finished": "2026-11-04 10:50 JST (render done 2026-11-03 18:58; 105 s with end card)",
   "duration": 105.0
+ },
+ {
+  "film_no": 6,
+  "folder": "films/film05",
+  "title": "The Lift Bridge",
+  "date_made": "2026-11-04",
+  "frames": 2400,
+  "status": "rendering",
+  "clever_move": "Rook crosses the old lift bridge over the deep river, stops and pulls the lever; the bridge goes up behind them and the Hush stops at the bank.",
+  "fear": "Across the water the Hush eats the train's lights; dark and still. '...Don't move. Not a sound.'",
+  "surprise": "The old chains slip and the bridge comes down by itself; Rook goes full steam ('Lights stay on if we move!') and the Hush walks over the bridge after them (it will come again).",
+  "places": [
+   "river line by a lake under pine hills",
+   "the mill on the hill",
+   "old lift bridge over a deep river",
+   "mill town and station"
+  ],
+  "render_started": "2026-11-04 10:57 JST (~6.5 s/frame incl. rest, done ~16:30 JST)"
  }
 ]
