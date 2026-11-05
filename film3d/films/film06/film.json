@@ -1,0 +1,20 @@
+{"film_no": 7, "title": "The Turntable", "poster_t": 62,
+ "synopsis": "The windmills stop, and the Hush rises on the line ahead. Rook runs the train backwards to an old turntable. But turning takes time.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [1.5, 4.0, "Windmill hills tonight. Hold the bar."],
+  [9.0, 11.5, "The windmills ahead... they stopped."],
+  [13.0, 15.5, "Every light ahead is going out."],
+  [17.0, 19.5, "There! It's on the line, ahead of us!"],
+  [21.0, 23.5, "Back! Full steam back!"],
+  [29.5, 32.0, "It walks faster than we can run!"],
+  [35.0, 37.5, "The old turntable. I have an idea."],
+  [45.0, 47.5, "Round we go, old table. Slowly..."],
+  [51.5, 54.0, "Come on, come on... turn!"],
+  [57.0, 59.5, "...Don't move. Not a sound."],
+  [63.5, 66.0, "...Almost there. Almost."],
+  [70.0, 72.5, "The wind! The old mill is turning!"],
+  [76.0, 78.5, "Now! Full steam! Hold on tight!"],
+  [85.0, 87.5, "It will come again. We keep moving."],
+  [92.0, 95.6, "Next stop: the town past the hills."]
+ ]}
