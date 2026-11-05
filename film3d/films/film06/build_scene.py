@@ -163,10 +163,12 @@ for i, (x, y, side) in enumerate(mills_xy): windmill(i, x, y, math.radians(-90 i
 d = Vector((0.816, -0.578, 0)); BMX, BMY = CX + 15 * d.x, CY + 15 * d.y
 BIG = windmill(10, BMX, BMY, math.atan2(-d.y, -d.x), 1.75)
 # hills, pines
+ds = Vector((math.cos(math.radians(-10.3)), math.sin(math.radians(-10.3)), 0))   # where the Hush stands (beside the big mill, not behind it)
 hillM = newM("S_HillM", (0.05, 0.065, 0.05), rough=1)
 for i in range(8):
     hx = -40 + i * 65
-    mk("S_Hill", sph(1, 20, 12), hillM, (hx, rr.uniform(85, 110), -6), scl=(rr.uniform(40, 55), 30, rr.uniform(16, 26)), smooth=True)
+    hy, hs = rr.uniform(85, 110), (rr.uniform(40, 55), 30, rr.uniform(16, 26))
+    if abs(hx - CX) > 62: mk("S_Hill", sph(1, 20, 12), hillM, (hx, hy, -6), scl=hs, smooth=True)   # keep the branch line clear
     mk("S_Hill", sph(1, 20, 12), hillM, (hx + 30, -rr.uniform(90, 115), -6), scl=(rr.uniform(40, 55), 30, rr.uniform(14, 22)), smooth=True)
 pineM = newM("S_Pine", (0.02, 0.05, 0.035), rough=1)
 for i in range(70):
@@ -226,9 +228,9 @@ for t, a in ((68.8, 0), (70.0, 0.4), (71.0, 1.5), (72.0, 3.2), (76.0, 11.0), (10
 # the Hush: rises AHEAD behind the hills (15-19), walks down the line at us, stands over the yard (54-71),
 # steps back from the sails (71-74), then walks after the train up the branch line
 for t, loc in ((0, (320, 78, -40)), (14.5, (320, 76, -40)), (16.5, (318, 64, -14)), (19, (312, 50, 0)), (23, (295, 14, 0)),
-               (28, (255, -4, 0)), (34, (195, -5, 0)), (40, (140, -6, 0)), (46, (108, -10, 0)), (51, (92, -14, 0)),
-               (54, (CX + 30 * d.x, CY + 30 * d.y, 0)), (71, (CX + 30 * d.x, CY + 30 * d.y, 0)), (74, (CX + 37 * d.x, CY + 37 * d.y, 0)),
-               (79, (CX + 37 * d.x, CY + 37 * d.y, 0)), (83, (95, 0, 0)), (90, (76, 26, 0)), (96, (65, 58, 0)), (100, (62, 82, 0))):
+               (28, (255, -4, 0)), (34, (195, -5, 0)), (40, (140, -6, 0)), (46, (108, -10, 0)), (51, (100, -6, 0)),
+               (54, (CX + 30 * ds.x, CY + 30 * ds.y, 0)), (71, (CX + 30 * ds.x, CY + 30 * ds.y, 0)), (74, (CX + 37 * ds.x, CY + 37 * ds.y, 0)),
+               (79, (CX + 37 * ds.x, CY + 37 * ds.y, 0)), (83, (98, 8, 0)), (90, (78, 28, 0)), (96, (65, 58, 0)), (100, (62, 82, 0))):
     key(H, "location", F(t), Vector(loc)); key(H, "scale", F(t), Vector((2.4, 2.4, 2.4)))
 dt = H.constraints.new("LOCKED_TRACK"); dt.target = T; dt.track_axis = "TRACK_NEGATIVE_Y"; dt.lock_axis = "LOCK_Z"
 gm = M("H_Green").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
@@ -276,16 +278,16 @@ def cam(name, start_s, loc, look, lens=28, parent=None):
     k = c.constraints.new("TRACK_TO"); k.target = tgt; k.track_axis = "TRACK_NEGATIVE_Z"; k.up_axis = "UP_Y"
     m = sc.timeline_markers.new(name, frame=F(start_s)); m.camera = c; return c
 cam("Cam_01", 0, (3.0, -11, 2.6), (1.0, 0, 1.6), 26, T)              # wide side: the windmill line
-cam("Cam_02", 8, (-6, -4, 3.5), (90, 18, 6), 26, T)                   # over the train: the windmills ahead stop and go dark
+cam("Cam_02", 8, (-8, 0.5, 6.5), (90, 18, 6), 26, T)                   # over the train: the windmills ahead stop and go dark
 cam("Cam_03", 12.5, (2.6, -3.4, 1.8), (0.6, -0.4, 1.3), 28, T)       # Rook close
-cam("Cam_04", 15.5, (-6, -3, 3.0), "H_Mask", 24, T)                  # the Hush rises ahead, on the line
+cam("Cam_04", 15.5, (-6, -3, 3.0), "H_Mask", 45, T)                  # the Hush rises ahead, on the line
 cam("Cam_05", 20, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)            # Rook: back!
-cam("Cam_06", 23.5, (-16, -14, 3.0), (10, 0, 6), 20, T)              # wide: the train runs back, the Hush follows
-cam("Cam_07", 29, (-1.6, -2.6, 1.6), "H_Mask", 20, T)                # from the cab: too fast
+cam("Cam_06", 23.5, (-14, -10, 3.0), (20, 0, 8), 30, T)              # wide: the train runs back, the Hush follows
+cam("Cam_07", 29, (-1.6, -2.6, 1.6), "H_Mask", 35, T)                # from the cab: too fast
 cam("Cam_08", 34, (2.6, -3.4, 1.8), (0.6, 0, 1.35), 28, T)           # Rook: the old turntable
-cam("Cam_09", 38, (36, -26, 9), (CX, 0, 2), 24)                      # wide: the yard, the train backs onto the table
+cam("Cam_09", 38, (CX - 20, CY - 20, 10), (CX + 10, -2, 5), 22)                      # wide: the yard, the train backs onto the table
 cam("Cam_10", 44, (CX - 13, CY - 11, 13), (CX, CY, 0), 26)           # high: the table turns
-cam("Cam_11", 49.5, (CX - 6, CY + 7, 1.4), "H_Mask", 22)             # low from the table: it arrives, the yard goes dark
+cam("Cam_11", 49.5, (CX - 8, CY + 9, 1.4), "H_Mask", 22)             # low from the table: it arrives, the yard goes dark
 cam("Cam_12", 55, (2.6, -3.0, 1.6), (0.6, 0, 1.35), 28, T)           # Rook in the dark
 cam("Cam_13", 60, (CX - 8, CY + 9, 0.8), "H_Mask", 18)               # from below: it towers over us, the big mill between
 cam("Cam_14", 64, (2.2, -2.6, 2.2), (0.6, 0, 1.3), 32, T)            # Rook: almost there
@@ -294,7 +296,7 @@ cam("Cam_16", 72, (CX - 4, CY + 5, 3), "H_Mask", 24)                 # sails swe
 cam("Cam_17", 75.5, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)          # Rook: now!
 cam("Cam_18", 79, (8, -9, 3), (0, 0, 1.4), 26, T)                    # lights on, full steam
 cam("Cam_19", 84.5, (-4, -3.2, 2.6), "H_Mask", 26, T)                # looking back: it follows
-cam("Cam_20", 90.5, (-24, -22, 12), (40, 0, 2), 24, T)               # final wide: the town past the hills
+cam("Cam_20", 90.5, (-20, -14, 8), (30, 0, 2), 24, T)               # final wide: the town past the hills
 sc.camera = O["Cam_01"]
 sc.render.resolution_x = 1280; sc.render.resolution_y = 720; sc.render.resolution_percentage = 100
 sc.eevee.taa_render_samples = 24
