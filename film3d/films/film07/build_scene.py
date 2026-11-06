@@ -301,18 +301,18 @@ cam("Cam_02", 8, (-7, 0.5, 5.5), (320, -10, -22), 30, T)                    # ov
 cam("Cam_03", 11.8, (2.6, -3.4, 1.8), (0.6, -0.4, 1.3), 28, T)             # Rook close
 cam("Cam_04", 13.5, (-5, -1.5, 3.2), "H_Mask", 70, T)                      # it rises down there, by our line
 cam("Cam_05", 19, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                  # Rook: it is coming up
-cam("Cam_06", 22.5, (165, -140, 38), (165, 0, 14), 18)                      # wide: the train at the top, the Hush climbing
+cam("Cam_06", 22.5, (190, -170, 46), (190, -10, 12), 16)                      # wide: the train at the top, the Hush climbing
 cam("Cam_07", 26, (2.2, -2.6, 2.2), (0.6, 0, 1.3), 32, T)                  # Rook: only down
 cam("Cam_08", 29, (8, -5, 1.8), (2.2, 0, 1.1), 28, T)                      # outside: fire closed, lights out
-cam("Cam_09", 34, (78, 34, prof(78) + 10), (118, -8, prof(118) + 2), 20)                          # wide: the dark train rolls, the Hush comes up
+cam("Cam_09", 34, (20, -12, PH + 8), (200, -12, 8), 24)                          # wide: the dark train rolls, the Hush comes up
 cam("Cam_10", 41, (-1.6, -1.0, 1.9), "H_Mask", 30, T)                      # from the cab: rolling toward it
 cam("Cam_11", 46, (2.6, -3.0, 1.6), (0.6, 0, 1.35), 28, T)                 # Rook in the dark
-cam("Cam_12", 49.5, (152, 7.0, prof(152) + 0.8), "H_Mask", 16)             # low by the line: the dark train rolls past its feet
-cam("Cam_13", 53.5, (-6, -2, 2.4), "H_Mask", 30, T)                         # behind us: its back, it still searches up the hill
+cam("Cam_12", 49.5, (160, 13, prof(160) + 1.2), (148, -10, prof(148) + 10), 18)             # low by the line: the dark train rolls past its feet
+cam("Cam_13", 53.5, (215, -2, prof(215) + 3), (165, -8, prof(165) + 8), 22)                         # behind us: its back, it still searches up the hill
 cam("Cam_14", 56.5, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: past it
 cam("Cam_15", 60, (300, -26, 7), (262, 0, 3), 24)                           # wide: the foot of the hill, the old crossing
 cam("Cam_16", 64.5, (287, -10, 2.4), (280, -2, 2.6), 30)                    # the crossing wakes up
-cam("Cam_17", 66, (-5, -3, 2.6), "H_Mask", 45, T)                          # it turns round
+cam("Cam_17", 66, (300, 6, 3), "H_Mask", 40)                          # it turns round
 cam("Cam_18", 68.5, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: open the fire
 cam("Cam_19", 72.5, (8, -9, 3), (0, 0, 1.4), 26, T)                         # lights on, full steam across the valley
 cam("Cam_20", 78.5, (-4, -3.2, 2.6), "H_Mask", 28, T)                       # looking back: it follows down the hill
