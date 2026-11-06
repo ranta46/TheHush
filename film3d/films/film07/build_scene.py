@@ -91,7 +91,7 @@ for n in ("R_KeyLoop-1", "R_KeyLoop1"):
 # ---------------- world: the high moor, Long Hill down into the valley, the old level crossing, the valley town ----------------
 from mathutils import Matrix
 rr = random.Random(88)
-PH, X0, X1 = 24.0, 50.0, 270.0            # moor height, top and foot of Long Hill
+PH, X0, X1 = 34.0, 55.0, 255.0            # moor height, top and foot of Long Hill
 def prof(x):                               # height of the line
     if x <= X0: return PH
     if x >= X1: return 0.0
@@ -301,10 +301,10 @@ cam("Cam_02", 8, (-7, 0.5, 5.5), (320, -10, -22), 30, T)                    # ov
 cam("Cam_03", 11.8, (2.6, -3.4, 1.8), (0.6, -0.4, 1.3), 28, T)             # Rook close
 cam("Cam_04", 13.5, (-5, -1.5, 3.2), "H_Mask", 70, T)                      # it rises down there, by our line
 cam("Cam_05", 19, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                  # Rook: it is coming up
-cam("Cam_06", 22.5, (22, -26, 33), (200, -12, 8), 24)                      # wide: the train at the top, the Hush climbing
+cam("Cam_06", 22.5, (165, -140, 38), (165, 0, 14), 18)                      # wide: the train at the top, the Hush climbing
 cam("Cam_07", 26, (2.2, -2.6, 2.2), (0.6, 0, 1.3), 32, T)                  # Rook: only down
 cam("Cam_08", 29, (8, -5, 1.8), (2.2, 0, 1.1), 28, T)                      # outside: fire closed, lights out
-cam("Cam_09", 34, (78, 34, 34), (118, -8, 16), 20)                          # wide: the dark train rolls, the Hush comes up
+cam("Cam_09", 34, (78, 34, prof(78) + 10), (118, -8, prof(118) + 2), 20)                          # wide: the dark train rolls, the Hush comes up
 cam("Cam_10", 41, (-1.6, -1.0, 1.9), "H_Mask", 30, T)                      # from the cab: rolling toward it
 cam("Cam_11", 46, (2.6, -3.0, 1.6), (0.6, 0, 1.35), 28, T)                 # Rook in the dark
 cam("Cam_12", 49.5, (152, 7.0, prof(152) + 0.8), "H_Mask", 16)             # low by the line: the dark train rolls past its feet
