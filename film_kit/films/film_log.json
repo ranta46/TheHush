@@ -32,5 +32,19 @@
   "folder": "film3d/films/film01",
   "youtube_post_id": 412830086,
   "facebook_post_id": 412830107
+ },
+ {
+  "film_no": 7,
+  "date": "2026-11-06",
+  "title": "The Turntable",
+  "synopsis": "The windmills stop, and the Hush rises on the line ahead. Rook runs the train backwards to an old turntable. But turning takes time.",
+  "clever_move": "The Hush stands on the line ahead, so Rook runs the train backwards onto the old turntable and turns the whole train a quarter round onto the branch line.",
+  "fear": "The table turns slowly in the dark; the Hush eats the yard lamps and the train's lights and stands right over them. '...Don't move. Not a sound.'",
+  "surprise": "A gust starts the big old mill by the yard; its sails sweep between the Hush and the train and it steps back (not defeated, it follows them).",
+  "closing_line": "Next stop: the town past the hills.",
+  "kind": "3d",
+  "folder": "film3d/films/film06",
+  "youtube_post_id": 418792068,
+  "facebook_post_id": 418792101
  }
 ]

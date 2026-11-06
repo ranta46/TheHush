@@ -129,7 +129,7 @@
   "title": "The Turntable",
   "date_made": "2026-11-05",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "clever_move": "The Hush stands on the line ahead, so Rook runs the train backwards onto the old turntable and turns the whole train a quarter round onto the branch line.",
   "fear": "The table turns slowly in the dark; the Hush eats the yard lamps and the train's lights and stands right over them. '...Don't move. Not a sound.'",
   "surprise": "A gust starts the big old mill by the yard; its sails sweep between the Hush and the train and it steps back (not defeated, it follows them).",
@@ -144,7 +144,10 @@
   "video": "gloamrun/films/gloamrun_film07_16x9.mp4",
   "poster": "gloamrun/films/gloamrun_film07_poster.jpg",
   "finished": "2026-11-06 10:50 JST (render done 2026-11-05 19:23; 105 s with end card)",
-  "duration": 105.0
+  "duration": 105.0,
+  "posted": "2026-11-06 20:33 JST",
+  "youtube_post_id": 418792068,
+  "facebook_post_id": 418792101
  },
  {
   "film_no": 8,
