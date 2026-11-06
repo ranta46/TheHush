@@ -1,0 +1,20 @@
+{"film_no": 8, "title": "The Long Hill", "poster_t": 51,
+ "synopsis": "At the top of Long Hill the valley lights go out, and the Hush starts to climb toward the train. There is no way round. Only down.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.8, 3.3, "Top of Long Hill. Hold the bar!"],
+  [9.6, 12.0, "The valley lights... they're going out."],
+  [15.8, 18.4, "It's down there. Right by our line."],
+  [20.0, 22.5, "It's coming up the hill. It hears us."],
+  [26.4, 28.8, "No way round. Only down."],
+  [29.4, 31.6, "Close the fire. Lights off."],
+  [35.0, 37.6, "No light. No sound. We just roll."],
+  [46.5, 49.0, "...Don't move. Not a sound."],
+  [57.0, 59.5, "...We're past it. Keep still."],
+  [65.3, 67.6, "Oh no. The old crossing bell!"],
+  [68.8, 71.2, "Open the fire! Full steam!"],
+  [79.5, 82.0, "It saw us. It's coming down!"],
+  [86.0, 88.5, "Faster! The town is just ahead!"],
+  [92.2, 94.6, "We rolled right past it."],
+  [95.2, 98.0, "It will be back. Hold the bar."]
+ ]}
