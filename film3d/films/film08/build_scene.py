@@ -261,7 +261,7 @@ for t, x, y in ((31.5, 250, -20), (38, 200, -40), (46, 205, -40), (55.5, 205, -4
     key(FEED, "location", F(t), Vector((x, y, 8)))
 d1 = H.constraints.new("LOCKED_TRACK"); d1.target = T; d1.track_axis = "TRACK_NEGATIVE_Y"; d1.lock_axis = "LOCK_Z"
 d2 = H.constraints.new("LOCKED_TRACK"); d2.target = FEED; d2.track_axis = "TRACK_NEGATIVE_Y"; d2.lock_axis = "LOCK_Z"
-for t, v in ((0, 0.0), (31.6, 0.0), (33.0, 1.0), (47.0, 1.0), (48.2, 0.35), (54.0, 0.35), (55.5, 1.0), (64.4, 1.0), (65.8, 0.0)):
+for t, v in ((0, 0.0), (31.6, 0.0), (33.0, 1.0), (46.4, 1.0), (47.6, 0.0), (54.4, 0.0), (55.8, 1.0), (64.4, 1.0), (65.8, 0.0)):
     d2.influence = v; d2.keyframe_insert("influence", frame=F(t))
 gm = M("H_Green").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
 for t, e in ((0, 0), (12.5, 0), (14, 60), (100, 60)): gm.default_value = e; gm.keyframe_insert("default_value", frame=F(t))
@@ -310,14 +310,14 @@ cam("Cam_04", 13.2, (-5, -1.5, 3.2), "H_Mask", 55, T)                      # it 
 cam("Cam_05", 15.5, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: full steam
 cam("Cam_06", 18.4, (60, -95, 26), (10, -10, 8), 18)                        # wide: the chase over the plain
 cam("Cam_07", 21.2, (-4, -3.2, 2.6), "H_Mask", 28, T)                       # from the train: it gains on us
-cam("Cam_08", 24.6, (120, -42, 14), (150, -8, 5), 22)                       # the old power house ahead
+cam("Cam_08", 24.6, (116, 14, 7), (146, -8, 4), 22)                       # the old power house ahead
 cam("Cam_09", 28.6, (PX + 5.5, -7.5, 2.6), (PX + 0.6, -1.2, 1.6), 28)      # Rook at the big switch
 cam("Cam_10", 30.9, (150, -70, 42), (300, 0, 4), 20)                        # the whole city wakes up
 cam("Cam_11", 33.4, (128, -4, 4), "H_Mask", 35)                             # it stops, turns to the light
 cam("Cam_12", 35.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: lights off, let it eat
 cam("Cam_13", 39.2, (165, 28, 16), (200, -14, 9), 22)                       # the dark train creeps in, it eats the first street
 cam("Cam_14", 45.6, (2.6, -3.0, 1.6), (0.6, 0, 1.35), 28, T)               # Rook in the dark
-cam("Cam_15", 49.4, (191, 7, 1.2), (195, -12, 13), 18)                      # low by the line: it stands right over us
+cam("Cam_15", 49.4, (182, 5, 1.4), (191, -8, 8), 16)                      # low by the line: it stands right over us
 cam("Cam_16", 52.6, (-1.6, -1.0, 1.9), "H_Mask", 30, T)                    # from the cab: up at its face
 cam("Cam_17", 56.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: it's going
 cam("Cam_18", 59.2, (215, 45, 26), (250, -30, 6), 22)                       # wide: it walks deeper in, street by street dies
@@ -325,9 +325,9 @@ cam("Cam_19", 63.2, (236, -4, 24), "H_Mask", 32)                             # e
 cam("Cam_20", 66.4, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: lights on, full steam
 cam("Cam_21", 70.4, (8, -9, 3), (0, 0, 1.4), 26, T)                        # lights on, out of the city
 cam("Cam_22", 75.6, (-4, -3.2, 2.6), "H_Mask", 28, T)                      # looking back: it follows
-cam("Cam_23", 80.4, (470, -36, 9), (482, 0, 2), 22)                         # over the river bridge
-cam("Cam_24", 85.6, (-20, -14, 8), (30, 0, 2), 24, T)                      # wide: the hill station ahead
-cam("Cam_25", 90.6, (2.4, -3.2, 1.7), (0.6, 0, 1.35), 28, T)               # Rook at the station
+cam("Cam_23", 84.0, (470, -36, 9), (482, 0, 2), 22)                         # over the river bridge
+cam("Cam_24", 89.0, (-20, -14, 8), (30, 0, 2), 24, T)                      # wide: the hill station ahead
+cam("Cam_25", 91.6, (2.4, -3.2, 1.7), (0.6, 0, 1.35), 28, T)               # Rook at the station
 sc.camera = O["Cam_01"]
 sc.render.resolution_x = 1280; sc.render.resolution_y = 720; sc.render.resolution_percentage = 100
 sc.eevee.taa_render_samples = 24
