@@ -29,6 +29,10 @@ Open the base file in one execute_blender_code call, run the build in the NEXT c
 3. Build, then preview 10-14 frames (40 %, 8 samples), LOOK at them: Rook and the Hush readable, faces toward camera,
    not too dark, cameras not inside objects. Fix (max 3 rounds). Save, then start the timer render (END = frames).
 4. film.json + score.py (gloamrun_sound cues). Push. film_log: status "rendering".
+5. Cold open (from 2026-11-07): set film.json "cold_open": [t0, t1] (about 3 s) on the scariest shot where the Hush is
+   big and close to Rook/the train (check the preview of that shot). post3d.py puts that clip (with its line and sound)
+   in front of the film, then the film starts from 0. If missing, post3d.py uses the first "Don't move" line.
+6. Follow every rule in "Current rules (auto-updated)" at the end of this file. They change after each post.
 
 ## Finishing (when all frames exist)
 blender_encode.py (TremenVR films/tuck/tools) encode(dir) -> raw.mp4 (wait until size stops changing; never call twice)
@@ -42,3 +46,18 @@ title "Gloamrun Film N: <title> | Rook and the Hush", thumbnail = poster; Facebo
 Pull raw.mp4 through Blender instead: execute_blender_code printing base64 of 1.5 MB slices ('CHUNKn' + data), ONE call
 at a time (parallel calls time out); the big output is saved to a tool-results file -> decode, join, check md5/ffprobe.
 Previews the same way (PNG base64). Pick poster_t on a frame where the Hush's face is lit (not a dark tunnel frame).
+
+## Review after EVERY post (the 20:13 posting run does this, no permission needed)
+Stats: Metricool brand 7473995, YouTube "videos published in range" (YTVP17 title, YTVP06 views, YTVP08 avg view
+duration s, YTVP09 likes, YTVP11 comments, YTVP12 shares) for every "Gloamrun Film" + channel subscribers (YTEV01).
+Save film3d/stats/YYYY-MM-DD.json. Compare each film's views and avg view duration / length (retention %) with
+the others. Write 1-3 findings + the change made at the top of film3d/insights.md (keep all past entries).
+Then APPLY the change right away by editing "Current rules (auto-updated)" below (the PC run reads it every film):
+allowed = cold open choice, story pace (when the Hush appears), shot length, line count/wording, title style
+(posting title "Gloamrun Film N: <title> | Rook and the Hush" may get a short hook before it), thumbnail/poster
+choice, description text. Never change: canon, the approved 3D models, GPU safety, one film per day, posting time.
+One change at a time, keep it if numbers improve over the next 3 films, otherwise roll it back.
+
+## Current rules (auto-updated)
+- 2026-11-07: films 1-4 kept only 14-27 s of 105 s on average. Start with a ~3 s cold open of the Hush close to
+  Rook (see Making a new film step 5). The Hush must be on screen within the first 10 s of the film itself.

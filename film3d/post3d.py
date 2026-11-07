@@ -1,6 +1,6 @@
 """Finish a 3D GLOAMRUN film (cloud). Input: raw.mp4 encoded by Blender (no sound, no text).
   python3 post3d.py films/film01 raw.mp4      -> films/film01/out/gloamrun_filmNN_16x9.mp4 + poster
-films/filmNN/film.json: {"film_no","title","synopsis","poster_t","note","lines":[[t0,t1,"text"],...]}
+films/filmNN/film.json: {"film_no","title","synopsis","poster_t","note","cold_open":[t0,t1] (optional),"lines":[[t0,t1,"text"],...]}
 films/filmNN/score.py: def score(S): ...   (gloamrun_sound cues, seconds from film start)
 Rook's lines are drawn exactly like the 2D canon (engine.draw_line). End card = film card from film_kit/film.py.
 """
@@ -33,6 +33,20 @@ def main():
     t0 = total - FK.CARD; sc.add(sc.drone(FK.CARD, 38), t0, 0.4); sc.play([(74, 1), (77, 1), (81, 2)], t0 + 0.2, 0.4, 0.22)
     for i, mm in enumerate([62, 69, 74, 81]): sc.add(sc.bell(mm, 3.5), t0 + 1.8 + i * 0.05, 0.09, -0.3 + i * 0.2)
     wav = os.path.join(tmp, "audio.wav"); sc.write(wav)
+    # cold open: the scariest 3 s first, then the film from the start (RUNBOOK_3D "Cold open")
+    co = meta.get("cold_open")
+    if not co:
+        hit = [l for l in meta["lines"] if "Don't move" in l[2] or "Not a sound" in l[2]]
+        co = [max(0.0, hit[0][0] - 0.6), hit[0][0] + 2.6] if hit else None
+    if co:
+        c0, c1 = float(co[0]), float(co[1]); cl = c1 - c0
+        cv = os.path.join(tmp, "cold.mp4")
+        run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(c0), "-t", str(cl), "-i", body, "-vf", f"fade=t=out:st={cl-0.3}:d=0.3,format=yuv420p", "-r", "24", "-an", "-c:v", "libx264", "-crf", "19", "-preset", "medium", cv])
+        vid2 = os.path.join(tmp, "video_co.mp4")
+        run(["ffmpeg", "-y", "-loglevel", "error", "-i", cv, "-i", vid, "-filter_complex", "[0:v][1:v]concat=n=2:v=1:a=0,format=yuv420p[v]", "-map", "[v]", "-r", "24", "-c:v", "libx264", "-crf", "19", "-preset", "medium", vid2])
+        wav2 = os.path.join(tmp, "audio_co.wav")
+        run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-filter_complex", f"[0:a]atrim={c0}:{c1},asetpts=PTS-STARTPTS,afade=t=out:st={cl-0.3}:d=0.3[a0];[0:a]asetpts=PTS-STARTPTS[a1];[a0][a1]concat=n=2:v=0:a=1[a]", "-map", "[a]", wav2])
+        vid, wav, total = vid2, wav2, total + cl
     tag = f"gloamrun_film{meta['film_no']:02d}"; final = os.path.join(out, f"{tag}_16x9.mp4")
     run(["ffmpeg", "-y", "-loglevel", "error", "-i", vid, "-i", wav, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", final])
     poster = os.path.join(out, f"{tag}_poster.jpg")
