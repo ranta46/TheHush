@@ -1,0 +1,13 @@
+{
+ "date": "2026-11-07",
+ "source": "Metricool brand 7473995, YouTube videos published in range (YTVP17/06/08/09/11/12), YTEV01",
+ "subscribers": 47,
+ "films": [
+  {"film_no": 1, "title": "The Sky Line", "kind": "2d", "length_s": 131, "views": 136, "avg_view_s": 27, "likes": 0, "comments": 0, "shares": 0},
+  {"film_no": 2, "title": "Into the Dark", "length_s": 105, "views": 35, "avg_view_s": 14, "likes": 0, "comments": 0, "shares": 0},
+  {"film_no": 3, "title": "The Last Car", "length_s": 105, "views": 70, "avg_view_s": 17, "likes": 0, "comments": 0, "shares": 0},
+  {"film_no": 4, "title": "The Echo Canyon", "length_s": 105, "views": 41, "avg_view_s": 18, "likes": 1, "comments": 1, "shares": 0}
+ ],
+ "no_data_yet": [5, 6, 7, 8],
+ "notes": "Films 5-7 (posted 11-04..11-06) not yet returned by Metricool. Film 7 YouTube post: 'Could not upload video thumbnail'. For scale: short Ep.24 = 940 views, 6 s avg."
+}
