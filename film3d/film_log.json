@@ -171,5 +171,24 @@
   "poster": "gloamrun/films/gloamrun_film08_poster.jpg",
   "finished": "2026-11-07 10:46 JST (render done 2026-11-06 21:59; 105 s with end card)",
   "duration": 105.0
+ },
+ {
+  "film_no": 9,
+  "folder": "films/film08",
+  "title": "The Sleeping City",
+  "date_made": "2026-11-07",
+  "frames": 2400,
+  "status": "rendering",
+  "clever_move": "The Hush is faster than the train, so Rook stops at the old power house and pulls the big switch: the whole sleeping city lights up, and while the Hush eats it street by street the dark train creeps through.",
+  "fear": "The Hush stands right over the dark train in the city street. '...Don't move. Not a sound.'",
+  "surprise": "Every light left in the city dies at once (it ate the whole city) and the Hush turns to the train; lights on, full steam over the river bridge (it will be back).",
+  "places": [
+   "the open plain",
+   "the old power house",
+   "the sleeping city",
+   "the iron river bridge",
+   "the hill station"
+  ],
+  "render_started": "2026-11-07 10:58 JST (~19 s/frame incl. rest, done ~00:00 JST 11-08)"
  }
 ]
