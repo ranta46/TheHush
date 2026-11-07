@@ -155,7 +155,7 @@
   "title": "The Long Hill",
   "date_made": "2026-11-06",
   "frames": 2400,
-  "status": "rendering",
+  "status": "stock",
   "clever_move": "The Hush climbs Long Hill toward the train, so Rook closes the firebox, puts out every light (even his eye) and lets the train roll down the hill with no fire, no light, no sound, right past the Hush in the dark.",
   "fear": "The dark train rolls past the Hush's feet while it searches up the hill. '...Don't move. Not a sound.'",
   "surprise": "At the foot of the hill the old level crossing wakes up by itself, bell ringing and red lamps flashing; the Hush turns round and walks down after them (it will be back).",
@@ -166,6 +166,10 @@
    "the valley town and station"
   ],
   "render_started": "2026-11-06 11:06 JST (~16 s/frame incl. rest, done ~22:00 JST)",
-  "render_progress": "2026-11-06 15:44 JST: 1094/2400 frames, ~15 s/frame incl. rest, done ~21:15 JST"
+  "render_progress": "2026-11-06 15:44 JST: 1094/2400 frames, ~15 s/frame incl. rest, done ~21:15 JST",
+  "video": "gloamrun/films/gloamrun_film08_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film08_poster.jpg",
+  "finished": "2026-11-07 10:46 JST (render done 2026-11-06 21:59; 105 s with end card)",
+  "duration": 105.0
  }
 ]
