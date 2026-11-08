@@ -1,0 +1,20 @@
+{"film_no": 10, "title": "The Old Ferry", "poster_t": 50.5, "cold_open": [49.6, 52.6],
+ "synopsis": "The road lamps go out behind the train, and the Hush comes down the valley. Ahead, the old bridge is gone. All that is left is an old ferry on a dark river.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.8, 3.3, "Next stop: River Town. Hold the bar!"],
+  [9.0, 11.4, "The road lamps... they're going out."],
+  [15.6, 18.0, "There it is. Full steam, now!"],
+  [21.5, 24.0, "Faster! It's gaining on us!"],
+  [25.6, 28.0, "The bridge is gone! The river!"],
+  [29.0, 31.4, "The old ferry! Hold on!"],
+  [32.2, 34.2, "Cut the rope!"],
+  [34.6, 37.0, "Lights off. Let the river take us."],
+  [47.0, 49.4, "...Don't move. Not a sound."],
+  [57.0, 59.4, "It's looking up the river. Slowly..."],
+  [63.6, 65.8, "The dock bell! It heard us!"],
+  [66.2, 68.4, "Lights on! Full steam!"],
+  [78.0, 80.4, "It's in the river behind us. Go!"],
+  [91.0, 93.4, "River Town! Thank you, old ferry."],
+  [95.0, 98.0, "It will be back. Hold the bar."]
+ ]}

@@ -310,19 +310,19 @@ cam("Cam_07", 21.2, (-4, -3.2, 2.6), "H_Mask", 28, T)                       # fr
 cam("Cam_08", 25.4, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: the bridge is gone
 cam("Cam_09", 27.6, (166, -14, 3.4), (151, 0, 1.0), 26)                     # the line ends at the river, the old ferry
 cam("Cam_10", 31.6, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: cut the rope, lights off
-cam("Cam_11", 37.0, (122, -42, 16), (152, -12, 6), 22)                      # wide: the dark ferry drifts, it comes to the bank
+cam("Cam_11", 37.0, (178, -62, 18), (150, -6, 5), 24)                      # wide: the dark ferry drifts, it comes to the bank
 cam("Cam_12", 41.0, (-1.6, -1.0, 1.9), "H_Mask", 35, T)                    # from the ferry: it searches the empty line end
 cam("Cam_13", 45.4, (2.6, -3.0, 1.6), (0.6, 0, 1.35), 28, T)               # Rook in the dark
 cam("Cam_14", 49.4, (5, -8, 0.2), (1, 8, 8), 16, T)                         # low on the water: it stands right over us
 cam("Cam_15", 52.6, (-1.6, -1.0, 1.9), "H_Mask", 30, T)                    # from the cab: up at its face
 cam("Cam_16", 56.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: it looks up the river
 cam("Cam_17", 59.6, (236, -82, 12), (198, -36, 5), 22)                      # wide from downstream: the ferry drifts to the far dock
-cam("Cam_18", 63.0, (FDX + 7, Y2 - 9, 2.6), (FDX + 1, Y2 - 2.6, 2.4), 30)   # the bump: the old dock bell rings
+cam("Cam_18", 63.0, (FDX + 5.5, Y2 - 7.5, 3.6), (FDX + 0.5, Y2 - 2.0, 2.4), 32)   # the bump: the old dock bell rings
 cam("Cam_19", 64.6, (-4, -3.2, 2.6), "H_Mask", 32, T)                       # it turns to us
 cam("Cam_20", 66.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: lights on, full steam
 cam("Cam_21", 68.6, (8, -9, 3), (0, 0, 1.4), 26, T)                        # off the dock, away along the far bank
 cam("Cam_22", 73.6, (-4, -3.2, 2.6), "H_Mask", 28, T)                      # looking back: it wades after us
-cam("Cam_23", 81.0, (395, -22, 10), (350, -66, 3), 22)                      # wide: along the far bank, it follows
+cam("Cam_23", 81.0, (440, -20, 14), (375, -66, 4), 22)                      # wide: along the far bank, it follows
 cam("Cam_24", 87.0, (-20, -14, 8), (30, 0, 2), 24, T)                      # wide: River Town ahead
 cam("Cam_25", 90.6, (2.4, -3.2, 1.7), (0.6, 0, 1.35), 28, T)               # Rook at the station
 sc.camera = O["Cam_01"]
