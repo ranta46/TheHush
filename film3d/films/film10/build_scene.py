@@ -313,11 +313,11 @@ HP_ = [(0, -100, -26, -40), (6.8, -100, -26, -40), (8.2, -100, -26, -16), (9.4, 
 for t, x, y, dz in HP_:
     key(H, "location", F(t), Vector((x, y, max(gh(x, y), -1.0) + dz))); key(H, "scale", F(t), Vector((2.4, 2.4, 2.4)))
 FEED = empty("S_Feed", (185, 10, 25))                         # where it looks while it searches (past us up the slope, then out over the moor)
-for t, x, y, z in ((43, 190, 12, 30), (52, 160, 14, 14), (55.5, 170, 10, 20), (56.5, 100, -90, 8), (61.5, 90, -100, 8)):
+for t, x, y, z in ((43, 190, 12, 30), (47, 192, 2, 30), (52, 190, 4, 28), (55.5, 186, 6, 24), (56.8, 100, -90, 8), (61.5, 90, -100, 8)):
     key(FEED, "location", F(t), Vector((x, y, z)))
 d1 = H.constraints.new("LOCKED_TRACK"); d1.target = T; d1.track_axis = "TRACK_NEGATIVE_Y"; d1.lock_axis = "LOCK_Z"
 d2 = H.constraints.new("LOCKED_TRACK"); d2.target = FEED; d2.track_axis = "TRACK_NEGATIVE_Y"; d2.lock_axis = "LOCK_Z"
-for t, v in ((0, 0.0), (43.0, 0.0), (44.0, 0.6), (55.5, 0.6), (57.0, 1.0), (61.5, 1.0), (62.4, 0.0)):
+for t, v in ((0, 0.0), (43.0, 0.0), (44.0, 0.6), (46.5, 0.6), (47.5, 0.85), (55.5, 0.85), (57.0, 1.0), (61.5, 1.0), (62.4, 0.0)):
     d2.influence = v; d2.keyframe_insert("influence", frame=F(t))
 gm = M("H_Green").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
 for t, e in ((0, 0), (6.8, 0), (8.4, 60), (100, 60)): gm.default_value = e; gm.keyframe_insert("default_value", frame=F(t))
