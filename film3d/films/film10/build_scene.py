@@ -118,7 +118,7 @@ def gh(x, y):
     return g
 grass = newM("S_Grass", (0.07, 0.08, 0.06), rough=0.95); GA.data.materials.clear(); GA.data.materials.append(grass)
 GA.location = (150, 100, -7.0)
-plainM = newM("S_Plain", (0.07, 0.08, 0.06), rough=1); chalkM = newM("S_Chalk", (0.2, 0.2, 0.19), rough=1)
+plainM = newM("S_Plain", (0.07, 0.08, 0.06), rough=1); chalkM = newM("S_Chalk", (0.34, 0.33, 0.31), rough=1)
 def axis(a, b, step):
     out = []; v = a
     while v <= b: out.append(v); v += step
@@ -129,8 +129,8 @@ bm = bmesh.new(); vv = [[bm.verts.new((x, y, gh(x, y))) for y in ys] for x in xs
 for i in range(len(xs) - 1):
     for j in range(len(ys) - 1):
         f = bm.faces.new((vv[i][j], vv[i + 1][j], vv[i + 1][j + 1], vv[i][j + 1]))
-        zs = [v.co.z for v in f.verts]
-        if max(zs) - min(zs) > 1.6 and max(zs) > 0.5 and min(zs) < HC - 0.3: f.material_index = 1
+        f.normal_update()
+        if f.normal.z < 0.85 and max(v.co.z for v in f.verts) > 0.6: f.material_index = 1
 GO = mk("S_MoorGround", bm, plainM, smooth=False); GO.data.materials.append(chalkM)
 railM = newM("S_RailM", (0.2, 0.2, 0.22), rough=0.4, metal=0.8); tie = newM("S_Tie", (0.05, 0.04, 0.035), rough=1)
 postM = newM("S_Post", (0.02, 0.02, 0.025), rough=0.5); ironM = newM("S_BIron", (0.06, 0.065, 0.075), rough=0.5, metal=0.6)
@@ -207,7 +207,7 @@ for i, D in enumerate((3, 9, 15, 21, 27, 33)):
 # the field lamps on the moor behind us (they die when the Hush comes, far ones first)
 BLAMP = []
 for i, x in enumerate((-140, -125, -110, -95, -80)):
-    y = -5.0; z = gh(x, y)
+    y = 5.0; z = gh(x, y)
     mk("S_Post", cyl(0.06, 0.08, 3.4, 8), postM, (x, y, z + 1.7))
     hm = newM(f"L_BHead{i}", (1, 0.62, 0.25), emit=8); mk(f"L_BHead{i}", sph(0.2, 12, 8), hm, (x, y, z + 3.45))
     BLAMP.append((hm, light(f"L_B{i}", "POINT", 60, (1, 0.6, 0.3), (x, y, z + 3.2))))
@@ -364,24 +364,24 @@ cam("Cam_01", 0, (3.0, -11, 2.6), (1.0, 0, 1.6), 26, T)                    # wid
 cam("Cam_02", 5.8, (-6, 2.5, 4.0), (-34, -22, 9), 26, T)                   # looking back: the field lamps die, it rises
 cam("Cam_03", 9.8, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                 # Rook: full steam
 cam("Cam_04", 12.8, (-5, -1.5, 3.2), "H_Mask", 55, T)                      # its face behind us
-cam("Cam_05", 15.6, (45, -80, 24), (5, -10, 6), 20)                         # wide: the chase over the moor
+cam("Cam_05", 15.6, (38, -52, 15), (0, -8, 6), 24)                         # wide: the chase over the moor
 cam("Cam_06", 20.2, (-4, -3.2, 2.6), "H_Mask", 28, T)                       # from the train: it gains on us
 cam("Cam_07", 24.6, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: the line ends, the old cliff lift
-cam("Cam_08", 27.0, (118, -26, 5), (165, 0, 16), 24)                        # the chalk cliff and the old lift ahead
-cam("Cam_09", 31.6, (138, -48, 10), (160, -2, 11), 22)                      # wide side: the lift climbs, it comes to the foot
+cam("Cam_08", 27.0, (-6, -5, 3), (35, 2, 9), 24, T)                        # the chalk cliff and the old lift ahead
+cam("Cam_09", 31.6, (176, -46, 8), (155, -4, 10), 22)                      # wide side: the lift climbs, it comes to the foot
 cam("Cam_10", 38.8, (2.6, -3.2, 1.8), (0.6, -0.6, 1.4), 28, T)             # Rook: the lamps go, the lift stops
 cam("Cam_11", 41.8, (-1.6, -1.6, 1.9), "H_Mask", 30, T)                    # from the lift: down at it, lights off
-cam("Cam_12", 45.0, (205, -42, 24), (166, -8, 13), 22)                      # wide: it walks up beside the dark lift
-cam("Cam_13", 48.4, (158, -31, 1.2), (167, -9, 16), 16)                     # low on the moor: it stands right beside us
+cam("Cam_12", 45.0, (179, -50, 20), (163, -8, 13), 22)                      # wide: it walks up beside the dark lift
+cam("Cam_13", 48.4, (183, -5, 31), (167, -8, 19), 20)                     # low on the moor: it stands right beside us
 cam("Cam_14", 52.2, (10, -6, 6), (3, -7, 3.2), 20, T)                      # Rook and its face, the same height
 cam("Cam_15", 56.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: it looks away
 cam("Cam_16", 59.2, (150, 30, 30), (165, -10, 14), 22)                      # wide from behind the spur: it looks out over the moor
-cam("Cam_17", 61.4, (XTOP + 3, 7.5, HC + 4.5), (180, 2.6, 30), 24)         # the old weight slips and runs down
+cam("Cam_17", 61.4, (XTOP - 1, 9, HC + 3), (172, 2.6, 18), 28)         # the old weight slips and runs down
 cam("Cam_18", 63.0, (172, -36, 30), (185, 0, 31), 22)                       # the lift shoots up the cliff
 cam("Cam_19", 64.4, (-1.5, -2.2, 1.6), "H_Mask", 30, T)                    # down at it: it turns to us
 cam("Cam_20", 66.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: lights on, full steam
 cam("Cam_21", 68.4, (8, -9, 3), (0, 0, 1.4), 26, T)                        # off the lift onto the plateau
-cam("Cam_22", 72.6, (-4, -3.2, 2.6), "H_Mask", 30, T)                      # looking back down: it walks along the foot
+cam("Cam_22", 72.6, (200, -20, HC + 6), (178, -46, 14), 24)                      # from the cliff edge: it walks along the foot below
 cam("Cam_23", 79.0, (330, -48, HC + 14), (290, 0, HC + 2), 22)              # wide: over the plateau
 cam("Cam_24", 85.6, (-20, -14, 8), (30, 0, 2), 24, T)                      # wide: Cliff Town ahead
 cam("Cam_25", 90.2, (2.4, -3.2, 1.7), (0.6, 0, 1.35), 28, T)               # Rook at the station
