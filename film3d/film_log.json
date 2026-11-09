@@ -225,5 +225,23 @@
   "poster": "gloamrun/films/gloamrun_film10_poster.jpg",
   "finished": "2026-11-09 10:58 JST (render done 2026-11-09 02:29; 108 s with cold open + end card)",
   "duration": 108.0
+ },
+ {
+  "film_no": 11,
+  "folder": "films/film10",
+  "title": "The Cliff Lift",
+  "date_made": "2026-11-09",
+  "frames": 2400,
+  "status": "rendering",
+  "clever_move": "The line ends at a chalk cliff, so Rook rolls the train onto the old cliff lift and rides it up the cliff ('It can't fly. Up we go!').",
+  "fear": "The Hush eats the incline lamps and the lift stops halfway; dark and still, the Hush stands right beside them, its face at their height. '...Don't move. Not a sound.'",
+  "surprise": "The old counterweight slips and runs down the cliff; the lift shoots to the top. Lights on, full steam over the plateau; the Hush walks off along the cliff foot (it will be back).",
+  "places": [
+   "the night moor with stone walls",
+   "the chalk cliff and the old cliff lift",
+   "the plateau",
+   "Cliff Town and station"
+  ],
+  "render_started": "2026-11-09 11:17 JST (~28 s/frame incl. rest, done ~06:15 JST 11-10)"
  }
 ]
