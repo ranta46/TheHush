@@ -1,5 +1,18 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-09 (after Film 10)
+| Film | Views | Avg view (s) | Retention |
+|---|---|---|---|
+| 1 The Sky Line (2D) | 136 | 27 | 21 % (131 s) |
+| 2 Into the Dark | 35 | 14 | 13 % |
+| 3 The Last Car | 70 | 17 | 16 % |
+| 4 The Echo Canyon | 41 | 18 | 17 % |
+| 5-10 | no data yet | | |
+- 3rd day with no new rows: Metricool still returns no YouTube video rows for films posted after 11-03, so films 5-10 (incl. all cold-open films 8-10) cannot be judged yet.
+- Subscribers holding at 50 (47 -> 50 on 11-07).
+- Film 9's YouTube upload again warned "Could not upload video thumbnail"; posters still don't reach YouTube.
+- Change: none. Holding the cold-open test until films 8-10 have numbers. Current rules unchanged.
+
 ## 2026-11-08 (after Film 9)
 | Film | Views | Avg view (s) | Retention |
 |---|---|---|---|

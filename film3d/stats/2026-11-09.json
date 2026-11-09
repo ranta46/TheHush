@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-09",
+  "source": "Metricool YTVP (videos published in range 2026-10-30..11-09)",
+  "subscribers": {
+    "20261101": 47,
+    "20261105": 47,
+    "20261107": 50,
+    "20261108": 50
+  },
+  "films": [
+    {
+      "film": 1,
+      "title": "The Sky Line",
+      "views": 136,
+      "avg_view_s": 27,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "length_s": 131
+    },
+    {
+      "film": 2,
+      "title": "Into the Dark",
+      "views": 35,
+      "avg_view_s": 14,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "length_s": 105
+    },
+    {
+      "film": 3,
+      "title": "The Last Car",
+      "views": 70,
+      "avg_view_s": 17,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "length_s": 105
+    },
+    {
+      "film": 4,
+      "title": "The Echo Canyon",
+      "views": 41,
+      "avg_view_s": 18,
+      "likes": 1,
+      "comments": 1,
+      "shares": 0,
+      "length_s": 105
+    }
+  ],
+  "no_data": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ]
+}
