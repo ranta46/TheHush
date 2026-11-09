@@ -208,7 +208,7 @@
   "title": "The Old Ferry",
   "date_made": "2026-11-08",
   "frames": 2400,
-  "status": "rendering",
+  "status": "stock",
   "clever_move": "The old bridge is gone, so Rook drives the train onto the old river ferry, cuts the rope and puts out every light; the dark ferry drifts down the river while the Hush searches the empty line end.",
   "fear": "The Hush wades into the river and stands right over the dark ferry. '...Don't move. Not a sound.'",
   "surprise": "The ferry bumps the far dock and the old dock bell rings by itself; the Hush turns to them, lights on, full steam along the far bank, it wades after them (it will be back).",
@@ -220,6 +220,10 @@
    "River Town and station"
   ],
   "render_started": "2026-11-08 11:01 JST (~20 s/frame incl. rest, done ~00:30 JST 11-09)",
-  "render_progress": "2026-11-08 15:39 JST: 768/2400 frames, ~20.5 s/frame incl. rest, done ~01:00 JST 11-09"
+  "render_progress": "2026-11-08 15:39 JST: 768/2400 frames, ~20.5 s/frame incl. rest, done ~01:00 JST 11-09",
+  "video": "gloamrun/films/gloamrun_film10_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film10_poster.jpg",
+  "finished": "2026-11-09 10:58 JST (render done 2026-11-09 02:29; 108 s with cold open + end card)",
+  "duration": 108.0
  }
 ]
