@@ -1,0 +1,20 @@
+{"film_no": 11, "title": "The Cliff Lift", "poster_t": 50.5, "cold_open": [49.4, 52.4],
+ "synopsis": "The field lamps go out behind the train, and the Hush comes over the moor. The line ends at a tall chalk cliff. There is only one way up: the old cliff lift.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.8, 3.3, "Next stop: Cliff Town. Hold the bar!"],
+  [6.6, 9.0, "The lamps went out. It's here."],
+  [10.2, 12.6, "There it is. Full steam!"],
+  [20.6, 23.0, "Faster! It's right behind us!"],
+  [25.0, 27.6, "The line ends! The old cliff lift!"],
+  [29.8, 32.2, "It can't fly. Up we go!"],
+  [39.2, 41.6, "The lamps... the lift stopped!"],
+  [42.0, 44.4, "Lights off. Everyone, quiet."],
+  [48.6, 51.0, "...Don't move. Not a sound."],
+  [56.6, 59.0, "It's looking away. Wait..."],
+  [61.8, 64.0, "The old weight! Hold on!"],
+  [66.0, 68.2, "Lights on! Full steam!"],
+  [74.6, 77.0, "It's walking around the cliff. Go!"],
+  [90.4, 92.8, "Cliff Town! Thank you, old lift."],
+  [94.8, 97.8, "It will be back. Hold the bar."]
+ ]}

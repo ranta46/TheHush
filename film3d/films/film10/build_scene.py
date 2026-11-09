@@ -373,7 +373,7 @@ cam("Cam_10", 38.8, (2.6, -3.2, 1.8), (0.6, -0.6, 1.4), 28, T)             # Roo
 cam("Cam_11", 41.8, (-1.6, -1.6, 1.9), "H_Mask", 30, T)                    # from the lift: down at it, lights off
 cam("Cam_12", 45.0, (179, -50, 20), (163, -8, 13), 22)                      # wide: it walks up beside the dark lift
 cam("Cam_13", 48.4, (183, -5, 31), (167, -8, 19), 20)                     # low on the moor: it stands right beside us
-cam("Cam_14", 52.2, (10, -6, 6), (3, -7, 3.2), 20, T)                      # Rook and its face, the same height
+cam("Cam_14", 52.2, (13, -4, 7.5), (3, -7, 3.2), 18, T)                      # Rook and its face, the same height
 cam("Cam_15", 56.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                # Rook: it looks away
 cam("Cam_16", 59.2, (150, 30, 30), (165, -10, 14), 22)                      # wide from behind the spur: it looks out over the moor
 cam("Cam_17", 61.4, (XTOP - 1, 9, HC + 3), (172, 2.6, 18), 28)         # the old weight slips and runs down
