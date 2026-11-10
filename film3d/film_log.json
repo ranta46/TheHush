@@ -235,7 +235,7 @@
   "title": "The Cliff Lift",
   "date_made": "2026-11-09",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "clever_move": "The line ends at a chalk cliff, so Rook rolls the train onto the old cliff lift and rides it up the cliff ('It can't fly. Up we go!').",
   "fear": "The Hush eats the incline lamps and the lift stops halfway; dark and still, the Hush stands right beside them, its face at their height. '...Don't move. Not a sound.'",
   "surprise": "The old counterweight slips and runs down the cliff; the lift shoots to the top. Lights on, full steam over the plateau; the Hush walks off along the cliff foot (it will be back).",
@@ -250,7 +250,15 @@
   "video": "gloamrun/films/gloamrun_film11_16x9.mp4",
   "poster": "gloamrun/films/gloamrun_film11_poster.jpg",
   "finished": "2026-11-10 10:50 JST (render done 2026-11-10 08:29; 108 s with cold open + end card)",
-  "duration": 108.0
+  "duration": 108.0,
+  "posted": "2026-11-10 20:33 JST",
+  "youtube_post_id": 423014181,
+  "facebook_post_id": 423014205,
+  "tiktok_post_id": 423014234,
+  "instagram_post_id": 423014260,
+  "threads_post_id": 423014281,
+  "bluesky_post_id": 423014306,
+  "pinterest_post_id": 423014347
  },
  {
   "film_no": 12,
