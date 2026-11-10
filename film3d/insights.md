@@ -1,5 +1,22 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-10 (after Film 11)
+| Film | Views | Avg view (s) | Retention |
+|---|---|---|---|
+| 1 The Sky Line (2D) | 158 | 28 | 21 % (131 s) |
+| 2 Into the Dark | 41 | 15 | 14 % |
+| 3 The Last Car | 79 | 18 | 17 % |
+| 4 The Echo Canyon | 49 | 19 | 18 % |
+| 5 The Sleeping Yard | 12 | 20 | 19 % |
+| 6 The Lift Bridge | 22 | 23 | 22 % |
+| 7 The Turntable | 51 | 29 | 28 % |
+| 8 The Long Hill (1st cold open) | 21 | 43 | 41 % |
+| 9-11 | no data yet | | |
+- Films 5-8 finally came in. Film 8, the first film with the 3 s cold open, holds 43 s (41 %), about double films 2-6 (14-22 %). Cold open looks right; still waiting for films 9-10 to confirm (keep it).
+- Views are the weak side: 12-79 per 3D film, while the ChatGPT Ep shorts with hook titles ("An empty tank. A sky full of water.") get 249-1246. People who click stay longer now; too few click.
+- Subscribers flat at 50. Facebook feed-post analytics return no film rows. Film 11 tonight is the first film on TikTok/Instagram/Threads/Bluesky/Pinterest; vault Film 1 goes to those 5 tomorrow 12:33.
+- Change (title, measured by views, separate from the cold-open retention test): YouTube title gets a short hook before it, "<hook> | Gloamrun Film N: <title> | Rook and the Hush", from Film 12. Judge on views of films 12-14 vs films 5-11 at the same age.
+
 ## 2026-11-09 (after Film 10)
 | Film | Views | Avg view (s) | Retention |
 |---|---|---|---|

@@ -61,3 +61,8 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
 ## Current rules (auto-updated)
 - 2026-11-07: films 1-4 kept only 14-27 s of 105 s on average. Start with a ~3 s cold open of the Hush close to
   Rook (see Making a new film step 5). The Hush must be on screen within the first 10 s of the film itself.
+- 2026-11-10: cold open KEEP (Film 8: 41 % retention vs 14-28 % for films 2-7). New test = title hook: every film.json
+  gets "hook": 4-7 easy English words from the scariest beat, two short sentences, no names (e.g. "The line ends. It
+  keeps coming."). The posting run uses YouTube title "<hook> | Gloamrun Film N: <title> | Rook and the Hush" (Facebook
+  title and post first line too). If film.json has no hook, the posting run writes one from the fear line. Judge on
+  views of films 12-14; roll back if they do worse than films 5-11 at the same age.
