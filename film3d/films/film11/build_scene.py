@@ -239,11 +239,11 @@ FIREM = newM("T_FireM", (1, 0.35, 0.08), emit=12)
 mk("T_Fire", box(), FIREM, (2.45, 0, 0.55), scl=(0.06, 0.5, 0.3), parent=T)
 FIRE = light("T_FireGlow", "POINT", 25, (1, 0.45, 0.15), (2.2, 0, 0.7), T)
 # the falling star (56.6 - 59.8): a bright streak across the sky
-STAR = empty("S_StarPivot", (40, 160, 120))
+STAR = empty("S_StarPivot", (40, 160, 70))
 STM = newM("S_StarM", (0.85, 0.95, 1.0), emit=60)
 mk("S_StarHead", sph(0.9, 12, 8), STM, (0, 0, 0), parent=STAR)
 mk("S_StarTail", box(), newM("S_StarTailM", (0.6, 0.8, 1.0), emit=18), (-9, 0, 0), scl=(18, 0.35, 0.35), parent=STAR)
-P0, P1 = Vector((40, 160, 120)), Vector((360, -150, 62))
+P0, P1 = Vector((40, 160, 70)), Vector((360, -150, 35))
 STAR.rotation_euler = (0, -math.atan2((P1 - P0).z, (P1 - P0).to_2d().length), math.atan2((P1 - P0).y, (P1 - P0).x))
 for t, p in ((0, P0), (56.6, P0), (59.8, P1), (100, P1)): key(STAR, "location", F(t), p)
 lin(STAR)
@@ -278,7 +278,7 @@ for hm, lt, td in RLAMP:
 # the Hush: rises behind Round Hill (5.5-8.5), comes round the west side and crosses the line behind us, follows us into the ring;
 # lights off -> it loses us and searches slowly round (we keep the hill between us); the switch is stuck -> it comes round
 # and stands right by the dark train (50-57); the falling star: it turns and walks after the light; then it follows us west.
-HPOL = [(0, 15, 62, -40), (5.5, 15, 62, -40), (7.0, 15, 62, -14), (8.5, 15, 62, 0), (10, 40, 62, 0), (14, 100, 60, 0), (18, 160, 57, 0),
+HPOL = [(0, 15, 62, -40), (5.0, 15, 62, -40), (6.2, 15, 62, -14), (7.4, 15, 62, 0), (8.6, 15, 62, 0), (10, 40, 62, 0), (14, 100, 60, 0), (18, 160, 57, 0),
         (21, 195, 54, 0), (23, 215, 54, 0), (25.6, 235, 54, 0), (30, 245, 55, 0), (36, 262, 56, 0), (40, 290, 56, 0), (44, 345, 56, 0),
         (47, 395, 56, 0), (50, 420, 56, 0), (57.3, 420, 56, 0), (60, 404, 62, 0), (63, 388, 68, 0), (66.5, 378, 72, 0), (70, 380, 74, 0),
         (73, 395, 74, 0)]
@@ -288,15 +288,15 @@ for t, x, y in ((80, 100, 72), (86, 40, 70), (92, -20, 70), (100, -95, 70)):
     key(H, "location", F(t), Vector((x, y, max(gh(x, y), 0.0)))); key(H, "scale", F(t), Vector((2.4, 2.4, 2.4)))
 FEED = empty("S_Feed", (150, 0, 10))                      # where it looks while it searches / after the star
 for t, x, y, z in ((0, 0, -45, 0), (25.6, 190, -45, 0), (30, 210, -40, 0), (36, 225, -10, 0), (40, 215, 20, 0), (42, 170, 60, 0),
-                   (50, 120, 46, 0), (53.5, 100, 40, 0), (55.5, 150, 30, 0), (56.6, 70, 160, 60), (58.2, 200, 0, 100), (59.8, 360, -150, 62),
-                   (66.5, 360, -150, 40)):
+                   (50, 120, 46, 0), (53.5, 100, 40, 0), (55.5, 150, 30, 0), (56.6, 70, 160, 60), (58.2, 200, 0, 50), (59.8, 360, -150, 35),
+                   (66.5, 360, -150, 30)):
     key(FEED, "location", F(t), Vector((x, y, z)))
 d1 = H.constraints.new("LOCKED_TRACK"); d1.target = T; d1.track_axis = "TRACK_NEGATIVE_Y"; d1.lock_axis = "LOCK_Z"
 d2 = H.constraints.new("LOCKED_TRACK"); d2.target = FEED; d2.track_axis = "TRACK_NEGATIVE_Y"; d2.lock_axis = "LOCK_Z"
 for t, v in ((0, 0.0), (25.6, 0.0), (26.8, 1.0), (40.6, 1.0), (42.0, 0.5), (49.0, 0.5), (50.0, 0.85), (55.5, 0.85), (56.6, 1.0), (66.5, 1.0), (68.0, 0.0)):
     d2.influence = v; d2.keyframe_insert("influence", frame=F(t))
 gm = M("H_Green").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
-for t, e in ((0, 0), (5.5, 0), (7.4, 60), (100, 60)): gm.default_value = e; gm.keyframe_insert("default_value", frame=F(t))
+for t, e in ((0, 0), (5.0, 0), (6.8, 60), (100, 60)): gm.default_value = e; gm.keyframe_insert("default_value", frame=F(t))
 # our lights: out at 26.0 ("Lights off! Keep the hill between us."), back on at 61.6 ("The switch! Now, full steam!")
 L0, L1 = 26.0, 61.6
 se = M("H_Signal").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
@@ -348,15 +348,15 @@ cam("Cam_05", 17.2, (-4, 3.0, 2.8), "H_Mask", 28, T)                            
 cam("Cam_06", 20.4, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: faster! it's right behind us
 cam("Cam_07", 22.4, (205, -98, 16), (150, -40, 8), 24)                           # wide: into the ring, it crosses the line behind us
 cam("Cam_08", 24.6, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: lights off! keep the hill between us
-cam("Cam_09", 28.4, (50, -70, 165), (150, 0, 0), 30)                           # high over the ring: the dark train and the Hush on opposite sides
+cam("Cam_09", 28.4, (-7, -3.5, 3.0), "H_Mask", 30, T)                           # high over the ring: the dark train and the Hush on opposite sides
 cam("Cam_10", 33.4, (-1.0, 1.6, 3.2), "H_Mask", 34, T)                             # from the dark train: its face over the hilltop, going round
 cam("Cam_11", 37.2, (262, 70, 60), (160, 10, 6), 24)                             # wide from the north-east: still opposite, we near the north point
 cam("Cam_12", 39.6, (118, 53, 4.5), (150, 44, 1.5), 24)                          # at the switch: the dark train rolls up and stops
 cam("Cam_13", 42.6, (-1.5, -4.2, 2.2), (0.9, -1.0, 1.0), 26, T)                   # Rook pulls the lever: stuck
 cam("Cam_14", 46.0, (118, 112, 34), (172, 32, 10), 24)                           # wide: it comes round the east side to the dark train
 cam("Cam_15", 49.4, (136, 51, 2.2), (186, 36, 17), 20)                           # low behind the train: it stands right by us (cold open)
-cam("Cam_16", 52.6, (4.5, 1.0, 2.4), "H_Mask", 26, T)                            # Rook and its face
-cam("Cam_17", 56.0, (126, 64, 4), (230, -60, 55), 20)                            # the falling star; it turns to the light
+cam("Cam_16", 52.6, (9, 3, 1.2), (-10, -1.5, 8), 18, T)                            # Rook and its face
+cam("Cam_17", 56.0, (126, 64, 4), (230, -40, 75), 20)                            # the falling star; it turns to the light
 cam("Cam_18", 59.4, (-3.0, -2.6, 2.6), "H_Mask", 30, T)                           # from the train: it walks off after the star
 cam("Cam_19", 60.8, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: the switch! lights on, full steam
 cam("Cam_20", 63.4, (98, 36, 4), (135, 45, 2), 26)                               # the train leaves west, lights on
