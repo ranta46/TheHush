@@ -93,7 +93,7 @@ for n in ("R_KeyLoop-1", "R_KeyLoop1"):
 from mathutils import Matrix
 rr = random.Random(1212)
 CX, CY, RR = 150.0, 0.0, 45.0                 # the ring line round Round Hill (radius 45)
-HILL_R, HILL_H = 34.0, 15.0                   # Round Hill (its face looks over the top: the mask is ~21 m up)
+HILL_R, HILL_H = 34.0, 18.0                   # Round Hill (its face looks over the top: the mask is ~21 m up)
 YA, YE = -45.0, 45.0                          # the approach line (into the ring at the south point) / the exit line (out at the north point, west to Lamp Town)
 S_RING0 = 210.0                               # arc length where the ring starts (approach x -60 .. 150)
 S_EXIT0 = S_RING0 + RR * math.pi              # the north point (exit junction)
@@ -278,16 +278,16 @@ for hm, lt, td in RLAMP:
 # the Hush: rises behind Round Hill (5.5-8.5), comes round the west side and crosses the line behind us, follows us into the ring;
 # lights off -> it loses us and searches slowly round (we keep the hill between us); the switch is stuck -> it comes round
 # and stands right by the dark train (50-57); the falling star: it turns and walks after the light; then it follows us west.
-HPOL = [(0, 90, 64, -40), (5.5, 90, 64, -40), (7.0, 90, 64, -14), (8.5, 90, 64, 0), (10, 100, 63, 0), (14, 140, 59, 0), (18, 180, 56, 0),
-        (21, 212, 54, 0), (23, 240, 54, 0), (25.6, 262, 54, 0), (30, 274, 55, 0), (36, 300, 56, 0), (40, 330, 56, 0), (44, 375, 56, 0),
-        (47, 405, 56, 0), (50, 420, 56, 0), (57.3, 420, 56, 0), (60, 404, 62, 0), (63, 388, 68, 0), (66.5, 378, 72, 0), (70, 380, 74, 0),
+HPOL = [(0, 15, 62, -40), (5.5, 15, 62, -40), (7.0, 15, 62, -14), (8.5, 15, 62, 0), (10, 40, 62, 0), (14, 100, 60, 0), (18, 160, 57, 0),
+        (21, 195, 54, 0), (23, 215, 54, 0), (25.6, 235, 54, 0), (30, 245, 55, 0), (36, 262, 56, 0), (40, 290, 56, 0), (44, 345, 56, 0),
+        (47, 395, 56, 0), (50, 420, 56, 0), (57.3, 420, 56, 0), (60, 404, 62, 0), (63, 388, 68, 0), (66.5, 378, 72, 0), (70, 380, 74, 0),
         (73, 395, 74, 0)]
 for t, thd, r, dz in HPOL:
     x, y = ring(thd, r); key(H, "location", F(t), Vector((x, y, max(gh(x, y), 0.0) * 0.3 + dz))); key(H, "scale", F(t), Vector((2.4, 2.4, 2.4)))
 for t, x, y in ((80, 100, 72), (86, 40, 70), (92, -20, 70), (100, -95, 70)):
     key(H, "location", F(t), Vector((x, y, max(gh(x, y), 0.0)))); key(H, "scale", F(t), Vector((2.4, 2.4, 2.4)))
 FEED = empty("S_Feed", (150, 0, 10))                      # where it looks while it searches / after the star
-for t, x, y, z in ((0, 0, -45, 0), (25.6, 200, -40, 0), (30, 220, -20, 0), (36, 225, 10, 0), (40, 150, -60, 0), (42, 170, 60, 0),
+for t, x, y, z in ((0, 0, -45, 0), (25.6, 190, -45, 0), (30, 210, -40, 0), (36, 225, -10, 0), (40, 215, 20, 0), (42, 170, 60, 0),
                    (50, 120, 46, 0), (53.5, 100, 40, 0), (55.5, 150, 30, 0), (56.6, 70, 160, 60), (58.2, 200, 0, 100), (59.8, 360, -150, 62),
                    (66.5, 360, -150, 40)):
     key(FEED, "location", F(t), Vector((x, y, z)))
@@ -348,8 +348,8 @@ cam("Cam_05", 17.2, (-4, 3.0, 2.8), "H_Mask", 28, T)                            
 cam("Cam_06", 20.4, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: faster! it's right behind us
 cam("Cam_07", 22.4, (205, -98, 16), (150, -40, 8), 24)                           # wide: into the ring, it crosses the line behind us
 cam("Cam_08", 24.6, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: lights off! keep the hill between us
-cam("Cam_09", 28.4, (150, -118, 120), (150, 0, 0), 26)                           # high over the ring: the dark train and the Hush on opposite sides
-cam("Cam_10", 33.4, (1.4, 2.6, 2.2), "H_Mask", 34, T)                             # from the dark train: its face over the hilltop, going round
+cam("Cam_09", 28.4, (50, -70, 165), (150, 0, 0), 30)                           # high over the ring: the dark train and the Hush on opposite sides
+cam("Cam_10", 33.4, (-1.0, 1.6, 3.2), "H_Mask", 34, T)                             # from the dark train: its face over the hilltop, going round
 cam("Cam_11", 37.2, (262, 70, 60), (160, 10, 6), 24)                             # wide from the north-east: still opposite, we near the north point
 cam("Cam_12", 39.6, (118, 53, 4.5), (150, 44, 1.5), 24)                          # at the switch: the dark train rolls up and stops
 cam("Cam_13", 42.6, (-1.5, -4.2, 2.2), (0.9, -1.0, 1.0), 26, T)                   # Rook pulls the lever: stuck

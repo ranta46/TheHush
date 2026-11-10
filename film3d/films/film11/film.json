@@ -1,0 +1,20 @@
+{"film_no": 12, "title": "Round Hill", "poster_t": 50.5, "cold_open": [49.6, 52.6],
+ "synopsis": "The lamps on Round Hill go out, and the Hush looks over the top. It is faster than the train. But a hill is a hill: you can always go round it.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.8, 3.3, "Next stop: Lamp Town. Hold the bar!"],
+  [6.6, 9.0, "The hill lamps went out. It's here."],
+  [10.0, 12.4, "It's coming round the hill. Full steam!"],
+  [18.4, 20.8, "Faster! It's right behind us!"],
+  [24.4, 27.0, "Lights off! Keep the hill between us."],
+  [30.4, 32.8, "It goes round. We go round."],
+  [36.0, 38.4, "It can't see us. Nice and slow."],
+  [42.8, 45.2, "The switch is stuck! Pull!"],
+  [46.2, 48.4, "It's coming. Everyone, quiet."],
+  [49.8, 52.2, "...Don't move. Not a sound."],
+  [56.8, 59.0, "Look! A falling star!"],
+  [61.0, 63.4, "The switch! Lights on! Full steam!"],
+  [74.6, 77.0, "It's coming after us. Go!"],
+  [90.4, 92.8, "Lamp Town! Thank you, little star."],
+  [94.8, 97.8, "It will be back. Hold the bar."]
+ ]}
