@@ -341,14 +341,14 @@ def cam(name, start_s, loc, look, lens=28, parent=None, world_look=False):
     k = c.constraints.new("TRACK_TO"); k.target = tgt; k.track_axis = "TRACK_NEGATIVE_Z"; k.up_axis = "UP_Y"
     m = sc.timeline_markers.new(name, frame=F(start_s)); m.camera = c; return c
 cam("Cam_01", 0, (3.0, -11, 2.6), (1.0, 0, 1.6), 26, T)                          # wide side: the train on the night heath
-cam("Cam_02", 5.0, (-4, -2.2, 3.4), "H_Mask", 34, T)                               # over the train: the hill lamps die, its face rises over Round Hill
+cam("Cam_02", 5.0, (-4, -2.2, 3.4), "H_Mask", 55, T)                               # over the train: the hill lamps die, its face rises over Round Hill
 cam("Cam_03", 9.8, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                       # Rook: it's coming round the hill
 cam("Cam_04", 12.6, (20, -150, 55), (110, -20, 6), 24)                           # high wide: the hill, the line, it comes round the west side
 cam("Cam_05", 17.2, (-4, 3.0, 2.8), "H_Mask", 28, T)                              # from the train: it closes in from the hill side
 cam("Cam_06", 20.4, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: faster! it's right behind us
 cam("Cam_07", 22.4, (205, -98, 16), (150, -40, 8), 24)                           # wide: into the ring, it crosses the line behind us
 cam("Cam_08", 24.6, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: lights off! keep the hill between us
-cam("Cam_09", 28.4, (-7, -3.5, 3.0), "H_Mask", 30, T)                           # high over the ring: the dark train and the Hush on opposite sides
+cam("Cam_09", 28.4, (4, -3, 2.6), "H_Mask", 28, T)                           # high over the ring: the dark train and the Hush on opposite sides
 cam("Cam_10", 33.4, (-1.0, 1.6, 3.2), "H_Mask", 34, T)                             # from the dark train: its face over the hilltop, going round
 cam("Cam_11", 37.2, (262, 70, 60), (160, 10, 6), 24)                             # wide from the north-east: still opposite, we near the north point
 cam("Cam_12", 39.6, (118, 53, 4.5), (150, 44, 1.5), 24)                          # at the switch: the dark train rolls up and stops
