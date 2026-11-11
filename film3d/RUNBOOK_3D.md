@@ -66,3 +66,6 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   keeps coming."). The posting run uses YouTube title "<hook> | Gloamrun Film N: <title> | Rook and the Hush" (Facebook
   title and post first line too). If film.json has no hook, the posting run writes one from the fear line. Judge on
   views of films 12-14; roll back if they do worse than films 5-11 at the same age.
+- 2026-11-11: hook also goes FIRST LINE of the post text on YouTube, Facebook, TikTok, Instagram, Threads and Pinterest
+  (line 2 = "Gloamrun Film N: <title>"). Bluesky keeps the title first (300-char limit). Judge with the title test on
+  films 12-14 (TikTok/Instagram baseline: Film 11 day 1 = 55 / 125 views). PC run: always write film.json "hook".

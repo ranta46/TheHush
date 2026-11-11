@@ -1,5 +1,24 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-11 (after Film 13, 2D fallback)
+| Film | YT views | YT avg view (s) | Retention |
+|---|---|---|---|
+| 1 The Sky Line (2D) | 158 | 28 | 21 % (131 s) |
+| 2 Into the Dark | 42 | 15 | 14 % |
+| 3 The Last Car | 79 | 18 | 17 % |
+| 4 The Echo Canyon | 50 | 19 | 18 % |
+| 5 The Sleeping Yard | 12 | 20 | 19 % |
+| 6 The Lift Bridge | 23 | 22 | 21 % |
+| 7 The Turntable | 57 | 26 | 25 % |
+| 8 The Long Hill (cold open) | 33 | 35 | 32 % |
+| 9 The Sleeping City (cold open) | 18 | 35 | 32 % |
+| 10-11 | no data yet | | |
+Other networks, Film 11 (day 1): TikTok 55 views / 6 likes; Instagram Reel 125 views, avg watch 9.9 s; Threads / Bluesky rows exist but metrics empty. YT subscribers 50 (flat).
+- Cold open confirmed twice: films 8 and 9 both hold 35 s (32 %) vs 15-26 s for films 2-7. Keep.
+- On day 1, Film 11 got more views on Instagram (125) and TikTok (55) than any 3D film has on YouTube after a week (12-79). The new networks are where the views are; YouTube remains the weak click-through.
+- No 3D stock tonight (Film 12 still rendering on the PC), so Film 13 "The Water Tower" was made in 2D (film_kit) to keep the daily film. Film 12 (3D) will post next once it is stock. Exclude Film 13 from 3D retention comparisons.
+- Change: the hook test now covers every network: the hook is the FIRST LINE of every post text (YouTube, Facebook, TikTok, Instagram, Threads, Pinterest; Bluesky keeps title first for the 300-char limit). Judge on TikTok/Instagram views of films 12-14 vs Film 11 (55 / 125 on day 1).
+
 ## 2026-11-10 (after Film 11)
 | Film | Views | Avg view (s) | Retention |
 |---|---|---|---|

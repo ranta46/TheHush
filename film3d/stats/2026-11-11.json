@@ -1,0 +1,133 @@
+{
+ "date": "2026-11-11",
+ "brand": 7473995,
+ "youtube_videos": [
+  {
+   "film": 1,
+   "title": "The Sky Line (2D)",
+   "views": 158,
+   "avg_view_s": 28,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0,
+   "len_s": 131
+  },
+  {
+   "film": 2,
+   "views": 42,
+   "avg_view_s": 15,
+   "len_s": 105
+  },
+  {
+   "film": 3,
+   "views": 79,
+   "avg_view_s": 18,
+   "len_s": 105
+  },
+  {
+   "film": 4,
+   "views": 50,
+   "avg_view_s": 19,
+   "likes": 1,
+   "comments": 1,
+   "len_s": 105
+  },
+  {
+   "film": 5,
+   "views": 12,
+   "avg_view_s": 20,
+   "likes": 1,
+   "len_s": 105
+  },
+  {
+   "film": 6,
+   "views": 23,
+   "avg_view_s": 22,
+   "len_s": 105
+  },
+  {
+   "film": 7,
+   "views": 57,
+   "avg_view_s": 26,
+   "len_s": 105
+  },
+  {
+   "film": 8,
+   "views": 33,
+   "avg_view_s": 35,
+   "shares": 1,
+   "len_s": 108,
+   "cold_open": true
+  },
+  {
+   "film": 9,
+   "views": 18,
+   "avg_view_s": 35,
+   "likes": 1,
+   "len_s": 108,
+   "cold_open": true
+  },
+  {
+   "film": 10,
+   "note": "no row yet"
+  },
+  {
+   "film": 11,
+   "note": "no row yet"
+  }
+ ],
+ "youtube_shorts_reference": [
+  {
+   "ep": 29,
+   "views": 1253
+  },
+  {
+   "ep": 28,
+   "views": 1242
+  },
+  {
+   "ep": 27,
+   "views": 250
+  },
+  {
+   "ep": 30,
+   "views": 5
+  }
+ ],
+ "youtube_subscribers": 50,
+ "tiktok": [
+  {
+   "film": 11,
+   "views": 55,
+   "likes": 6,
+   "comments": 0,
+   "shares": 0,
+   "len_s": 108
+  }
+ ],
+ "instagram_reels": [
+  {
+   "film": 11,
+   "views": 125,
+   "avg_watch_s": 9.9,
+   "likes": 2,
+   "comments": 0,
+   "shares": 0
+  }
+ ],
+ "threads": [
+  {
+   "film": 11,
+   "note": "post found, metrics null"
+  }
+ ],
+ "bluesky": [
+  {
+   "film": 11,
+   "note": "post found, metrics null"
+  }
+ ],
+ "facebook": "no film rows",
+ "pinterest": "not fetched (image pin)",
+ "vault_film1_2026-11-11": "published 12:33 on 5 networks, no metrics yet"
+}
