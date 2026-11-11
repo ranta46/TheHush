@@ -279,6 +279,7 @@
    "Lamp Town and station"
   ],
   "render_started": "2026-11-10 11:33 JST (~36 s/frame incl. rest, done ~11:30 JST 11-11)",
-  "render_check": "2026-11-10 15:45 JST: Blender MCP timed out (unreachable), hush/film11 folder not connected -> progress unknown; expected ~420/2400, done ~11:30 JST 11-11"
+  "render_check": "2026-11-10 15:45 JST: Blender MCP timed out (unreachable), hush/film11 folder not connected -> progress unknown; expected ~420/2400, done ~11:30 JST 11-11",
+  "render_check_2": "2026-11-11 10:38 JST: PC online but Blender MCP failed (Request timed out) and TremenFilm folder not connected to the run -> progress unknown; finish/encode not possible; stock 0"
  }
 ]
