@@ -268,7 +268,7 @@
   "title": "Round Hill",
   "date_made": "2026-11-10",
   "frames": 2400,
-  "status": "rendering",
+  "status": "stock",
   "clever_move": "The Hush is faster, so Rook puts out every light and keeps Round Hill between the train and the Hush ('It goes round. We go round.'), creeping round the old ring line on the far side of the hill.",
   "fear": "At the north point the old switch is stuck; the Hush comes round the hill and stands right by the dark train. '...Don't move. Not a sound.'",
   "surprise": "A falling star crosses the sky; the Hush turns and walks off after the light. The switch gives; lights on, full steam west to Lamp Town; it follows (it will be back).",
@@ -282,6 +282,10 @@
   "render_check": "2026-11-10 15:45 JST: Blender MCP timed out (unreachable), hush/film11 folder not connected -> progress unknown; expected ~420/2400, done ~11:30 JST 11-11",
   "render_check_2": "2026-11-11 10:38 JST: PC online but Blender MCP failed (Request timed out) and TremenFilm folder not connected to the run -> progress unknown; finish/encode not possible; stock 0",
   "render_check_3": "2026-11-11 15:37 JST: PC online but Blender MCP still failed (Request timed out); TremenFilm folder still not connected to the run (connectedFolders empty) -> cannot check/encode; stock 0, tonight 20:13 has no film",
-  "render_check_4": "2026-11-11 18:08 JST: Blender had frozen (MCP timed out since morning; last frame took 796 s). User killed Blender and restarted Claude app. Resumed render from frame 1180/2400 via blender_render_timer start(). Expected done ~06:30 JST 11-12."
+  "render_check_4": "2026-11-11 18:08 JST: Blender had frozen (MCP timed out since morning; last frame took 796 s). User killed Blender and restarted Claude app. Resumed render from frame 1180/2400 via blender_render_timer start(). Expected done ~06:30 JST 11-12.",
+  "video": "gloamrun/films/gloamrun_film12_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film12_poster.jpg",
+  "finished": "2026-11-12 10:50 JST (render done 2026-11-11 19:53; raw.mp4 pulled via Blender base64, md5 ok; 108 s with cold open + end card)",
+  "duration": 108.0
  }
 ]
