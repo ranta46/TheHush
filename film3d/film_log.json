@@ -305,6 +305,7 @@
    "Pine Town and station"
   ],
   "hook": "It looks into the shed. Don't move.",
-  "render_started": "2026-11-12 11:00 JST (~8 s/frame incl. rest, done ~16:30-17:30 JST)"
+  "render_started": "2026-11-12 11:00 JST (~8 s/frame incl. rest, done ~16:30-17:30 JST)",
+  "render_progress": "2026-11-12 15:39 JST: 1853/2400 frames, ~10 s/frame, done ~17:20 JST (TremenFilm folder not connected to this run; checked via Blender MCP)"
  }
 ]
