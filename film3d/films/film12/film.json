@@ -1,0 +1,20 @@
+{"film_no": 14, "title": "The Snow Pass", "poster_t": 50.5, "cold_open": [49.4, 52.4], "hook": "It looks into the shed. Don't move.",
+ "synopsis": "The Hush is faster up the mountain. At the top of the pass hangs a roof of heavy snow, and Rook has one long whistle.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.8, 3.3, "Next stop: Pine Town. Hold the bar!"],
+  [6.4, 8.8, "The valley lamps went out. It's here."],
+  [10.4, 12.8, "It's coming up the valley. Full steam!"],
+  [17.0, 19.4, "It's faster uphill! Come on, old girl!"],
+  [22.8, 25.2, "Look at all that snow up there..."],
+  [26.2, 28.6, "Long whistle! Bring it down!"],
+  [33.4, 35.8, "The pass is closed. It can't see us."],
+  [38.8, 41.2, "It's climbing over! Lights off!"],
+  [42.4, 44.8, "Into the snow shed. Nice and slow."],
+  [49.6, 52.0, "...Don't move. Not a sound."],
+  [57.6, 60.0, "The snow! It's sliding down!"],
+  [61.2, 63.6, "Lights on! Full steam!"],
+  [74.6, 77.0, "It's climbing back up. Go!"],
+  [90.4, 92.8, "Pine Town! Thank you, snow."],
+  [94.8, 97.8, "It will be back. Hold the bar."]
+ ]}

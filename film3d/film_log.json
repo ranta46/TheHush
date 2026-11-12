@@ -287,5 +287,24 @@
   "poster": "gloamrun/films/gloamrun_film12_poster.jpg",
   "finished": "2026-11-12 10:50 JST (render done 2026-11-11 19:53; raw.mp4 pulled via Blender base64, md5 ok; 108 s with cold open + end card)",
   "duration": 108.0
+ },
+ {
+  "film_no": 14,
+  "folder": "films/film12",
+  "title": "The Snow Pass",
+  "date_made": "2026-11-12",
+  "frames": 2400,
+  "status": "rendering",
+  "clever_move": "The Hush is faster uphill, so at the top of the pass Rook blows one long whistle under the heavy snow; it comes down behind the train and closes the cut ('Bring it down!').",
+  "fear": "It climbs over the ridge; the dark train hides in the old snow shed on the ledge and the Hush looks down over the roof. '...Don't move. Not a sound.'",
+  "surprise": "The snow under its own heavy feet gives way and carries it over the shed roof and down the mountain; lights on, full steam to Pine Town; it climbs back up and follows (it will be back).",
+  "places": [
+   "the snowy valley",
+   "the pass and its narrow cut",
+   "the old snow shed on the ledge",
+   "Pine Town and station"
+  ],
+  "hook": "It looks into the shed. Don't move.",
+  "render_started": "2026-11-12 11:00 JST (~8 s/frame incl. rest, done ~16:30-17:30 JST)"
  }
 ]
