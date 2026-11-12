@@ -301,14 +301,14 @@ cam("Cam_08", 26.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                     
 cam("Cam_09", 28.0, (125, -3.5, 5), (60, 0, 9), 24)                             # wide: the snow comes down behind the train, it is right there
 cam("Cam_10", 31.6, (15, -5, 4), (55, 0, 14), 24)                                   # the Hush stopped at the snow
 cam("Cam_11", 33.2, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: the pass is closed
-cam("Cam_12", 36.4, (110, 60, 45), (60, 20, 28), 24)                           # wide: it climbs over the south ridge
+cam("Cam_12", 36.4, (95, 45, 55), "H_Mask", 35)                           # wide: it climbs over the south ridge
 cam("Cam_13", 38.6, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: lights off!
 cam("Cam_14", 41.8, (125, -7, 2), (150, 0, 2), 24)                              # the dark train creeps into the snow shed
 cam("Cam_15", 46.4, (175, -9, 0.5), "H_Mask", 22)                              # from inside the shed: it comes down the slope
 cam("Cam_16", 49.2, (154, -10, -0.5), (157, 2, 7), 20)                             # low behind Rook: its face right over us (cold open)
 cam("Cam_17", 52.6, (2.4, -2.6, 1.5), (0.6, 0, 1.45), 30, T)                     # Rook in the dark
 cam("Cam_18", 55.2, (190, -40, -12), (158, 4, 8), 30)                           # from below: it stands over the shed; the snow gives way
-cam("Cam_19", 59.4, (185, -6, 2), "H_Mask", 24)                             # from the train: it slides down the mountain
+cam("Cam_19", 59.4, (175, -45, -30), "H_Mask", 24)                             # from the train: it slides down the mountain
 cam("Cam_20", 61.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: lights on! full steam!
 cam("Cam_21", 63.6, (190, -6, 3), (160, 0, 2), 26)                               # the train comes out of the shed, lights on
 cam("Cam_22", 67.6, (8, -9, 3), (0, 0, 1.4), 26, T)                              # side: full steam along the ledge
