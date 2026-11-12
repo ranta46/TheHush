@@ -268,7 +268,7 @@
   "title": "Round Hill",
   "date_made": "2026-11-10",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "clever_move": "The Hush is faster, so Rook puts out every light and keeps Round Hill between the train and the Hush ('It goes round. We go round.'), creeping round the old ring line on the far side of the hill.",
   "fear": "At the north point the old switch is stuck; the Hush comes round the hill and stands right by the dark train. '...Don't move. Not a sound.'",
   "surprise": "A falling star crosses the sky; the Hush turns and walks off after the light. The switch gives; lights on, full steam west to Lamp Town; it follows (it will be back).",
@@ -286,7 +286,16 @@
   "video": "gloamrun/films/gloamrun_film12_16x9.mp4",
   "poster": "gloamrun/films/gloamrun_film12_poster.jpg",
   "finished": "2026-11-12 10:50 JST (render done 2026-11-11 19:53; raw.mp4 pulled via Blender base64, md5 ok; 108 s with cold open + end card)",
-  "duration": 108.0
+  "duration": 108.0,
+  "posted": "2026-11-12 20:33 JST",
+  "hook": "It comes round. Don't move.",
+  "youtube_post_id": 425540896,
+  "facebook_post_id": 425540917,
+  "tiktok_post_id": 425540944,
+  "instagram_post_id": 425540962,
+  "threads_post_id": 425540993,
+  "bluesky_post_id": 425541008,
+  "pinterest_post_id": 425541030
  },
  {
   "film_no": 14,
