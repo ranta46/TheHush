@@ -1,5 +1,20 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-12 (after Film 12 Round Hill, 3D)
+| Film | YT views | YT avg (s) | Retention | TikTok views / likes | IG views / avg watch (s) / 3 s skip |
+|---|---|---|---|---|---|
+| 7 The Turntable | 57 | 26 | 25 % | - | - |
+| 8 The Long Hill (cold open) | 33 | 35 | 32 % | - | - |
+| 9 The Sleeping City (cold open) | 18 | 35 | 32 % | - | - |
+| 11 The Cliff Lift (day 2) | no row | | | 442 / 24 | 126 / 9.9 / 44 % |
+| 1 The Sky Line, vault (day 1) | 158 (old) | 28 | 21 % | 308 / 4 | 109 / 6.5 / 73 % |
+| 13 The Water Tower, 2D + hook (8 h) | no row | | | 54 / 1 | 18 / 18.7 / 56 % |
+YT subscribers 50 -> 51. Metricool still has no YouTube rows for films 10-13.
+- TikTok is now the biggest network: Film 11 went 55 -> 442 views in one more day (24 likes), and the vault post of Film 1 got 308 on TikTok in a day, about 2x its YouTube total after 2 weeks. Vault reposts work; keep them daily.
+- Instagram loses 44-73 % of viewers in the first 3 s. Film 13 (hook in text) is too young to judge on views, but those who stay watch longer (18.7 s vs 9.9 s).
+- Threads failed on the vault Film 2 post today ("authentication failure"): the Threads connection in Metricool needs a reconnect by the user.
+- Change: TikTok and Instagram Reel posts now also get the poster as cover (videoThumbnailUrl = poster raw URL), so the profile grid shows the designed poster instead of the dark first frame. Starts with the next post (Film 14). Hook test continues unchanged (judge on films 12-14).
+
 ## 2026-11-11 (after Film 13, 2D fallback)
 | Film | YT views | YT avg view (s) | Retention |
 |---|---|---|---|

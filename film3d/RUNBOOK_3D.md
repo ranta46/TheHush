@@ -69,3 +69,6 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
 - 2026-11-11: hook also goes FIRST LINE of the post text on YouTube, Facebook, TikTok, Instagram, Threads and Pinterest
   (line 2 = "Gloamrun Film N: <title>"). Bluesky keeps the title first (300-char limit). Judge with the title test on
   films 12-14 (TikTok/Instagram baseline: Film 11 day 1 = 55 / 125 views). PC run: always write film.json "hook".
+- 2026-11-12: cover test: TikTok and Instagram Reel posts (new films and vault posts) also send videoThumbnailUrl =
+  poster raw URL (if Metricool rejects it, post again without). Judge on TikTok/IG views of films 14-16 vs films 11-13;
+  roll back if worse. PC run: the poster must show the Hush and Rook clearly (it is now the cover on 4 networks).
