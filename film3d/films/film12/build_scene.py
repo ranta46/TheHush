@@ -102,7 +102,7 @@ def gh(x, y):
     R = 30.0 * math.exp(-((x - PASS_X) / 28.0) ** 2)                 # the pass ridge (cut through at |y| < 6)
     back = 22.0 * math.exp(-((x + 255.0) / 28.0) ** 2)               # the ridge at the back of the valley
     n = 0.9 * math.sin(x * 0.045 + y * 0.03) + 0.6 * math.sin(x * 0.09 - y * 0.06 + 1.3)
-    up = wall * (R + 0.35 * d + 0.004 * d * d + n * ss(0, 20, d)) + back
+    up = wall * (R + min(40.0, 0.35 * d + 0.002 * d * d) + n * ss(0, 20, d)) + back
     if y < 0:                                                         # past the pass the south side drops away under the ledge
         b = ss(85.0, 115.0, x) * (1.0 - ss(380.0, 410.0, x))
         drop = -min(45.0, 1.1 * max(0.0, -y - 8.0)) + n * ss(0, 20, d) * 0.5
@@ -110,7 +110,7 @@ def gh(x, y):
     t = ss(375.0, 410.0, x)                                           # Pine Town: flat
     return up * (1 - t) - 0.02
 GA = O["Ground"]; GA.location = (0, 0, -60.0); GA.scale = (1400, 1000, 1)
-snowM = newM("S_Snow", (0.42, 0.45, 0.52), rough=0.9); rockM = newM("S_RockM", (0.1, 0.1, 0.11), rough=1)
+snowM = newM("S_Snow", (0.55, 0.6, 0.7), rough=0.9); rockM = newM("S_RockM", (0.1, 0.1, 0.11), rough=1)
 GA.data.materials.clear(); GA.data.materials.append(rockM)
 def axis(a, b, step):
     out = []; v = a
@@ -146,13 +146,19 @@ mk("S_ShedWall", box(), woodM, ((SHED0 + SHED1) / 2, 3.75, 2.3), scl=(SHED1 - SH
 mk("S_ShedRoof", box(), woodM, ((SHED0 + SHED1) / 2, 0.3, 4.6), (0.13, 0, 0), scl=(SHED1 - SHED0 + 1.0, 7.4, 0.3))
 mk("S_ShedSnow", box(), newM("S_SnowTop", (0.6, 0.63, 0.7), rough=0.9), ((SHED0 + SHED1) / 2, 0.3, 4.95), (0.13, 0, 0), scl=(SHED1 - SHED0 + 1.0, 7.2, 0.4))
 # the snow on top of the pass (north side of the cut): it comes down into the cut behind the train (the whistle, 28 - 31.5)
-SNOWM = newM("S_SlideM", (0.62, 0.65, 0.72), rough=0.9)
+SNOWM = newM("S_SlideM", (0.7, 0.74, 0.82), emit=0.12, rough=0.9)
 CH = [((60, 0, 6), (10, 9, 8)), ((70, 0, 7), (10, 10, 9)), ((65, 1, 16), (9, 8, 8)), ((76, -1, 4), (7, 9, 6)), ((55, -2, 3), (6, 8, 5)), ((66, 0, 23), (6, 6, 4))]
 for i, (fin, scl) in enumerate(CH):
     o = mk(f"S_Slide{i}", sph(1, 16, 10), SNOWM, scl=scl, smooth=True)
     st = Vector((fin[0], 27 + i * 0.8, gh(fin[0], 27) + 2 + fin[2] * 0.25)); md = Vector((fin[0], 9, fin[2] * 0.6 + 16)); fn = Vector(fin)
     t0 = 28.0 + i * 0.28
     for t, p in ((0, st), (t0, st), (t0 + 1.2, md), (t0 + 2.2, fn), (100, fn)): key(o, "location", F(t), p)
+    lin(o)
+# the second slide (57.3 - 61.5): the snow on the slope above the shed gives way under the Hush and goes over the roof
+for i, x in enumerate((148, 154, 162, 168)):
+    o = mk(f"S_Slide2_{i}", sph(1, 14, 8), SNOWM, scl=(5, 4, 2.5), smooth=True)
+    st = Vector((x, 16, gh(x, 16) - 1.5)); md = Vector((x - 1, 0, 6.2)); fn = Vector((x - 3, -48, gh(x - 3, -48) + 1)); t0 = 57.3 + i * 0.15
+    for t, p in ((0, st), (t0, st), (t0 + 1.4, md), (t0 + 4.0, fn), (100, fn)): key(o, "location", F(t), p)
     lin(o)
 # lamps along the valley (they die in a wave from the back as its face rises), along the ledge (it eats them), Pine Town station
 RLAMP = []
@@ -195,7 +201,7 @@ mk("S_Platform", box(), newM("S_Plat", (0.1, 0.09, 0.1), rough=1), (454, 2.4, 0.
 moonM = newM("S_Moon", (0.9, 0.88, 0.8), emit=3)
 mk("S_Moon", cyl(9, 9, 0.2, 48), moonM, (150, 380, 120), (math.pi / 2, 0, 0.0))
 w = sc.world; w.node_tree.nodes["Background"].inputs[0].default_value = (0.014, 0.018, 0.045, 1)
-O["MoonKey"].data.energy = 2.0
+O["MoonKey"].data.energy = 3.4
 FIREM = newM("T_FireM", (1, 0.35, 0.08), emit=12)
 mk("T_Fire", box(), FIREM, (2.45, 0, 0.55), scl=(0.06, 0.5, 0.3), parent=T)
 FIRE = light("T_FireGlow", "POINT", 25, (1, 0.45, 0.15), (2.2, 0, 0.7), T)
@@ -230,13 +236,13 @@ for hm, lt, td in RLAMP:
 # slides down the mountain (57.4-61.5), then climbs back up and follows far behind.
 HP_ = [(0, -280, 0, -40), (5.4, -280, 0, -40), (6.6, -280, 0, -14), (8.0, -280, 0, 0), (9.0, -280, 0, 0), (10, -262, 0, 0), (14, -215, 0, 0),
        (18, -160, 0, 0), (22, -90, 0, 0), (25, -30, 0, 0), (27, 10, 0, 0), (29, 36, 0, 0), (30.6, 44, 0, 0), (31.4, 46, 0, 0), (35.6, 46, 0, 0),
-       (37, 50, -10, 0), (40, 64, -24, 0), (43, 88, -27, 0), (46, 116, -22, 0), (48.2, 145, -16, 0), (50, 158, -14, 0), (57.4, 158, -14, 0),
-       (58.4, 158, -22, 0), (60, 156, -40, 0), (61.6, 152, -62, 0), (66, 150, -66, 0), (70, 165, -58, 0), (74, 190, -45, 0), (80, 235, -32, 0),
+       (37, 50, 10, 0), (40, 64, 24, 0), (43, 88, 27, 0), (46, 116, 22, 0), (48.2, 145, 16, 0), (50, 158, 13, 0), (57.4, 158, 13, 0),
+       (58.4, 158, 4, 4.0), (59.0, 158, -3, 5.0), (60.0, 157, -22, 0), (61.6, 154, -50, 0), (66, 150, -66, 0), (70, 165, -58, 0), (74, 190, -45, 0), (80, 235, -32, 0),
        (86, 295, -26, 0), (92, 350, -22, 0), (100, 420, -18, 0)]
 for t, x, y, dz in HP_:
     key(H, "location", F(t), Vector((x, y, gh(x, y) + dz))); key(H, "scale", F(t), Vector((2.4, 2.4, 2.4)))
 FEED = empty("S_Feed", (66, 0, 15))                      # where it looks when it is not looking at the train
-for t, x, y, z in ((0, 66, 0, 15), (31, 66, 0, 15), (36, 66, 0, 15), (40, 100, -10, 10), (46, 150, -5, 0), (57.2, 150, -5, 0),
+for t, x, y, z in ((0, 66, 0, 15), (31, 66, 0, 15), (36, 66, 0, 15), (40, 100, 10, 10), (46, 150, 5, 0), (57.2, 150, 5, 0),
                    (57.8, 160, -80, -45), (66, 160, -90, -45)):
     key(FEED, "location", F(t), Vector((x, y, z)))
 d1 = H.constraints.new("LOCKED_TRACK"); d1.target = T; d1.track_axis = "TRACK_NEGATIVE_Y"; d1.lock_axis = "LOCK_Z"
@@ -260,7 +266,7 @@ for t, e in ((0, 25), (L0 - 0.2, 25), (L0 + 0.1, 0), (L1 - 0.2, 0), (L1 + 0.2, 4
 # Rook head (rz = local direction + 30: 30 ahead, 120 left / up at the snow, -150 back, -60 right / the drop side)
 for t, rz in ((0, 30), (5.0, 30), (5.6, -150), (9.8, -150), (10.4, 30), (13.0, 30), (13.6, -150), (16.6, -150), (17.2, 30), (21.6, 30),
               (22.2, 120), (25.8, 120), (26.4, 30), (28.0, 30), (28.6, -150), (36.8, -150), (37.4, -120), (41.4, -120), (42.0, 30), (46.0, 30),
-              (46.6, -60), (57.4, -60), (58.0, -80), (60.8, -80), (61.4, 30), (72.6, 30), (73.2, -150), (77.4, -150), (78.0, 30), (100, 30)):
+              (46.6, 120), (57.4, 120), (58.4, -70), (60.8, -70), (61.4, 30), (72.6, 30), (73.2, -150), (77.4, -150), (78.0, 30), (100, 30)):
     key(HP, "rotation_euler", F(t), math.radians(rz), 2)
 for sd in (-1, 1):
     wg = O[f"R_Wing{sd}"]
@@ -285,24 +291,24 @@ def cam(name, start_s, loc, look, lens=28, parent=None, world_look=False):
     k = c.constraints.new("TRACK_TO"); k.target = tgt; k.track_axis = "TRACK_NEGATIVE_Z"; k.up_axis = "UP_Y"
     m = sc.timeline_markers.new(name, frame=F(start_s)); m.camera = c; return c
 cam("Cam_01", 0, (3.0, -11, 2.6), (1.0, 0, 1.6), 26, T)                          # wide side: the train in the snowy valley
-cam("Cam_02", 5.0, (6, 2.2, 3.4), "H_Mask", 50, T)                                # over the train, back: the lamps die, its face over the ridge
+cam("Cam_02", 5.0, (6, 2.2, 3.4), "H_Mask", 90, T)                                # over the train, back: the lamps die, its face over the ridge
 cam("Cam_03", 9.8, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                       # Rook: it's coming up the valley
-cam("Cam_04", 12.8, (-100, -150, 50), (-100, 0, 6), 24)                          # high wide: the valley, the train and the Hush behind
+cam("Cam_04", 12.8, (-20, -30, 28), (-140, 0, 8), 24)                          # high wide: the valley, the train and the Hush behind
 cam("Cam_05", 17.0, (-4, 3.0, 2.8), "H_Mask", 28, T)                              # from the train: it is faster uphill
 cam("Cam_06", 20.4, (14, -5, 1.4), (0, 0, 1.6), 30, T)                           # front: the train runs into the cut
-cam("Cam_07", 22.6, (-1.0, -2.2, 1.6), (66, 26, 36), 26, T, True)                 # behind Rook: all that snow on top of the pass
+cam("Cam_07", 22.6, (60, -4.5, 1.6), (68, 24, 30), 20)                 # behind Rook: all that snow on top of the pass
 cam("Cam_08", 26.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: long whistle! bring it down!
-cam("Cam_09", 28.0, (112, -42, 22), (62, 0, 10), 24)                             # wide: the snow comes down behind the train, it is right there
-cam("Cam_10", 31.6, (18, -30, 6), "H_Mask", 24)                                   # the Hush stopped at the snow
+cam("Cam_09", 28.0, (125, -3.5, 5), (60, 0, 9), 24)                             # wide: the snow comes down behind the train, it is right there
+cam("Cam_10", 31.6, (15, -5, 4), (55, 0, 14), 24)                                   # the Hush stopped at the snow
 cam("Cam_11", 33.2, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: the pass is closed
-cam("Cam_12", 36.4, (135, -75, 30), (70, -22, 26), 24)                           # wide: it climbs over the south ridge
+cam("Cam_12", 36.4, (0, 60, 40), (60, 20, 25), 24)                           # wide: it climbs over the south ridge
 cam("Cam_13", 38.6, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: lights off!
-cam("Cam_14", 41.8, (190, -14, 5), (150, 0, 2), 24)                              # the dark train creeps into the snow shed
-cam("Cam_15", 46.4, (-2, 2.0, 1.8), "H_Mask", 22, T)                              # from inside the shed: it comes down the slope
-cam("Cam_16", 49.2, (1.8, 2.6, 1.0), "H_Mask", 20, T)                             # low behind Rook: its face right over us (cold open)
+cam("Cam_14", 41.8, (125, -7, 2), (150, 0, 2), 24)                              # the dark train creeps into the snow shed
+cam("Cam_15", 46.4, (175, -9, 0.5), "H_Mask", 22)                              # from inside the shed: it comes down the slope
+cam("Cam_16", 49.2, (154, -10, -0.5), (157, 2, 7), 20)                             # low behind Rook: its face right over us (cold open)
 cam("Cam_17", 52.6, (2.4, -2.6, 1.5), (0.6, 0, 1.45), 30, T)                     # Rook in the dark
-cam("Cam_18", 55.2, (195, -60, -18), (158, -8, 6), 22)                           # from below: it stands over the shed; the snow gives way
-cam("Cam_19", 59.4, (-1, -2.0, 2.4), "H_Mask", 28, T)                             # from the train: it slides down the mountain
+cam("Cam_18", 55.2, (190, -40, -12), (158, 4, 8), 22)                           # from below: it stands over the shed; the snow gives way
+cam("Cam_19", 59.4, (2, -4.5, 1.5), "H_Mask", 24, T)                             # from the train: it slides down the mountain
 cam("Cam_20", 61.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: lights on! full steam!
 cam("Cam_21", 63.6, (190, -6, 3), (160, 0, 2), 26)                               # the train comes out of the shed, lights on
 cam("Cam_22", 67.6, (8, -9, 3), (0, 0, 1.4), 26, T)                              # side: full steam along the ledge
