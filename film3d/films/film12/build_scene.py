@@ -146,7 +146,7 @@ mk("S_ShedWall", box(), woodM, ((SHED0 + SHED1) / 2, 3.75, 2.3), scl=(SHED1 - SH
 mk("S_ShedRoof", box(), woodM, ((SHED0 + SHED1) / 2, 0.3, 4.6), (0.13, 0, 0), scl=(SHED1 - SHED0 + 1.0, 7.4, 0.3))
 mk("S_ShedSnow", box(), newM("S_SnowTop", (0.6, 0.63, 0.7), rough=0.9), ((SHED0 + SHED1) / 2, 0.3, 4.95), (0.13, 0, 0), scl=(SHED1 - SHED0 + 1.0, 7.2, 0.4))
 # the snow on top of the pass (north side of the cut): it comes down into the cut behind the train (the whistle, 28 - 31.5)
-SNOWM = newM("S_SlideM", (0.7, 0.74, 0.82), emit=0.12, rough=0.9)
+SNOWM = newM("S_SlideM", (0.7, 0.74, 0.82), emit=0.3, rough=0.9)
 CH = [((60, 0, 6), (10, 9, 8)), ((70, 0, 7), (10, 10, 9)), ((65, 1, 16), (9, 8, 8)), ((76, -1, 4), (7, 9, 6)), ((55, -2, 3), (6, 8, 5)), ((66, 0, 23), (6, 6, 4))]
 for i, (fin, scl) in enumerate(CH):
     o = mk(f"S_Slide{i}", sph(1, 16, 10), SNOWM, scl=scl, smooth=True)
@@ -184,7 +184,7 @@ for i in range(60):
     if abs(y) < 8: continue
     s = rr.uniform(0.8, 2.4); rocks.append(((x, y, gh(x, y) + s * 0.3), (s * 1.4, s, s * 0.9), rr.uniform(0, 3)))
 pboxes("S_Rocks", rockM, rocks)
-farM = newM("S_FarPeak", (0.2, 0.22, 0.27), rough=1)
+farM = newM("S_FarPeak", (0.12, 0.13, 0.17), rough=1)
 for i in range(9):
     hx = -320 + i * 100
     mk("S_FarPeak", cyl(1, 0.05, 1, 8), farM, (hx, rr.uniform(260, 300), 20), scl=(rr.uniform(55, 75), 45, rr.uniform(70, 110)))
@@ -296,19 +296,19 @@ cam("Cam_03", 9.8, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      
 cam("Cam_04", 12.8, (-20, -30, 28), (-140, 0, 8), 24)                          # high wide: the valley, the train and the Hush behind
 cam("Cam_05", 17.0, (-4, 3.0, 2.8), "H_Mask", 28, T)                              # from the train: it is faster uphill
 cam("Cam_06", 20.4, (14, -5, 1.4), (0, 0, 1.6), 30, T)                           # front: the train runs into the cut
-cam("Cam_07", 22.6, (60, -4.5, 1.6), (68, 24, 30), 20)                 # behind Rook: all that snow on top of the pass
+cam("Cam_07", 22.6, (1.2, -0.6, 2.2), (66, 24, 34), 24, T, True)                 # behind Rook: all that snow on top of the pass
 cam("Cam_08", 26.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: long whistle! bring it down!
 cam("Cam_09", 28.0, (125, -3.5, 5), (60, 0, 9), 24)                             # wide: the snow comes down behind the train, it is right there
 cam("Cam_10", 31.6, (15, -5, 4), (55, 0, 14), 24)                                   # the Hush stopped at the snow
 cam("Cam_11", 33.2, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: the pass is closed
-cam("Cam_12", 36.4, (0, 60, 40), (60, 20, 25), 24)                           # wide: it climbs over the south ridge
+cam("Cam_12", 36.4, (110, 60, 45), (60, 20, 28), 24)                           # wide: it climbs over the south ridge
 cam("Cam_13", 38.6, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: lights off!
 cam("Cam_14", 41.8, (125, -7, 2), (150, 0, 2), 24)                              # the dark train creeps into the snow shed
 cam("Cam_15", 46.4, (175, -9, 0.5), "H_Mask", 22)                              # from inside the shed: it comes down the slope
 cam("Cam_16", 49.2, (154, -10, -0.5), (157, 2, 7), 20)                             # low behind Rook: its face right over us (cold open)
 cam("Cam_17", 52.6, (2.4, -2.6, 1.5), (0.6, 0, 1.45), 30, T)                     # Rook in the dark
-cam("Cam_18", 55.2, (190, -40, -12), (158, 4, 8), 22)                           # from below: it stands over the shed; the snow gives way
-cam("Cam_19", 59.4, (2, -4.5, 1.5), "H_Mask", 24, T)                             # from the train: it slides down the mountain
+cam("Cam_18", 55.2, (190, -40, -12), (158, 4, 8), 30)                           # from below: it stands over the shed; the snow gives way
+cam("Cam_19", 59.4, (185, -6, 2), "H_Mask", 24)                             # from the train: it slides down the mountain
 cam("Cam_20", 61.0, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                      # Rook: lights on! full steam!
 cam("Cam_21", 63.6, (190, -6, 3), (160, 0, 2), 26)                               # the train comes out of the shed, lights on
 cam("Cam_22", 67.6, (8, -9, 3), (0, 0, 1.4), 26, T)                              # side: full steam along the ledge
