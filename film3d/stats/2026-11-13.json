@@ -1,0 +1,162 @@
+{
+ "date": "2026-11-13",
+ "brand": 7473995,
+ "youtube_videos": [
+  {
+   "film": 1,
+   "views": 159,
+   "avg_view_s": 28,
+   "len_s": 131
+  },
+  {
+   "film": 2,
+   "views": 42,
+   "avg_view_s": 15,
+   "len_s": 105
+  },
+  {
+   "film": 3,
+   "views": 79,
+   "avg_view_s": 18,
+   "len_s": 105
+  },
+  {
+   "film": 4,
+   "views": 50,
+   "avg_view_s": 19,
+   "likes": 1,
+   "comments": 1,
+   "len_s": 105
+  },
+  {
+   "film": 5,
+   "views": 12,
+   "avg_view_s": 20,
+   "likes": 1,
+   "len_s": 105
+  },
+  {
+   "film": 6,
+   "views": 23,
+   "avg_view_s": 22,
+   "len_s": 105
+  },
+  {
+   "film": 7,
+   "views": 59,
+   "avg_view_s": 26,
+   "len_s": 105
+  },
+  {
+   "film": 8,
+   "views": 36,
+   "avg_view_s": 36,
+   "shares": 1,
+   "len_s": 108,
+   "cold_open": true
+  },
+  {
+   "film": 9,
+   "views": 23,
+   "avg_view_s": 33,
+   "likes": 1,
+   "len_s": 108,
+   "cold_open": true
+  },
+  {
+   "film": 10,
+   "views": 15,
+   "avg_view_s": 21,
+   "len_s": 108,
+   "cold_open": true
+  },
+  {
+   "film": "11-13",
+   "note": "no row yet (Metricool YT lag)"
+  }
+ ],
+ "youtube_shorts_chatgpt_ref": "Ep shorts with hook titles 250-1272 views",
+ "youtube_subscribers": {
+  "2026-11-10": 50,
+  "2026-11-11": 51,
+  "2026-11-12": 51
+ },
+ "tiktok": [
+  {
+   "film": 11,
+   "views": 443,
+   "likes": 24,
+   "age_days": 3
+  },
+  {
+   "film": 1,
+   "vault": true,
+   "views": 310,
+   "likes": 4,
+   "age_days": 2.4
+  },
+  {
+   "film": 13,
+   "hook": true,
+   "kind": "2d",
+   "views": 428,
+   "likes": 12,
+   "shares": 1,
+   "age_days": 2
+  },
+  {
+   "film": 2,
+   "vault": true,
+   "views": 381,
+   "likes": 11,
+   "age_days": 1.4
+  },
+  {
+   "film": 12,
+   "hook": true,
+   "views": 56,
+   "likes": 5,
+   "age_days": 1
+  }
+ ],
+ "instagram_reels": [
+  {
+   "film": 11,
+   "views": 127,
+   "avg_watch_s": 10.7,
+   "likes": 2
+  },
+  {
+   "film": 1,
+   "vault": true,
+   "views": 109,
+   "avg_watch_s": 6.5,
+   "likes": 1
+  },
+  {
+   "film": 13,
+   "hook": true,
+   "views": 120,
+   "avg_watch_s": 17.0,
+   "likes": 3
+  },
+  {
+   "film": 2,
+   "vault": true,
+   "views": 109,
+   "avg_watch_s": 8.0
+  },
+  {
+   "film": 12,
+   "hook": true,
+   "views": 128,
+   "avg_watch_s": 15.1,
+   "likes": 2
+  }
+ ],
+ "threads": "rows for films 11-13 + vault 1, all metrics null",
+ "bluesky": "Film 11: 1 like; others 0/null",
+ "facebook": "no film rows",
+ "pinterest": "image pins, not fetched",
+ "note": "vault Film 3 (11-13 12:33) too young, no rows yet"
+}

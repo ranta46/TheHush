@@ -72,3 +72,7 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
 - 2026-11-12: cover test: TikTok and Instagram Reel posts (new films and vault posts) also send videoThumbnailUrl =
   poster raw URL (if Metricool rejects it, post again without). Judge on TikTok/IG views of films 14-16 vs films 11-13;
   roll back if worse. PC run: the poster must show the Hush and Rook clearly (it is now the cover on 4 networks).
+- 2026-11-13: vault hook: vault reposts (TikTok, Instagram, Threads, Pinterest) put a hook line FIRST (4-7 easy words from
+  the scariest beat, two short sentences, like the film hooks), then "From the vault: Gloamrun Film N: <title>". Use the
+  film's "hook" from the log if it has one, otherwise write one from its fear line. Bluesky keeps the title first.
+  Starts with vault Film 5. Judge on IG avg watch of vault films 5-7 vs vault films 1-2 (6.5 / 8.0 s); roll back if not better.

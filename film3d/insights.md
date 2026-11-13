@@ -1,5 +1,22 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-13 (Film 15 The Firefly Wood, 2D fallback: no 3D stock, Film 14 still rendering)
+| Film | YT views / avg (s) / ret. | TikTok views / likes | IG views / avg watch (s) |
+|---|---|---|---|
+| 8 The Long Hill (cold open) | 36 / 36 / 33 % | - | - |
+| 9 The Sleeping City (cold open) | 23 / 33 / 31 % | - | - |
+| 10 The Old Ferry (cold open) | 15 / 21 / 19 % | - | - |
+| 11 The Cliff Lift (no hook, day 3) | no row | 443 / 24 | 127 / 10.7 |
+| 13 The Water Tower (2D, hook, day 2) | no row | 428 / 12 | 120 / 17.0 |
+| 12 Round Hill (hook, day 1) | no row | 56 / 5 | 128 / 15.1 |
+| 1 The Sky Line, vault (no hook, day 2) | 159 total | 310 / 4 | 109 / 6.5 |
+| 2 Into the Dark, vault (no hook, day 1) | - | 381 / 11 | 109 / 8.0 |
+YT subscribers 51 (flat). Threads rows exist but metrics are null; Bluesky 0-1 likes. YT still has no rows for films 11-13.
+- Hook in the first line: Instagram viewers of hook films watch 15-17 s vs 10.7 s (Film 11, no hook) and 6.5-8 s for vault posts (no hook). Views per network stay flat (IG ~110-128, TikTok ~300-440 after 2 days), so the hook helps holding, not reach yet. Title test still judged on films 12-14.
+- Vault reposts keep pulling TikTok views like new films (310-381 in 1-2 days) but hold IG viewers worst (6.5-8 s): they are the only posts without a hook line.
+- YouTube long films remain the weak spot (15-59 views) while ChatGPT's hook-titled shorts get 250-1272.
+- Change: vault posts (TikTok, Instagram, Threads, Pinterest) also get a hook as the FIRST line, before "From the vault: Gloamrun Film N: <title>". Starts with vault Film 5 (11-15 12:33; Film 4 for 11-14 was already scheduled). Judge on IG avg watch of vault films 5-7 vs films 1-2 (6.5 / 8.0 s); roll back if not better.
+
 ## 2026-11-12 (after Film 12 Round Hill, 3D)
 | Film | YT views | YT avg (s) | Retention | TikTok views / likes | IG views / avg watch (s) / 3 s skip |
 |---|---|---|---|---|---|

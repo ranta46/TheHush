@@ -116,5 +116,38 @@
    "bluesky": 424299235,
    "pinterest": 424299248
   }
+ },
+ {
+  "film_no": 15,
+  "date": "2026-11-13",
+  "title": "The Firefly Wood",
+  "duration": 109.0,
+  "kind": "2d",
+  "folder": "film_kit/films/film15",
+  "synopsis": "The train lamp is stuck on, and the Hush can see it from far away. The only place to hide one light is among a thousand little lights.",
+  "clever_move": "The lamp is stuck on and cannot be hidden, so Rook stops the train in the Firefly Wood: one light among a thousand little lights.",
+  "fear": "The fireflies go out one by one around the Hush as it searches; it stands right over the train. '...Don't move. Not a sound.'",
+  "surprise": "All the fireflies rise at once and fly off over the hill as one big light; the Hush turns and follows them. Lamp on, full steam to Glowmere.",
+  "closing_line": "Thank you, little lights.",
+  "hook": "It stands in the lights. Don't move.",
+  "places": [
+   "the night line",
+   "the Firefly Wood",
+   "Glowmere"
+  ],
+  "status": "posted",
+  "posted": "2026-11-13 20:51 JST",
+  "reason": "no 3D stock (Film 14 The Snow Pass still rendering; PC run was paused by device_absent)",
+  "video": "gloamrun/films/gloamrun_film15_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film15_poster.jpg",
+  "post_ids": {
+   "youtube": 426830511,
+   "facebook": 426830733,
+   "tiktok": 426830777,
+   "instagram": 426830815,
+   "threads": 426830862,
+   "bluesky": 426830909,
+   "pinterest": 426830947
+  }
  }
 ]

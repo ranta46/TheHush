@@ -37,5 +37,19 @@
    "bluesky": 425541575,
    "pinterest": 425541720
   }
+ },
+ {
+  "film_no": 4,
+  "title": "The Echo Canyon",
+  "scheduled": "2026-11-14 12:33 JST",
+  "logged": "2026-11-13 20:23 JST",
+  "post_ids": {
+   "tiktok": 426822565,
+   "instagram": 426822587,
+   "threads": 426822606,
+   "bluesky": 426822620,
+   "pinterest": 426822635
+  },
+  "cover": "poster as TikTok/IG cover"
  }
 ]
