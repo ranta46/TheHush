@@ -1,0 +1,21 @@
+{"film_no": 16, "title": "The Falls", "poster_t": 50.5, "cold_open": [49.4, 52.4], "hook": "It stands at the water. Don't breathe.",
+ "synopsis": "The Hush is faster down the valley. Ahead, the old falls pour over the line, and Rook takes the dark train in behind the water.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.8, 3.3, "Next stop: Falls Town. Hold the bar!"],
+  [6.4, 8.8, "The lamps went out. It's here."],
+  [10.4, 12.8, "It's coming down the valley. Full steam!"],
+  [17.0, 19.4, "It's faster than us! Come on, old girl!"],
+  [23.0, 25.4, "Listen... the old falls. I have an idea."],
+  [27.0, 29.4, "Behind the water. Nice and slow."],
+  [31.0, 33.4, "Lights off. Fire out. Not a sound."],
+  [39.6, 42.0, "The water is loud. It can't hear us."],
+  [44.8, 47.2, "It's here. Right in front of us."],
+  [49.6, 52.0, "...Don't move. Not a sound."],
+  [57.8, 60.2, "Ha! It doesn't like the cold water!"],
+  [61.0, 63.4, "It's going down the river. Lights on!"],
+  [64.6, 67.0, "Full steam! Out the far side!"],
+  [76.0, 78.4, "It's turning back. Go!"],
+  [90.4, 92.8, "Falls Town! Thank you, old falls."],
+  [94.8, 97.8, "It will be back. Hold the bar."]
+ ]}
