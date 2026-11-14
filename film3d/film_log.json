@@ -305,7 +305,7 @@
   "title": "The Snow Pass",
   "date_made": "2026-11-12",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "clever_move": "The Hush is faster uphill, so at the top of the pass Rook blows one long whistle under the heavy snow; it comes down behind the train and closes the cut ('Bring it down!').",
   "fear": "It climbs over the ridge; the dark train hides in the old snow shed on the ledge and the Hush looks down over the roof. '...Don't move. Not a sound.'",
   "surprise": "The snow under its own heavy feet gives way and carries it over the shed roof and down the mountain; lights on, full steam to Pine Town; it climbs back up and follows (it will be back).",
@@ -321,7 +321,16 @@
   "video": "gloamrun/films/gloamrun_film14_16x9.mp4",
   "poster": "gloamrun/films/gloamrun_film14_poster.jpg",
   "duration": 108.0,
-  "finished": "2026-11-14 09:53 JST (frames done 11-12 17:28; encode stalled 3 runs due to PC bridge; finished manually, raw sent in 3MB parts)"
+  "finished": "2026-11-14 09:53 JST (frames done 11-12 17:28; encode stalled 3 runs due to PC bridge; finished manually, raw sent in 3MB parts)",
+  "posted": "2026-11-14 20:33 JST",
+  "youtube_post_id": 427916801,
+  "facebook_post_id": 427916811,
+  "tiktok_post_id": 427916828,
+  "instagram_post_id": 427916851,
+  "threads_post_id": 427916862,
+  "bluesky_post_id": 427916880,
+  "pinterest_post_id": 427916883,
+  "publish_check": "2026-11-14 20:16 JST: all 7 networks scheduled (PENDING); YouTube thumbnail + TikTok/IG poster cover sent"
  },
  {
   "film_no": 16,
