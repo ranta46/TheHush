@@ -338,6 +338,7 @@
    "Falls Town and station"
   ],
   "clever_move": "The Hush is faster, so Rook puts out every light and the fire and creeps the dark train in behind the old falls; the roar hides the sound and the water hides the train. The cold water hits its mask and it goes down the river.",
-  "render_started": "2026-11-14 10:00 JST (~5-10 s/frame, done ~15:00-17:00 JST)"
+  "render_started": "2026-11-14 10:00 JST (~5-10 s/frame, done ~15:00-17:00 JST)",
+  "render_progress": "2026-11-14 10:40 JST: 462/2400 frames, ~6 s/frame incl. rest, done ~14:00-14:30 JST"
  }
 ]
