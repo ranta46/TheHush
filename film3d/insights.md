@@ -1,5 +1,21 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-14 (Film 14 The Snow Pass, 3D, posted 20:33 on 7 networks; vault Film 5 set for 11-15 12:33)
+| Film | TikTok views / likes (age) | IG views / avg watch (s) / ret. / 3 s skip |
+|---|---|---|
+| 11 The Cliff Lift (no hook) | 443 / 24 (4 d) | 127 / 10.7 / 10 % / 45 % |
+| 12 Round Hill (hook) | 449 / 26 (2 d) | 129 / 15.0 / 14 % / 40 % |
+| 13 The Water Tower (2D, hook) | 429 / 12 (3 d) | 121 / 16.9 / 16 % / 55 % |
+| 15 The Firefly Wood (2D, hook, cover) | 52 / 1 (1 d) | 37 / 8.9 / 8 % / 52 % |
+| vault 1 The Sky Line | 310 / 4 | 109 / 6.5 / 5 % / 73 % |
+| vault 2 Into the Dark | 438 / 14 | 110 / 8.8 / 8 % / 58 % |
+| vault 3 The Last Car (1.3 d) | 343 / 20 | 112 / 5.8 / 6 % / 69 % |
+YouTube: no rows for films 11-15 (Metricool's YouTube list has not moved since 11-09; films 1-10 unchanged, best 8 = 33 % ret.). Subscribers 51 (flat). Threads all null, Bluesky ~0.
+- Viewers on IG leave early: average watch is 6-17 s of a 105-131 s film (5-16 %). Films with a cold open (11-15) lose 40-55 % in the first 3 s, the old vault films without one lose 58-73 %. The calm start right after the cold open is where most of the rest leave.
+- TikTok is steady at ~430-450 views per film by day 2-4, new or vault, hook or not; vault 3 got the most likes of any vault post (20). The hook test shows no reach change yet on TikTok/IG; YouTube (where it was meant to be judged) has no data.
+- Film 15 (first cover-test film) is slow on day 1 on IG (37 vs 120-128) and TikTok (52 vs 56): one film only, keep the test running (judge on 14-16).
+- Change (story pace, PC run, from Film 17): after the cold open the film starts IN the danger: no calm start. The first line (by 1 s) names the danger and the Hush is on screen by 5 s of the film itself (was 10 s). Packaging tests (title hook 12-14, cover 14-16, vault hook 5-7) are not touched, so this is judged cleanly on films 17-19: IG avg watch and 3 s skip vs films 12-16, and YouTube retention once Metricool shows rows again. Roll back if worse.
+
 ## 2026-11-13 (Film 15 The Firefly Wood, 2D fallback: no 3D stock, Film 14 still rendering)
 | Film | YT views / avg (s) / ret. | TikTok views / likes | IG views / avg watch (s) |
 |---|---|---|---|

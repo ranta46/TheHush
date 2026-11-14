@@ -76,3 +76,7 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   the scariest beat, two short sentences, like the film hooks), then "From the vault: Gloamrun Film N: <title>". Use the
   film's "hook" from the log if it has one, otherwise write one from its fear line. Bluesky keeps the title first.
   Starts with vault Film 5. Judge on IG avg watch of vault films 5-7 vs vault films 1-2 (6.5 / 8.0 s); roll back if not better.
+- 2026-11-14: no calm start (story pace). After the cold open the film begins already in danger: Rook's first line (starting
+  by 1.0 s) names the danger (e.g. "The lamps went out. It's here!"), and the Hush is on screen by 5 s of the film itself
+  (was 10 s). The calm "Next stop" beat moves to the end or goes. From Film 17 (Film 16 was made before this). Judge on
+  IG avg watch + 3 s skip of films 17-19 vs films 12-16 (IG 8.9-16.9 s / 40-55 %) and YouTube retention when rows return.
