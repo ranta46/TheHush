@@ -152,7 +152,7 @@ nt.links.new(wv.outputs["Fac"], cr.inputs["Fac"])
 cr.color_ramp.elements[0].position = 0.3; cr.color_ramp.elements[0].color = (0.25, 0.4, 0.55, 1)
 cr.color_ramp.elements[1].position = 0.9; cr.color_ramp.elements[1].color = (0.8, 0.9, 1.0, 1)
 nt.links.new(cr.outputs["Color"], bs.inputs["Base Color"]); nt.links.new(cr.outputs["Color"], bs.inputs["Emission Color"])
-bs.inputs["Emission Strength"].default_value = 0.7; bs.inputs["Alpha"].default_value = 0.72; bs.inputs["Roughness"].default_value = 0.2
+bs.inputs["Emission Strength"].default_value = 0.35; bs.inputs["Alpha"].default_value = 0.38; bs.inputs["Roughness"].default_value = 0.2
 nt.links.new(bs.outputs["BSDF"], outn.inputs["Surface"])
 try: WM.surface_render_method = "DITHERED"
 except Exception: pass
@@ -166,7 +166,6 @@ try:
 except Exception: pass
 bmw = bmesh.new(); bmesh.ops.create_grid(bmw, x_segments=1, y_segments=1, size=0.5)
 CUR = mk("S_Falls", bmw, WM, (FC, -3.6, 4.9), (math.pi / 2, 0, 0), (FA1 - FA0 - 2, 12.4, 1))
-CUR2 = mk("S_Falls2", box(), WM, (FC, -4.3, 4.9), scl=(FA1 - FA0 - 6, 0.25, 12.2))
 poolM = newM("S_Pool", (0.04, 0.07, 0.11), emit=0.15, rough=0.05)
 mk("S_PoolWater", box(), poolM, (FC, -11, -0.7), scl=(FA1 - FA0 + 14, 14, 0.2))
 mk("S_River", box(), poolM, (FC, -110, -0.65), scl=(14, 186, 0.2))
@@ -334,7 +333,7 @@ cam("Cam_16", 52.6, (2.4, -2.6, 1.5), (0.6, 0, 1.45), 30, T)                    
 cam("Cam_17", 54.6, (FC - 26, -26, 6), "H_Mask", 35)                              # side: its face at the water, the splash
 cam("Cam_18", 57.6, (FC + 20, -12, 14), "H_Mask", 30)                             # it walks off down the river
 cam("Cam_19", 60.8, (2.6, -3.2, 1.8), (0.6, 0, 1.4), 28, T)                       # Rook: lights on!
-cam("Cam_20", 63.4, (FA1 + 14, -8, 2), (FC, 0, 2), 26)                             # the train comes out of the falls, lights on
+cam("Cam_20", 63.4, (FA1 + 18, -16, 3), (FA1 - 2, 0, 1.5), 28)                             # the train comes out of the falls, lights on
 cam("Cam_21", 67.6, (8, -9, 3), (0, 0, 1.4), 26, T)                               # side: full steam
 cam("Cam_22", 72.6, (-4, -3.0, 2.6), "H_Mask", 30, T)                              # back: it turns and follows
 cam("Cam_23", 78.6, (330, -110, 40), (260, -30, 0), 22)                           # wide: it follows far behind
