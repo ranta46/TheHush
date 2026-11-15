@@ -246,10 +246,10 @@ for hm, lt, td in RLAMP:
 # the lanterns: appear in the wagon (23.6), light up (24.4-26), go up one by one (26-36) and drift north on the wind
 for o in (CRATES,):
     o.hide_render = False; o.keyframe_insert("hide_render", frame=1); o.hide_render = True; o.keyframe_insert("hide_render", frame=F(23.6))
-LM = [newM(f"S_LanM{k}", (1, 0.55, 0.2), emit=0) for k in range(3)]
+LM = [newM(f"S_LanM{k}", (1, 0.28, 0.04), emit=0) for k in range(3)]   # warm gold (was blown white at emit 9)
 for k, m in enumerate(LM):
     s = m.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
-    for t, e in ((0, 0), (24.4 + k * 0.5, 0), (24.9 + k * 0.5, 9)): s.default_value = e; s.keyframe_insert("default_value", frame=F(t))
+    for t, e in ((0, 0), (24.4 + k * 0.5, 0), (24.9 + k * 0.5, 1.2)): s.default_value = e; s.keyframe_insert("default_value", frame=F(t))
 WX = MX - 1.85                                                           # wagon centre (world) while stopped
 LC = empty("S_LanternC", (WX, 0, 1))
 for t, p in ((0, (WX, 0, 1)), (26, (WX, 0, 1.5)), (36, (WX - 1, 6, 16)), (46, (WX - 2, 12, 30)), (56, (WX - 4, 20, 42)),
@@ -272,7 +272,7 @@ for i in range(NL):
     lin(o)
 LGLOW = light("S_LanternGlow", "POINT", 0, (1, 0.6, 0.3), (0, 0, 0)); LGLOW.parent = LC; LGLOW.location = (0, 0, 2)
 LGLOW.data.shadow_soft_size = 4.0
-for t, e in ((0, 0), (24.4, 0), (26.0, 2500), (46, 4000), (70, 4000), (90, 2000)): LGLOW.data.energy = e; LGLOW.data.keyframe_insert("energy", frame=F(t))
+for t, e in ((0, 0), (24.4, 0), (26.0, 875), (46, 1400), (70, 1400), (90, 700)): LGLOW.data.energy = e; LGLOW.data.keyframe_insert("energy", frame=F(t))
 # the one that comes back: rises with the others, drifts down and lands on the stack (55.4), rides it, blows off (63)
 LB = mk("S_LanBack", lanmesh(1.1), LM[0])
 LB.hide_render = True; LB.keyframe_insert("hide_render", frame=1); LB.hide_render = False; LB.keyframe_insert("hide_render", frame=F(23.6))
