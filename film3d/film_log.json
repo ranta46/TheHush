@@ -339,7 +339,7 @@
   "title": "The Falls",
   "date_made": "2026-11-14",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "hook": "It stands at the water. Don't breathe.",
   "places": [
    "the river valley",
@@ -353,7 +353,15 @@
   "video": "gloamrun/films/gloamrun_film16_16x9.mp4",
   "poster": "gloamrun/films/gloamrun_film16_poster.jpg",
   "duration": 108.0,
-  "finished": "2026-11-14 15:55 JST (render done 15:00; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 22.5 = Hush + Rook + train; 108 s with cold open + end card)"
+  "finished": "2026-11-14 15:55 JST (render done 15:00; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 22.5 = Hush + Rook + train; 108 s with cold open + end card)",
+  "posted": "2026-11-15 20:33 JST",
+  "youtube_post_id": 428794645,
+  "facebook_post_id": 428794664,
+  "tiktok_post_id": 428794690,
+  "instagram_post_id": 428794721,
+  "threads_post_id": 428794742,
+  "bluesky_post_id": 428794765,
+  "pinterest_post_id": 428794792
  },
  {
   "film_no": 17,

@@ -66,5 +66,20 @@
   },
   "cover": "poster as TikTok/IG cover",
   "hook": "It's looking right at us. Don't move. (vault hook test, first)"
+ },
+ {
+  "film_no": 6,
+  "title": "The Lift Bridge",
+  "scheduled": "2026-11-16 12:33 JST",
+  "logged": "2026-11-15 20:16 JST",
+  "post_ids": {
+   "tiktok": 428795133,
+   "instagram": 428795156,
+   "threads": 428795172,
+   "bluesky": 428795183,
+   "pinterest": 428795320
+  },
+  "cover": "poster as TikTok/IG cover",
+  "hook": "It ate our lights. Don't move. (vault hook test)"
  }
 ]
