@@ -354,5 +354,24 @@
   "poster": "gloamrun/films/gloamrun_film16_poster.jpg",
   "duration": 108.0,
   "finished": "2026-11-14 15:55 JST (render done 15:00; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 22.5 = Hush + Rook + train; 108 s with cold open + end card)"
+ },
+ {
+  "film_no": 17,
+  "folder": "films/film14",
+  "title": "The Sky Lanterns",
+  "date_made": "2026-11-15",
+  "frames": 2400,
+  "status": "built",
+  "hook": "It stands over us. Don't move.",
+  "places": [
+   "the high meadow with stone walls",
+   "the lantern wagon on the meadow",
+   "the old stone viaduct over the river valley",
+   "Lantern Town and station"
+  ],
+  "clever_move": "The Hush is faster over the meadow, so Rook stops, lights every festival lantern in the wagon and lets them all go, then puts out every light; the Hush can't fly and walks under the thousand little lights looking up.",
+  "fear": "It stands right over the dark train, looking up at the lanterns. '...Don't move. Not a sound.'",
+  "surprise": "One lantern comes back down and lands on the stack; it looks down at us. Lights on, full steam over the old viaduct to Lantern Town; it follows (it will be back).",
+  "built": "2026-11-15 10:50 JST: hush_film14.blend built and saved (PC C:\\Users\\81803\\TremenFilm\\hush\\film14). Preview renders came out BLACK in 0.1 s (GPU broken state) -> stopped, render NOT started. Next PC run: after Blender restart, open hush_film14.blend, preview 10-14 frames, fix, then start the timer render (END 2400) and set status 'rendering'. Do NOT make a new film number for this."
  }
 ]

@@ -1,0 +1,20 @@
+{"film_no": 17, "title": "The Sky Lanterns", "poster_t": 57.0, "cold_open": [50.2, 53.2], "hook": "It stands over us. Don't move.",
+ "synopsis": "The Hush is faster over the high meadow. The wagon is full of lanterns for Lantern Town, and Rook lets them all go.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.6, 3.0, "The lamps went out. It's here! Full steam!"],
+  [6.0, 8.4, "It's coming over the hill. Hold the bar!"],
+  [12.4, 14.8, "It's gaining on us! Come on, old girl!"],
+  [18.4, 20.8, "The festival lanterns! I have an idea."],
+  [23.8, 26.2, "Light them all. Let them go!"],
+  [30.0, 32.4, "Lights off. Not a sound."],
+  [36.4, 38.8, "Shine bright, little lights. Go high!"],
+  [41.0, 43.4, "It can't fly. It can't reach them."],
+  [46.0, 48.4, "It's right over us."],
+  [50.4, 52.8, "...Don't move. Not a sound."],
+  [56.4, 58.8, "Oh no. One came back."],
+  [59.6, 62.0, "It sees us! Lights on! Full steam!"],
+  [76.6, 79.0, "Over the old bridge! Go, go!"],
+  [88.4, 90.8, "Lantern Town! Sorry, no lanterns this year."],
+  [93.4, 96.4, "It will be back. Hold the bar."]
+ ]}
