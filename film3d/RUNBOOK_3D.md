@@ -80,3 +80,6 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   by 1.0 s) names the danger (e.g. "The lamps went out. It's here!"), and the Hush is on screen by 5 s of the film itself
   (was 10 s). The calm "Next stop" beat moves to the end or goes. From Film 17 (Film 16 was made before this). Judge on
   IG avg watch + 3 s skip of films 17-19 vs films 12-16 (IG 8.9-16.9 s / 40-55 %) and YouTube retention when rows return.
+- 2026-11-15: back link (description text): YouTube description and Facebook post text get one line "Last film: <youtube_url of
+  the newest posted film in film_log>" right after the synopsis (before "Play the ride free"). Only new films (not vault).
+  From Film 17. Judge on YouTube views of films 17-19 vs films 11-16 at the same age; roll back if not better.

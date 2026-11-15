@@ -1,0 +1,275 @@
+{
+ "date": "2026-11-15",
+ "brand": 7473995,
+ "fetched": "2026-11-15 20:20 JST",
+ "youtube_videos": [
+  {
+   "film": 1,
+   "views": 160,
+   "avg_view_s": 28,
+   "len_s": 131
+  },
+  {
+   "film": 2,
+   "views": 42,
+   "avg_view_s": 15,
+   "len_s": 105
+  },
+  {
+   "film": 3,
+   "views": 79,
+   "avg_view_s": 18,
+   "len_s": 105
+  },
+  {
+   "film": 4,
+   "views": 50,
+   "avg_view_s": 19,
+   "len_s": 105,
+   "likes": 1,
+   "comments": 1
+  },
+  {
+   "film": 5,
+   "views": 12,
+   "avg_view_s": 20,
+   "len_s": 105,
+   "likes": 1
+  },
+  {
+   "film": 6,
+   "views": 23,
+   "avg_view_s": 22,
+   "len_s": 105
+  },
+  {
+   "film": 7,
+   "views": 70,
+   "avg_view_s": 25,
+   "len_s": 105
+  },
+  {
+   "film": 8,
+   "views": 49,
+   "avg_view_s": 29,
+   "len_s": 108,
+   "shares": 1,
+   "cold_open": true
+  },
+  {
+   "film": 9,
+   "views": 24,
+   "avg_view_s": 32,
+   "len_s": 108,
+   "likes": 1,
+   "cold_open": true
+  },
+  {
+   "film": 10,
+   "views": 25,
+   "avg_view_s": 31,
+   "len_s": 108,
+   "cold_open": true
+  },
+  {
+   "film": 11,
+   "views": 63,
+   "avg_view_s": 18,
+   "len_s": 108,
+   "cold_open": true,
+   "note": "first row, 5 d"
+  }
+ ],
+ "youtube_no_rows": [
+  12,
+  14,
+  16,
+  "2D 13,15"
+ ],
+ "youtube_shorts_chatgpt_ref": {
+  "Ep.27": 250,
+  "Ep.28": 1243,
+  "Ep.29": 1279,
+  "Ep.30": 5
+ },
+ "followers": {
+  "youtube": 51,
+  "tiktok": 36,
+  "instagram": "null"
+ },
+ "tiktok": [
+  {
+   "film": 11,
+   "views": 443,
+   "likes": 24,
+   "age_days": 5
+  },
+  {
+   "film": 1,
+   "vault": true,
+   "views": 310,
+   "likes": 4,
+   "age_days": 4.4
+  },
+  {
+   "film": 13,
+   "kind": "2d",
+   "hook": true,
+   "views": 429,
+   "likes": 12,
+   "shares": 1,
+   "age_days": 4
+  },
+  {
+   "film": 2,
+   "vault": true,
+   "views": 439,
+   "likes": 14,
+   "age_days": 3.4
+  },
+  {
+   "film": 12,
+   "hook": true,
+   "views": 450,
+   "likes": 26,
+   "age_days": 3
+  },
+  {
+   "film": 3,
+   "vault": true,
+   "views": 408,
+   "likes": 23,
+   "age_days": 2.3
+  },
+  {
+   "film": 15,
+   "kind": "2d",
+   "hook": true,
+   "cover": true,
+   "views": 431,
+   "likes": 13,
+   "comments": 1,
+   "age_days": 2
+  },
+  {
+   "film": 4,
+   "vault": true,
+   "cover": true,
+   "views": 336,
+   "likes": 7,
+   "age_days": 1.3
+  },
+  {
+   "film": 14,
+   "hook": true,
+   "cover": true,
+   "views": 51,
+   "likes": 1,
+   "comments": 1,
+   "age_days": 1
+  },
+  {
+   "film": 5,
+   "vault": true,
+   "vault_hook": true,
+   "note": "no row yet (8 h)"
+  }
+ ],
+ "instagram_reels": [
+  {
+   "film": 11,
+   "views": 127,
+   "avg_watch_s": 10.7,
+   "skip3s_pct": 44.7,
+   "likes": 2
+  },
+  {
+   "film": 1,
+   "vault": true,
+   "views": 109,
+   "avg_watch_s": 6.5,
+   "skip3s_pct": 72.8,
+   "likes": 1
+  },
+  {
+   "film": 13,
+   "hook": true,
+   "views": 121,
+   "avg_watch_s": 16.9,
+   "skip3s_pct": 54.9,
+   "likes": 3
+  },
+  {
+   "film": 2,
+   "vault": true,
+   "views": 110,
+   "avg_watch_s": 8.8,
+   "skip3s_pct": 58.3
+  },
+  {
+   "film": 12,
+   "hook": true,
+   "views": 129,
+   "avg_watch_s": 15.0,
+   "skip3s_pct": 39.8,
+   "likes": 2
+  },
+  {
+   "film": 3,
+   "vault": true,
+   "views": 112,
+   "avg_watch_s": 5.8,
+   "skip3s_pct": 68.7,
+   "likes": 2
+  },
+  {
+   "film": 15,
+   "hook": true,
+   "cover": true,
+   "views": 115,
+   "avg_watch_s": 12.3,
+   "skip3s_pct": 57.8,
+   "likes": 2
+  },
+  {
+   "film": 4,
+   "vault": true,
+   "cover": true,
+   "views": 115,
+   "avg_watch_s": 7.6,
+   "skip3s_pct": 65.7,
+   "likes": 1
+  },
+  {
+   "film": 14,
+   "hook": true,
+   "cover": true,
+   "views": 66,
+   "avg_watch_s": 12.6,
+   "skip3s_pct": 52.6,
+   "age_days": 1
+  },
+  {
+   "film": 5,
+   "vault": true,
+   "vault_hook": true,
+   "note": "no row yet"
+  }
+ ],
+ "threads": "not fetched (metrics null in past runs)",
+ "bluesky": "not fetched (~0)",
+ "facebook": "no film rows",
+ "pinterest": "image pins, not fetched",
+ "new_post_today": {
+  "film": 16,
+  "title": "The Falls",
+  "networks": 7,
+  "time": "2026-11-15 20:33 JST"
+ },
+ "vault_scheduled": {
+  "film": 6,
+  "title": "The Lift Bridge",
+  "time": "2026-11-16 12:33 JST",
+  "networks": 5
+ }
+}

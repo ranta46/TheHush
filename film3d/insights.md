@@ -1,5 +1,21 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-15 (Film 16 The Falls, 3D, posted 20:33 on 7 networks; vault Film 6 set for 11-16 12:33)
+| Film | TikTok views / likes (age) | IG views / avg watch (s) / 3 s skip | YT views / avg (s) / ret. |
+|---|---|---|---|
+| 11 The Cliff Lift (no hook) | 443 / 24 (5 d) | 127 / 10.7 / 45 % | 63 / 18 / 17 % (first row) |
+| 12 Round Hill (hook) | 450 / 26 (3 d) | 129 / 15.0 / 40 % | no row |
+| 13 The Water Tower (2D, hook) | 429 / 12 (4 d) | 121 / 16.9 / 55 % | no row |
+| 15 The Firefly Wood (2D, hook, cover) | 431 / 13 (2 d) | 115 / 12.3 / 58 % | no row |
+| 14 The Snow Pass (hook, cover) | 51 / 1 (1 d) | 66 / 12.6 / 53 % | no row |
+| vault 3 The Last Car | 408 / 23 (2.3 d) | 112 / 5.8 / 69 % | - |
+| vault 4 The Echo Canyon (cover) | 336 / 7 (1.3 d) | 115 / 7.6 / 66 % | - |
+YT for comparison: films 8-10 (cold open) 24-49 views, 29-32 s (27-30 %); ChatGPT shorts ~1250. Followers: YT 51 (flat), TikTok 36, IG n/a.
+- TikTok is a flat ~430-450 per film by day 2, new or vault, hook or cover. Day 1 is always ~50, so the jump happens on day 2. The cover test is neutral so far (Film 15: 431 TikTok / 115 IG vs 429-450 / 121-129).
+- New films hold IG viewers ~2x longer than vault posts (12-17 s vs 6-9 s). Vault 4 (no hook) 7.6 s; vault 5 is the first with a hook line, no row yet.
+- YouTube finally gave a Film 11 row: 63 views, but only 18 s (17 %), worse than films 8-10. YouTube is still the weakest network and nothing on it points viewers to the other films.
+- Change (description text, posting run, from Film 17): YouTube description and Facebook text get a line "Last film: <YouTube URL of the previous film>" after the synopsis (so one view can lead to the next). Does not touch the TikTok/IG tests. Judge on YouTube views of films 17-19 vs films 11-16 at the same age when rows come; roll back if not better.
+
 ## 2026-11-14 (Film 14 The Snow Pass, 3D, posted 20:33 on 7 networks; vault Film 5 set for 11-15 12:33)
 | Film | TikTok views / likes (age) | IG views / avg watch (s) / ret. / 3 s skip |
 |---|---|---|
