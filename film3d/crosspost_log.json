@@ -81,5 +81,20 @@
   },
   "cover": "poster as TikTok/IG cover",
   "hook": "It ate our lights. Don't move. (vault hook test)"
+ },
+ {
+  "film_no": 7,
+  "title": "The Turntable",
+  "scheduled": "2026-11-17 12:33 JST",
+  "logged": "2026-11-16 20:20 JST",
+  "post_ids": {
+   "tiktok": 429911762,
+   "instagram": 429911804,
+   "threads": 429911864,
+   "bluesky": 429911913,
+   "pinterest": 429911943
+  },
+  "cover": "poster as TikTok/IG cover",
+  "hook": "It's right over us. Not a sound. (vault hook test)"
  }
 ]

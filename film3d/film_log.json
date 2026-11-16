@@ -371,7 +371,7 @@
   "title": "The Sky Lanterns",
   "date_made": "2026-11-15",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "hook": "It stands over us. Don't move.",
   "places": [
    "the high meadow with stone walls",
@@ -387,7 +387,15 @@
   "video": "gloamrun/films/gloamrun_film17_16x9.mp4",
   "poster": "gloamrun/films/gloamrun_film17_poster.jpg",
   "duration": 108.0,
-  "finished": "2026-11-16 10:55 JST (render done 2026-11-16 01:06; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 16.5 = Hush + Rook + train; 108 s with cold open + end card)"
+  "finished": "2026-11-16 10:55 JST (render done 2026-11-16 01:06; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 16.5 = Hush + Rook + train; 108 s with cold open + end card)",
+  "posted": "2026-11-16 20:33 JST",
+  "youtube_post_id": 429911103,
+  "facebook_post_id": 429911135,
+  "tiktok_post_id": 429911156,
+  "instagram_post_id": 429911182,
+  "threads_post_id": 429911212,
+  "bluesky_post_id": 429911233,
+  "pinterest_post_id": 429911254
  },
  {
   "film_no": 18,
