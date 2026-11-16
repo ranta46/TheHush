@@ -91,7 +91,7 @@ for n in ("R_KeyLoop-1", "R_KeyLoop1"):
 from mathutils import Matrix
 rr = random.Random(1818)
 X0 = -230.0                                    # the line runs straight east along y = 0 (x -230 .. 480)
-WA, WB = 60.0, 300.0                           # the wheat field along the line
+WA, WB = 60.0, 265.0                           # the wheat field along the line
 WY = 1.75                                      # wheat starts this far from the line centre (gap for the train)
 WH = 2.5                                       # wheat height (the train is lower)
 def ss(a, b, v):
@@ -119,8 +119,8 @@ for i in range(len(xs) - 1):
         if abs(vv[i][j].co.z - vv[i + 1][j + 1].co.z) > 2.0: f.material_index = 1
 GO = mk("S_DownsGround", bm, grassM, smooth=True); GO.data.materials.append(rockM)
 # the wheat: a golden top surface (two strips beside the line) + stalk clumps at the edges and along the line, all waving in the wind
-wheatM = newM("S_Wheat", (0.46, 0.32, 0.1), emit=0.06, rough=0.9)
-wheat2 = newM("S_Wheat2", (0.56, 0.4, 0.13), emit=0.08, rough=0.9)
+wheatM = newM("S_Wheat", (0.2, 0.135, 0.045), emit=0.015, rough=0.9)
+wheat2 = newM("S_Wheat2", (0.27, 0.19, 0.06), emit=0.02, rough=0.9)
 WAVE = []
 def wavemod(o):
     m = o.modifiers.new("Wind", "WAVE"); m.use_x = True; m.use_y = True; m.use_cyclic = True
@@ -144,7 +144,7 @@ for sd in (-1, 1):
     o = mk(f"S_WheatTop{sd}", bm, wheatM, smooth=True); wavemod(o)
 bm = bmesh.new()
 def stalk(x, y, h):
-    g = bmesh.ops.create_cone(bm, cap_ends=False, cap_tris=False, segments=5, radius1=0.16, radius2=0.05, depth=h)["verts"]
+    g = bmesh.ops.create_cone(bm, cap_ends=False, cap_tris=False, segments=5, radius1=0.07, radius2=0.025, depth=h)["verts"]
     bmesh.ops.rotate(bm, cent=(0, 0, 0), matrix=Matrix.Rotation(rr.uniform(-0.12, 0.12), 3, "X") @ Matrix.Rotation(rr.uniform(-0.12, 0.12), 3, "Y"), verts=g)
     bmesh.ops.translate(bm, vec=(x, y, gh(x, y) + h / 2), verts=g)
 n = 0
@@ -300,8 +300,8 @@ HP_ = [(0, -280, -10, -40), (2.4, -280, -10, -40), (3.4, -280, -10, -14), (4.6, 
 for t, x, y, dz in HP_:
     key(H, "location", F(t), Vector((x, y, gh(x, y) + dz))); key(H, "scale", F(t), Vector((2.4, 2.4, 2.4)))
 SEARCH = empty("S_Search", (80, 30, 2))
-for t, p in ((0, (80, 30, 2)), (26, (90, 30, 2)), (31, (150, -30, 2)), (36, (70, 50, 2)), (41, (140, 20, 2)), (46, (130, -25, 2)),
-             (51, (95, -40, 2)), (55.6, (150, 5, 2)), (100, (150, 5, 2))):
+for t, p in ((0, (80, 30, 2)), (26, (90, 30, 2)), (31, (150, -30, 2)), (36, (70, 50, 2)), (41, (140, 20, 2)), (45, (125, -15, 1)),
+             (47.5, (110, 0, 1)), (51, (101, 1, 1)), (55.6, (107, 0, 1)), (100, (150, 5, 2))):
     key(SEARCH, "location", F(t), Vector(p))
 d1 = H.constraints.new("LOCKED_TRACK"); d1.target = T; d1.track_axis = "TRACK_NEGATIVE_Y"; d1.lock_axis = "LOCK_Z"
 d2 = H.constraints.new("LOCKED_TRACK"); d2.target = SEARCH; d2.track_axis = "TRACK_NEGATIVE_Y"; d2.lock_axis = "LOCK_Z"
@@ -355,22 +355,22 @@ cam("Cam_03", 6.0, (-40, -70, 30), (-150, 0, 8), 22)                            
 cam("Cam_04", 10.0, (-4, 3.0, 2.8), "H_Mask", 28, T)                               # from the train: it is gaining
 cam("Cam_05", 15.0, (14, -5, 1.4), (0, 0, 1.6), 30, T)                            # front: the train runs, the wheat ahead
 cam("Cam_06", 17.6, (-3, -1.5, 2.8), (8, 0, 1), 26, T)                            # behind Rook: the wheat field! lights off
-cam("Cam_07", 20.6, (76, -16, 2.0), (58, 0, 1.6), 26)                             # low at the field edge: the dark train goes into the wheat
+cam("Cam_07", 20.6, (54, -14, 3.6), (68, 0, 1.2), 26)                             # low at the field edge: the dark train goes into the wheat
 cam("Cam_08", 23.4, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 30, T)                      # over the wheat: Rook down low in it
 cam("Cam_09", 27.0, (30, -70, 28), (80, -5, 2), 24)                               # high wide: the wheat sea, the dark line, the Hush at the edge
 cam("Cam_10", 30.4, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 30, T)                      # Rook: when the wind blows, we move
 cam("Cam_11", 33.6, (90, -1.2, 3.0), "H_Mask", 24)                                # over the wheat tops: it wades into the field
-cam("Cam_12", 35.8, (125, -45, 16), (95, 0, 1), 26)                               # high side: the wind waves, the dark train creeps
+cam("Cam_12", 35.8, (125, 40, 16), (95, 0, 1), 26)                               # high side: the wind waves, the dark train creeps
 cam("Cam_13", 40.2, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 30, T)                      # Rook: stop, wait for the wind
 cam("Cam_14", 42.4, (125, -38, 6), "H_Mask", 30)                                  # it searches the field (the second gust)
 cam("Cam_15", 45.6, (109, 0.9, 1.3), "H_Mask", 20)                                # low behind the train between the wheat: it towers over us
 cam("Cam_16", 49.6, (0.2, 1.5, 0.9), "H_Mask", 20, T)                             # low behind Rook: its face right over us (cold open)
-cam("Cam_17", 53.4, (7.5, -3.5, 3.4), (SX - 0.9, 0, 2.2), 32, T)                  # the whistle peeps: a little puff
+cam("Cam_17", 53.4, (7.5, -3.0, 4.4), (SX - 0.9, 0, 2.2), 32, T)                  # the whistle peeps: a little puff
 cam("Cam_18", 56.4, (114, 18, 14), "H_Mask", 45)                                  # its face turns down to us
 cam("Cam_19", 59.0, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 28, T)                      # Rook: it heard us! lights on! full steam!
-cam("Cam_20", 62.4, (8, -9, 3.2), (0, 0, 1.4), 26, T)                             # side: full steam through the wheat
+cam("Cam_20", 62.4, (9, -12, 5.0), (0, 0, 1.4), 26, T)                             # side: full steam through the wheat
 cam("Cam_21", 66.0, (-4, 3.0, 3.2), "H_Mask", 30, T)                               # back: it follows through the wheat
-cam("Cam_22", 70.0, (330, -40, 12), (285, 0, 1), 24)                              # wide: the end of the field, the train bursts out
+cam("Cam_22", 70.0, (290, -40, 12), (240, 0, 1), 24)                              # wide: the end of the field, the train bursts out
 cam("Cam_23", 76.2, (-3, -1.5, 2.8), (8, 0, 1), 26, T)                            # behind Rook: out of the wheat
 cam("Cam_24", 80.0, (360, -30, 4), (300, -15, 8), 24)                             # low: it comes out of the wheat behind us
 cam("Cam_25", 84.0, (-20, -14, 8), (30, 0, 2), 24, T)                             # Harvest Town ahead
