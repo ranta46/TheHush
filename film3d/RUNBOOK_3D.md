@@ -83,3 +83,7 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
 - 2026-11-15: back link (description text): YouTube description and Facebook post text get one line "Last film: <youtube_url of
   the newest posted film in film_log>" right after the synopsis (before "Play the ride free"). Only new films (not vault).
   From Film 17. Judge on YouTube views of films 17-19 vs films 11-16 at the same age; roll back if not better.
+- 2026-11-16: cover test (14-16) CLOSED, KEEP (neutral on TikTok/IG views, no harm). New: vault Pinterest pins link to the film's own
+  YouTube video: pinLink = that film's YouTube watch URL (film_log "youtube_url", or getScheduledPosts on its posted date ->
+  youtube publicUrl) and the pin text gets "Watch the full film: <url>" right before "Play the ride free". New-film pins keep
+  the ride link. Starts with vault Film 7 (11-17). Judge on YouTube views of vault films 7-10 (3 days after vs before).

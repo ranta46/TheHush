@@ -1,5 +1,22 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-16 (Film 17 The Sky Lanterns, 3D, posted 20:33 on 7 networks; vault Film 7 set for 11-17 12:33)
+| Film | TikTok views / likes | IG views / avg watch (s) / ret. / 3 s skip |
+|---|---|---|
+| 11 The Cliff Lift (no hook) | 444 / 24 | 127 / 10.7 / 10 % / 45 % |
+| 12 Round Hill (hook) | 450 / 26 | 130 / 14.8 / 14 % / 40 % |
+| 13 The Water Tower (2D, hook) | 429 / 12 | 122 / 16.8 / 16 % / 54 % |
+| 14 The Snow Pass (hook, cover) | 435 / 7 | 119 / 15.6 / 14 % / 50 % |
+| 15 The Firefly Wood (2D, hook, cover) | 434 / 13 | 116 / 12.3 / 11 % / 57 % |
+| 16 The Falls (day 1, not compared) | 53 / 1 | 125 / 9.5 / 9 % / 45 % |
+| vault 1-4 (no hook) | 311-439 / 4-23 | 109-116 / 6.3-8.7 / 6-8 % / 59-73 % |
+| vault 5 (vault hook, 1.4 d) | 163 / 2 | 116 / 10.7 / 10 % / 56 % |
+YouTube: Metricool's video list is still frozen at films 1-11 (Film 7 = 70 views, best 3D film there). Subscribers 51 -> 50.
+- Cover test (films 14-15 vs 11-13): TikTok 434-435 vs 429-450, IG 116-119 vs 122-130. Neutral, no harm: KEEP the poster cover (it looks better on the grid) and close the test.
+- Vault hook works on IG holding: vault 5 = 10.7 s avg / 56 % skip vs 6.3-8.7 s / 59-73 % for vault 1-4 (first of 3; judge on 5-7). Its TikTok is slower so far (163 at 1.4 d vs ~400) - check on day 2.
+- YouTube is still the weak spot and the only place the long films earn watch time; all other networks send nobody there (TikTok/IG links are not clickable).
+- Change (description text / link, posting run, vault posts only): the vault Pinterest pin links to that film's own YouTube video (pinLink = its YouTube URL, plus a line "Watch the full film: <url>" before "Play the ride free"). Applied now to tomorrow's vault Film 7 pin. New-film pins keep the ride link. Judge on YouTube views of vault films 7-10 in the 3 days after their vault day vs the 3 days before; roll back if no change.
+
 ## 2026-11-15 (Film 16 The Falls, 3D, posted 20:33 on 7 networks; vault Film 6 set for 11-16 12:33)
 | Film | TikTok views / likes (age) | IG views / avg watch (s) / 3 s skip | YT views / avg (s) / ret. |
 |---|---|---|---|

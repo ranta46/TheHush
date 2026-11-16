@@ -1,0 +1,188 @@
+{
+ "date": "2026-11-16",
+ "brand": 7473995,
+ "fetched": "2026-11-16 20:20 JST",
+ "youtube_videos": "unchanged since 11-09 list (films 1-11 only; Film 7 = 70 views / 25 s, Film 11 = 63 / 18 s); no rows for 12+",
+ "followers": {
+  "youtube": 50
+ },
+ "tiktok": [
+  {
+   "film": 11,
+   "views": 444,
+   "likes": 24
+  },
+  {
+   "film": 1,
+   "vault": true,
+   "views": 311,
+   "likes": 4
+  },
+  {
+   "film": 13,
+   "kind": "2d",
+   "hook": true,
+   "views": 429,
+   "likes": 12,
+   "shares": 1
+  },
+  {
+   "film": 2,
+   "vault": true,
+   "views": 439,
+   "likes": 14
+  },
+  {
+   "film": 12,
+   "hook": true,
+   "views": 450,
+   "likes": 26
+  },
+  {
+   "film": 3,
+   "vault": true,
+   "views": 408,
+   "likes": 23
+  },
+  {
+   "film": 15,
+   "kind": "2d",
+   "hook": true,
+   "cover": true,
+   "views": 434,
+   "likes": 13,
+   "comments": 1
+  },
+  {
+   "film": 4,
+   "vault": true,
+   "cover": true,
+   "views": 423,
+   "likes": 13
+  },
+  {
+   "film": 14,
+   "hook": true,
+   "cover": true,
+   "views": 435,
+   "likes": 7,
+   "comments": 1
+  },
+  {
+   "film": 5,
+   "vault": true,
+   "vault_hook": true,
+   "cover": true,
+   "views": 163,
+   "likes": 2,
+   "age_days": 1.4
+  },
+  {
+   "film": 16,
+   "hook": true,
+   "cover": true,
+   "views": 53,
+   "likes": 1,
+   "age_days": 1
+  },
+  {
+   "film": 6,
+   "vault": true,
+   "note": "no row yet (8 h)"
+  }
+ ],
+ "instagram_reels": [
+  {
+   "film": 11,
+   "views": 127,
+   "avg_watch_s": 10.7,
+   "skip3s_pct": 44.7
+  },
+  {
+   "film": 1,
+   "vault": true,
+   "views": 109,
+   "avg_watch_s": 6.5,
+   "skip3s_pct": 72.8
+  },
+  {
+   "film": 13,
+   "views": 122,
+   "avg_watch_s": 16.8,
+   "skip3s_pct": 54.4
+  },
+  {
+   "film": 2,
+   "vault": true,
+   "views": 111,
+   "avg_watch_s": 8.7,
+   "skip3s_pct": 58.7
+  },
+  {
+   "film": 12,
+   "views": 130,
+   "avg_watch_s": 14.8,
+   "skip3s_pct": 40.4
+  },
+  {
+   "film": 3,
+   "vault": true,
+   "views": 113,
+   "avg_watch_s": 6.3,
+   "skip3s_pct": 68.0
+  },
+  {
+   "film": 15,
+   "views": 116,
+   "avg_watch_s": 12.3,
+   "skip3s_pct": 57.3
+  },
+  {
+   "film": 4,
+   "vault": true,
+   "views": 116,
+   "avg_watch_s": 8.4,
+   "skip3s_pct": 65.1
+  },
+  {
+   "film": 14,
+   "views": 119,
+   "avg_watch_s": 15.6,
+   "skip3s_pct": 49.5,
+   "likes": 4
+  },
+  {
+   "film": 5,
+   "vault": true,
+   "vault_hook": true,
+   "views": 116,
+   "avg_watch_s": 10.7,
+   "skip3s_pct": 56.2,
+   "likes": 1
+  },
+  {
+   "film": 16,
+   "views": 125,
+   "avg_watch_s": 9.5,
+   "skip3s_pct": 44.7,
+   "age_days": 1
+  }
+ ],
+ "threads": "not fetched (metrics null)",
+ "bluesky": "not fetched (~0)",
+ "facebook": "no film rows",
+ "pinterest": "not fetched",
+ "new_post_today": {
+  "film": 17,
+  "title": "The Sky Lanterns",
+  "networks": 7,
+  "time": "2026-11-16 20:33 JST"
+ },
+ "vault_scheduled": {
+  "film": 7,
+  "title": "The Turntable",
+  "time": "2026-11-17 12:33 JST",
+  "networks": 5,
+  "pinLink": "https://www.youtube.com/watch?v=z2lToW1qnEo"
+ }
+}
