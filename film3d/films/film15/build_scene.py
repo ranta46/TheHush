@@ -355,12 +355,12 @@ cam("Cam_03", 6.0, (-40, -70, 30), (-150, 0, 8), 22)                            
 cam("Cam_04", 10.0, (-4, 3.0, 2.8), "H_Mask", 28, T)                               # from the train: it is gaining
 cam("Cam_05", 15.0, (14, -5, 1.4), (0, 0, 1.6), 30, T)                            # front: the train runs, the wheat ahead
 cam("Cam_06", 17.6, (-3, -1.5, 2.8), (8, 0, 1), 26, T)                            # behind Rook: the wheat field! lights off
-cam("Cam_07", 20.6, (54, -14, 3.6), (68, 0, 1.2), 26)                             # low at the field edge: the dark train goes into the wheat
+cam("Cam_07", 20.6, (48, -3, 4.5), (78, 0, 1.0), 26)                             # low at the field edge: the dark train goes into the wheat
 cam("Cam_08", 23.4, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 30, T)                      # over the wheat: Rook down low in it
 cam("Cam_09", 27.0, (30, -70, 28), (80, -5, 2), 24)                               # high wide: the wheat sea, the dark line, the Hush at the edge
 cam("Cam_10", 30.4, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 30, T)                      # Rook: when the wind blows, we move
 cam("Cam_11", 33.6, (90, -1.2, 3.0), "H_Mask", 24)                                # over the wheat tops: it wades into the field
-cam("Cam_12", 35.8, (125, 40, 16), (95, 0, 1), 26)                               # high side: the wind waves, the dark train creeps
+cam("Cam_12", 35.8, (125, 35, 34), (98, -4, 4), 26)                               # high side: the wind waves, the dark train creeps
 cam("Cam_13", 40.2, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 30, T)                      # Rook: stop, wait for the wind
 cam("Cam_14", 42.4, (125, -38, 6), "H_Mask", 30)                                  # it searches the field (the second gust)
 cam("Cam_15", 45.6, (109, 0.9, 1.3), "H_Mask", 20)                                # low behind the train between the wheat: it towers over us
@@ -368,7 +368,7 @@ cam("Cam_16", 49.6, (0.2, 1.5, 0.9), "H_Mask", 20, T)                           
 cam("Cam_17", 53.4, (7.5, -3.0, 4.4), (SX - 0.9, 0, 2.2), 32, T)                  # the whistle peeps: a little puff
 cam("Cam_18", 56.4, (114, 18, 14), "H_Mask", 45)                                  # its face turns down to us
 cam("Cam_19", 59.0, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 28, T)                      # Rook: it heard us! lights on! full steam!
-cam("Cam_20", 62.4, (9, -12, 5.0), (0, 0, 1.4), 26, T)                             # side: full steam through the wheat
+cam("Cam_20", 62.4, (6, 8, 9), (0, 0, 1), 28, T)                             # side: full steam through the wheat
 cam("Cam_21", 66.0, (-4, 3.0, 3.2), "H_Mask", 30, T)                               # back: it follows through the wheat
 cam("Cam_22", 70.0, (290, -40, 12), (240, 0, 1), 24)                              # wide: the end of the field, the train bursts out
 cam("Cam_23", 76.2, (-3, -1.5, 2.8), (8, 0, 1), 26, T)                            # behind Rook: out of the wheat
