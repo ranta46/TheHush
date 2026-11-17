@@ -87,3 +87,8 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   YouTube video: pinLink = that film's YouTube watch URL (film_log "youtube_url", or getScheduledPosts on its posted date ->
   youtube publicUrl) and the pin text gets "Watch the full film: <url>" right before "Play the ride free". New-film pins keep
   the ride link. Starts with vault Film 7 (11-17). Judge on YouTube views of vault films 7-10 (3 days after vs before).
+- 2026-11-17: title hook test (12-14) CLOSED, KEEP (YouTube avg view 27-39 s vs 15-32 s for 5-11; Film 12 = 36 %, best ever). Vault hook
+  KEEP so far (IG 10.6-13.6 s vs 6.5-8.7 s). New (thumbnail/poster): when post3d.py makes the poster, burn the film.json "hook" onto it as
+  big easy text, 2 short lines, white with a dark outline, in a top corner, never over the Hush's face or Rook (still check it by eye).
+  Poster = YouTube thumbnail + TikTok/IG cover + Pinterest pin. From the next poster made (Film 19). If the poster was already made
+  without it, the posting run may add the text in the cloud before posting. Judge on YouTube views of films 19-21 vs 12-17 at the same age.

@@ -1,0 +1,287 @@
+{
+ "date": "2026-11-17",
+ "brand": 7473995,
+ "fetched": "2026-11-17 20:20 JST",
+ "youtube_videos": [
+  {
+   "film": 1,
+   "views": 161,
+   "avg_view_s": 28,
+   "likes": 0
+  },
+  {
+   "film": 2,
+   "views": 42,
+   "avg_view_s": 15,
+   "likes": 0
+  },
+  {
+   "film": 3,
+   "views": 80,
+   "avg_view_s": 19,
+   "likes": 0
+  },
+  {
+   "film": 4,
+   "views": 51,
+   "avg_view_s": 19,
+   "likes": 1
+  },
+  {
+   "film": 5,
+   "views": 14,
+   "avg_view_s": 23,
+   "likes": 1
+  },
+  {
+   "film": 6,
+   "views": 23,
+   "avg_view_s": 22,
+   "likes": 0
+  },
+  {
+   "film": 7,
+   "views": 71,
+   "avg_view_s": 24,
+   "likes": 0
+  },
+  {
+   "film": 8,
+   "views": 62,
+   "avg_view_s": 25,
+   "likes": 0
+  },
+  {
+   "film": 9,
+   "views": 25,
+   "avg_view_s": 32,
+   "likes": 1
+  },
+  {
+   "film": 10,
+   "views": 30,
+   "avg_view_s": 28,
+   "likes": 0
+  },
+  {
+   "film": 11,
+   "views": 74,
+   "avg_view_s": 17,
+   "likes": 0
+  },
+  {
+   "film": 12,
+   "views": 50,
+   "avg_view_s": 39,
+   "likes": 0
+  },
+  {
+   "film": 13,
+   "views": 32,
+   "avg_view_s": 28,
+   "likes": 0
+  },
+  {
+   "film": 15,
+   "views": 19,
+   "avg_view_s": 27,
+   "likes": 0
+  }
+ ],
+ "youtube_note": "rows returned for 12,13,15 (hook titles); none yet for 14,16,17. ChatGPT shorts Ep.28/29 ~1250 views.",
+ "followers": {
+  "youtube": 50
+ },
+ "tiktok": [
+  {
+   "film": 17,
+   "views": 78,
+   "likes": 2,
+   "comments": 1,
+   "age_days": 1
+  },
+  {
+   "film": 6,
+   "vault": true,
+   "views": 274,
+   "likes": 4,
+   "comments": 1
+  },
+  {
+   "film": 16,
+   "views": 346,
+   "likes": 11
+  },
+  {
+   "film": 5,
+   "vault": true,
+   "views": 202,
+   "likes": 4
+  },
+  {
+   "film": 14,
+   "views": 437,
+   "likes": 7,
+   "comments": 1
+  },
+  {
+   "film": 4,
+   "vault": true,
+   "views": 425,
+   "likes": 13
+  },
+  {
+   "film": 15,
+   "views": 435,
+   "likes": 13,
+   "comments": 1
+  },
+  {
+   "film": 3,
+   "vault": true,
+   "views": 409,
+   "likes": 23
+  },
+  {
+   "film": 12,
+   "views": 451,
+   "likes": 26
+  },
+  {
+   "film": 2,
+   "vault": true,
+   "views": 440,
+   "likes": 14
+  },
+  {
+   "film": 13,
+   "views": 430,
+   "likes": 12,
+   "shares": 1
+  },
+  {
+   "film": 1,
+   "vault": true,
+   "views": 312,
+   "likes": 4
+  },
+  {
+   "film": 11,
+   "views": 445,
+   "likes": 24
+  },
+  {
+   "film": 7,
+   "vault": true,
+   "note": "no row yet (8 h)"
+  }
+ ],
+ "instagram_reels": [
+  {
+   "film": 17,
+   "views": 114,
+   "likes": 3,
+   "avg_watch_s": 11.4,
+   "skip3s_pct": 49.5,
+   "age_days": 1
+  },
+  {
+   "film": 6,
+   "vault": true,
+   "views": 120,
+   "likes": 1,
+   "avg_watch_s": 13.6,
+   "skip3s_pct": 57.8
+  },
+  {
+   "film": 16,
+   "views": 128,
+   "avg_watch_s": 9.5,
+   "skip3s_pct": 45.2
+  },
+  {
+   "film": 5,
+   "vault": true,
+   "views": 121,
+   "likes": 1,
+   "avg_watch_s": 10.6,
+   "skip3s_pct": 57.0
+  },
+  {
+   "film": 14,
+   "views": 120,
+   "likes": 4,
+   "avg_watch_s": 15.5,
+   "skip3s_pct": 49.1
+  },
+  {
+   "film": 4,
+   "vault": true,
+   "views": 116,
+   "avg_watch_s": 8.4,
+   "skip3s_pct": 65.1
+  },
+  {
+   "film": 15,
+   "views": 116,
+   "avg_watch_s": 12.3,
+   "skip3s_pct": 57.3
+  },
+  {
+   "film": 3,
+   "vault": true,
+   "views": 113,
+   "avg_watch_s": 6.3,
+   "skip3s_pct": 68.0
+  },
+  {
+   "film": 12,
+   "views": 130,
+   "avg_watch_s": 14.8,
+   "skip3s_pct": 40.4
+  },
+  {
+   "film": 2,
+   "vault": true,
+   "views": 111,
+   "avg_watch_s": 8.7,
+   "skip3s_pct": 58.7
+  },
+  {
+   "film": 13,
+   "views": 122,
+   "avg_watch_s": 16.8,
+   "skip3s_pct": 54.4
+  },
+  {
+   "film": 1,
+   "vault": true,
+   "views": 109,
+   "avg_watch_s": 6.5,
+   "skip3s_pct": 72.8
+  },
+  {
+   "film": 11,
+   "views": 127,
+   "avg_watch_s": 10.7,
+   "skip3s_pct": 44.7
+  }
+ ],
+ "threads": "not fetched",
+ "bluesky": "not fetched (~0)",
+ "facebook": "no film rows",
+ "pinterest": "not fetched",
+ "new_post_today": {
+  "film": 18,
+  "title": "The Wheat Sea",
+  "networks": 7,
+  "time": "2026-11-17 20:33 JST"
+ },
+ "vault_scheduled": {
+  "film": 8,
+  "title": "The Long Hill",
+  "time": "2026-11-18 12:33 JST",
+  "networks": 5,
+  "pinLink": "https://www.youtube.com/watch?v=OyIhwCarcsc"
+ }
+}

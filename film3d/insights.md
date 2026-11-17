@@ -1,5 +1,22 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-17 (Film 18 The Wheat Sea, 3D, set for 20:33 on 7 networks; vault Film 8 set for 11-18 12:33)
+| Film | YT views / avg (s) / ret. | TikTok views / likes | IG views / avg watch (s) / 3 s skip |
+|---|---|---|---|
+| 5-11 (no hook) | 14-80 / 17-32 / 16-30 % | 11: 445 / 24 | 11: 127 / 10.7 / 45 % |
+| 12 Round Hill (title hook) | 50 / 39 / 36 % | 451 / 26 | 130 / 14.8 / 40 % |
+| 13 The Water Tower (2D, hook) | 32 / 28 | 430 / 12 | 122 / 16.8 / 54 % |
+| 15 The Firefly Wood (2D, hook) | 19 / 27 | 435 / 13 | 116 / 12.3 / 57 % |
+| 16 The Falls | no row | 346 / 11 | 128 / 9.5 / 45 % |
+| 17 The Sky Lanterns (no calm start, day 1) | no row | 78 / 2 | 114 / 11.4 / 50 % |
+| vault 1-4 (no hook) | - | 312-440 | 109-116 / 6.3-8.7 / 59-73 % |
+| vault 5-6 (vault hook) | - | 202 / 274 | 121-120 / 10.6-13.6 / 57-58 % |
+YouTube subscribers 50 (flat). YouTube rows came back for 12, 13, 15 (not 14, 16, 17).
+- Title hook (films 12-14 vs 5-11): YouTube views are in the same range (50/32 vs 14-80), but watch time is better: Film 12 = 39 s (36 %), the best of any film; hook films 27-39 s vs 15-32 s. KEEP (closed).
+- Vault hook (vault 5-7 vs vault 1-2): IG avg watch 10.6 / 13.6 s vs 6.5 / 8.7 s, 3 s skip 57 % vs 59-73 %. Clearly better on holding; KEEP (vault 7 will confirm). But TikTok reach on vault 5-6 is lower (202/274 vs 312-440): watch on day 3.
+- Film 17 (first "no calm start" film) day 1: IG 11.4 s / 50 % skip vs Film 16 day 1 9.5 s / 45 %; TikTok 78 vs ~50 usual day 1. Too early, keep running to Film 19.
+- Change (thumbnail/poster, PC run, from Film 19 poster or the next poster made): the poster gets the film's hook burned in as big easy text (2 short lines, white with dark outline, top-left or top-right, never over the Hush's face or Rook). The poster is the YouTube thumbnail and the TikTok/IG/Pinterest cover, and the hook already wins on YouTube watch time, so it should also win the click. Judge on YouTube views of films 19-21 vs films 12-17 at the same age; roll back if not better.
+
 ## 2026-11-16 (Film 17 The Sky Lanterns, 3D, posted 20:33 on 7 networks; vault Film 7 set for 11-17 12:33)
 | Film | TikTok views / likes | IG views / avg watch (s) / ret. / 3 s skip |
 |---|---|---|
