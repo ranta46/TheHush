@@ -1,0 +1,21 @@
+{"film_no": 19, "title": "The Long Shadow", "poster_t": 34.5, "cold_open": [50.2, 53.2], "hook": "Stay in its shadow. Don't move.",
+ "synopsis": "On the open salt flat there is nowhere to hide. Rook puts out every light and hides the dark train in the Hush's own long shadow.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.6, 3.0, "The lamps are going out. It's behind us!"],
+  [6.0, 8.4, "It's faster on the flat. Hold the bar!"],
+  [11.6, 14.0, "No hills. No trees. Nowhere to hide!"],
+  [16.6, 19.0, "Look! Its shadow. Long and black."],
+  [20.4, 22.8, "Lights off! Into its shadow!"],
+  [24.6, 27.4, "It looks for lights, not at its feet."],
+  [30.6, 33.0, "Slow now. Same speed as it."],
+  [36.4, 38.8, "Stay in the dark. Stay in it."],
+  [41.0, 43.0, "It stopped. Stop!"],
+  [46.0, 48.4, "It's right behind us."],
+  [50.4, 52.8, "...Don't move. Not a sound."],
+  [56.2, 58.4, "Oh no. Its shadow is moving!"],
+  [59.6, 62.0, "It sees us! Lights on! Full steam!"],
+  [76.6, 79.0, "Faster, old girl! Go, go!"],
+  [88.4, 90.8, "Salt Town! Hot soup for everyone!"],
+  [93.4, 96.4, "It will be back. Hold the bar."]
+ ]}

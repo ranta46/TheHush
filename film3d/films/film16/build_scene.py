@@ -303,7 +303,7 @@ cam("Cam_02", 2.6, (6, 2.2, 3.4), "H_Mask", 60, T)                              
 cam("Cam_03", 6.0, (-60, -85, 32), (-150, 0, 8), 22)                              # high wide: the flat, the train and the Hush behind
 cam("Cam_04", 10.0, (-4, 3.0, 2.8), "H_Mask", 28, T)                               # from the train: it is gaining
 cam("Cam_05", 13.0, (14, -5, 1.4), (0, 0, 1.6), 30, T)                            # front: nowhere to hide on the flat
-cam("Cam_06", 16.2, (-30, -75, 45), (-30, 0, 0), 22)                              # high: its long shadow on the salt, reaching for us
+cam("Cam_06", 16.2, (-20, -95, 55), (-40, 0, 3), 20)                              # high: its long shadow on the salt, reaching for us
 cam("Cam_07", 20.0, (-3, -1.5, 2.8), (8, 0, 1), 26, T)                            # behind Rook: lights off!
 cam("Cam_08", 23.0, (118, -30, 2.5), (60, 0, 8), 22)                              # low ahead: it comes, the dark train slides into its shadow
 cam("Cam_09", 27.0, (150, -95, 50), (105, 0, 3), 24)                              # high side: the shadow band over the dark train
@@ -314,7 +314,7 @@ cam("Cam_13", 40.2, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 30, T)                    
 cam("Cam_14", 42.8, (185, -42, 4), "H_Mask", 30)                                  # side low: it stands still, looking far
 cam("Cam_15", 45.6, (203, 1.4, 1.2), "H_Mask", 20)                                # low in front of the train: it towers over us
 cam("Cam_16", 49.6, (2.6, -2.2, 0.75), (-4.0, 0.4, 3.6), 18, T)                   # low beside Rook: its face right over us (cold open)
-cam("Cam_17", 54.6, (214, 22, 2.4), (236, 40, 3.5), 32)                            # the old salt works lamp flickers on by itself
+cam("Cam_17", 54.6, (226, 30, 2.6), (236, 40, 3.4), 35)                            # the old salt works lamp flickers on by itself
 cam("Cam_18", 55.8, (150, -80, 34), (180, 6, 3), 26)                              # high: it steps aside, its shadow slides off us
 cam("Cam_19", 58.4, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 28, T)                      # Rook in the moonlight: it sees us!
 cam("Cam_20", 62.4, (6, 8, 9), (0, 0, 1), 28, T)                                  # side: full steam over the salt
