@@ -97,5 +97,22 @@
   "cover": "poster as TikTok/IG cover",
   "hook": "It's right over us. Not a sound. (vault hook test)",
   "pinLink": "https://www.youtube.com/watch?v=z2lToW1qnEo"
+ },
+ {
+  "film_no": 8,
+  "title": "The Long Hill",
+  "scheduled": "2026-11-18 12:33 JST",
+  "logged": "2026-11-17 20:16 JST",
+  "hook": "We roll right past it. Not a sound.",
+  "youtube_url": "https://www.youtube.com/watch?v=OyIhwCarcsc",
+  "post_ids": {
+   "tiktok": 431299680,
+   "instagram": 431299716,
+   "threads": 431299777,
+   "bluesky": 431299830,
+   "pinterest": 431299879
+  },
+  "cover": "poster as TikTok/IG cover",
+  "pin_link": "film's YouTube"
  }
 ]

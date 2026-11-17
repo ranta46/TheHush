@@ -406,7 +406,7 @@
   "title": "The Wheat Sea",
   "date_made": "2026-11-16",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "hook": "The wind stops. Don't move.",
   "places": [
    "the night downs with stone walls",
@@ -421,7 +421,15 @@
   "video": "gloamrun/films/gloamrun_film18_16x9.mp4",
   "poster": "gloamrun/films/gloamrun_film18_poster.jpg",
   "duration": 108.0,
-  "finished": "2026-11-17 10:50 JST (render done 2026-11-16 19:29; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 63.0 = Rook + train + Hush looming; 108 s with cold open + end card)"
+  "finished": "2026-11-17 10:50 JST (render done 2026-11-16 19:29; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 63.0 = Rook + train + Hush looming; 108 s with cold open + end card)",
+  "posted": "2026-11-17 20:33 JST",
+  "youtube_post_id": 431299007,
+  "facebook_post_id": 431299038,
+  "tiktok_post_id": 431299067,
+  "instagram_post_id": 431299102,
+  "threads_post_id": 431299124,
+  "bluesky_post_id": 431299150,
+  "pinterest_post_id": 431299160
  },
  {
   "film_no": 19,
