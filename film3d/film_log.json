@@ -406,7 +406,7 @@
   "title": "The Wheat Sea",
   "date_made": "2026-11-16",
   "frames": 2400,
-  "status": "rendering",
+  "status": "stock",
   "hook": "The wind stops. Don't move.",
   "places": [
    "the night downs with stone walls",
@@ -417,6 +417,10 @@
   "fear": "The wind dies and the Hush stands right over the dark train in the wheat. '...Don't move. Not a sound.'",
   "surprise": "The old whistle peeps by itself (a little puff of steam); it looks down at us. Lights on, full steam out of the wheat to Harvest Town; it follows (it will be back).",
   "render_started": "2026-11-16 11:10 JST (~12.5 s/frame incl. rest, done ~19:30-20:00 JST)",
-  "render_progress": "2026-11-16 15:40 JST: 1469/2400 frames, ~13.8 s/frame, done ~19:15 JST"
+  "render_progress": "2026-11-16 15:40 JST: 1469/2400 frames, ~13.8 s/frame, done ~19:15 JST",
+  "video": "gloamrun/films/gloamrun_film18_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film18_poster.jpg",
+  "duration": 108.0,
+  "finished": "2026-11-17 10:50 JST (render done 2026-11-16 19:29; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 63.0 = Rook + train + Hush looming; 108 s with cold open + end card)"
  }
 ]
