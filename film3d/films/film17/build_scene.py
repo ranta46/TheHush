@@ -203,8 +203,8 @@ for i in range(8):
 # the sea: rises all film (the tide comes in); a big wave rolls over the low road between us and it (55-59.5)
 seaM = newM("S_SeaM", (0.012, 0.03, 0.06), rough=0.07, metal=0.35)
 SEA = mk("S_Sea", box(), seaM, (300, 0, -2.6), scl=(1600, 1400, 0.1))
-waveM = newM("S_WaveM", (0.16, 0.24, 0.32), emit=0.25, rough=0.2, metal=0.2)
-WAVE = mk("S_Wave", sph(1.0, 32, 12), waveM, (214, -140, -3), scl=(28, 5.0, 3.4), smooth=True)
+waveM = newM("S_WaveM", (0.08, 0.14, 0.2), emit=0.15, rough=0.2, metal=0.2)
+WAVE = mk("S_Wave", sph(1.0, 32, 12), waveM, (214, -140, -10), scl=(30, 8.0, 9.0), smooth=True)
 foamM = newM("S_FoamM", (0.55, 0.62, 0.68), emit=0.5, rough=0.6)
 mk("S_Foam", sph(1.0, 32, 8), foamM, (0, 0.35, 0.72), scl=(0.9, 0.35, 0.3), parent=WAVE, smooth=True)
 # the big low moon in the west (behind the Hush): it lights the sea
@@ -241,7 +241,7 @@ SLK = [(0, -2.6), (16, -2.2), (26, -1.6), (33, -1.0), (36, -0.9), (44, -0.86), (
        (72, 1.4), (78, 1.9), (84, 2.0), (100, 2.05)]
 for t, z in SLK: key(SEA, "location", F(t), z, 2)
 lin(SEA)
-for t, y, z in ((0, -140, -3), (54.4, -140, -3), (55.4, -80, -0.9), (57.0, -10, -0.5), (58.2, 30, -0.4), (59.6, 90, -0.6), (60.6, 140, -3.5)):
+for t, y, z in ((0, -140, -10), (54.4, -140, -10), (55.4, -80, -2.0), (57.0, -10, -1.2), (58.2, 30, -1.0), (59.6, 90, -2.0), (60.6, 140, -10)):
     key(WAVE, "location", F(t), Vector((214, y, z)))
 for hm, lt, td in RLAMP:
     if td > 150: continue
@@ -299,9 +299,9 @@ cam("Cam_01", 0, (2.6, -3.2, 1.8), (0.0, 0, 1.3), 28, T)                        
 cam("Cam_02", 2.6, (6, 2.2, 3.4), "H_Mask", 60, T)                                 # over the train, back: its face rises over the dunes
 cam("Cam_03", 5.6, (-50, -110, 40), (-160, 0, 6), 22)                             # high wide: the coast, the train, the Hush behind, the sea
 cam("Cam_04", 11.0, (14, -5, 1.4), (0, 0, 1.6), 30, T)                            # front: Rook, the sea road ahead
-cam("Cam_05", 16.0, (40, -70, 30), (150, 0, -1), 22)                              # high: the long sea road over the flats to the island
+cam("Cam_05", 16.0, (0, -60, 26), (110, 0, -1), 22)                              # high: the long sea road over the flats to the island
 cam("Cam_06", 21.6, (-4, 3.0, 2.8), "H_Mask", 28, T)                               # from the train: it comes down to the shore
-cam("Cam_07", 26.0, (142, -26, -0.6), (112, 0, 0.5), 24)                          # low on the flats: the train on the sea road
+cam("Cam_07", 26.0, (178, -24, -0.6), (132, 0, 1.0), 24)                          # low on the flats: the train on the sea road
 cam("Cam_08", 30.0, (300, 30, 10), (60, 0, 8), 35)                                # from the island side: it walks onto the sea road
 cam("Cam_09", 34.0, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 30, T)                      # Rook: the low road, the rails under water
 cam("Cam_10", 37.2, (6, -4, 0.35), (2, 0, 0.2), 24, T)                            # low: the wheels in the sea
@@ -316,11 +316,11 @@ cam("Cam_18", 58.4, (2.0, 1.6, 2.2), "H_Mask", 26, T)                           
 cam("Cam_19", 62.4, (240, -120, 45), (275, 0, 0), 24)                             # high: the sea over the road, it standing in it
 cam("Cam_20", 64.4, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 28, T)                      # Rook: light the fire
 cam("Cam_21", 67.6, (6, 8, 9), (0, 0, 1), 28, T)                                  # side: full steam up onto the island
-cam("Cam_22", 71.6, (-4, 3.0, 3.2), "H_Mask", 30, T)                               # back: it wades after us
-cam("Cam_23", 75.6, (445, -30, 9), (250, 0, 8), 30)                               # from the island: it stopped in the deep water
+cam("Cam_22", 71.6, (-4, 3.0, 3.2), "H_Mask", 60, T)                               # back: it wades after us
+cam("Cam_23", 75.6, (445, -30, 9), (244, 5, 7), 85)                               # from the island: it stopped in the deep water
 cam("Cam_24", 80.0, (-20, -14, 8), (30, 0, 2), 24, T)                             # Isle Town ahead
 cam("Cam_25", 85.6, (2.4, -3.2, 1.7), (0.6, 0, 1.35), 28, T)                      # Rook at the station
-cam("Cam_26", 91.6, (585, -22, 9), (300, 0, 9), 32)                               # the lit island, the sea, it waits out there
+cam("Cam_26", 91.6, (578, -6, 5.5), (250, 5, 6), 55)                               # the lit island, the sea, it waits out there
 sc.camera = O["Cam_01"]
 sc.render.resolution_x = 1280; sc.render.resolution_y = 720; sc.render.resolution_percentage = 100
 sc.eevee.taa_render_samples = 24
