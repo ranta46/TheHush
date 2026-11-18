@@ -114,5 +114,22 @@
   },
   "cover": "poster as TikTok/IG cover",
   "pin_link": "film's YouTube"
+ },
+ {
+  "film_no": 9,
+  "title": "The Sleeping City",
+  "scheduled": "2026-11-19 12:33 JST",
+  "logged": "2026-11-18 20:16 JST",
+  "hook": "It ate the city. Now us.",
+  "youtube_url": "https://www.youtube.com/watch?v=AcjmUEHFWz4",
+  "post_ids": {
+   "tiktok": 432688685,
+   "instagram": 432688729,
+   "threads": 432688752,
+   "bluesky": 432688781,
+   "pinterest": 432688803
+  },
+  "cover": "poster as TikTok/IG cover",
+  "pin_link": "film's YouTube"
  }
 ]

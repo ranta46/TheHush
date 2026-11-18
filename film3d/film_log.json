@@ -201,7 +201,9 @@
   "duration": 108.2,
   "posted": "2026-11-08 20:33 JST",
   "youtube_post_id": 420653116,
-  "facebook_post_id": 420653131
+  "facebook_post_id": 420653131,
+  "youtube_url": "https://www.youtube.com/watch?v=AcjmUEHFWz4",
+  "hook": "It ate the city. Now us."
  },
  {
   "film_no": 10,
@@ -439,7 +441,7 @@
   "title": "The Long Shadow",
   "date_made": "2026-11-17",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "hook": "Stay in its shadow. Don't move.",
   "places": [
    "the west ridge under a big low moon",
@@ -455,7 +457,16 @@
   "video": "gloamrun/films/gloamrun_film19_16x9.mp4",
   "poster": "gloamrun/films/gloamrun_film19_poster.jpg",
   "duration": 108.0,
-  "finished": "2026-11-18 10:58 JST (render done 2026-11-17 23:10; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 34.5 = Hush face + Rook, hook burned top right; 108 s with cold open + end card)"
+  "finished": "2026-11-18 10:58 JST (render done 2026-11-17 23:10; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 34.5 = Hush face + Rook, hook burned top right; 108 s with cold open + end card)",
+  "posted": "2026-11-18 20:33 JST",
+  "youtube_post_id": 432687775,
+  "facebook_post_id": 432687813,
+  "tiktok_post_id": 432687845,
+  "instagram_post_id": 432687906,
+  "threads_post_id": 432687953,
+  "bluesky_post_id": 432687996,
+  "pinterest_post_id": 432688018,
+  "publish_check": "2026-11-18 20:16 JST: all 7 scheduled PENDING; YouTube thumbnail + TikTok/IG poster cover sent; YT/FB 'Last film' line (Film 18)"
  },
  {
   "film_no": 20,
