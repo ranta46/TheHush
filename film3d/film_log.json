@@ -474,6 +474,7 @@
    "Isle Town with its lighthouse and station"
   ],
   "hook": "The sea is rising. It's right behind.",
-  "render_started": "2026-11-18 11:06 JST (~21 s/frame + rest, ~23.5 s/frame incl. rest, done ~03:00-04:00 JST 11-19)"
+  "render_started": "2026-11-18 11:06 JST (~21 s/frame + rest, ~23.5 s/frame incl. rest, done ~03:00-04:00 JST 11-19)",
+  "render_progress": "2026-11-18 15:43 JST: 722/2400 frames, ~23 s/frame incl. rest (last 21.3 s), done ~02:30-03:00 JST 11-19 (TremenFilm folder not connected to this run; checked via Blender MCP)"
  }
 ]
