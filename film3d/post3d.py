@@ -9,6 +9,22 @@ HERE = os.path.dirname(os.path.abspath(__file__)); KIT = os.path.join(HERE, ".."
 import gloamrun_engine as E, gloamrun_sound as S, film as FK
 from PIL import Image
 def run(a): subprocess.run(a, check=True)
+def burn_hook(poster, hook, corner="left"):
+    """RUNBOOK_3D 2026-11-17: hook as big easy text, 2 short lines, white with a dark outline, in a top corner
+    (film.json "hook_corner": "left"/"right"; pick the side away from the Hush's face and Rook)."""
+    from PIL import ImageDraw
+    parts = [x.strip() for x in hook.replace("! ", "!|").replace(". ", ".|").replace("? ", "?|").split("|") if x.strip()]
+    if len(parts) != 2:
+        w = hook.split(); parts = [" ".join(w[:(len(w) + 1) // 2]), " ".join(w[(len(w) + 1) // 2:])]
+    im = Image.open(poster).convert("RGB"); W, H = im.size; d = ImageDraw.Draw(im)
+    size = int(H * 0.105); f = E.font(E.FONT_BLACK, size)
+    while max(d.textlength(t, font=f) for t in parts) > W * 0.46: size -= 2; f = E.font(E.FONT_BLACK, size)
+    m = int(W * 0.035); y = int(H * 0.05); sw = max(4, size // 9)
+    for t in parts:
+        tw = d.textlength(t, font=f); x = m if corner == "left" else W - m - tw
+        d.text((x, y), t, font=f, fill=(255, 255, 255), stroke_width=sw, stroke_fill=(12, 14, 26))
+        y += int(size * 1.18)
+    im.save(poster, quality=92)
 def main():
     fd, raw = sys.argv[1], sys.argv[2]; meta = json.load(open(os.path.join(fd, "film.json")))
     for _, _, t in meta["lines"]:
@@ -51,6 +67,7 @@ def main():
     run(["ffmpeg", "-y", "-loglevel", "error", "-i", vid, "-i", wav, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", final])
     poster = os.path.join(out, f"{tag}_poster.jpg")
     run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(meta.get("poster_t", 30)), "-i", raw, "-frames:v", "1", "-q:v", "3", poster])
+    if meta.get("hook"): burn_hook(poster, meta["hook"], meta.get("hook_corner", "left"))
     info = dict(meta, duration=round(total, 1), video=os.path.basename(final), poster=os.path.basename(poster), size_mb=round(os.path.getsize(final) / 1e6, 1))
     info.pop("lines", None); json.dump(info, open(os.path.join(out, f"{tag}_meta.json"), "w"), indent=1); print(json.dumps(info))
 if __name__ == "__main__":
