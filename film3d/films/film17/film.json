@@ -1,0 +1,20 @@
+{"film_no": 20, "title": "The Sea Road", "poster_t": 51.0, "cold_open": [49.8, 52.8], "hook": "The sea is rising. It's right behind.", "hook_corner": "left",
+ "synopsis": "The Hush is faster on the sand. Rook takes the old sea road to Isle Town just as the tide comes in, and the sea closes the road behind the train.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.6, 3.0, "The coast lamps are dying. It's here!"],
+  [5.8, 8.2, "It's faster on the sand. Hold the bar!"],
+  [11.2, 13.8, "The sea road! The tide is coming in."],
+  [16.4, 19.0, "We cross before the sea closes it."],
+  [30.4, 32.8, "It's on the sea road too!"],
+  [34.4, 37.0, "The low road. The rails are under water!"],
+  [39.4, 41.8, "Slow now. Keep the fire dry."],
+  [44.6, 47.0, "Our lamp! It's eating the light!"],
+  [50.0, 52.6, "...Don't look back. Keep rolling."],
+  [56.0, 58.0, "Here comes the sea!"],
+  [60.6, 63.0, "The road is gone behind us!"],
+  [65.0, 67.4, "Light the fire! Up the hill!"],
+  [76.4, 78.8, "It stopped in the deep water. Go, go!"],
+  [86.6, 89.0, "Isle Town! Hot tea for everyone!"],
+  [92.6, 95.6, "Low tide comes again. It will be back."]
+ ]}
