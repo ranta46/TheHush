@@ -92,3 +92,7 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   big easy text, 2 short lines, white with a dark outline, in a top corner, never over the Hush's face or Rook (still check it by eye).
   Poster = YouTube thumbnail + TikTok/IG cover + Pinterest pin. From the next poster made (Film 19). If the poster was already made
   without it, the posting run may add the text in the cloud before posting. Judge on YouTube views of films 19-21 vs 12-17 at the same age.
+- 2026-11-18: vault hook test CLOSED, KEEP (IG avg watch vault 5-7 = 10.5-14.3 s vs 6.4-9.0 s). New (description text): Bluesky also opens with the
+  hook: line 1 = hook, line 2 = "Gloamrun Film N: <title>" (vault: "From the vault: Gloamrun Film N: <title>"), then one short sentence, the ride link,
+  #Gloamrun #animation, whole text under 300 chars. New films and vault posts, from vault Film 10 / Film 20. Judge on Bluesky likes+reposts of the
+  next 6 posts vs the 18 before (2 likes total); roll back if not better.

@@ -1,5 +1,22 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-18 (Film 19 The Long Shadow, 3D, set for 20:33 on 7 networks; vault Film 9 set for 11-19 12:33)
+| Film | YT views / avg (s) / ret. | TikTok views / likes | IG views / avg watch (s) / ret. |
+|---|---|---|---|
+| 12 Round Hill (hook) | 51 / 38 / 35 % | 451 / 26 | 132 / 14.7 / 14 % |
+| 14 The Snow Pass (hook, cover) | 24 / 25 / 23 % (first row) | 437 / 7 | 120 / 15.5 / 14 % |
+| 15 The Firefly Wood (2D, hook, cover) | 25 / 26 | 435 / 13 | 117 / 12.2 / 11 % |
+| 16 The Falls | no row | 347 / 11 | 129 / 9.4 / 9 % |
+| 17 The Sky Lanterns (no calm start) | no row | 440 / 5 | 120 / 12.8 / 12 % |
+| 18 The Wheat Sea (no calm start, back link, day 1) | no row | 64 / 0 | **393 / 31.6 / 29 %** |
+| vault 5-7 (vault hook) | - | 203 / 384 / 322 | 122-124 / 10.5-14.3 |
+| vault 1-4 (no hook) | - | 313-440 | 111-116 / 6.2-9.0 |
+YouTube subscribers 50 (flat). Threads insights all null, Pinterest pin rows empty, Bluesky 0-1 likes per post.
+- Film 18 is the best Instagram post ever: 393 views and 31.6 s avg watch on day 1 (every other film: 111-132 views, 6-16 s). It is the 2nd "no calm start" film; Film 17 was normal (120 / 12.8 s). Story pace test: looks good, keep and judge with Film 19.
+- Vault hook test (vault 5-7 vs 1-2): IG avg watch 10.5 / 13.9 / 14.3 s vs 6.4 / 9.0 s. CLOSED, KEEP.
+- YouTube is still flat: films 14-15 at 24-25 views (23-24 % ret.) vs 51 for Film 12; rows for 16-18 not back yet, so the back-link and poster-hook tests cannot be judged yet. Bluesky is the dead network (0 likes on almost all 18 posts) and is the only one still opening with the bare title.
+- Change (description text, posting run, new films and vault): Bluesky post text also starts with the hook line (line 1 = hook, line 2 = "Gloamrun Film N: <title>" or "From the vault: Gloamrun Film N: <title>", then 1 short sentence, the ride link, #Gloamrun #animation; stay under 300 chars). Starts with vault Film 10 / Film 20. Judge on Bluesky likes+reposts of the next 6 posts vs the last 18 (2 likes total); roll back if no better.
+
 ## 2026-11-17 (Film 18 The Wheat Sea, 3D, set for 20:33 on 7 networks; vault Film 8 set for 11-18 12:33)
 | Film | YT views / avg (s) / ret. | TikTok views / likes | IG views / avg watch (s) / 3 s skip |
 |---|---|---|---|
