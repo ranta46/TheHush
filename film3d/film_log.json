@@ -519,8 +519,9 @@
       "switch two on the ledge",
       "High Gate on the top and its station"
     ],
-    "hook": "It climbs to us. Don't move.",
+    "hook": "It climbs to us. The stones are sliding.",
     "render_started": "2026-11-19 11:08 JST (~24 s/frame + rest, done ~03:30-05:00 JST 11-20)",
-    "render_check": "2026-11-19 15:40-15:50 JST: PC online but Blender MCP timed out 4 times (unreachable / possibly frozen during render); TremenFilm folder not connected to the run (connectedFolders empty) -> progress unknown; expected ~600/2400 if running, done ~03:30-05:00 JST 11-20. Stock 1 (Film 20)."
+    "render_check": "2026-11-19 15:40-15:50 JST: PC online but Blender MCP timed out 4 times (unreachable / possibly frozen during render); TremenFilm folder not connected to the run (connectedFolders empty) -> progress unknown; expected ~600/2400 if running, done ~03:30-05:00 JST 11-20. Stock 1 (Film 20).",
+    "hook_note": "2026-11-19 posting run: hook changed (no 'Don't move.' test, films 21-23)"
   }
 ]

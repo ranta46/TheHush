@@ -96,3 +96,8 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   hook: line 1 = hook, line 2 = "Gloamrun Film N: <title>" (vault: "From the vault: Gloamrun Film N: <title>"), then one short sentence, the ride link,
   #Gloamrun #animation, whole text under 300 chars. New films and vault posts, from vault Film 10 / Film 20. Judge on Bluesky likes+reposts of the
   next 6 posts vs the 18 before (2 likes total); roll back if not better.
+- 2026-11-19: story pace test (17-19) CLOSED, KEEP (IG avg watch 12.1 / 31.4 / 16.3 s vs 10.3-16.3 s; Film 18 = 1205 IG views). New (hook wording):
+  for films 21-23 the hook's 2nd sentence must NOT be "Don't move." / "Not a sound." / "Don't breathe." (7 of the last 9 hooks ended that way). Use a
+  new short threat line from this film's own place (e.g. "The sea is rising. It's right behind."). The in-film fear line may still say "Don't move".
+  Film 21 hook is now "It climbs to us. The stones are sliding." (burn this one on its poster). Judge on IG avg watch + TikTok/IG views of films 20-22
+  vs 17-19; roll back if worse.

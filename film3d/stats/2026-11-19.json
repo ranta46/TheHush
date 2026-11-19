@@ -1,0 +1,299 @@
+{
+  "date": "2026-11-19",
+  "brand": 7473995,
+  "fetched": "2026-11-19 20:20 JST",
+  "youtube_videos": [
+    {
+      "film": 1,
+      "views": 161,
+      "avg_view_s": 28
+    },
+    {
+      "film": 2,
+      "views": 42,
+      "avg_view_s": 15
+    },
+    {
+      "film": 3,
+      "views": 80,
+      "avg_view_s": 19
+    },
+    {
+      "film": 4,
+      "views": 51,
+      "avg_view_s": 19
+    },
+    {
+      "film": 5,
+      "views": 14,
+      "avg_view_s": 23
+    },
+    {
+      "film": 6,
+      "views": 23,
+      "avg_view_s": 22
+    },
+    {
+      "film": 7,
+      "views": 71,
+      "avg_view_s": 24
+    },
+    {
+      "film": 8,
+      "views": 65,
+      "avg_view_s": 24
+    },
+    {
+      "film": 9,
+      "views": 25,
+      "avg_view_s": 32
+    },
+    {
+      "film": 10,
+      "views": 32,
+      "avg_view_s": 26
+    },
+    {
+      "film": 11,
+      "views": 77,
+      "avg_view_s": 17
+    },
+    {
+      "film": 12,
+      "views": 51,
+      "avg_view_s": 38
+    },
+    {
+      "film": 13,
+      "views": 32,
+      "avg_view_s": 28
+    },
+    {
+      "film": 14,
+      "views": 24,
+      "avg_view_s": 25
+    },
+    {
+      "film": 15,
+      "views": 25,
+      "avg_view_s": 26
+    }
+  ],
+  "youtube_note": "still no rows for films 16-19 (4th day). ChatGPT shorts Ep.28/29 1243/1281 views.",
+  "followers": {
+    "youtube": 51
+  },
+  "tiktok": [
+    {
+      "film": 19,
+      "views": 71,
+      "likes": 6,
+      "age_days": 1
+    },
+    {
+      "film": 8,
+      "vault": true,
+      "views": 417,
+      "likes": 13
+    },
+    {
+      "film": 18,
+      "views": 447,
+      "likes": 7,
+      "shares": 1
+    },
+    {
+      "film": 7,
+      "vault": true,
+      "views": 419,
+      "likes": 14
+    },
+    {
+      "film": 17,
+      "views": 443,
+      "likes": 5
+    },
+    {
+      "film": 6,
+      "vault": true,
+      "views": 384,
+      "likes": 6
+    },
+    {
+      "film": 16,
+      "views": 347,
+      "likes": 11
+    },
+    {
+      "film": 5,
+      "vault": true,
+      "views": 203,
+      "likes": 4
+    },
+    {
+      "film": 14,
+      "views": 437,
+      "likes": 7
+    },
+    {
+      "film": 4,
+      "vault": true,
+      "views": 425,
+      "likes": 13
+    },
+    {
+      "film": 15,
+      "views": 435,
+      "likes": 13
+    },
+    {
+      "film": 3,
+      "vault": true,
+      "views": 409,
+      "likes": 23
+    },
+    {
+      "film": 12,
+      "views": 451,
+      "likes": 26
+    },
+    {
+      "film": 2,
+      "vault": true,
+      "views": 440,
+      "likes": 14
+    },
+    {
+      "film": 13,
+      "views": 430,
+      "likes": 12
+    },
+    {
+      "film": 1,
+      "vault": true,
+      "views": 313,
+      "likes": 4
+    },
+    {
+      "film": 11,
+      "views": 445,
+      "likes": 24
+    }
+  ],
+  "instagram_reels": [
+    {
+      "film": 19,
+      "views": 119,
+      "likes": 1,
+      "avg_watch_s": 16.3,
+      "age_days": 1
+    },
+    {
+      "film": 8,
+      "vault": true,
+      "views": 130,
+      "avg_watch_s": 15.8
+    },
+    {
+      "film": 18,
+      "views": 1205,
+      "likes": 28,
+      "reach": 988,
+      "avg_watch_s": 31.4
+    },
+    {
+      "film": 7,
+      "vault": true,
+      "views": 142,
+      "avg_watch_s": 14.8
+    },
+    {
+      "film": 17,
+      "views": 130,
+      "likes": 3,
+      "avg_watch_s": 12.1
+    },
+    {
+      "film": 6,
+      "vault": true,
+      "views": 130,
+      "avg_watch_s": 13.9
+    },
+    {
+      "film": 16,
+      "views": 133,
+      "avg_watch_s": 10.3
+    },
+    {
+      "film": 5,
+      "vault": true,
+      "views": 126,
+      "avg_watch_s": 10.8
+    },
+    {
+      "film": 14,
+      "views": 120,
+      "likes": 4,
+      "avg_watch_s": 15.5
+    },
+    {
+      "film": 4,
+      "vault": true,
+      "views": 116,
+      "avg_watch_s": 8.4
+    },
+    {
+      "film": 15,
+      "views": 118,
+      "avg_watch_s": 12.1
+    },
+    {
+      "film": 3,
+      "vault": true,
+      "views": 116,
+      "avg_watch_s": 6.1
+    },
+    {
+      "film": 12,
+      "views": 133,
+      "avg_watch_s": 14.6
+    },
+    {
+      "film": 2,
+      "vault": true,
+      "views": 114,
+      "avg_watch_s": 9.0
+    },
+    {
+      "film": 13,
+      "views": 125,
+      "avg_watch_s": 16.3
+    },
+    {
+      "film": 1,
+      "vault": true,
+      "views": 113,
+      "avg_watch_s": 6.3
+    },
+    {
+      "film": 11,
+      "views": 130,
+      "avg_watch_s": 11.7
+    }
+  ],
+  "threads": "not fetched (Metricool returns null insights for Threads)",
+  "bluesky": "Bluesky hook test starts with Film 20 / vault 10 (no data yet)",
+  "facebook": "not fetched",
+  "pinterest": "not fetched (pin rows empty so far)",
+  "new_post_today": {
+    "film": 20,
+    "time": "2026-11-19 20:33 JST",
+    "networks": 7
+  },
+  "vault_scheduled": {
+    "film": 10,
+    "time": "2026-11-20 12:33 JST",
+    "networks": 5,
+    "note": "last vault film"
+  }
+}

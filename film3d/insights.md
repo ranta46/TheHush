@@ -1,5 +1,19 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-19 (Film 20 The Sea Road, 3D, set for 20:33 on 7 networks; vault Film 10 (last vault film) set for 11-20 12:33)
+| Film | YT views / avg (s) / ret. | TikTok views / likes | IG views / avg watch (s) / ret. |
+|---|---|---|---|
+| 12-16 (calm start) | 24-51 / 25-38 (16 no row) | 347-451 / 7-26 | 118-133 / 10.3-16.3 / 10-15 % |
+| 17 The Sky Lanterns (no calm start) | no row | 443 / 5 | 130 / 12.1 / 11 % |
+| 18 The Wheat Sea (no calm start) | no row | 447 / 7 | **1205 / 31.4 / 29 %** (reach 988, 28 likes) |
+| 19 The Long Shadow (no calm start, day 1) | no row | 71 / 6 | 119 / 16.3 / 15 % |
+| vault 5-8 (vault hook) | - | 203-419 | 126-142 / 10.8-15.8 |
+YouTube subscribers 51 (+1). YouTube rows for 16-19 still missing (4th day), so the back-link and poster-hook tests still cannot be judged.
+- Story pace test ("no calm start", films 17-19 vs 12-16): IG avg watch 12.1 / 31.4 / 16.3 s vs 10.3-16.3 s; Film 18 tripled to 1205 IG views (best post ever, 10x any other film). Film 19 day 1 is already at the top of the old range. CLOSED, KEEP.
+- TikTok is flat: every film ends at ~350-450 views no matter what (hooks, covers, pace changed nothing). Instagram is the network that reacts to the film itself.
+- Hooks are getting samey: 7 of the last 9 film hooks end with "Don't move." (Film 21's too). On a profile grid / feed they read like the same post.
+- Change (title/line wording, PC run + posting run): the hook's 2nd sentence may NOT be "Don't move." / "Not a sound." / "Don't breathe." for films 21-23; it must be a new short threat line from this film's own place (like Film 20 "The sea is rising. It's right behind."). Film 21's hook changed now to "It climbs to us. The stones are sliding." (poster not made yet). Judge on IG avg watch + TikTok/IG views of films 20-22 vs 17-19; roll back if worse.
+
 ## 2026-11-18 (Film 19 The Long Shadow, 3D, set for 20:33 on 7 networks; vault Film 9 set for 11-19 12:33)
 | Film | YT views / avg (s) / ret. | TikTok views / likes | IG views / avg watch (s) / ret. |
 |---|---|---|---|
