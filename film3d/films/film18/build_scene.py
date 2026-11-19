@@ -124,7 +124,7 @@ def gh(x, y):
     if d < 5: z = min(z, -0.06 + (z + 0.06) * ss(3.0, 5.0, d))
     return z
 GA = O["Ground"]; GA.location = (0, 0, -30.0); GA.scale = (1400, 1000, 1)
-stoneM = newM("S_Scree", (0.1, 0.095, 0.095), rough=1); grassM = newM("S_Grass", (0.045, 0.06, 0.045), rough=1)
+stoneM = newM("S_Scree", (0.034, 0.033, 0.036), rough=1); grassM = newM("S_Grass", (0.045, 0.06, 0.045), rough=1)
 rockM = newM("S_RockM", (0.08, 0.08, 0.09), rough=1)
 GA.data.materials.clear(); GA.data.materials.append(rockM)
 def axis(a, b, step):
@@ -335,14 +335,14 @@ cam("Cam_03", 5.6, (-130, -95, 32), (-235, 0, 8), 22)                           
 cam("Cam_04", 11.0, (14, -5, 1.4), (0, 0, 1.6), 30, T)                            # front: Rook, Iron Mountain ahead
 cam("Cam_05", 15.0, (70, -150, 34), (75, 34, 26), 24)                             # wide: the steep face and its old zigzag line
 cam("Cam_06", 19.6, (-4, -3.0, 2.8), "H_Mask", 28, T)                              # from the train: it comes down the valley
-cam("Cam_07", 24.0, (120, 30, 0), (70, 10, 7), 26)                                # above leg 1: the train climbs the first leg
+cam("Cam_07", 24.0, (118, -14, 10), (74, 12, 8), 26)                                # above leg 1: the train climbs the first leg
 cam("Cam_08", 27.6, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 30, T)                      # Rook: switch one, now backwards
 cam("Cam_09", 30.6, (95, -45, 18), (32, 12, 14), 30)                              # side: it climbs straight up and slides
 cam("Cam_10", 33.8, (75, 62, 0), (60, 25, 18), 24)                                # from the top: the train reversing up leg 2, it at the foot
 cam("Cam_11", 36.4, (-2, 2.5, 3.0), "H_Mask", 30, T)                               # over Rook: it climbs again, higher
 cam("Cam_12", 40.8, (2.6, -2.2, 1.6), (0.5, 0, 1.3), 30, T)                       # Rook: lights out, stop here
-cam("Cam_13", 44.6, (2.6, -2.4, 0.75), "H_Mask", 18, T)                            # low beside Rook: its face right beside us (cold open)
-cam("Cam_14", 49.4, (60, -22, 22), (16, 30, 30), 30)                              # side: the dark train on the ledge, it searching below
+cam("Cam_13", 44.6, (0.9, 2.6, 1.3), "H_Mask", 24, T)                            # low beside Rook: its face right beside us (cold open)
+cam("Cam_14", 49.4, (2, 52, 47), (18, 22, 33), 26)                              # side: the dark train on the ledge, it searching below
 cam("Cam_15", 52.6, (-5, 1.5, 2.4), "H_Mask", 24, T)                               # behind the train: its face beside us
 cam("Cam_16", 55.2, (-40, 10, 0), (18, 28, 26), 28)                               # wide: the stones give, it slides a little
 cam("Cam_17", 58.6, (4.2, -2.4, 0.45), (2.0, 0, 0.3), 24, T)                      # low: the wheels slip on the wet rails
