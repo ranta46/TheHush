@@ -1,0 +1,20 @@
+{"film_no": 21, "title": "The Zigzag", "poster_t": 46.0, "cold_open": [45.0, 48.0], "hook": "It climbs to us. Don't move.", "hook_corner": "left",
+ "synopsis": "The Hush is faster in the valley. Rook takes the old zigzag line up the steep face of Iron Mountain, where the loose stones slide under its feet.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.6, 3.0, "The valley lamps went dark. It's here!"],
+  [5.8, 8.2, "It's faster down here. Hold the bar!"],
+  [11.2, 13.8, "Iron Mountain! We take the old zigzag."],
+  [16.0, 18.6, "Rails go where feet can't. Up we go!"],
+  [27.8, 30.4, "Switch one! Now backwards, up the next!"],
+  [31.4, 33.6, "Look! The stones slide under it!"],
+  [36.6, 39.0, "It's climbing again. Higher this time..."],
+  [41.0, 43.0, "Lights out. Stop here."],
+  [46.6, 49.2, "...Don't move. Not a sound."],
+  [55.4, 57.8, "Now. Roll slowly. No steam."],
+  [60.4, 62.8, "We're slipping back! The rails are wet!"],
+  [63.4, 65.6, "Sand on the rails! Full steam!"],
+  [72.4, 74.8, "It slid all the way down!"],
+  [81.4, 83.8, "High Gate! Everyone inside, it's warm!"],
+  [90.2, 93.2, "It's still looking up. It will be back."]
+ ]}
