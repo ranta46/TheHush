@@ -341,18 +341,18 @@ cam("Cam_09", 30.6, (95, -45, 18), (32, 12, 14), 30)                            
 cam("Cam_10", 33.8, (75, 62, 0), (60, 25, 18), 24)                                # from the top: the train reversing up leg 2, it at the foot
 cam("Cam_11", 36.4, (-2, 2.5, 3.0), "H_Mask", 30, T)                               # over Rook: it climbs again, higher
 cam("Cam_12", 40.8, (2.6, -2.2, 1.6), (0.5, 0, 1.3), 30, T)                       # Rook: lights out, stop here
-cam("Cam_13", 44.6, (0.9, 2.6, 1.3), "H_Mask", 24, T)                            # low beside Rook: its face right beside us (cold open)
+cam("Cam_13", 44.6, (-0.2, 2.6, 0.8), "H_Mask", 24, T)                            # low beside Rook: its face right beside us (cold open)
 cam("Cam_14", 49.4, (2, 52, 47), (18, 22, 33), 26)                              # side: the dark train on the ledge, it searching below
 cam("Cam_15", 52.6, (-5, 1.5, 2.4), "H_Mask", 24, T)                               # behind the train: its face beside us
 cam("Cam_16", 55.2, (-40, 10, 0), (18, 28, 26), 28)                               # wide: the stones give, it slides a little
 cam("Cam_17", 58.6, (4.2, -2.4, 0.45), (2.0, 0, 0.3), 24, T)                      # low: the wheels slip on the wet rails
 cam("Cam_18", 61.0, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 28, T)                      # Rook: slipping back, sand on the rails
 cam("Cam_19", 65.2, (6, -9, 4.5), (0, 0, 1), 28, T)                               # side: full steam up leg 3, it climbing below
-cam("Cam_20", 68.6, (70, 72, 0), (42, 10, 8), 30)                                 # from the top: it slides all the way down
+cam("Cam_20", 68.6, (70, 56, 64), (44, 8, 5), 30)                                 # from the top: it slides all the way down
 cam("Cam_21", 72.2, (-4, -3.0, 3.2), "H_Mask", 45, T)                              # back: it small at the foot
 cam("Cam_22", 76.2, (-20, -14, 8), (30, 0, 2), 24, T)                             # High Gate ahead through the old stone gate
 cam("Cam_23", 81.0, (2.4, -3.2, 1.7), (0.6, 0, 1.35), 28, T)                      # Rook at the station
-cam("Cam_24", 87.4, (262, 58, 0), (46, -2, 12), 40)                               # from the top: the lit station, it at the foot looking up
+cam("Cam_24", 87.4, (290, 74, 66), (46, -2, 12), 40)                               # from the top: the lit station, it at the foot looking up
 sc.camera = O["Cam_01"]
 sc.render.resolution_x = 1280; sc.render.resolution_y = 720; sc.render.resolution_percentage = 100
 sc.eevee.taa_render_samples = 24
