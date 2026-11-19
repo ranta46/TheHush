@@ -1,135 +1,154 @@
 [
- {
-  "film_no": 1,
-  "title": "The Sky Line",
-  "scheduled": "2026-11-11 12:33 JST",
-  "logged": "2026-11-10 20:20 JST",
-  "post_ids": {
-   "tiktok": 423014851,
-   "instagram": 423014887,
-   "threads": 423014913,
-   "bluesky": 423014948,
-   "pinterest": 423015550
+  {
+    "film_no": 1,
+    "title": "The Sky Line",
+    "scheduled": "2026-11-11 12:33 JST",
+    "logged": "2026-11-10 20:20 JST",
+    "post_ids": {
+      "tiktok": 423014851,
+      "instagram": 423014887,
+      "threads": 423014913,
+      "bluesky": 423014948,
+      "pinterest": 423015550
+    }
+  },
+  {
+    "film_no": 2,
+    "title": "Into the Dark",
+    "scheduled": "2026-11-12 12:33 JST",
+    "logged": "2026-11-11 20:25 JST",
+    "post_ids": {
+      "tiktok": 424299506,
+      "instagram": 424299526,
+      "threads": 424299548,
+      "bluesky": 424299567,
+      "pinterest": 424299588
+    }
+  },
+  {
+    "film_no": 3,
+    "title": "The Last Car",
+    "scheduled": "2026-11-13 12:33 JST",
+    "logged": "2026-11-12 20:17 JST",
+    "post_ids": {
+      "tiktok": 425541442,
+      "instagram": 425541473,
+      "threads": 425541521,
+      "bluesky": 425541575,
+      "pinterest": 425541720
+    }
+  },
+  {
+    "film_no": 4,
+    "title": "The Echo Canyon",
+    "scheduled": "2026-11-14 12:33 JST",
+    "logged": "2026-11-13 20:23 JST",
+    "post_ids": {
+      "tiktok": 426822565,
+      "instagram": 426822587,
+      "threads": 426822606,
+      "bluesky": 426822620,
+      "pinterest": 426822635
+    },
+    "cover": "poster as TikTok/IG cover"
+  },
+  {
+    "film_no": 5,
+    "title": "The Sleeping Yard",
+    "scheduled": "2026-11-15 12:33 JST",
+    "logged": "2026-11-14 20:17 JST",
+    "post_ids": {
+      "tiktok": 427917261,
+      "instagram": 427917278,
+      "threads": 427917300,
+      "bluesky": 427917318,
+      "pinterest": 427917436
+    },
+    "cover": "poster as TikTok/IG cover",
+    "hook": "It's looking right at us. Don't move. (vault hook test, first)"
+  },
+  {
+    "film_no": 6,
+    "title": "The Lift Bridge",
+    "scheduled": "2026-11-16 12:33 JST",
+    "logged": "2026-11-15 20:16 JST",
+    "post_ids": {
+      "tiktok": 428795133,
+      "instagram": 428795156,
+      "threads": 428795172,
+      "bluesky": 428795183,
+      "pinterest": 428795320
+    },
+    "cover": "poster as TikTok/IG cover",
+    "hook": "It ate our lights. Don't move. (vault hook test)"
+  },
+  {
+    "film_no": 7,
+    "title": "The Turntable",
+    "scheduled": "2026-11-17 12:33 JST",
+    "logged": "2026-11-16 20:20 JST",
+    "post_ids": {
+      "tiktok": 429911762,
+      "instagram": 429911804,
+      "threads": 429911864,
+      "bluesky": 429911913,
+      "pinterest": 429912829
+    },
+    "cover": "poster as TikTok/IG cover",
+    "hook": "It's right over us. Not a sound. (vault hook test)",
+    "pinLink": "https://www.youtube.com/watch?v=z2lToW1qnEo"
+  },
+  {
+    "film_no": 8,
+    "title": "The Long Hill",
+    "scheduled": "2026-11-18 12:33 JST",
+    "logged": "2026-11-17 20:16 JST",
+    "hook": "We roll right past it. Not a sound.",
+    "youtube_url": "https://www.youtube.com/watch?v=OyIhwCarcsc",
+    "post_ids": {
+      "tiktok": 431299680,
+      "instagram": 431299716,
+      "threads": 431299777,
+      "bluesky": 431299830,
+      "pinterest": 431299879
+    },
+    "cover": "poster as TikTok/IG cover",
+    "pin_link": "film's YouTube"
+  },
+  {
+    "film_no": 9,
+    "title": "The Sleeping City",
+    "scheduled": "2026-11-19 12:33 JST",
+    "logged": "2026-11-18 20:16 JST",
+    "hook": "It ate the city. Now us.",
+    "youtube_url": "https://www.youtube.com/watch?v=AcjmUEHFWz4",
+    "post_ids": {
+      "tiktok": 432688685,
+      "instagram": 432688729,
+      "threads": 432688752,
+      "bluesky": 432688781,
+      "pinterest": 432688803
+    },
+    "cover": "poster as TikTok/IG cover",
+    "pin_link": "film's YouTube"
+  },
+  {
+    "film_no": 10,
+    "title": "The Old Ferry",
+    "scheduled": "2026-11-20 12:33 JST",
+    "logged": "2026-11-19 20:17 JST",
+    "hook": "It wades in. It's right over us.",
+    "youtube_url": "https://www.youtube.com/watch?v=SMr-CGG3e2s",
+    "post_ids": {
+      "tiktok": 434070168,
+      "instagram": 434070199,
+      "threads": 434070238,
+      "bluesky": 434070288,
+      "pinterest": 434070311
+    },
+    "cover": "poster as TikTok/IG cover",
+    "pin_link": "film's YouTube",
+    "bluesky": "hook first (Bluesky hook test)",
+    "note": "last of vault films 1-10"
   }
- },
- {
-  "film_no": 2,
-  "title": "Into the Dark",
-  "scheduled": "2026-11-12 12:33 JST",
-  "logged": "2026-11-11 20:25 JST",
-  "post_ids": {
-   "tiktok": 424299506,
-   "instagram": 424299526,
-   "threads": 424299548,
-   "bluesky": 424299567,
-   "pinterest": 424299588
-  }
- },
- {
-  "film_no": 3,
-  "title": "The Last Car",
-  "scheduled": "2026-11-13 12:33 JST",
-  "logged": "2026-11-12 20:17 JST",
-  "post_ids": {
-   "tiktok": 425541442,
-   "instagram": 425541473,
-   "threads": 425541521,
-   "bluesky": 425541575,
-   "pinterest": 425541720
-  }
- },
- {
-  "film_no": 4,
-  "title": "The Echo Canyon",
-  "scheduled": "2026-11-14 12:33 JST",
-  "logged": "2026-11-13 20:23 JST",
-  "post_ids": {
-   "tiktok": 426822565,
-   "instagram": 426822587,
-   "threads": 426822606,
-   "bluesky": 426822620,
-   "pinterest": 426822635
-  },
-  "cover": "poster as TikTok/IG cover"
- },
- {
-  "film_no": 5,
-  "title": "The Sleeping Yard",
-  "scheduled": "2026-11-15 12:33 JST",
-  "logged": "2026-11-14 20:17 JST",
-  "post_ids": {
-   "tiktok": 427917261,
-   "instagram": 427917278,
-   "threads": 427917300,
-   "bluesky": 427917318,
-   "pinterest": 427917436
-  },
-  "cover": "poster as TikTok/IG cover",
-  "hook": "It's looking right at us. Don't move. (vault hook test, first)"
- },
- {
-  "film_no": 6,
-  "title": "The Lift Bridge",
-  "scheduled": "2026-11-16 12:33 JST",
-  "logged": "2026-11-15 20:16 JST",
-  "post_ids": {
-   "tiktok": 428795133,
-   "instagram": 428795156,
-   "threads": 428795172,
-   "bluesky": 428795183,
-   "pinterest": 428795320
-  },
-  "cover": "poster as TikTok/IG cover",
-  "hook": "It ate our lights. Don't move. (vault hook test)"
- },
- {
-  "film_no": 7,
-  "title": "The Turntable",
-  "scheduled": "2026-11-17 12:33 JST",
-  "logged": "2026-11-16 20:20 JST",
-  "post_ids": {
-   "tiktok": 429911762,
-   "instagram": 429911804,
-   "threads": 429911864,
-   "bluesky": 429911913,
-   "pinterest": 429912829
-  },
-  "cover": "poster as TikTok/IG cover",
-  "hook": "It's right over us. Not a sound. (vault hook test)",
-  "pinLink": "https://www.youtube.com/watch?v=z2lToW1qnEo"
- },
- {
-  "film_no": 8,
-  "title": "The Long Hill",
-  "scheduled": "2026-11-18 12:33 JST",
-  "logged": "2026-11-17 20:16 JST",
-  "hook": "We roll right past it. Not a sound.",
-  "youtube_url": "https://www.youtube.com/watch?v=OyIhwCarcsc",
-  "post_ids": {
-   "tiktok": 431299680,
-   "instagram": 431299716,
-   "threads": 431299777,
-   "bluesky": 431299830,
-   "pinterest": 431299879
-  },
-  "cover": "poster as TikTok/IG cover",
-  "pin_link": "film's YouTube"
- },
- {
-  "film_no": 9,
-  "title": "The Sleeping City",
-  "scheduled": "2026-11-19 12:33 JST",
-  "logged": "2026-11-18 20:16 JST",
-  "hook": "It ate the city. Now us.",
-  "youtube_url": "https://www.youtube.com/watch?v=AcjmUEHFWz4",
-  "post_ids": {
-   "tiktok": 432688685,
-   "instagram": 432688729,
-   "threads": 432688752,
-   "bluesky": 432688781,
-   "pinterest": 432688803
-  },
-  "cover": "poster as TikTok/IG cover",
-  "pin_link": "film's YouTube"
- }
 ]
