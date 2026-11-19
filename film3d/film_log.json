@@ -475,7 +475,7 @@
   "title": "The Sea Road",
   "date_made": "2026-11-18",
   "frames": 2400,
-  "status": "rendering",
+  "status": "stock",
   "clever_move": "The Hush is faster on the sand, so Rook takes the old sea road over the tidal flats to Isle Town just as the tide comes in; the sea and a big wave close the road behind the train, and the Hush, wading after it, stops in the deep water with the sea at its chest.",
   "fear": "On the low road the rails are under water and the train must crawl; the Hush walks right behind and eats the lamp and the fire. '...Don't look back. Keep rolling.'",
   "surprise": "A big wave rolls over the low road between the train and the Hush; the road behind is gone under the sea (not defeated: it waits out in the sea for low tide).",
@@ -487,6 +487,10 @@
   ],
   "hook": "The sea is rising. It's right behind.",
   "render_started": "2026-11-18 11:06 JST (~21 s/frame + rest, ~23.5 s/frame incl. rest, done ~03:00-04:00 JST 11-19)",
-  "render_progress": "2026-11-18 15:43 JST: 722/2400 frames, ~23 s/frame incl. rest (last 21.3 s), done ~02:30-03:00 JST 11-19 (TremenFilm folder not connected to this run; checked via Blender MCP)"
+  "render_progress": "2026-11-18 15:43 JST: 722/2400 frames, ~23 s/frame incl. rest (last 21.3 s), done ~02:30-03:00 JST 11-19 (TremenFilm folder not connected to this run; checked via Blender MCP)",
+  "video": "gloamrun/films/gloamrun_film20_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film20_poster.jpg",
+  "duration": 108.0,
+  "finished": "2026-11-19 10:55 JST (render done 2026-11-19 04:14; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 51.0 = Hush + Rook, hook burned top left; 108 s with cold open + end card)"
  }
 ]
