@@ -510,7 +510,7 @@
     "title": "The Zigzag",
     "date_made": "2026-11-19",
     "frames": 2400,
-    "status": "stock",
+    "status": "posted",
     "clever_move": "The Hush is faster in the valley, so Rook takes the old zigzag line (switchback) up the steep loose-stone face of Iron Mountain: forward, then backwards up the second leg, then forward again ('Rails go where feet can't'); it tries to climb straight up and the stones slide under it.",
     "fear": "At switch two Rook stops with every light out; its face rises right beside the ledge. '...Don't move. Not a sound.'",
     "surprise": "Creeping on in the dark, the wheels slip on the wet rails and the train rolls back toward it; 'Sand on the rails! Full steam!' Up the last leg; it slides all the way down to the foot (it will be back).",
@@ -528,7 +528,15 @@
     "poster": "gloamrun/films/gloamrun_film21_poster.jpg",
     "duration": 108.0,
     "synopsis": "The Hush is faster in the valley. Rook takes the old zigzag line up the steep face of Iron Mountain, where the loose stones slide under its feet.",
-    "finished": "2026-11-20 10:50 JST (render done 2026-11-20 05:35; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 46.0 = Hush face + Rook, hook burned top left; 108 s with cold open + end card)"
+    "finished": "2026-11-20 10:50 JST (render done 2026-11-20 05:35; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 46.0 = Hush face + Rook, hook burned top left; 108 s with cold open + end card)",
+    "posted": "2026-11-20 20:33 JST",
+    "youtube_post_id": 435417220,
+    "facebook_post_id": 435417240,
+    "tiktok_post_id": 435417268,
+    "instagram_post_id": 435417306,
+    "threads_post_id": 435417330,
+    "bluesky_post_id": 435417360,
+    "pinterest_post_id": 435417378
   },
   {
     "film_no": 22,

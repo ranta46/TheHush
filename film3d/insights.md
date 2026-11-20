@@ -1,5 +1,19 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-20 (Film 21 The Zigzag, 3D, set for 20:33 on 7 networks; vault 1-10 all crossposted, vault step finished)
+| Film | YT views / avg (s) / ret. | TikTok views / likes | IG views / avg watch (s) / 3 s skip |
+|---|---|---|---|
+| 12-17 ("Don't move." style hooks) | 24-51 / 25-38 (16-17 no row) | 347-451 / 5-26 | 118-135 / 10.4-16.3 / 41-57 % |
+| 18 The Wheat Sea | no row | 449 / 8 | **1207 / 31.3 / 27 %** |
+| 19 The Long Shadow (day 2) | no row | 326 / 19 | 123 / 15.8 / 47 % |
+| 20 The Sea Road (new threat-line hook, day 1) | no row | 36 / 2 | 132 / **23.6** / **32 %** |
+| vault 8-9 (day 2-3) | - | 422 / 158 | 133-126 / 15.6-12.1 / 34-51 % |
+YouTube subscribers 51 (flat). YouTube rows for 16-20 still missing (5th day). Bluesky: 0 likes since 11-17 (hook-first test 2 posts in).
+- Film 20 (first hook without "Don't move.") holds best on IG day 1 after Film 18: 3 s skip 32 % (12-17: 41-57 %) and 23.6 s avg watch. Supports the hook-wording test (films 21-23).
+- TikTok day 1 is weak for Film 20 (36 vs 50-78) and vault 9 is slow (158); TikTok keeps ending near 350-450 whatever we change.
+- Comments are 0-1 per film on every network; nothing in the posts asks viewers anything. YouTube Film 20 lost its custom thumbnail (Metricool "Could not upload video thumbnail").
+- Change (description text, posting run, from Film 22): first comment = one easy either/or question from the film's danger on YouTube, Facebook, Instagram, Threads. Judge on comments of films 22-24 vs 11-21; roll back if not better.
+
 ## 2026-11-19 (Film 20 The Sea Road, 3D, set for 20:33 on 7 networks; vault Film 10 (last vault film) set for 11-20 12:33)
 | Film | YT views / avg (s) / ret. | TikTok views / likes | IG views / avg watch (s) / ret. |
 |---|---|---|---|

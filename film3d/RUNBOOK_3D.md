@@ -101,3 +101,9 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   new short threat line from this film's own place (e.g. "The sea is rising. It's right behind."). The in-film fear line may still say "Don't move".
   Film 21 hook is now "It climbs to us. The stones are sliding." (burn this one on its poster). Judge on IG avg watch + TikTok/IG views of films 20-22
   vs 17-19; roll back if worse.
+- 2026-11-20: hook wording test running (Film 20 already used a new threat line: IG 3 s skip 31.9 %, avg 23.6 s on day 1 vs 41-57 % / 10-16 s for
+  "Don't move." hooks 12-17; keep going to Film 23). New (description text, posting run): comments are 0-1 per film on every network, so new films
+  get a first comment = one easy either/or question from the film's danger (e.g. "Would you hide in the dark, or run for it?"), no names, no links.
+  Send it as firstCommentText on YouTube, Facebook, Instagram and Threads (not TikTok, Bluesky, Pinterest, vault posts). If Metricool rejects it,
+  post again without it. From Film 22. PC run: film.json may add "question"; if missing, the posting run writes one. Judge on comments of films
+  22-24 vs films 11-21 (0-1 each); roll back if not better.
