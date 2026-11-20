@@ -529,5 +529,24 @@
     "duration": 108.0,
     "synopsis": "The Hush is faster in the valley. Rook takes the old zigzag line up the steep face of Iron Mountain, where the loose stones slide under its feet.",
     "finished": "2026-11-20 10:50 JST (render done 2026-11-20 05:35; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 46.0 = Hush face + Rook, hook burned top left; 108 s with cold open + end card)"
+  },
+  {
+    "film_no": 22,
+    "folder": "films/film19",
+    "title": "The Needle",
+    "date_made": "2026-11-20",
+    "frames": 2400,
+    "status": "rendering",
+    "clever_move": "The Hush is faster on the open moor, so Rook takes the old line into the Needle, a rock gorge too narrow for it ('It's too big to come in'); it stops at the walls and has to walk along the rim above, looking down.",
+    "fear": "In the Bowl, where the gorge opens, it walks down in; Rook stops dark by the big rock and it stands right beside them. '...Don't move. Not a sound.'",
+    "surprise": "A drop from the rock falls on the hot boiler: HISS. It turns. 'Full steam! Into the Needle!' At the end the Needle is a high cliff over Reed Town; it can't climb down and stands up there (it will be back).",
+    "places": [
+      "the night moor",
+      "the Needle (narrow rock gorge through the high plateau)",
+      "the Bowl with the big rock",
+      "Reed Town by the lake"
+    ],
+    "hook": "It looks down. The walls open here.",
+    "render_started": "2026-11-20 11:18 JST (~28 s/frame + rest, ~31 s/frame incl. rest, done ~08:00-09:00 JST 11-21)"
   }
 ]
