@@ -510,7 +510,7 @@
     "title": "The Zigzag",
     "date_made": "2026-11-19",
     "frames": 2400,
-    "status": "rendering",
+    "status": "stock",
     "clever_move": "The Hush is faster in the valley, so Rook takes the old zigzag line (switchback) up the steep loose-stone face of Iron Mountain: forward, then backwards up the second leg, then forward again ('Rails go where feet can't'); it tries to climb straight up and the stones slide under it.",
     "fear": "At switch two Rook stops with every light out; its face rises right beside the ledge. '...Don't move. Not a sound.'",
     "surprise": "Creeping on in the dark, the wheels slip on the wet rails and the train rolls back toward it; 'Sand on the rails! Full steam!' Up the last leg; it slides all the way down to the foot (it will be back).",
@@ -523,6 +523,11 @@
     "hook": "It climbs to us. The stones are sliding.",
     "render_started": "2026-11-19 11:08 JST (~24 s/frame + rest, done ~03:30-05:00 JST 11-20)",
     "render_check": "2026-11-19 15:40-15:50 JST: PC online but Blender MCP timed out 4 times (unreachable / possibly frozen during render); TremenFilm folder not connected to the run (connectedFolders empty) -> progress unknown; expected ~600/2400 if running, done ~03:30-05:00 JST 11-20. Stock 1 (Film 20).",
-    "hook_note": "2026-11-19 posting run: hook changed (no 'Don't move.' test, films 21-23)"
+    "hook_note": "2026-11-19 posting run: hook changed (no 'Don't move.' test, films 21-23)",
+    "video": "gloamrun/films/gloamrun_film21_16x9.mp4",
+    "poster": "gloamrun/films/gloamrun_film21_poster.jpg",
+    "duration": 108.0,
+    "synopsis": "The Hush is faster in the valley. Rook takes the old zigzag line up the steep face of Iron Mountain, where the loose stones slide under its feet.",
+    "finished": "2026-11-20 10:50 JST (render done 2026-11-20 05:35; raw.mp4 pulled via Blender base64 (folder not connected), md5 ok; poster_t 46.0 = Hush face + Rook, hook burned top left; 108 s with cold open + end card)"
   }
 ]
