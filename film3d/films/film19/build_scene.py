@@ -167,6 +167,7 @@ lamp("G0", 40, 3.0, 31.6); lamp("G1", 100, 3.0, 36.0)                           
 lamp("W0", 164, 4.0, 42.4)                                                                       # the Bowl lamp: it eats it as it steps down
 for i, x in enumerate((240, 290)): lamp(f"K{i}", x, 3.0, 999)
 for i in range(5): lamp(f"St{i}", 352 + i * 10.0, -4.4, 999, 80)
+for i, x in enumerate((328, 338)): lamp(f"Cf{i}", x, -4.4, 999, 120)                          # lamps at the cliff foot
 # Reed Town by the lake
 houseM = newM("S_HouseM", (0.2, 0.2, 0.22), rough=1); roofM = newM("S_Roof", (0.25, 0.12, 0.09), rough=1)
 winM = newM("S_Win", (1, 0.62, 0.25), emit=5)
@@ -248,7 +249,7 @@ for t, e in ((0, 0), (2.6, 0), (4.0, 60), (41.0, 60), (42.4, 140), (44, 70), (58
     gm.default_value = e; gm.keyframe_insert("default_value", frame=F(t))
 # the hiss: a drop from the rock falls on the hot boiler at 58.6 -> a puff of steam
 for t, z in ((0, 6.0), (57.9, 6.0), (58.6, 1.7), (58.62, -5)): key(DROP, "location", F(t), z, 2)
-for t, s in ((0, 0), (58.6, 0), (59.0, 1.0), (59.8, 1.5), (60.6, 0)): key(STEAM, "scale", F(t), Vector((s, s, s * 1.3)))
+for t, s in ((0, 0), (58.6, 0), (59.0, 0.5), (59.8, 0.8), (60.6, 0)): key(STEAM, "scale", F(t), Vector((s, s, s * 1.3)))
 for t, z in ((0, 2.0), (58.6, 2.0), (60.6, 3.6)): key(STEAM, "location", F(t), z, 2)
 # our lights: put out by Rook at 41.4 ("Lights out."), lit again at 61.2 ("Full steam!")
 L0, L1 = 41.4, 61.2
@@ -302,18 +303,18 @@ cam("Cam_10", 32.4, (110, 42, 42), (105, -6, 8), 22)                            
 cam("Cam_11", 34.8, (8, -1.8, 1.6), (0, 0, 1.4), 26, T)                           # front: Rook, the Bowl ahead
 cam("Cam_12", 38.0, (194, -9, 5), (165, 0, 4), 24)                                # in the Bowl: the train comes in, it on the rim
 cam("Cam_13", 40.8, (2.6, -2.2, 1.6), (0.5, 0, 1.3), 30, T)                       # Rook: lights out
-cam("Cam_14", 44.6, (174.6, 3.8, 1.6), (176, -8, 6.5), 16)                          # low behind Rook: it stands right by us (cold open)
-cam("Cam_15", 49.4, (175, 40, 26), (175, -8, 4), 24)                              # high from the north rim: the dark train, it beside
+cam("Cam_14", 44.6, (0.0, 2.2, 0.4), (174, -6, 10), 22, T, world_look=True)                          # low behind Rook: it stands right by us (cold open)
+cam("Cam_15", 49.4, (205, 30, 24), (176, -6, 4), 24)                              # high from the north rim: the dark train, it beside
 cam("Cam_16", 52.6, (-5, 1.5, 2.4), "H_Mask", 24, T)                               # behind the train: its face
-cam("Cam_17", 55.2, (160, 6, 3), (176, -14, 10), 24)                              # in the Bowl: it goes back
-cam("Cam_18", 58.2, (5.4, -1.8, 2.4), (4.2, 0, 1.7), 30, T)                       # the drop hits the hot boiler: hiss
+cam("Cam_17", 55.2, (160, 6, 3), (170, -17, 16), 20)                              # in the Bowl: it goes back
+cam("Cam_18", 58.2, (7.5, -3.0, 2.8), (4.2, 0, 1.9), 30, T)                       # the drop hits the hot boiler: hiss
 cam("Cam_19", 59.8, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 28, T)                      # Rook: it heard us, full steam
 cam("Cam_20", 63.2, (6, -3.0, 3.5), (0, 0, 1.5), 24, T)                           # side: full steam into the Needle
-cam("Cam_21", 66.4, (230, 30, 44), (215, -8, 10), 26)                             # high: it climbs out on the rim
-cam("Cam_22", 70.0, (-4, -1.5, 3.2), "H_Mask", 40, T)                              # back: it on the high rim
-cam("Cam_23", 73.6, (345, -12, 3), (318, 0, 9), 24)                               # Reed Town: the train comes out, it on the cliff top
+cam("Cam_21", 66.4, (250, 60, 70), (215, -6, 12), 28)                             # high: it climbs out on the rim
+cam("Cam_22", 70.0, (-3, 1.8, 1.0), "H_Mask", 24, T)                              # back: it on the high rim
+cam("Cam_23", 73.6, (345, -12, 3), (318, -6, 22), 20)                               # Reed Town: the train comes out, it on the cliff top
 cam("Cam_24", 78.4, (2.4, -3.2, 1.7), (0.6, 0, 1.35), 28, T)                      # Rook at the station
-cam("Cam_25", 87.4, (400, -30, 10), (330, -4, 24), 30)                            # the lit station, it on the cliff looking down
+cam("Cam_25", 87.4, (395, -22, 6), (335, -8, 22), 26)                            # the lit station, it on the cliff looking down
 sc.camera = O["Cam_01"]
 sc.render.resolution_x = 1280; sc.render.resolution_y = 720; sc.render.resolution_percentage = 100
 sc.eevee.taa_render_samples = 24
