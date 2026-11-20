@@ -293,16 +293,16 @@ cam("Cam_01", 0, (2.6, -3.2, 1.8), (0.0, 0, 1.3), 28, T)                        
 cam("Cam_02", 2.6, (6, 2.2, 3.4), "H_Mask", 55, T)                                 # over the train, back: its face rises on the moor
 cam("Cam_03", 5.6, (-150, -95, 30), (-250, 0, 8), 22)                             # high wide: the moor, the train, it behind
 cam("Cam_04", 11.0, (-3, -2.2, 2.6), (14, 0, 3.0), 26, T)                         # over Rook: the Needle ahead
-cam("Cam_05", 15.0, (-60, -70, 14), (10, 0, 9), 24)                               # wide: the rock wall and the narrow gorge
+cam("Cam_05", 15.0, (-110, -40, 10), (0, 0, 8), 26)                               # wide: the rock wall and the narrow gorge
 cam("Cam_06", 19.6, (-4, -3.0, 2.8), "H_Mask", 28, T)                              # from the train: it comes over the moor
 cam("Cam_07", 22.4, (30, 2.5, 2.2), (-20, 0, 7), 22)                              # inside the Needle: the train comes in, it stops at the walls
 cam("Cam_08", 26.4, (2.4, -2.2, 3.0), (0.6, 0, 1.45), 30, T)                      # Rook in the gorge
-cam("Cam_09", 28.6, (-3, 1.5, 1.2), "H_Mask", 20, T)                               # up from the gorge floor: it walks on top
-cam("Cam_10", 32.4, (70, 55, 48), (85, -6, 6), 22)                                # high: the train in the slit, it on the rim
+cam("Cam_09", 28.6, (-3, 1.5, 1.2), "H_Mask", 26, T)                               # up from the gorge floor: it walks on top
+cam("Cam_10", 32.4, (110, 42, 42), (105, -6, 8), 22)                                # high: the train in the slit, it on the rim
 cam("Cam_11", 34.8, (8, -1.8, 1.6), (0, 0, 1.4), 26, T)                           # front: Rook, the Bowl ahead
 cam("Cam_12", 38.0, (194, -9, 5), (165, 0, 4), 24)                                # in the Bowl: the train comes in, it on the rim
 cam("Cam_13", 40.8, (2.6, -2.2, 1.6), (0.5, 0, 1.3), 30, T)                       # Rook: lights out
-cam("Cam_14", 44.6, (174.2, 2.4, 1.0), (176, -8, 9), 18)                          # low behind Rook: it stands right by us (cold open)
+cam("Cam_14", 44.6, (174.6, 3.8, 1.6), (176, -8, 6.5), 16)                          # low behind Rook: it stands right by us (cold open)
 cam("Cam_15", 49.4, (175, 40, 26), (175, -8, 4), 24)                              # high from the north rim: the dark train, it beside
 cam("Cam_16", 52.6, (-5, 1.5, 2.4), "H_Mask", 24, T)                               # behind the train: its face
 cam("Cam_17", 55.2, (160, 6, 3), (176, -14, 10), 24)                              # in the Bowl: it goes back
