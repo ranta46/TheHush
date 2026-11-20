@@ -1,0 +1,20 @@
+{"film_no": 22, "title": "The Needle", "poster_t": 46.0, "cold_open": [45.0, 48.0], "hook": "It looks down. The walls open here.", "hook_corner": "right",
+ "synopsis": "The Hush is faster on the open moor. Rook takes the old line into the Needle, a rock gorge too narrow for it. But the gorge does not stay narrow.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.6, 3.0, "The moor lamps went dark. It's here!"],
+  [5.8, 8.2, "It's faster on the open moor. Hold the bar!"],
+  [11.2, 13.8, "The Needle! The old line goes inside."],
+  [16.0, 18.6, "It's too big to come in. Go, go!"],
+  [24.6, 27.0, "It stopped at the walls. Too big!"],
+  [29.4, 31.8, "Now it walks on top. Watching us."],
+  [35.0, 37.4, "The Bowl is ahead. The walls open there."],
+  [40.8, 43.0, "Lights out. Stop by the rock."],
+  [46.6, 49.2, "...Don't move. Not a sound."],
+  [55.2, 57.6, "It's going back. Wait... wait..."],
+  [59.0, 60.8, "The boiler hissed! It heard us!"],
+  [61.0, 63.2, "Full steam! Into the Needle!"],
+  [72.4, 74.8, "It can't climb down. It must go round!"],
+  [81.4, 83.8, "Reed Town! Everyone inside, it's warm!"],
+  [90.2, 93.2, "It's still up there. It will be back."]
+ ]}
