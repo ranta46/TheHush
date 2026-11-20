@@ -210,7 +210,7 @@ GORGE = light("T_GorgeFill", "AREA", 260, (0.55, 0.65, 1.0), (1.5, 0, 9.0)); GOR
 FIREM = newM("T_FireM", (1, 0.35, 0.08), emit=12)
 mk("T_Fire", box(), FIREM, (2.45, 0, 0.55), scl=(0.06, 0.5, 0.3), parent=T)
 FIRE = light("T_FireGlow", "POINT", 25, (1, 0.45, 0.15), (2.2, 0, 0.7), T)
-STEAM = mk("T_Steam", sph(1, 12, 8), newM("T_SteamM", (0.8, 0.82, 0.85), emit=0.8, rough=1), (4.2, 0, 2.0), scl=(0, 0, 0), parent=T)
+STEAM = mk("T_Steam", sph(1, 12, 8), newM("T_SteamM", (0.7, 0.72, 0.76), emit=0.3, rough=1), (4.2, 0, 2.0), scl=(0, 0, 0), parent=T)
 DROP = mk("T_Drop", sph(0.07, 8, 6), newM("T_DropM", (0.6, 0.75, 1.0), emit=2.0, rough=0.1), (4.2, 0.1, 6.0), parent=T)
 
 # ---------------- the Hush ----------------
@@ -249,7 +249,7 @@ for t, e in ((0, 0), (2.6, 0), (4.0, 60), (41.0, 60), (42.4, 140), (44, 70), (58
     gm.default_value = e; gm.keyframe_insert("default_value", frame=F(t))
 # the hiss: a drop from the rock falls on the hot boiler at 58.6 -> a puff of steam
 for t, z in ((0, 6.0), (57.9, 6.0), (58.6, 1.7), (58.62, -5)): key(DROP, "location", F(t), z, 2)
-for t, s in ((0, 0), (58.6, 0), (59.0, 0.5), (59.8, 0.8), (60.6, 0)): key(STEAM, "scale", F(t), Vector((s, s, s * 1.3)))
+for t, s in ((0, 0), (58.6, 0), (59.0, 0.35), (59.8, 0.55), (60.6, 0)): key(STEAM, "scale", F(t), Vector((s, s, s * 1.3)))
 for t, z in ((0, 2.0), (58.6, 2.0), (60.6, 3.6)): key(STEAM, "location", F(t), z, 2)
 # our lights: put out by Rook at 41.4 ("Lights out."), lit again at 61.2 ("Full steam!")
 L0, L1 = 41.4, 61.2
@@ -299,7 +299,7 @@ cam("Cam_06", 19.6, (-4, -3.0, 2.8), "H_Mask", 28, T)                           
 cam("Cam_07", 22.4, (30, 2.5, 2.2), (-20, 0, 7), 22)                              # inside the Needle: the train comes in, it stops at the walls
 cam("Cam_08", 26.4, (2.4, -2.2, 3.0), (0.6, 0, 1.45), 30, T)                      # Rook in the gorge
 cam("Cam_09", 28.6, (-3, 1.5, 1.2), "H_Mask", 26, T)                               # up from the gorge floor: it walks on top
-cam("Cam_10", 32.4, (110, 42, 42), (105, -6, 8), 22)                                # high: the train in the slit, it on the rim
+cam("Cam_10", 32.4, (60, 40, 45), (75, -8, 14), 22)                                # high: the train in the slit, it on the rim
 cam("Cam_11", 34.8, (8, -1.8, 1.6), (0, 0, 1.4), 26, T)                           # front: Rook, the Bowl ahead
 cam("Cam_12", 38.0, (194, -9, 5), (165, 0, 4), 24)                                # in the Bowl: the train comes in, it on the rim
 cam("Cam_13", 40.8, (2.6, -2.2, 1.6), (0.5, 0, 1.3), 30, T)                       # Rook: lights out
@@ -311,8 +311,8 @@ cam("Cam_18", 58.2, (7.5, -3.0, 2.8), (4.2, 0, 1.9), 30, T)                     
 cam("Cam_19", 59.8, (2.4, -2.6, 3.0), (0.6, 0, 1.45), 28, T)                      # Rook: it heard us, full steam
 cam("Cam_20", 63.2, (6, -3.0, 3.5), (0, 0, 1.5), 24, T)                           # side: full steam into the Needle
 cam("Cam_21", 66.4, (250, 60, 70), (215, -6, 12), 28)                             # high: it climbs out on the rim
-cam("Cam_22", 70.0, (-3, 1.8, 1.0), "H_Mask", 24, T)                              # back: it on the high rim
-cam("Cam_23", 73.6, (345, -12, 3), (318, -6, 22), 20)                               # Reed Town: the train comes out, it on the cliff top
+cam("Cam_22", 70.0, (262, 24, 42), (245, -15, 26), 22)                              # across the Needle: it walks on the high rim
+cam("Cam_23", 73.6, (365, -14, 3), (318, -6, 22), 20)                               # Reed Town: the train comes out, it on the cliff top
 cam("Cam_24", 78.4, (2.4, -3.2, 1.7), (0.6, 0, 1.35), 28, T)                      # Rook at the station
 cam("Cam_25", 87.4, (395, -22, 6), (335, -8, 22), 26)                            # the lit station, it on the cliff looking down
 sc.camera = O["Cam_01"]
