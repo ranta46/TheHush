@@ -111,3 +111,5 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   (Film 22 not posted yet; Film 23 was a 2D fallback and already got the question). New (description text, TikTok only, posting run, new films from the next one):
   TikTok hashtags = "#Gloamrun #animation #spooky #horror #creepy" (instead of "#Gloamrun #TheHush #animation #shortfilm #spooky"). Other networks unchanged.
   Judge on TikTok day-3 views of the next 3 new films vs films 19-21 (330 / 139 / 23); roll back if not better.
+- 2026-11-21 (ops fix, not a test): right after a push, raw.githubusercontent.com/.../main/ URLs can 404 for minutes (YouTube thumbnail failed on Films 20-21). Posting runs send media and
+  videoThumbnailUrl as https://raw.githubusercontent.com/ranta46/ranta-videos/<commit sha>/<path> (git log -1 --format=%H on the commit that added the file).
