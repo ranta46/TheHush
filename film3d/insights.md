@@ -1,5 +1,22 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-21 (Film 23 The Green Lamps, 2D FALLBACK (no 3D stock: PC run stopped device_absent, Film 22 still "rendering"), set for 20:45 on 7 networks)
+| Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / 3 s skip |
+|---|---|---|---|
+| 11-15 | 31-100 / 17-39 | 430-451 / 7-26 | 118-133 / 11.7-16.3 / 41-57 % |
+| 16 The Falls | **122** / 16 / 15 % (first row) | 347 / 11 | 135 / 10.4 / 44 % |
+| 17 The Sky Lanterns (back link) | **121** / 21 / 20 % (first row) | 443 / 5 | 131 / 12.0 / 53 % |
+| 18 The Wheat Sea | 44 / 18 | 449 / 8 | 1207 / 31.3 / 27 % |
+| 19 The Long Shadow | 21 / 31 | 330 / 19 (3) | 123 / 15.8 / 47 % |
+| 20 The Sea Road (new hook style) | no row | 139 / 9 (2) | **174 / 27.6 / 30 %** |
+| 21 The Zigzag (new hook style) | no row | **23 / 0 (1)** | 129 / 18.6 / 40 % (day 1) |
+| vault 9-10 | - | 252 / 117 | 127 / 12.5-13.6 / 45-51 % |
+YouTube subscribers 51 (flat 3 days). Comments 0-1 everywhere.
+- YouTube rows for 16-19 are back: 16-17 already at 121-122 views (above every film since Film 1), Film 15 rose 25 -> 100. Older films keep growing on YouTube for a week, so day-3 numbers undercount. Back-link test (17-19) still not judgeable (16 without the link did as well as 17).
+- Hook wording (no "Don't move."): IG holds better again (Film 21 skip 40 % / 18.6 s vs 47-53 % / 12-16 s for 17 and 19), but TikTok day 1 keeps falling for new films (78, 71, 64, 36, 23). TikTok new-film reach looks throttled, not story-driven (same video does 350-450 on vault slots).
+- YouTube custom thumbnail failed on Film 20 AND Film 21 ("Could not upload video thumbnail") even after the phone check: the channel likely lacks the custom-thumbnail feature (YouTube Studio > Settings > Channel > Feature eligibility). Owner must check.
+- Change (description text, TikTok only, from the next new film): TikTok hashtags become "#Gloamrun #animation #spooky #horror #creepy" (drop #TheHush #shortfilm, which nobody searches) to reach the For You horror crowd. Judge on TikTok views at day 3 of the next 3 new films vs films 19-21 (330 / 139 / 23); roll back if not better.
+
 ## 2026-11-20 (Film 21 The Zigzag, 3D, set for 20:33 on 7 networks; vault 1-10 all crossposted, vault step finished)
 | Film | YT views / avg (s) / ret. | TikTok views / likes | IG views / avg watch (s) / 3 s skip |
 |---|---|---|---|

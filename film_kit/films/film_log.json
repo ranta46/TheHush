@@ -151,5 +151,40 @@
   },
   "youtube_url": "https://www.youtube.com/watch?v=7n5t_SMUi-g",
   "publish_check": "2026-11-13 20:55 JST: all 7 networks PUBLISHED; YouTube custom thumbnail + TikTok/IG poster cover sent"
+ },
+ {
+  "film_no": 23,
+  "date": "2026-11-21",
+  "title": "The Green Lamps",
+  "duration": 109.0,
+  "kind": "2d",
+  "folder": "film_kit/films/film23",
+  "synopsis": "The Hush is faster than the train tonight. At the old junction, one line goes home and one goes nowhere. Rook makes every lamp on the wrong line turn green.",
+  "clever_move": "At the old junction Rook stops dark at the signal box and turns every signal on the dead quarry line green; the Hush follows the green lamps up the hill, eating them one by one.",
+  "fear": "Stopped dark by the signal box, the Hush stands right over the train. '...Don't move. Not a sound.'",
+  "surprise": "The lever slips back and the train's own home signal turns green; the Hush turns. 'Now. Full steam!' It is too far up the quarry line (it will be back).",
+  "closing_line": "Never trust a green light at night.",
+  "places": [
+   "the night line with dark signals",
+   "the old junction and signal box",
+   "the quarry line up the hill",
+   "Ashby town"
+  ],
+  "hook": "It follows the lights. Ours is on.",
+  "question": "Would you trust a green light at night, or stop?",
+  "video": "gloamrun/films/gloamrun_film23_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film23_poster.jpg",
+  "status": "posted",
+  "note": "2D fallback: no 3D stock (PC run stopped, device_absent since 11-21 10:37 JST; Film 22 The Needle still 'rendering')",
+  "post": {
+   "time_jst": "2026-11-21 20:45",
+   "youtube": 436586229,
+   "facebook": 436586246,
+   "tiktok": 436586258,
+   "instagram": 436586272,
+   "threads": 436586281,
+   "bluesky": 436586297,
+   "pinterest": 436586304
+  }
  }
 ]

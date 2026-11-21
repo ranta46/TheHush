@@ -107,3 +107,7 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   Send it as firstCommentText on YouTube, Facebook, Instagram and Threads (not TikTok, Bluesky, Pinterest, vault posts). If Metricool rejects it,
   post again without it. From Film 22. PC run: film.json may add "question"; if missing, the posting run writes one. Judge on comments of films
   22-24 vs films 11-21 (0-1 each); roll back if not better.
+- 2026-11-21: hook wording test still running (IG better: Film 21 skip 40 % / 18.6 s vs 47-53 %; TikTok day 1 falling 78 -> 23). First-comment test starts with the next new film
+  (Film 22 not posted yet; Film 23 was a 2D fallback and already got the question). New (description text, TikTok only, posting run, new films from the next one):
+  TikTok hashtags = "#Gloamrun #animation #spooky #horror #creepy" (instead of "#Gloamrun #TheHush #animation #shortfilm #spooky"). Other networks unchanged.
+  Judge on TikTok day-3 views of the next 3 new films vs films 19-21 (330 / 139 / 23); roll back if not better.
