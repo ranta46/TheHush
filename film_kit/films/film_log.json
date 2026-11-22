@@ -188,5 +188,40 @@
   },
   "youtube_url": "https://www.youtube.com/watch?v=GJemKixaijs",
   "publish_check": "2026-11-21 20:48 JST: all 7 PUBLISHED; YouTube custom thumbnail OK (no warning)"
+ },
+ {
+  "film_no": 24,
+  "date": "2026-11-22",
+  "title": "The Windmills",
+  "duration": 109.0,
+  "kind": "2d",
+  "folder": "film_kit/films/film24",
+  "synopsis": "The lamps of the windmill fields go out, and the Hush is close behind. Rook hangs the spare lantern on an old windmill sail, and the light goes round and round.",
+  "clever_move": "Rook stops dark under the old mill and hangs the spare lantern on a windmill sail; the turning light holds the Hush's eyes and it walks to the mill to watch it go round.",
+  "fear": "Stopped dark by the mill, the Hush stands right over the train. '...It's right above us.' '...Not a sound. Not one.' Then the wind stops, the light stops, and it turns to the train.",
+  "surprise": "A big gust spins the sails fast and the lantern flies off over the hill; the Hush goes after it. 'Now. Full steam!' (it will be back).",
+  "closing_line": "Thank you, old mill. And you, wind.",
+  "places": [
+   "the windmill fields at night",
+   "the old mill on the hill",
+   "Millbrook town"
+  ],
+  "hook": "The wind stops. It turns to us.",
+  "question": "Would you hide by the old mill, or keep running?",
+  "video": "gloamrun/films/gloamrun_film24_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film24_poster.jpg",
+  "status": "posted",
+  "note": "2D fallback: no 3D stock (PC run 'Hush 3Dフィルム 制作と仕上げ' disabled by device_absent since 11-22 10:37 JST; Film 22 The Needle still 'rendering')",
+  "media_sha": "44938ec9e56a6a4ea866ab02e147c9fce95d5250",
+  "post": {
+   "time_jst": "2026-11-22 20:45",
+   "youtube": 437473692,
+   "facebook": 437473703,
+   "tiktok": 437473721,
+   "instagram": 437473743,
+   "threads": 437473780,
+   "bluesky": 437473807,
+   "pinterest": 437473833
+  }
  }
 ]

@@ -113,3 +113,7 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   Judge on TikTok day-3 views of the next 3 new films vs films 19-21 (330 / 139 / 23); roll back if not better.
 - 2026-11-21 (ops fix, not a test): right after a push, raw.githubusercontent.com/.../main/ URLs can 404 for minutes (YouTube thumbnail failed on Films 20-21). Posting runs send media and
   videoThumbnailUrl as https://raw.githubusercontent.com/ranta46/ranta-videos/<commit sha>/<path> (git log -1 --format=%H on the commit that added the file).
+- 2026-11-22: hook wording test (21-23) CLOSED, KEEP (IG avg watch 19-28 s vs 12-16 s for "Don't move." hooks): keep writing hooks whose 2nd sentence is a new threat line
+  from this film's place, not "Don't move." / "Not a sound." / "Don't breathe.". New (story pace, from the next film made, 3D and 2D): the first big scare comes earlier: the Hush
+  reaches the last car (very close, Rook flinches, a short line like "...It's at the last car!") by 9 s of the film itself (was ~15 s), because viewers leave at 15-25 s on every
+  network. The rest of the act keeps its shape. Judge on IG avg watch of the next 3 new films vs films 20 / 21 / 23 (27.6 / 19.2 / 21.5 s); roll back if worse.

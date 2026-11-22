@@ -1,5 +1,19 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-22 (Film 24 The Windmills, 2D FALLBACK (no 3D stock: PC run disabled device_absent again, Film 22 still "rendering"), set for 20:45 on 7 networks)
+| Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / ret. |
+|---|---|---|---|
+| 17-19 ("Don't move." style hooks) | 125 / 21 / 19 %, 81 / 13 / 12 %, 36 / 28 / 26 % | 443 / 332 / 449 | 131 / 12.0 s, 1207 / 31.3 s, 123 / 15.8 s |
+| 20 The Sea Road (new hook style) | **43 / 22 / 20 %** (first row) | 139 / 9 (3) | 174 / **27.6 s / 26 %** |
+| 21 The Zigzag (new hook style) | no row | 137 / 11 (2) | 131 / 19.2 s / 18 % |
+| 23 The Green Lamps (2D, new hook style) | no row | **17 / 0 (1)** | 148 / 21.5 s / 20 % (day 1) |
+| vault 1-10 (all networks) | - | 194-440 | 113-143 / 6.1-15.6 s |
+YouTube subscribers 53 (+2 in a day, first rise since 11-19). Comments 0-1 everywhere. Gloamrun Shorts Ep.28/29 (ChatGPT) = 1245 / 1282 YouTube views vs 15-133 for every film.
+- Hook wording test (21-23, no "Don't move." 2nd sentence) CLOSED, KEEP: IG avg watch 27.6 / 19.2 / 21.5 s for 20-23 vs 12.0 / 15.8 s for 17 and 19 (18 is a one-off 1207-view outlier). TikTok day 1 is still falling (36 -> 23 -> 17), but the same pattern hit "Don't move." films too, so it is reach, not wording.
+- On every network people leave around 15-25 s (IG avg 19-28 s, YouTube 13-28 s of ~108 s). In the current story shape the first big scare (the Hush at the last car, Rook flinch) sits at ~15-18 s of act 1, right where most viewers have already gone.
+- Ops: the PC run got disabled by device_absent again (2nd day in a row), and this cloud run cannot re-enable it (a scheduled run may not change a scheduled task). 2D fallback two days running.
+- Change (story pace, from the next film made, 3D and 2D): the first big scare moves earlier: the Hush reaches the last car (very close, Rook flinches, Rook line like "...It's at the last car!") by 9 s of the film itself (was ~15 s), so the peak lands before the 15-25 s drop. Judge on IG avg watch of the next 3 new films vs films 20 / 21 / 23 (27.6 / 19.2 / 21.5 s); roll back if worse.
+
 ## 2026-11-21 (Film 23 The Green Lamps, 2D FALLBACK (no 3D stock: PC run stopped device_absent, Film 22 still "rendering"), set for 20:45 on 7 networks)
 | Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / 3 s skip |
 |---|---|---|---|
