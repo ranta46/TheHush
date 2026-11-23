@@ -1,0 +1,21 @@
+{"film_no": 25, "title": "The Glass Roof", "poster_t": 8.6, "cold_open": [42.0, 45.0], "hook": "It looks in. The roof is glass.", "hook_corner": "right",
+ "question": "Would you hide in the dark shed, or run for it?",
+ "synopsis": "The Hush is right behind the last car. Rook hides the train in the old engine shed and puts out every light. But the shed has a glass roof, and the Hush looks in.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.6, 3.0, "The yard lamps went dark. It's here!"],
+  [7.8, 10.0, "...It's at the last car!"],
+  [10.4, 12.6, "Full steam! Hold the bar!"],
+  [16.6, 19.0, "The old engine shed! Get inside!"],
+  [21.0, 23.4, "Close the doors! Walls hide us."],
+  [24.6, 27.0, "Lights out. Every one."],
+  [29.2, 31.6, "It's outside. It can't see in."],
+  [37.0, 39.4, "It's looking in the windows."],
+  [45.6, 48.0, "...Don't move. Not a sound."],
+  [55.0, 57.4, "It's going. Wait... wait..."],
+  [59.4, 61.4, "The glass fell! It heard us!"],
+  [61.6, 63.8, "Out the back door! Full steam!"],
+  [70.4, 72.8, "Keep the fire hot! Don't look back!"],
+  [78.2, 80.6, "Ember Town! Lights ahead. Hold on!"],
+  [90.0, 93.0, "It's still out there. It will be back."]
+ ]}
