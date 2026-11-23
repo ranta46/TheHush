@@ -569,7 +569,7 @@
   "title": "The Glass Roof",
   "date_made": "2026-11-23",
   "frames": 2400,
-  "status": "rendering",
+  "status": "stock",
   "clever_move": "The Hush is right behind the last car and faster, so Rook runs the train into the old engine shed, the doors close behind it and he puts out every light ('Walls hide us'); it can only bend down and look in through the glass roof.",
   "fear": "Its face at the glass roof right above the dark train. '...Don't move. Not a sound.'",
   "surprise": "Its heavy steps shake a loose roof pane; it slides and crashes inside beside the cab. It comes back to the glass; 'Out the back door! Full steam!' The train bursts out of the back doors to Ember Town (it will be back).",
@@ -580,6 +580,11 @@
    "Ember Town and station"
   ],
   "hook": "It looks in. The roof is glass.",
-  "render_started": "2026-11-23 10:51 JST (~6 s/frame + rest, ~7.3 s/frame incl. rest, done ~15:45-16:30 JST)"
+  "render_started": "2026-11-23 10:51 JST (~6 s/frame + rest, ~7.3 s/frame incl. rest, done ~15:45-16:30 JST)",
+  "video": "gloamrun/films/gloamrun_film25_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film25_poster.jpg",
+  "duration": 108.0,
+  "synopsis": "The Hush is right behind the last car. Rook hides the train in the old engine shed and puts out every light. But the shed has a glass roof, and the Hush looks in.",
+  "finished": "2026-11-23 16:35 JST (render done 16:17; raw.mp4 pulled via Blender base64 in 3MB parts (folder not connected), md5 ok; poster_t 8.6 Hush + Rook, hook burned; 108 s with cold open + end card)"
  }
 ]
