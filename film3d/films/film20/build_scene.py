@@ -181,6 +181,10 @@ fallM.node_tree.nodes["Principled BSDF"].inputs["Alpha"].default_value = 0.45
 try: fallM.surface_render_method = "DITHERED"
 except Exception: pass
 FALL.data.materials[0] = fallM
+fb = fallM.node_tree.nodes["Principled BSDF"]
+for t_, a_, e_ in ((0, 0.10, 0.0), (57.6, 0.10, 0.0), (58.0, 0.45, 0.6)):
+    fb.inputs["Alpha"].default_value = a_; fb.inputs["Alpha"].keyframe_insert("default_value", frame=F(t_))
+    fb.inputs["Emission Strength"].default_value = e_; fb.inputs["Emission Strength"].keyframe_insert("default_value", frame=F(t_))
 SHARDS = [mk("S_Shard", box(), fallM, (FALL.location.x + rr.uniform(-0.3, 0.3), -1.25, 0.03), (0, 0, rr.uniform(0, 3)), (0, 0, 0)) for i in range(10)]
 for s_ in SHARDS: s_.visible_shadow = False
 RLAMP = []
@@ -198,7 +202,7 @@ def lamp(tag, x, y, td, e=55, z=None):
 # the Hush: (t, x, y, dz) ; z = ground + dz   (dz < 0 = it bends down into its smoke to look in)
 HP_ = [(0, -268, -6, -40), (2.4, -268, -6, -40), (3.4, -268, -6, -16), (4.4, -266, -6, 0), (8.0, -185, -3, 0), (9.4, -167, -3, 0),
        (14, -112, -5, 0), (19, -52, -6, 0), (22.6, -12, -6, 0), (26, 24, -8, 0), (29, 33, -11, 0), (33, 40, -14, 0), (37, 46, -14, -2),
-       (40, 50, -13, -6), (42, 52, -12.5, -9), (48, 53, -12.5, -9), (50, 53.5, -12.5, -9), (53.5, 50, -13, -5), (56, 44, -15, 0),
+       (40, 50, -13, -5), (42, 52, -12.5, -7), (48, 53, -12.5, -7), (50, 53.5, -12.5, -7), (53.5, 50, -13, -4), (56, 44, -15, 0),
        (57.6, 40, -16, 0), (59.6, 42, -15, 0), (61.6, 49, -13, -4), (63, 52, -13, -3), (64.4, 58, -14, 0), (66, 66, -15, 0),
        (70, 96, -12, 0), (76, 150, -10, 0), (80, 190, -10, 0), (84, 214, -12, 0), (86, 220, -14, 0), (100, 220, -14, 0)]
 def h_x(x):
@@ -346,14 +350,14 @@ def cam(name, start_s, loc, look, lens=28, parent=None, world_look=False, free=F
     m = sc.timeline_markers.new(name, frame=F(start_s)); m.camera = c; return c
 cam("Cam_01", 0, (2.6, -3.2, 1.8), (0.0, 0, 1.3), 28, T)                          # Rook: the yard lamps went dark
 cam("Cam_02", 2.6, (6, 2.2, 3.4), "H_Mask", 55, T)                                 # over the train, back: its face rises
-cam("Cam_03", 5.0, (-6, -34, 3), (-8, 0, 10), 18, T)                             # side wide: it catches up, right behind the last car
-cam("Cam_03b", 7.8, (3.0, -1.5, 0.8), (-4, 0, 5), 18, T)                          # low on Rook: it is at the last car (flinch)
+cam("Cam_03", 5.0, (-8, -34, 3), (-12, 0, 10), 18, T)                             # side wide: it catches up, right behind the last car
+cam("Cam_03b", 7.8, (3.0, -1.5, 0.8), (-4, 0, 7), 16, T)                          # low on Rook: it is at the last car (flinch)
 cam("Cam_04", 10.2, (-95, -45, 16), (-125, 0, 4), 24)                            # high wide: full steam, it behind
 cam("Cam_05", 14.0, (-40, -24, 6), (-85, 0, 8), 24)                               # it walks after us, the lamps die
 cam("Cam_06", 16.4, (-3, -2.2, 2.6), (14, 0, 2.0), 34, T)                         # over Rook: the old shed ahead
 cam("Cam_07", 19.4, (30, -12, 4), (46, 0, 2), 24)                                 # the yard: the train runs in, the doors close
-cam("Cam_08", 24.2, (59.4, -1.7, 1.9), (52.5, 0.2, 1.2), 22, None, free=True)       # inside: Rook, lights out
-cam("Cam_09", 27.4, (6, 30, 16), (40, -8, 9), 24)                                # outside: it comes to the shed, eats the lamp
+cam("Cam_08", 24.2, (55.8, -1.6, 1.6), (53.4, 0, 1.3), 22, None, free=True)       # inside: Rook, lights out
+cam("Cam_09", 27.4, (10, 20, 14), (40, -8, 9), 24)                                # outside: it comes to the shed, eats the lamp
 cam("Cam_10", 32.4, (80, 24, 26), (48, -8, 6), 24)                                # high: it walks along the little shed
 cam("Cam_11", 36.4, (48.5, 1.7, 0.6), (50, -6, 9), 18, None, free=True)           # inside, up: the glass roof, its shape passes
 cam("Cam_12", 41.0, (51.5, 1.6, 0.4), "H_Mask", 20, None, free=True)              # inside, up: its face at the glass (cold open)
