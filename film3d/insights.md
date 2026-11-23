@@ -1,5 +1,19 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-23 (Film 22 The Needle, 3D (stock was back: 22 and 25), set for 20:33 on 7 networks; vault step finished)
+| Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / ret. |
+|---|---|---|---|
+| 16-18 | 144 / 18 / 17 %, 127 / 22 / 20 %, 99 / 13 / 12 % | 347 / 443 / 450 | 135 / 10.4 s, 131 / 12.0 s, 1207 / 31.3 s |
+| 19-21 (poster with hook) | 36 / 28 / 26 %, 43 / 22 / 20 %, **42 / 12 / 11 %** (first row) | 332 / 139 / 137 | 123 / 15.8, 174 / 27.6, 131 / 19.2 |
+| 23 The Green Lamps (2D) | no row | 85 / 1 (2) | 153 / 21.0 s / 19 % |
+| 24 The Windmills (2D, first TikTok horror hashtags) | no row | **11 / 0 (1)** | 124 / **27.3 s / 25 %** (day 1) |
+| vault 1-10 | - | 194-440 | 113-143 / 6.1-15.6 s |
+YouTube subscribers 53 (flat). Comments 0-1 everywhere. Shorts (ChatGPT) Ep.28/29/33 = 1245 / 1282 / 1090 YouTube views vs 15-144 for every film. Threads views null, Facebook feed posts give no rows in Metricool.
+- IG holds well on the newest films (avg watch 27.3 / 21.0 / 19.2 / 27.6 s for 24 / 23 / 21 / 20 vs 10-16 s for 11-17), but IG VIEWS are stuck at 115-175 per Reel (only Film 18 broke out). Hold is no longer the limit on IG; reach is.
+- TikTok new-film day 1 is still tiny (11 / 17) and grows slowly (Film 23: 17 -> 85 on day 2). Hashtag test has only 1 film; keep going.
+- Poster-hook test (19-21) cannot be judged cleanly: YouTube custom thumbnail failed on 20 and 21. YouTube views 36-43 at day 3-5 are inside the old 24-51 range of 12-15 (below 16-17). Keep it and judge again on 22 / 24 / 25 (thumbnails went through). Vault pin -> YouTube test (7-10): no change in YouTube views (71 / 69 / 28 / 37 flat), neutral, keep (no harm).
+- Change (description text, Instagram only, new films from Film 25): IG hashtags = "#Gloamrun #animation #horror #creepy #scary #spooky" (drop #TheHush #shortfilm). Judge on IG views of the next 3 new films vs 20 / 21 / 23 / 24 (174 / 131 / 153 / 124); roll back if not better.
+
 ## 2026-11-22 (Film 24 The Windmills, 2D FALLBACK (no 3D stock: PC run disabled device_absent again, Film 22 still "rendering"), set for 20:45 on 7 networks)
 | Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / ret. |
 |---|---|---|---|

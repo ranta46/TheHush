@@ -117,3 +117,7 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   from this film's place, not "Don't move." / "Not a sound." / "Don't breathe.". New (story pace, from the next film made, 3D and 2D): the first big scare comes earlier: the Hush
   reaches the last car (very close, Rook flinches, a short line like "...It's at the last car!") by 9 s of the film itself (was ~15 s), because viewers leave at 15-25 s on every
   network. The rest of the act keeps its shape. Judge on IG avg watch of the next 3 new films vs films 20 / 21 / 23 (27.6 / 19.2 / 21.5 s); roll back if worse.
+- 2026-11-23: IG avg watch is now good (19-28 s on films 20-24) but IG views stay at 115-175 per Reel, so test reach (description text, Instagram only, posting run,
+  new films from Film 25; vault and other networks unchanged): Instagram hashtags = "#Gloamrun #animation #horror #creepy #scary #spooky" (instead of
+  "#Gloamrun #TheHush #animation #shortfilm #spooky"). Judge on IG views of the next 3 new films vs films 20 / 21 / 23 / 24 (174 / 131 / 153 / 124); roll back if not
+  better. Poster-hook test: judge again on films 22 / 24 / 25 (YouTube thumbnail failed on 20-21).

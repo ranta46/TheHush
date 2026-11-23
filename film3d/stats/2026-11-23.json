@@ -1,0 +1,463 @@
+{
+ "date": "2026-11-23",
+ "brand": 7473995,
+ "fetched": "2026-11-23 20:25 JST",
+ "youtube_videos": [
+  {
+   "film": 2,
+   "views": 42,
+   "avg_view_s": 15,
+   "retention_pct": 14
+  },
+  {
+   "film": 3,
+   "views": 80,
+   "avg_view_s": 19,
+   "retention_pct": 18
+  },
+  {
+   "film": 4,
+   "views": 52,
+   "avg_view_s": 19,
+   "retention_pct": 18
+  },
+  {
+   "film": 5,
+   "views": 15,
+   "avg_view_s": 22,
+   "retention_pct": 20
+  },
+  {
+   "film": 6,
+   "views": 23,
+   "avg_view_s": 22,
+   "retention_pct": 20
+  },
+  {
+   "film": 7,
+   "views": 71,
+   "avg_view_s": 24,
+   "retention_pct": 22
+  },
+  {
+   "film": 8,
+   "views": 69,
+   "avg_view_s": 23,
+   "retention_pct": 21
+  },
+  {
+   "film": 9,
+   "views": 28,
+   "avg_view_s": 33,
+   "retention_pct": 31
+  },
+  {
+   "film": 10,
+   "views": 37,
+   "avg_view_s": 23,
+   "retention_pct": 21
+  },
+  {
+   "film": 11,
+   "views": 80,
+   "avg_view_s": 18,
+   "retention_pct": 17
+  },
+  {
+   "film": 12,
+   "views": 71,
+   "avg_view_s": 39,
+   "retention_pct": 36
+  },
+  {
+   "film": 13,
+   "views": 31,
+   "avg_view_s": 28,
+   "retention_pct": 26
+  },
+  {
+   "film": 14,
+   "views": 51,
+   "avg_view_s": 19,
+   "retention_pct": 18
+  },
+  {
+   "film": 15,
+   "views": 100,
+   "avg_view_s": 32,
+   "retention_pct": 30
+  },
+  {
+   "film": 16,
+   "views": 144,
+   "avg_view_s": 18,
+   "retention_pct": 17
+  },
+  {
+   "film": 17,
+   "views": 127,
+   "avg_view_s": 22,
+   "retention_pct": 20
+  },
+  {
+   "film": 18,
+   "views": 99,
+   "avg_view_s": 13,
+   "retention_pct": 12
+  },
+  {
+   "film": 19,
+   "views": 36,
+   "avg_view_s": 28,
+   "retention_pct": 26
+  },
+  {
+   "film": 20,
+   "views": 43,
+   "avg_view_s": 22,
+   "retention_pct": 20
+  },
+  {
+   "film": 21,
+   "views": 42,
+   "avg_view_s": 12,
+   "retention_pct": 11
+  }
+ ],
+ "youtube_note": "Film 21 first row (42 / 12 s). 23, 24 no row yet. Likes 0-1, comments 0-1, shares 0-1. Shorts Ep.33 1090, Ep.29 1282, Ep.28 1245 views vs films 15-144. YouTube thumbnail OK on Film 24 (static jpeg set).",
+ "followers": {
+  "youtube": 53
+ },
+ "tiktok": [
+  {
+   "film": 24,
+   "views": 11,
+   "likes": 0,
+   "age_days": 1,
+   "hashtags": "new horror set"
+  },
+  {
+   "film": 23,
+   "views": 85,
+   "likes": 1,
+   "age_days": 2
+  },
+  {
+   "film": 21,
+   "views": 137,
+   "likes": 11,
+   "age_days": 3
+  },
+  {
+   "film": 20,
+   "views": 139,
+   "likes": 9,
+   "age_days": 4
+  },
+  {
+   "film": 19,
+   "views": 332,
+   "likes": 19
+  },
+  {
+   "film": 18,
+   "views": 450,
+   "likes": 8
+  },
+  {
+   "film": 17,
+   "views": 443,
+   "likes": 5
+  },
+  {
+   "film": 16,
+   "views": 347,
+   "likes": 11
+  },
+  {
+   "film": 15,
+   "views": 435,
+   "likes": 13
+  },
+  {
+   "film": 14,
+   "views": 437,
+   "likes": 7
+  },
+  {
+   "film": 13,
+   "views": 430,
+   "likes": 12
+  },
+  {
+   "film": 12,
+   "views": 452,
+   "likes": 26
+  },
+  {
+   "film": 11,
+   "views": 445,
+   "likes": 24
+  },
+  {
+   "film": 10,
+   "vault": true,
+   "views": 194,
+   "likes": 17
+  },
+  {
+   "film": 9,
+   "vault": true,
+   "views": 252,
+   "likes": 21
+  },
+  {
+   "film": 8,
+   "vault": true,
+   "views": 422,
+   "likes": 13
+  },
+  {
+   "film": 7,
+   "vault": true,
+   "views": 421,
+   "likes": 14
+  },
+  {
+   "film": 6,
+   "vault": true,
+   "views": 384,
+   "likes": 6
+  },
+  {
+   "film": 5,
+   "vault": true,
+   "views": 204,
+   "likes": 4
+  },
+  {
+   "film": 4,
+   "vault": true,
+   "views": 425,
+   "likes": 13
+  },
+  {
+   "film": 3,
+   "vault": true,
+   "views": 409,
+   "likes": 23
+  },
+  {
+   "film": 2,
+   "vault": true,
+   "views": 440,
+   "likes": 14
+  },
+  {
+   "film": 1,
+   "vault": true,
+   "views": 315,
+   "likes": 4
+  }
+ ],
+ "instagram_reels": [
+  {
+   "film": 24,
+   "views": 124,
+   "likes": 4,
+   "reach": 108,
+   "avg_watch_s": 27.3,
+   "retention_pct": 25
+  },
+  {
+   "film": 23,
+   "views": 153,
+   "likes": 2,
+   "reach": 134,
+   "avg_watch_s": 21.0,
+   "retention_pct": 19
+  },
+  {
+   "film": 21,
+   "views": 131,
+   "likes": 3,
+   "reach": 116,
+   "avg_watch_s": 19.2,
+   "retention_pct": 18
+  },
+  {
+   "film": 20,
+   "views": 174,
+   "likes": 5,
+   "reach": 144,
+   "avg_watch_s": 27.6,
+   "retention_pct": 26
+  },
+  {
+   "film": 19,
+   "views": 123,
+   "likes": 1,
+   "reach": 113,
+   "avg_watch_s": 15.8,
+   "retention_pct": 15
+  },
+  {
+   "film": 18,
+   "views": 1207,
+   "likes": 28,
+   "reach": 988,
+   "avg_watch_s": 31.3,
+   "retention_pct": 29
+  },
+  {
+   "film": 17,
+   "views": 131,
+   "likes": 3,
+   "reach": 115,
+   "avg_watch_s": 12.0,
+   "retention_pct": 11
+  },
+  {
+   "film": 16,
+   "views": 135,
+   "likes": 0,
+   "reach": 119,
+   "avg_watch_s": 10.4,
+   "retention_pct": 10
+  },
+  {
+   "film": 14,
+   "views": 120,
+   "likes": 4,
+   "reach": 108,
+   "avg_watch_s": 15.5,
+   "retention_pct": 14
+  },
+  {
+   "film": 15,
+   "views": 118,
+   "likes": 2,
+   "reach": 104,
+   "avg_watch_s": 12.1,
+   "retention_pct": 11
+  },
+  {
+   "film": 12,
+   "views": 133,
+   "likes": 2,
+   "reach": 115,
+   "avg_watch_s": 14.6,
+   "retention_pct": 14
+  },
+  {
+   "film": 13,
+   "views": 125,
+   "likes": 3,
+   "reach": 108,
+   "avg_watch_s": 16.3,
+   "retention_pct": 15
+  },
+  {
+   "film": 11,
+   "views": 130,
+   "likes": 2,
+   "reach": 116,
+   "avg_watch_s": 11.7,
+   "retention_pct": 11
+  },
+  {
+   "film": 10,
+   "views": 127,
+   "likes": 1,
+   "reach": 110,
+   "avg_watch_s": 13.6,
+   "retention_pct": 13,
+   "vault": true
+  },
+  {
+   "film": 9,
+   "views": 127,
+   "likes": 0,
+   "reach": 110,
+   "avg_watch_s": 12.5,
+   "retention_pct": 12,
+   "vault": true
+  },
+  {
+   "film": 8,
+   "views": 133,
+   "likes": 1,
+   "reach": 114,
+   "avg_watch_s": 15.6,
+   "retention_pct": 14,
+   "vault": true
+  },
+  {
+   "film": 7,
+   "views": 143,
+   "likes": 0,
+   "reach": 124,
+   "avg_watch_s": 14.7,
+   "retention_pct": 14,
+   "vault": true
+  },
+  {
+   "film": 6,
+   "views": 131,
+   "likes": 1,
+   "reach": 99,
+   "avg_watch_s": 13.8,
+   "retention_pct": 13,
+   "vault": true
+  },
+  {
+   "film": 5,
+   "views": 126,
+   "likes": 1,
+   "reach": 111,
+   "avg_watch_s": 10.8,
+   "retention_pct": 10,
+   "vault": true
+  },
+  {
+   "film": 4,
+   "views": 116,
+   "likes": 1,
+   "reach": 107,
+   "avg_watch_s": 8.4,
+   "retention_pct": 8,
+   "vault": true
+  },
+  {
+   "film": 3,
+   "views": 116,
+   "likes": 2,
+   "reach": 102,
+   "avg_watch_s": 6.1,
+   "retention_pct": 6,
+   "vault": true
+  },
+  {
+   "film": 2,
+   "views": 114,
+   "likes": 0,
+   "reach": 103,
+   "avg_watch_s": 9.0,
+   "retention_pct": 8,
+   "vault": true
+  },
+  {
+   "film": 1,
+   "views": 113,
+   "likes": 1,
+   "reach": 104,
+   "avg_watch_s": 6.3,
+   "retention_pct": 6,
+   "vault": true
+  }
+ ],
+ "threads": "posts listed but views/likes/replies all null in Metricool",
+ "facebook": "FBPO feed posts: no rows (Facebook film posts not in Metricool post analytics)",
+ "not_fetched": "Bluesky, Pinterest per-post (0-few in past runs)",
+ "new_post_today": "Film 22 The Needle (3D) 20:33 JST, 7 networks"
+}
