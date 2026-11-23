@@ -176,7 +176,12 @@ def door(tag, xh, yh, sgn):
     mk(f"S_DoorBand{tag}", box(), ironM, (0.07, -sgn * 1.12, 1.5), scl=(0.03, 2.1, 0.12), parent=piv); DOORS[tag] = piv; return piv
 door("F1", SX0, SW, 1); door("F2", SX0, -SW, -1); door("B1", SX1, SW, 1); door("B2", SX1, -SW, -1)
 FALL = PANES[11]                                                    # the loose pane (beside the cab)
-SHARDS = [mk("S_Shard", box(), glassM, (FALL.location.x + rr.uniform(-0.3, 0.3), -1.25, 0.03), (0, 0, rr.uniform(0, 3)), (0, 0, 0)) for i in range(10)]
+fallM = newM("S_GlassFall", (0.7, 0.85, 1.0), emit=0.6, rough=0.05)
+fallM.node_tree.nodes["Principled BSDF"].inputs["Alpha"].default_value = 0.45
+try: fallM.surface_render_method = "DITHERED"
+except Exception: pass
+FALL.data.materials[0] = fallM
+SHARDS = [mk("S_Shard", box(), fallM, (FALL.location.x + rr.uniform(-0.3, 0.3), -1.25, 0.03), (0, 0, rr.uniform(0, 3)), (0, 0, 0)) for i in range(10)]
 for s_ in SHARDS: s_.visible_shadow = False
 RLAMP = []
 def light(name, typ, energy, col, loc, parent=None, size=1.0, shadow=False):
@@ -341,23 +346,24 @@ def cam(name, start_s, loc, look, lens=28, parent=None, world_look=False, free=F
     m = sc.timeline_markers.new(name, frame=F(start_s)); m.camera = c; return c
 cam("Cam_01", 0, (2.6, -3.2, 1.8), (0.0, 0, 1.3), 28, T)                          # Rook: the yard lamps went dark
 cam("Cam_02", 2.6, (6, 2.2, 3.4), "H_Mask", 55, T)                                 # over the train, back: its face rises
-cam("Cam_03", 5.0, (3.2, -3.8, 1.9), (-7, 0, 4.5), 20, T)                         # Rook in front, it right behind the last car (flinch)
-cam("Cam_04", 10.2, (-110, -70, 28), (-140, 0, 6), 24)                            # high wide: full steam, it behind
+cam("Cam_03", 5.0, (-6, -34, 3), (-8, 0, 10), 18, T)                             # side wide: it catches up, right behind the last car
+cam("Cam_03b", 7.8, (3.0, -1.5, 0.8), (-4, 0, 5), 18, T)                          # low on Rook: it is at the last car (flinch)
+cam("Cam_04", 10.2, (-95, -45, 16), (-125, 0, 4), 24)                            # high wide: full steam, it behind
 cam("Cam_05", 14.0, (-40, -24, 6), (-85, 0, 8), 24)                               # it walks after us, the lamps die
-cam("Cam_06", 16.4, (-3, -2.2, 2.6), (14, 0, 2.0), 26, T)                         # over Rook: the old shed ahead
-cam("Cam_07", 19.4, (24, -14, 5), (46, 0, 2), 24)                                 # the yard: the train runs in, the doors close
-cam("Cam_08", 24.2, (57.4, -1.5, 1.3), (51.5, 0, 1.2), 26, None, free=True)       # inside: Rook, lights out
-cam("Cam_09", 27.4, (8, 26, 10), (40, -8, 10), 24)                                # outside: it comes to the shed, eats the lamp
+cam("Cam_06", 16.4, (-3, -2.2, 2.6), (14, 0, 2.0), 34, T)                         # over Rook: the old shed ahead
+cam("Cam_07", 19.4, (30, -12, 4), (46, 0, 2), 24)                                 # the yard: the train runs in, the doors close
+cam("Cam_08", 24.2, (59.4, -1.7, 1.9), (52.5, 0.2, 1.2), 22, None, free=True)       # inside: Rook, lights out
+cam("Cam_09", 27.4, (6, 30, 16), (40, -8, 9), 24)                                # outside: it comes to the shed, eats the lamp
 cam("Cam_10", 32.4, (80, 24, 26), (48, -8, 6), 24)                                # high: it walks along the little shed
 cam("Cam_11", 36.4, (48.5, 1.7, 0.6), (50, -6, 9), 18, None, free=True)           # inside, up: the glass roof, its shape passes
-cam("Cam_12", 41.0, (51.5, 1.0, 0.5), "H_Mask", 20, None, free=True)              # inside, up: its face at the glass (cold open)
+cam("Cam_12", 41.0, (51.5, 1.6, 0.4), "H_Mask", 20, None, free=True)              # inside, up: its face at the glass (cold open)
 cam("Cam_13", 48.4, (2.4, -1.9, 1.5), (0.6, 0, 1.3), 30, T)                       # Rook in the dark
 cam("Cam_14", 51.6, (64, 26, 22), (50, -8, 8), 22)                                # high from the north: it bent over the dark shed
 cam("Cam_15", 54.6, (16, -40, 4), (46, -10, 10), 24)                              # it straightens and goes
-cam("Cam_16", 57.8, (57.6, -1.0, 1.1), (54.8, -1.4, 1.6), 22, None, free=True)    # inside: the pane slides and falls, CRASH
+cam("Cam_16", 57.8, (56.8, -2.0, 0.4), (54.4, -1.0, 1.2), 20, None, free=True)    # inside: the pane slides and falls, CRASH
 cam("Cam_17", 59.2, (52.0, 1.2, 0.5), "H_Mask", 20, None, free=True)              # inside, up: it is back at the glass
-cam("Cam_18", 61.6, (2.4, -2.6, 1.8), (0.6, 0, 1.45), 28, T)                      # Rook: out the back door
-cam("Cam_19", 63.6, (70, -6, 1.5), (60, 0, 1.6), 24)                              # the back doors burst open
+cam("Cam_18", 60.9, (2.6, -1.7, 1.4), (0.6, 0, 1.35), 24, T)                      # Rook: out the back door
+cam("Cam_19", 62.2, (74, -5, 1.4), (61, 0, 1.4), 24)                              # the back doors burst open
 cam("Cam_20", 66.4, (112, -52, 30), (80, 0, 4), 24)                               # high: we run, it comes after
 cam("Cam_21", 70.0, (6, -3.0, 3.5), (0, 0, 1.5), 24, T)                           # side: keep the fire hot
 cam("Cam_22", 74.0, (250, -20, 4), (200, 0, 8), 22)                               # the line: the train passes, it far behind
