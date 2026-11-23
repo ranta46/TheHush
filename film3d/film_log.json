@@ -572,7 +572,18 @@
       "threads": 438623287,
       "bluesky": 438623316,
       "pinterest": 438623365
-    }
+    },
+    "youtube_url": "https://www.youtube.com/watch?v=rhfcJCRVcOI",
+    "published_ids": {
+      "youtube": "rhfcJCRVcOI",
+      "facebook": "1127870623370384",
+      "tiktok": "7711328635231243540",
+      "instagram": "https://www.instagram.com/reel/DgFSKopirkG/",
+      "threads": "18126717808911586",
+      "bluesky": "3n2xzwekvna2p",
+      "pinterest": "1086493478894691453"
+    },
+    "all_published": true
   },
   {
     "film_no": 25,
