@@ -1,5 +1,19 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-24 (Film 25 The Glass Roof, 3D, set for 20:33 on 7 networks; vault step finished; stock now 0, Film 26 rendering)
+| Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / ret. |
+|---|---|---|---|
+| 19-21 | 39 / 27 / 25 %, 54 / 18 / 17 %, **74 / 19 / 18 %** | 332 / 139 (5) / 137 (4) | 123 / 15.8, 174 / 27.6, 132 / 19.1 |
+| 22 The Needle (3D, TikTok horror tags, 1st comment) | no row | 19 / 1 (1) | 111 / 20.3 s / 19 % (day 1) |
+| 23 The Green Lamps (2D, old TikTok tags) | 18 / 10 / 9 % | 85 / 1 (3) | 155 / 20.8 s / 19 % |
+| 24 The Windmills (2D, TikTok horror tags) | 13 / 16 / 15 % | **140 / 17 (2)** (was 11 on day 1) | 127 / 26.9 s / 25 % |
+| vault 1-10 | - | 194-440 | 113-143 / 6.1-15.6 s |
+YouTube subscribers 53 (flat 3 days). Gloamrun Shorts (ChatGPT) Ep.28/29/33/35 = 1245 / 1282 / 1203 / 1057 YouTube views; every film is 13-161.
+- TikTok horror hashtags look good so far: Film 24 jumped 11 -> 140 on day 2 (likes 17, best since Film 19) vs Film 23 (old tags) 85 at day 3. Keep the test running (22 / 24 / 25).
+- YouTube is the weakest network for films: 2D films 23/24 got 18/13 views and 10-16 s avg; 3D films 19-21 get 39-74 and keep growing for a week. YouTube film description still uses the old tags "#TheHush #shortfilm" that TikTok dropped.
+- First-comment test: films 23 and 24 each have 1 YouTube comment (most films 0). Early sign, keep going.
+- Change (description text, YouTube only, new films from Film 26): YouTube description hashtags = "#Gloamrun #animation #horror #creepy #scary" (instead of "#Gloamrun #TheHush #animation #shortfilm") and youtubeData tags = ["Gloamrun","Rook and the Hush","horror animation","creepy","scary","animated short film","monster"]. Judge on YouTube views at day 3-5 of films 26-28 vs 3D films 19-21 (39 / 54 / 74); roll back if not better.
+
 ## 2026-11-23 (Film 22 The Needle, 3D (stock was back: 22 and 25), set for 20:33 on 7 networks; vault step finished)
 | Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / ret. |
 |---|---|---|---|

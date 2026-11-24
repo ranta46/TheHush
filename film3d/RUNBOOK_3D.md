@@ -121,3 +121,7 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   new films from Film 25; vault and other networks unchanged): Instagram hashtags = "#Gloamrun #animation #horror #creepy #scary #spooky" (instead of
   "#Gloamrun #TheHush #animation #shortfilm #spooky"). Judge on IG views of the next 3 new films vs films 20 / 21 / 23 / 24 (174 / 131 / 153 / 124); roll back if not
   better. Poster-hook test: judge again on films 22 / 24 / 25 (YouTube thumbnail failed on 20-21).
+- 2026-11-24: TikTok horror hashtags look good (Film 24: 11 -> 140 views on day 2, 17 likes); YouTube is the weakest network for films (13-74 views). New (description text, YouTube only, posting
+  run, new films from Film 26; vault, Facebook and other networks unchanged): YouTube description hashtags = "#Gloamrun #animation #horror #creepy #scary" (instead of
+  "#Gloamrun #TheHush #animation #shortfilm") and youtubeData tags = ["Gloamrun","Rook and the Hush","horror animation","creepy","scary","animated short film","monster"].
+  Judge on YouTube views at day 3-5 of films 26-28 vs 3D films 19-21 (39 / 54 / 74); roll back if not better.
