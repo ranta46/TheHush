@@ -1,0 +1,21 @@
+{"film_no": 26, "title": "The Spiral", "poster_t": 46.5, "cold_open": [45.0, 48.0], "hook": "It's right below us. A stone falls.", "hook_corner": "left",
+ "question": "Would you hide in the dark tunnel, or run for it?",
+ "synopsis": "The Hush is right behind the last car. Rook runs the dark train into the old spiral tunnel. The Hush waits at the door, but the line goes round and up, and comes out right above its head.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.6, 3.0, "The valley lamps went dark. It's here!"],
+  [7.8, 10.0, "...It's at the last car!"],
+  [10.4, 12.6, "Full steam! Hold the bar!"],
+  [16.6, 19.0, "The old spiral tunnel! Into the mountain!"],
+  [23.2, 25.6, "Lights out. It goes round and up inside."],
+  [28.6, 31.0, "It's at the door. It's too big."],
+  [34.0, 36.6, "It watches the door. We leave by the top."],
+  [38.6, 41.0, "We're out. It's right below us."],
+  [45.6, 48.0, "...Don't move. Not a sound."],
+  [51.4, 53.8, "Almost past. Wait... wait..."],
+  [57.6, 59.4, "A stone fell! It looked up!"],
+  [59.8, 61.8, "Lights on! Full steam!"],
+  [69.0, 71.4, "Keep the fire hot! It's climbing!"],
+  [76.4, 78.8, "Copper Town! Lights ahead. Hold on!"],
+  [88.0, 91.0, "It's still down there. It will be back."]
+ ]}
