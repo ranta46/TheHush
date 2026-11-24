@@ -611,13 +611,16 @@
   "posted": "2026-11-24 20:33 JST",
   "youtube_post_id": 440118228,
   "facebook_post_id": 440118301,
-  "tiktok_post_id": 440118354,
+  "tiktok_post_id": 440142939,
   "instagram_post_id": 440118381,
   "threads_post_id": 440118413,
   "bluesky_post_id": 440118438,
   "pinterest_post_id": 440118456,
   "question": "Would you stay still in the dark shed, or run out the back door?",
-  "media_url_sha": "fd57bdea04a840e213cc07a4fa08fafc086c609e"
+  "media_url_sha": "fd57bdea04a840e213cc07a4fa08fafc086c609e",
+  "youtube_url": "https://www.youtube.com/watch?v=H6CPO6JcGCs",
+  "tiktok_first_try": "440118354 ERROR 'Tiktok internal error' at 20:33; re-sent for 20:57 JST",
+  "publish_check": "2026-11-24 20:36 JST: YouTube (custom thumbnail set, no warning), Facebook, Instagram, Threads, Bluesky, Pinterest PUBLISHED; TikTok ERROR (internal) -> re-sent 20:57. 21:00 JST: TikTok retry PUBLISHED (https://www.tiktok.com/@rook89113/video/7711705865987968277). All 7 networks up."
  },
  {
   "film_no": 26,
