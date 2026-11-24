@@ -150,7 +150,7 @@ _nt.links.new(_nz.outputs["Fac"], _bp.inputs["Height"]); _nt.links.new(_bp.outpu
 stoneM = newM("S_PortalStone", (0.2, 0.19, 0.17), rough=0.9)
 pboxes("S_Cliff", rockM, [
     B(53, 80, -260, -2.6, -1, ZL), B(53, 80, 2.6, 42, -1, ZL), B(53, 80, -2.6, 2.6, 6.5, ZL),          # below the ledge, the low door's roof
-    B(60, 82, -24, 42, ZL, 30), B(60, 75, 42, 60, ZL - 1, 24),                                          # the wall above the ledge
+    B(60, 82, -24, 42, ZL, 30),                                          # the wall above the ledge
     B(53, 54.2, -260, -24, ZL, 30), B(58.8, 82, -260, -24, ZL, 30), B(54.2, 58.8, -260, -24, ZL + 4.5, 30),  # the shoulder round the top door
     B(54.2, 58.8, -260, -41, ZL, ZL + 4.5)])
 pboxes("S_TunnelEnds", darkM, [B(78, 79.9, -2.6, 2.6, -1, 6.5), B(54.2, 58.8, -41, -40, ZL, ZL + 4.5),
@@ -313,7 +313,7 @@ cam("Cam_05", 14.0, (-40, -24, 6), (-85, 0, 8), 24)                             
 cam("Cam_06", 16.4, (-3, -2.2, 2.6), (14, 0, 3.0), 30, T)                         # over Rook: the cliff and the low door ahead
 cam("Cam_07", 19.4, (28, -18, 4), (54, 0, 5), 24)                                 # the train runs into the low door under the ledge
 cam("Cam_08", 22.6, (2.4, -1.7, 1.5), (0.6, 0, 1.3), 26, T)                       # inside: Rook, lights out
-cam("Cam_09", 27.0, (50, -22, 3), (34, -3, 13), 22, None, free=True)                                  # outside: it comes to the door, eats the lamp, bends down
+cam("Cam_09", 27.0, (50, -22, 3), (34, -3, 17), 22, None, free=True)                                  # outside: it comes to the door, eats the lamp, bends down
 cam("Cam_10", 31.6, (66, 1.0, 1.4), "H_Mask", 24, None, free=True)                # inside the low door, out: its face fills the door
 cam("Cam_11", 36.0, (47, -9, 14.5), (56.5, -24, 13.2), 26, None, free=True)        # the top door: the dark train creeps out, it below
 cam("Cam_12", 40.4, (26, 22, 26), (50, -8, 9), 24, None, free=True)               # high: the dark train on the ledge right above it
@@ -324,7 +324,7 @@ cam("Cam_16", 55.6, (52.4, -6.5, 13.2), (54.2, -1.2, 12.1), 22, None, free=True)
 cam("Cam_17", 56.6, (62, 1.4, 1.0), "H_Mask", 22, None, free=True)                # inside the low door: the stone clacks in front of its face, it looks up
 cam("Cam_18", 58.6, (2.6, -1.7, 1.4), (0.6, 0, 1.35), 24, T)                      # Rook: lights on, full steam
 cam("Cam_19", 60.6, (52.5, 34, 14.5), (56, -4, 14), 24, None, free=True)          # up the ledge, back: the train comes, it rises behind
-cam("Cam_20", 64.6, (8, 30, 40), (48, 62, 10), 24, None, free=True)               # high: we run onto the pass, it climbs after
+cam("Cam_20", 64.6, (0, 34, 30), (48, 38, 12), 26, None, free=True)               # high: we run onto the pass, it climbs after
 cam("Cam_21", 68.6, (6, -3.0, 3.5), (0, 0, 1.5), 24, T)                           # side: keep the fire hot
 cam("Cam_22", 72.6, (64, 150, 16), (54, 90, 22), 22, None, free=True)             # the pass: the train passes, it far behind
 cam("Cam_23", 76.2, (-3, -2.2, 2.6), (14, 0, 2.0), 26, T)                         # over Rook: Copper Town ahead
