@@ -142,7 +142,7 @@ pboxes("S_TiesU", tie, [((UX, y, ZL - 0.02), (1.4, 0.25, 0.06), 0) for y in axis
 pboxes("S_EndStop", newM("S_Red", (0.6, 0.05, 0.03), rough=0.5), [((X0 + 2, 0, 0.4), (0.3, 1.8, 0.5), 0), ((UX, Y1, ZL + 0.4), (1.8, 0.3, 0.5), 0)])
 # ---- Grey Mountain's cliff: rock blocks; low door x 53..80 (y +-2.6, 6.5 high); the ledge top at ZL (x 53..60); top door in the shoulder at y = -24 ----
 rockM = newM("S_Rock", (0.05, 0.047, 0.045), rough=1)
-_nt = rockM.node_tree; _nz = _nt.nodes.new("ShaderNodeTexNoise"); _nz.inputs["Scale"].default_value = 0.35; _nz.inputs["Detail"].default_value = 6
+_nt = rockM.node_tree; _nz = _nt.nodes.new("ShaderNodeTexNoise"); _nz.inputs["Scale"].default_value = 0.12; _nz.inputs["Detail"].default_value = 6
 _cr = _nt.nodes.new("ShaderNodeValToRGB"); _cr.color_ramp.elements[0].color = (0.022, 0.021, 0.022, 1); _cr.color_ramp.elements[1].color = (0.075, 0.068, 0.06, 1)
 _bp = _nt.nodes.new("ShaderNodeBump"); _bp.inputs["Strength"].default_value = 0.6
 _pb = _nt.nodes["Principled BSDF"]; _nt.links.new(_nz.outputs["Fac"], _cr.inputs["Fac"]); _nt.links.new(_cr.outputs["Color"], _pb.inputs["Base Color"])
@@ -313,9 +313,9 @@ cam("Cam_05", 14.0, (-40, -24, 6), (-85, 0, 8), 24)                             
 cam("Cam_06", 16.4, (-3, -2.2, 2.6), (14, 0, 3.0), 30, T)                         # over Rook: the cliff and the low door ahead
 cam("Cam_07", 19.4, (28, -18, 4), (54, 0, 5), 24)                                 # the train runs into the low door under the ledge
 cam("Cam_08", 22.6, (2.4, -1.7, 1.5), (0.6, 0, 1.3), 26, T)                       # inside: Rook, lights out
-cam("Cam_09", 27.0, (22, -42, 6), (44, -2, 10), 24)                                  # outside: it comes to the door, eats the lamp, bends down
+cam("Cam_09", 27.0, (50, -22, 3), (34, -3, 13), 22, None, free=True)                                  # outside: it comes to the door, eats the lamp, bends down
 cam("Cam_10", 31.6, (66, 1.0, 1.4), "H_Mask", 24, None, free=True)                # inside the low door, out: its face fills the door
-cam("Cam_11", 36.0, (34, -14, 15), (53, -20, 10), 20, None, free=True)        # the top door: the dark train creeps out, it below
+cam("Cam_11", 36.0, (47, -9, 14.5), (56.5, -24, 13.2), 26, None, free=True)        # the top door: the dark train creeps out, it below
 cam("Cam_12", 40.4, (26, 22, 26), (50, -8, 9), 24, None, free=True)               # high: the dark train on the ledge right above it
 cam("Cam_13", 44.4, (49.5, -26, 15.5), (50, -6, 9), 20, None, free=True)          # low by its face, up: the train above (cold open)
 cam("Cam_14", 48.4, (2.2, 2.4, 1.2), (0.6, 0, 1.3), 26, T)                        # Rook in the dark, looking down at it
