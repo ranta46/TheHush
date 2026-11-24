@@ -141,7 +141,12 @@ pboxes("S_RailsU", railM, [((UX + sd * 0.53, (Y0 + Y1) / 2, ZL + 0.03), (0.08, Y
 pboxes("S_TiesU", tie, [((UX, y, ZL - 0.02), (1.4, 0.25, 0.06), 0) for y in axis(Y0, Y1, 2.0)])
 pboxes("S_EndStop", newM("S_Red", (0.6, 0.05, 0.03), rough=0.5), [((X0 + 2, 0, 0.4), (0.3, 1.8, 0.5), 0), ((UX, Y1, ZL + 0.4), (1.8, 0.3, 0.5), 0)])
 # ---- Grey Mountain's cliff: rock blocks; low door x 53..80 (y +-2.6, 6.5 high); the ledge top at ZL (x 53..60); top door in the shoulder at y = -24 ----
-rockM = newM("S_Rock", (0.10, 0.095, 0.09), rough=1); darkM = newM("S_TunnelDark", (0.0, 0.0, 0.0), rough=1)
+rockM = newM("S_Rock", (0.05, 0.047, 0.045), rough=1)
+_nt = rockM.node_tree; _nz = _nt.nodes.new("ShaderNodeTexNoise"); _nz.inputs["Scale"].default_value = 0.35; _nz.inputs["Detail"].default_value = 6
+_cr = _nt.nodes.new("ShaderNodeValToRGB"); _cr.color_ramp.elements[0].color = (0.022, 0.021, 0.022, 1); _cr.color_ramp.elements[1].color = (0.075, 0.068, 0.06, 1)
+_bp = _nt.nodes.new("ShaderNodeBump"); _bp.inputs["Strength"].default_value = 0.6
+_pb = _nt.nodes["Principled BSDF"]; _nt.links.new(_nz.outputs["Fac"], _cr.inputs["Fac"]); _nt.links.new(_cr.outputs["Color"], _pb.inputs["Base Color"])
+_nt.links.new(_nz.outputs["Fac"], _bp.inputs["Height"]); _nt.links.new(_bp.outputs["Normal"], _pb.inputs["Normal"]); darkM = newM("S_TunnelDark", (0.0, 0.0, 0.0), rough=1)
 stoneM = newM("S_PortalStone", (0.2, 0.19, 0.17), rough=0.9)
 pboxes("S_Cliff", rockM, [
     B(53, 80, -260, -2.6, -1, ZL), B(53, 80, 2.6, 42, -1, ZL), B(53, 80, -2.6, 2.6, 6.5, ZL),          # below the ledge, the low door's roof
@@ -174,7 +179,7 @@ for i, x in enumerate((-140, -100, -60, -20)): lamp(f"V{i}", x, -3.2, h_x(x) + 0
 lamp("D0", 49.5, -4.0, 29.4, 70)                                                                  # the lamp at the low door: it eats it
 for i, y in enumerate((120, 180)): lamp(f"K{i}", UX - 3.0, y, 999, 55, ZL)
 for i in range(5): lamp(f"St{i}", UX - 3.2, 222 + i * 9.0, 999, 80, ZL)
-LEDGEMOON = light("S_LedgeMoon", "AREA", 120, (0.55, 0.65, 1.0), (50, -8, 26))
+LEDGEMOON = light("S_LedgeMoon", "AREA", 30, (0.55, 0.65, 1.0), (50, -8, 26))
 LEDGEMOON.data.shape = "RECTANGLE"; LEDGEMOON.data.size = 30; LEDGEMOON.data.size_y = 60; LEDGEMOON.rotation_euler = (0, math.radians(-25), 0)
 # Copper Town on the pass
 houseM = newM("S_HouseM", (0.2, 0.2, 0.22), rough=1); roofM = newM("S_Roof", (0.25, 0.12, 0.09), rough=1)
@@ -308,13 +313,13 @@ cam("Cam_05", 14.0, (-40, -24, 6), (-85, 0, 8), 24)                             
 cam("Cam_06", 16.4, (-3, -2.2, 2.6), (14, 0, 3.0), 30, T)                         # over Rook: the cliff and the low door ahead
 cam("Cam_07", 19.4, (28, -18, 4), (54, 0, 5), 24)                                 # the train runs into the low door under the ledge
 cam("Cam_08", 22.6, (2.4, -1.7, 1.5), (0.6, 0, 1.3), 26, T)                       # inside: Rook, lights out
-cam("Cam_09", 27.0, (6, -34, 9), (46, 0, 8), 24)                                  # outside: it comes to the door, eats the lamp, bends down
+cam("Cam_09", 27.0, (22, -42, 6), (44, -2, 10), 24)                                  # outside: it comes to the door, eats the lamp, bends down
 cam("Cam_10", 31.6, (66, 1.0, 1.4), "H_Mask", 24, None, free=True)                # inside the low door, out: its face fills the door
-cam("Cam_11", 36.0, (38, -16, 17), (56.5, -26, 13.5), 24, None, free=True)        # the top door: the dark train creeps out, it below
+cam("Cam_11", 36.0, (34, -14, 15), (53, -20, 10), 20, None, free=True)        # the top door: the dark train creeps out, it below
 cam("Cam_12", 40.4, (26, 22, 26), (50, -8, 9), 24, None, free=True)               # high: the dark train on the ledge right above it
-cam("Cam_13", 44.4, (47.5, -11, 2.2), (52, -4, 10), 18, None, free=True)          # low by its face, up: the train above (cold open)
+cam("Cam_13", 44.4, (49.5, -26, 15.5), (50, -6, 9), 20, None, free=True)          # low by its face, up: the train above (cold open)
 cam("Cam_14", 48.4, (2.2, 2.4, 1.2), (0.6, 0, 1.3), 26, T)                        # Rook in the dark, looking down at it
-cam("Cam_15", 51.4, (24, -32, 3), (50, -4, 9), 24)                                # wide from below: almost past it
+cam("Cam_15", 51.4, (34, -30, 22), (52, -4, 10), 26, None, free=True)                                # wide from below: almost past it
 cam("Cam_16", 55.6, (52.4, -6.5, 13.2), (54.2, -1.2, 12.1), 22, None, free=True)  # on the ledge edge: the wheel knocks the stone off
 cam("Cam_17", 56.6, (62, 1.4, 1.0), "H_Mask", 22, None, free=True)                # inside the low door: the stone clacks in front of its face, it looks up
 cam("Cam_18", 58.6, (2.6, -1.7, 1.4), (0.6, 0, 1.35), 24, T)                      # Rook: lights on, full steam
