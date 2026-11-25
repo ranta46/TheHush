@@ -628,7 +628,7 @@
   "title": "The Spiral",
   "date_made": "2026-11-24",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "clever_move": "The Hush is right behind the last car and faster, so Rook runs the dark train into the low door of the old spiral tunnel in Grey Mountain; it is too big and bends down to stare into the door, while the line goes round and up inside and the dark train creeps out of the top door onto the ledge right above its head ('It watches the door. We leave by the top.').",
   "fear": "The dark train creeps along the ledge right above its bent head. '...Don't move. Not a sound.'",
   "surprise": "A wheel knocks a stone off the ledge; it clacks down onto the rails in front of its face and it looks up. 'Lights on! Full steam!' Up the ledge over the pass to Copper Town (it will be back).",
@@ -645,7 +645,18 @@
   "poster": "gloamrun/films/gloamrun_film26_poster.jpg",
   "finished": "2026-11-25 10:50 JST (render done 19:09 11-24; 108 s with end card)",
   "duration": 108.0,
-  "media_commit": "bb6e537d7631e4ffb00386fca99703c8011c4c6f"
+  "media_commit": "bb6e537d7631e4ffb00386fca99703c8011c4c6f",
+  "posted": "2026-11-25 20:33 JST",
+  "synopsis": "The Hush is right behind the last car. Rook runs the dark train into the old spiral tunnel. The Hush waits at the door, but the line goes round and up, and comes out right above its head.",
+  "question": "Would you hide in the dark tunnel, or run for it?",
+  "youtube_post_id": 441578348,
+  "facebook_post_id": 441578371,
+  "tiktok_post_id": 441578392,
+  "instagram_post_id": 441578416,
+  "threads_post_id": 441578436,
+  "bluesky_post_id": 441578468,
+  "pinterest_post_id": 441578505,
+  "media_url_sha": "bb6e537d7631e4ffb00386fca99703c8011c4c6f"
  },
  {
   "film_no": 27,
