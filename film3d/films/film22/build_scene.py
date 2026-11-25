@@ -343,7 +343,7 @@ cam("Cam_11", 32.8, (55, 45, 10), (40, -5, 8), 20)                              
 cam("Cam_12", 34.4, (2.6, -1.7, 1.4), (0.6, 0, 1.35), 24, T)                      # Rook counts the flashes
 cam("Cam_13", 37.4, (20, 60, 30), (60, -5, 4), 24)                                # high: it walks closer in the dark
 cam("Cam_14", 41.4, (88, 14, 2.4), (72, -6, 9), 20)                               # no flash: it comes right up beside the dark train
-cam("Cam_15", 44.4, (90, 4, 3.0), (74, -6, 9), 22, None, free=True)               # low by the train, up at its face (cold open)
+cam("Cam_15", 44.4, (94, 8, 2.5), (75, -5, 12.5), 20, None, free=True)               # low by the train, up at its face (cold open)
 cam("Cam_16", 48.4, (2.2, 2.4, 1.2), (0.6, 0, 1.3), 26, T)                        # Rook in the dark, it right behind him
 cam("Cam_17", 51.2, (40, 40, 30), (76, -5, 4), 26)                                # high: come on, storm... a flash, we creep on
 cam("Cam_18", 55.0, (40, -40, 7), (66, -12, 10), 22)                             # the lightning hits the old signal behind it

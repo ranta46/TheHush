@@ -1,0 +1,21 @@
+{"film_no": 27, "title": "The Storm", "poster_t": 57.6, "cold_open": [45.0, 48.0], "hook": "No flash. It's right beside us.", "hook_corner": "left",
+ "question": "Would you run in the lightning, or wait in the dark?",
+ "synopsis": "The Hush is right behind the last car on the open heath. Then a storm comes, and it stops to eat every flash of lightning. Rook puts out the lights and moves only when the sky flashes.",
+ "note": "The last train runs again tomorrow.",
+ "lines": [
+  [0.6, 3.0, "The heath lamps went dark. It's here!"],
+  [7.8, 10.0, "...It's at the last car!"],
+  [10.4, 12.6, "Full steam! Hold the bar!"],
+  [16.6, 19.0, "A storm ahead! It's faster on the heath!"],
+  [21.0, 23.2, "Look! It stops to eat the lightning!"],
+  [23.4, 25.8, "Lights out. We go only when it flashes."],
+  [34.6, 36.8, "Flash, go! Dark, stop. Flash, go!"],
+  [41.6, 44.0, "No flash... It's coming this way."],
+  [45.6, 48.0, "...Don't move. Not a sound."],
+  [50.4, 52.6, "Come on, storm. One more flash..."],
+  [57.6, 59.4, "It hit the old signal!"],
+  [59.8, 61.8, "Lights on! Full steam!"],
+  [69.0, 71.4, "Keep the fire hot! It's coming!"],
+  [76.4, 78.8, "Stone Town! Lights ahead. Hold on!"],
+  [88.0, 91.0, "The storm is gone. It will be back."]
+ ]}
