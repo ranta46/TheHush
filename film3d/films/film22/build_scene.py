@@ -228,9 +228,9 @@ KF = sorted(f for f in KF if 1 <= f <= END)
 cl = cn.inputs["Emission Strength"]
 for f in KF:
     L = min(2.0, sum(lvl(i, f) for i in range(len(STRIKES))))
-    FLASH.data.energy = 7.0 * L; FLASH.data.keyframe_insert("energy", frame=f)
-    BG.default_value = (0.016 + 0.2 * L, 0.02 + 0.22 * L, 0.05 + 0.32 * L, 1); BG.keyframe_insert("default_value", frame=f)
-    cl.default_value = 2.5 * L; cl.keyframe_insert("default_value", frame=f)
+    FLASH.data.energy = 2.2 * L; FLASH.data.keyframe_insert("energy", frame=f)
+    BG.default_value = (0.016 + 0.05 * L, 0.02 + 0.055 * L, 0.05 + 0.09 * L, 1); BG.keyframe_insert("default_value", frame=f)
+    cl.default_value = 0.7 * L; cl.keyframe_insert("default_value", frame=f)
     for i, (o, m) in enumerate(boltM):
         li = lvl(i, f); e = m.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
         e.default_value = 60 * li; e.keyframe_insert("default_value", frame=f)
@@ -293,7 +293,7 @@ se = M("H_Signal").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"
 for t, e in ((0, 80), (L0, 80), (L0 + 0.6, 3), (L1 - 0.2, 3), (L1 + 0.4, 60), (100, 50)): se.default_value = e; se.keyframe_insert("default_value", frame=F(t))
 for t, e in ((0, 6), (L0, 6), (L0 + 0.6, 0.3), (L1 - 0.2, 0.3), (L1 + 0.4, 4)): SIGL.data.energy = e; SIGL.data.keyframe_insert("energy", frame=F(t))
 for t, e in ((0, 900), (L0, 900), (L0 + 0.4, 0), (L1, 0), (L1 + 0.3, 900)): HL.data.energy = e; HL.data.keyframe_insert("energy", frame=F(t))
-for t, e in ((0, 45), (L0, 45), (L0 + 0.6, 16), (L1 - 0.2, 16), (L1 + 0.6, 45)): O["Fill"].data.energy = e; O["Fill"].data.keyframe_insert("energy", frame=F(t))
+for t, e in ((0, 45), (L0, 45), (L0 + 0.6, 22), (L1 - 0.2, 22), (L1 + 0.6, 45)): O["Fill"].data.energy = e; O["Fill"].data.keyframe_insert("energy", frame=F(t))
 wi = M("H_Window").node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
 for t, e in ((0, 4), (L0, 4), (L0 + 0.5, 0.0), (L1, 0.0), (L1 + 0.3, 4)): wi.default_value = e; wi.keyframe_insert("default_value", frame=F(t))
 fe = FIREM.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
@@ -334,21 +334,21 @@ cam("Cam_03b", 7.8, (3.0, -1.5, 0.8), (-4, 0, 7), 16, T)                        
 cam("Cam_04", 10.2, (-95, -45, 16), (-125, 0, 4), 24)                            # high wide: full steam, it behind
 cam("Cam_05", 14.0, (-40, -24, 6), (-85, 0, 8), 24)                               # it walks after us, the lamps die
 cam("Cam_06", 16.4, (-3, -2.2, 2.6), (14, 0.6, 4.0), 30, T)                       # over Rook: the storm ahead, a far flash
-cam("Cam_07", 19.0, (-5, 40, 10), (-45, -60, 20), 20)                             # the first lightning: it stops and turns to the light
+cam("Cam_07", 19.0, (-75, -45, 7), (-40, -6, 14), 22)                             # the first lightning: it stops and turns to the light
 cam("Cam_08", 21.0, (2.4, -1.7, 1.5), (0.6, 0, 1.3), 26, T)                       # Rook: it eats the lightning
 cam("Cam_08b", 23.2, (2.2, 2.4, 1.2), (0.6, 0, 1.3), 26, T)                       # Rook: lights out, we go only when it flashes
 cam("Cam_09", 25.8, (45, -48, 16), (20, 10, 10), 22)                              # wide: flash -> the dark train runs, it looks away
-cam("Cam_10", 29.4, (46, 3.5, 1.6), "H_Mask", 24, None, free=True)                # in front of the dark train: it searches behind us
+cam("Cam_10", 29.4, (58, 4, 2.0), "H_Mask", 30, None, free=True)                # in front of the dark train: it searches behind us
 cam("Cam_11", 32.8, (55, 45, 10), (40, -5, 8), 20)                                # flash, go! dark, stop.
 cam("Cam_12", 34.4, (2.6, -1.7, 1.4), (0.6, 0, 1.35), 24, T)                      # Rook counts the flashes
 cam("Cam_13", 37.4, (20, 60, 30), (60, -5, 4), 24)                                # high: it walks closer in the dark
 cam("Cam_14", 41.4, (88, 14, 2.4), (72, -6, 9), 20)                               # no flash: it comes right up beside the dark train
-cam("Cam_15", 44.4, (79, -2.6, 1.0), "H_Mask", 18, None, free=True)               # low by the train, up at its face (cold open)
+cam("Cam_15", 44.4, (90, 4, 3.0), (74, -6, 9), 22, None, free=True)               # low by the train, up at its face (cold open)
 cam("Cam_16", 48.4, (2.2, 2.4, 1.2), (0.6, 0, 1.3), 26, T)                        # Rook in the dark, it right behind him
 cam("Cam_17", 51.2, (40, 40, 30), (76, -5, 4), 26)                                # high: come on, storm... a flash, we creep on
-cam("Cam_18", 55.0, (100, -34, 6), (68, -10, 12), 20)                             # the lightning hits the old signal behind it
+cam("Cam_18", 55.0, (40, -40, 7), (66, -12, 10), 22)                             # the lightning hits the old signal behind it
 cam("Cam_19", 58.4, (2.6, -1.7, 1.4), (0.6, 0, 1.35), 24, T)                      # Rook: lights on, full steam
-cam("Cam_20", 60.6, (120, -30, 8), (72, -10, 8), 22)                              # we run, it bends down to eat the fire
+cam("Cam_20", 60.6, (30, -50, 8), (72, -8, 8), 22)                              # we run, it bends down to eat the fire
 cam("Cam_21", 64.6, (150, 45, 28), (190, 0, 4), 26)                               # high: the train on the heath
 cam("Cam_22", 68.6, (6, -3.0, 3.5), (0, 0, 1.5), 24, T)                           # side: keep the fire hot
 cam("Cam_23", 72.6, (320, -22, 10), (230, 0, 8), 22)                              # front: the train comes, it far behind
