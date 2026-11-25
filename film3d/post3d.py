@@ -16,7 +16,7 @@ def burn_hook(poster, hook, corner="left"):
     parts = [x.strip() for x in hook.replace("! ", "!|").replace(". ", ".|").replace("? ", "?|").split("|") if x.strip()]
     if len(parts) != 2:
         w = hook.split(); parts = [" ".join(w[:(len(w) + 1) // 2]), " ".join(w[(len(w) + 1) // 2:])]
-    im = Image.open(poster).convert("RGB"); W, H = im.size; d = ImageDraw.Draw(im)
+    im = Image.open(poster).convert("RGB") if isinstance(poster, str) else poster; W, H = im.size; d = ImageDraw.Draw(im)
     size = int(H * 0.105); f = E.font(E.FONT_BLACK, size)
     while max(d.textlength(t, font=f) for t in parts) > W * 0.46: size -= 2; f = E.font(E.FONT_BLACK, size)
     m = int(W * 0.035); y = int(H * 0.05); sw = max(4, size // 9)
@@ -24,7 +24,8 @@ def burn_hook(poster, hook, corner="left"):
         tw = d.textlength(t, font=f); x = m if corner == "left" else W - m - tw
         d.text((x, y), t, font=f, fill=(255, 255, 255), stroke_width=sw, stroke_fill=(12, 14, 26))
         y += int(size * 1.18)
-    im.save(poster, quality=92)
+    if isinstance(poster, str): im.save(poster, quality=92)
+    return im
 def main():
     fd, raw = sys.argv[1], sys.argv[2]; meta = json.load(open(os.path.join(fd, "film.json")))
     for _, _, t in meta["lines"]:
@@ -57,7 +58,12 @@ def main():
     if co:
         c0, c1 = float(co[0]), float(co[1]); cl = c1 - c0
         cv = os.path.join(tmp, "cold.mp4")
-        run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(c0), "-t", str(cl), "-i", body, "-vf", f"fade=t=out:st={cl-0.3}:d=0.3,format=yuv420p", "-r", "24", "-an", "-c:v", "libx264", "-crf", "19", "-preset", "medium", cv])
+        # RUNBOOK_3D 2026-11-25: the film.json "hook" is burned as big text over the cold open (same look as the poster)
+        if meta.get("hook"):
+            hp = os.path.join(tmp, "hook_cold.png"); burn_hook(Image.new("RGBA", (1280, 720), (0, 0, 0, 0)), meta["hook"], meta.get("hook_corner", "left")).save(hp)
+            run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(c0), "-t", str(cl), "-i", body, "-i", hp, "-filter_complex", f"[0:v][1:v]overlay=0:0,fade=t=out:st={cl-0.3}:d=0.3,format=yuv420p[v]", "-map", "[v]", "-r", "24", "-an", "-c:v", "libx264", "-crf", "19", "-preset", "medium", cv])
+        else:
+            run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(c0), "-t", str(cl), "-i", body, "-vf", f"fade=t=out:st={cl-0.3}:d=0.3,format=yuv420p", "-r", "24", "-an", "-c:v", "libx264", "-crf", "19", "-preset", "medium", cv])
         vid2 = os.path.join(tmp, "video_co.mp4")
         run(["ffmpeg", "-y", "-loglevel", "error", "-i", cv, "-i", vid, "-filter_complex", "[0:v][1:v]concat=n=2:v=1:a=0,format=yuv420p[v]", "-map", "[v]", "-r", "24", "-c:v", "libx264", "-crf", "19", "-preset", "medium", vid2])
         wav2 = os.path.join(tmp, "audio_co.wav")

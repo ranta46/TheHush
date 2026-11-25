@@ -125,3 +125,9 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   run, new films from Film 26; vault, Facebook and other networks unchanged): YouTube description hashtags = "#Gloamrun #animation #horror #creepy #scary" (instead of
   "#Gloamrun #TheHush #animation #shortfilm") and youtubeData tags = ["Gloamrun","Rook and the Hush","horror animation","creepy","scary","animated short film","monster"].
   Judge on YouTube views at day 3-5 of films 26-28 vs 3D films 19-21 (39 / 54 / 74); roll back if not better.
+- 2026-11-25: first-comment test (22-24) CLOSED, KEEP (IG 1 comment on every film since 22 vs 0 on 17-21; YouTube 23/24 got 1 each). New (cold open): the film.json "hook" is
+  burned as big text over the 3 s cold open (same look and corner as the poster; post3d.py does it automatically when film.json has "hook"; 2D fallback films do the same
+  over their first 3 s). PC run: keep writing "hook" and "hook_corner" (corner away from the Hush's face and Rook), check one cold-open frame by eye. From the next film
+  finished (Film 27). Judge on IG 3 s skip of the next 3 new films vs films 20-25 (~39 % avg); roll back if not lower.
+- 2026-11-25 (ops fix, not a test): Metricool can say "Tiktok internal error" while the video still goes up (Film 25 is on TikTok twice). Before re-sending a TikTok post
+  marked ERROR, wait ~10 min and check TikTok posts (getAnalyticsDataByMetrics TKPO02, TKPO05) or the account for that film; re-send only if it is not there.

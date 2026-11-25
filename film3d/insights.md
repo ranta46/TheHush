@@ -1,5 +1,20 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-25 (Film 26 The Spiral, 3D, set for 20:33 on 7 networks; vault step finished; stock now 0, Film 27 rendering)
+| Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / 3 s skip / comments |
+|---|---|---|---|
+| 19-21 | 39 / 27 / 25 %, 54 / 18 / 17 %, 74 / 19 / 18 % | 332 / 139 / 137 | 123-174 / 15.8-27.6 s / 30-47 % / 0 each |
+| 22 The Needle (3D, 1st comment, TikTok horror tags) | no row yet | **195 / 17 (2)** (19 on day 1) | 119 / 20.4 s / 50 % / 1 |
+| 23 The Green Lamps (2D, 1st comment) | 18 / 10 / 9 % (1 comment) | 85 / 1 (4) | 155 / 20.8 s / 41 % / 1 |
+| 24 The Windmills (2D, 1st comment, TikTok horror tags) | 13 / 16 / 15 % (1 comment) | 140 / 17 (3) | 127 / 26.9 s / 35 % / 1 |
+| 25 The Glass Roof (3D, IG horror tags) | no row yet | 17 + 13 (1) = TWO posts | 118 / 19.4 s / 40 % / 1 (day 1) |
+YouTube subscribers 53 (flat 4 days). Shorts (ChatGPT) still 1057-1282 YouTube views vs 13-146 for films.
+- First-comment test (22-24) CLOSED, KEEP: every new film since 22 has 1 IG comment (17-21 had 0) and 23/24 got the only YouTube comments of the month. Small, but the only thing that moved comments.
+- TikTok horror tags: Film 22 jumped 19 -> 195 on day 2 and Film 24 is 140 at day 3 (vs 139 / 137 for 20-21 with old tags). Looking good; judge when 25 reaches day 3.
+- IG 3 s skip is still 35-50 % on new films: almost half of IG viewers leave in the first 3 s, before the cold open has said what is going on. The cold open has only Rook's subtitle ("...Don't move. Not a sound."), not the hook that is on the poster and title.
+- Ops: Film 25 on TikTok is posted TWICE. Metricool said "Tiktok internal error" at 20:33 but the video went up anyway, and the 20:57 retry made a second copy (17 + 13 views, split). Fix for posting runs: before re-sending a TikTok "ERROR", check TikTok posts (TKPO02/TKPO05) for that film; if it is there, do not re-send.
+- Change (cold open, from the next film finished, 3D post3d.py done in code): the film.json "hook" is burned as big text (same look as the poster, top corner from "hook_corner") over the 3 s cold open, so the first frame tells viewers what is happening. Judge on IG 3 s skip of the next 3 new films vs films 20-25 (30 / 40 / 41 / 35 / 50 / 40 %, avg ~39 %); roll back if not lower.
+
 ## 2026-11-24 (Film 25 The Glass Roof, 3D, set for 20:33 on 7 networks; vault step finished; stock now 0, Film 26 rendering)
 | Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / ret. |
 |---|---|---|---|

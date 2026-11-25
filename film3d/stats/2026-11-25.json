@@ -1,0 +1,329 @@
+{
+ "date": "2026-11-25",
+ "brand": 7473995,
+ "fetched": "2026-11-25 20:16 JST",
+ "youtube_videos": [
+  {
+   "film": 1,
+   "views": 161,
+   "avg_view_s": 28,
+   "retention_pct": 26
+  },
+  {
+   "film": 2,
+   "views": 42,
+   "avg_view_s": 15,
+   "retention_pct": 14
+  },
+  {
+   "film": 3,
+   "views": 80,
+   "avg_view_s": 19,
+   "retention_pct": 18
+  },
+  {
+   "film": 4,
+   "views": 52,
+   "avg_view_s": 19,
+   "retention_pct": 18
+  },
+  {
+   "film": 5,
+   "views": 15,
+   "avg_view_s": 22,
+   "retention_pct": 20
+  },
+  {
+   "film": 6,
+   "views": 23,
+   "avg_view_s": 22,
+   "retention_pct": 20
+  },
+  {
+   "film": 7,
+   "views": 72,
+   "avg_view_s": 24,
+   "retention_pct": 22
+  },
+  {
+   "film": 8,
+   "views": 69,
+   "avg_view_s": 23,
+   "retention_pct": 21
+  },
+  {
+   "film": 9,
+   "views": 30,
+   "avg_view_s": 31,
+   "retention_pct": 29
+  },
+  {
+   "film": 10,
+   "views": 38,
+   "avg_view_s": 23,
+   "retention_pct": 21
+  },
+  {
+   "film": 11,
+   "views": 81,
+   "avg_view_s": 19,
+   "retention_pct": 18
+  },
+  {
+   "film": 12,
+   "views": 74,
+   "avg_view_s": 40,
+   "retention_pct": 37
+  },
+  {
+   "film": 13,
+   "views": 32,
+   "avg_view_s": 29,
+   "retention_pct": 27
+  },
+  {
+   "film": 14,
+   "views": 51,
+   "avg_view_s": 19,
+   "retention_pct": 18
+  },
+  {
+   "film": 15,
+   "views": 100,
+   "avg_view_s": 32,
+   "retention_pct": 30
+  },
+  {
+   "film": 16,
+   "views": 146,
+   "avg_view_s": 18,
+   "retention_pct": 17
+  },
+  {
+   "film": 17,
+   "views": 127,
+   "avg_view_s": 22,
+   "retention_pct": 20
+  },
+  {
+   "film": 18,
+   "views": 105,
+   "avg_view_s": 15,
+   "retention_pct": 14
+  },
+  {
+   "film": 19,
+   "views": 39,
+   "avg_view_s": 27,
+   "retention_pct": 25
+  },
+  {
+   "film": 20,
+   "views": 54,
+   "avg_view_s": 18,
+   "retention_pct": 17
+  },
+  {
+   "film": 21,
+   "views": 74,
+   "avg_view_s": 19,
+   "retention_pct": 18
+  },
+  {
+   "film": 23,
+   "views": 18,
+   "avg_view_s": 10,
+   "retention_pct": 9
+  },
+  {
+   "film": 24,
+   "views": 13,
+   "avg_view_s": 16,
+   "retention_pct": 15
+  }
+ ],
+ "youtube_note": "No change since 11-24 (rows for 22 and 25 not in yet). Comments: 23 and 24 have 1 each. Shorts Ep.28/29/33/35 = 1245/1282/1203/1057.",
+ "followers": {
+  "youtube": 53
+ },
+ "tiktok": [
+  {
+   "film": 25,
+   "views": 17,
+   "likes": 1,
+   "age_days": 1,
+   "note": "20:33 post that Metricool marked ERROR actually published"
+  },
+  {
+   "film": 25,
+   "views": 13,
+   "likes": 3,
+   "age_days": 1,
+   "note": "20:57 retry = duplicate"
+  },
+  {
+   "film": 22,
+   "views": 195,
+   "likes": 17,
+   "age_days": 2
+  },
+  {
+   "film": 24,
+   "views": 140,
+   "likes": 17,
+   "age_days": 3
+  },
+  {
+   "film": 23,
+   "views": 85,
+   "likes": 1,
+   "age_days": 4
+  },
+  {
+   "film": 21,
+   "views": 137,
+   "likes": 11
+  },
+  {
+   "film": 20,
+   "views": 139,
+   "likes": 9
+  },
+  {
+   "film": 19,
+   "views": 332,
+   "likes": 19
+  },
+  {
+   "film": 18,
+   "views": 450
+  },
+  {
+   "film": 17,
+   "views": 443
+  },
+  {
+   "film": 16,
+   "views": 347
+  },
+  {
+   "film": 10,
+   "vault": true,
+   "views": 194
+  },
+  {
+   "film": 9,
+   "vault": true,
+   "views": 254
+  },
+  {
+   "film": 8,
+   "vault": true,
+   "views": 422
+  },
+  {
+   "film": 7,
+   "vault": true,
+   "views": 421
+  }
+ ],
+ "instagram_reels": [
+  {
+   "film": 25,
+   "views": 118,
+   "likes": 1,
+   "comments": 1,
+   "avg_watch_s": 19.4,
+   "retention_pct": 18,
+   "skip3s_pct": 40.0
+  },
+  {
+   "film": 22,
+   "views": 119,
+   "likes": 3,
+   "comments": 1,
+   "avg_watch_s": 20.4,
+   "retention_pct": 19,
+   "skip3s_pct": 50.5
+  },
+  {
+   "film": 24,
+   "views": 127,
+   "likes": 4,
+   "comments": 1,
+   "avg_watch_s": 26.9,
+   "retention_pct": 25,
+   "skip3s_pct": 35.1
+  },
+  {
+   "film": 23,
+   "views": 155,
+   "likes": 2,
+   "comments": 1,
+   "avg_watch_s": 20.8,
+   "skip3s_pct": 41.0
+  },
+  {
+   "film": 21,
+   "views": 132,
+   "likes": 3,
+   "comments": 0,
+   "avg_watch_s": 19.1,
+   "skip3s_pct": 40.0
+  },
+  {
+   "film": 20,
+   "views": 174,
+   "likes": 5,
+   "comments": 0,
+   "avg_watch_s": 27.6,
+   "skip3s_pct": 29.8
+  },
+  {
+   "film": 19,
+   "views": 123,
+   "comments": 0,
+   "avg_watch_s": 15.8,
+   "skip3s_pct": 47.0
+  },
+  {
+   "film": 18,
+   "views": 1207,
+   "comments": 0,
+   "avg_watch_s": 31.3,
+   "skip3s_pct": 27.4
+  },
+  {
+   "film": 10,
+   "vault": true,
+   "views": 127,
+   "avg_watch_s": 13.6,
+   "skip3s_pct": 44.5
+  },
+  {
+   "film": 9,
+   "vault": true,
+   "views": 127,
+   "avg_watch_s": 12.5,
+   "skip3s_pct": 50.5
+  },
+  {
+   "film": 8,
+   "vault": true,
+   "views": 133,
+   "avg_watch_s": 15.6,
+   "skip3s_pct": 33.6
+  },
+  {
+   "film": 7,
+   "vault": true,
+   "views": 143,
+   "avg_watch_s": 14.7,
+   "skip3s_pct": 60.8
+  }
+ ],
+ "threads": "not fetched (null in Metricool before)",
+ "facebook": "feed posts give no rows",
+ "not_fetched": "Bluesky, Pinterest per-post",
+ "new_post_today": "Film 26 The Spiral (3D) 20:33 JST, 7 networks"
+}
