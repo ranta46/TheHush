@@ -90,7 +90,7 @@ rr = random.Random(2828)
 def ss(a, b, v):
     if b < a: return 1.0 - ss(b, a, v)
     u = min(1.0, max(0.0, (v - a) / (b - a))); return u * u * (3 - 2 * u)
-FX0, FX1 = 6.0, 122.0                                                          # the fog sea along the line
+FX0, FX1 = 6.0, 100.0                                                          # the fog sea along the line
 def gh(x, y):
     n = 0.9 * math.sin(x * 0.05 + y * 0.03) + 0.6 * math.sin(x * 0.11 - y * 0.07 + 1.3)
     ay = abs(y)
@@ -184,21 +184,21 @@ mk("T_Fire", box(), FIREM, (2.45, 0, 0.55), scl=(0.06, 0.5, 0.3), parent=T)
 FIRE = light("T_FireGlow", "POINT", 25, (1, 0.45, 0.15), (2.2, 0, 0.7), T)
 # ---------------- the fog sea: soft layers (no volumetrics), they thicken and rise at 50.5-53.8 ----------------
 FOGR = empty("S_FogRig", (0, 0, 0))
-def fogmat(name, a):
+def fogmat(name, a, cmin):
     m = bpy.data.materials.get(name) or bpy.data.materials.new(name); m.use_nodes = True
     try: m.surface_render_method = "DITHERED"
     except Exception: pass
     try: m.blend_method = "HASHED"
     except Exception: pass
     nt = m.node_tree; N = nt.nodes; Lk = nt.links
-    b = N.get("Principled BSDF"); b.inputs["Base Color"].default_value = (0.5, 0.55, 0.66, 1); b.inputs["Roughness"].default_value = 1
-    b.inputs["Emission Color"].default_value = (0.55, 0.6, 0.75, 1); b.inputs["Emission Strength"].default_value = 0.35
+    b = N.get("Principled BSDF"); b.inputs["Base Color"].default_value = (0.36, 0.4, 0.5, 1); b.inputs["Roughness"].default_value = 1
+    b.inputs["Emission Color"].default_value = (0.5, 0.56, 0.72, 1); b.inputs["Emission Strength"].default_value = 0.14
     tc = N.new("ShaderNodeTexCoord"); sp = N.new("ShaderNodeSeparateXYZ"); Lk.new(tc.outputs["Generated"], sp.inputs[0])
     nz = N.new("ShaderNodeTexNoise"); nz.noise_dimensions = "4D"; nz.inputs["Scale"].default_value = 0.035; nz.inputs["Detail"].default_value = 3
     Lk.new(tc.outputs["Object"], nz.inputs["Vector"])
     nz.inputs["W"].default_value = 0.0; nz.inputs["W"].keyframe_insert("default_value", frame=1)
     nz.inputs["W"].default_value = 2.5; nz.inputs["W"].keyframe_insert("default_value", frame=END)
-    cr = N.new("ShaderNodeValToRGB"); cr.color_ramp.elements[0].position = 0.3; cr.color_ramp.elements[1].position = 0.72
+    cr = N.new("ShaderNodeValToRGB"); cr.color_ramp.elements[0].position = 0.36; cr.color_ramp.elements[1].position = 0.64
     Lk.new(nz.outputs["Fac"], cr.inputs[0])
     def edge(out, k):
         inv = N.new("ShaderNodeMath"); inv.operation = "SUBTRACT"; inv.inputs[0].default_value = 1.0; Lk.new(out, inv.inputs[1])
@@ -206,15 +206,23 @@ def fogmat(name, a):
         ml = N.new("ShaderNodeMath"); ml.operation = "MULTIPLY"; ml.use_clamp = True; ml.inputs[1].default_value = k; Lk.new(mn.outputs[0], ml.inputs[0]); return ml.outputs[0]
     ex = edge(sp.outputs[0], 9.0); ey = edge(sp.outputs[1], 4.0)
     m1 = N.new("ShaderNodeMath"); m1.operation = "MULTIPLY"; Lk.new(ex, m1.inputs[0]); Lk.new(ey, m1.inputs[1])
-    mr = N.new("ShaderNodeMapRange"); mr.inputs["To Min"].default_value = 0.45 * a; mr.inputs["To Max"].default_value = a
+    mr = N.new("ShaderNodeMapRange"); mr.inputs["To Min"].default_value = 0.2 * a; mr.inputs["To Max"].default_value = a
     Lk.new(cr.outputs["Color"], mr.inputs["Value"])
     m2 = N.new("ShaderNodeMath"); m2.operation = "MULTIPLY"; m2.use_clamp = True; Lk.new(m1.outputs[0], m2.inputs[0]); Lk.new(mr.outputs[0], m2.inputs[1])
-    Lk.new(m2.outputs[0], b.inputs["Alpha"]); return m
+    # a thin clearing around the stopped train (so the low shots can see its face); it closes when the fog rises
+    dv = N.new("ShaderNodeVectorMath"); dv.operation = "DISTANCE"; Lk.new(tc.outputs["Object"], dv.inputs[0])
+    dv.inputs[1].default_value = (58.0 - (FX0 + FX1) / 2, -3.0, 0.0)
+    c1 = N.new("ShaderNodeMapRange"); c1.inputs["From Min"].default_value = 7; c1.inputs["From Max"].default_value = 20; Lk.new(dv.outputs["Value"], c1.inputs["Value"])
+    c2 = N.new("ShaderNodeMapRange"); Lk.new(c1.outputs["Result"], c2.inputs["Value"])
+    for t, v in ((0, cmin), (50.5, cmin), (53.8, 1.0), (100, 1.0)):
+        c2.inputs["To Min"].default_value = v; c2.inputs["To Min"].keyframe_insert("default_value", frame=F(t))
+    m3 = N.new("ShaderNodeMath"); m3.operation = "MULTIPLY"; Lk.new(m2.outputs[0], m3.inputs[0]); Lk.new(c2.outputs["Result"], m3.inputs[1])
+    Lk.new(m3.outputs[0], b.inputs["Alpha"]); return m
 FOGL = []
-for k, (z, a) in enumerate(((0.9, 0.22), (1.9, 0.3), (2.9, 0.45), (3.7, 0.82))):
+for k, (z, a, cm) in enumerate(((0.9, 0.2, 0.15), (1.9, 0.28, 0.15), (2.9, 0.42, 0.2), (3.7, 0.75, 0.5))):
     bm = bmesh.new(); bmesh.ops.create_grid(bm, x_segments=1, y_segments=1, size=0.5)
     bmesh.ops.scale(bm, vec=(FX1 - FX0 + 30, 230, 1), verts=bm.verts)
-    o = mk(f"S_Fog{k}", bm, fogmat(f"S_FogM{k}", a), ((FX0 + FX1) / 2, 0, z), parent=FOGR)
+    o = mk(f"S_Fog{k}", bm, fogmat(f"S_FogM{k}", a, cm), ((FX0 + FX1) / 2, 0, z), parent=FOGR)
     o.visible_shadow = False
     try: o.visible_diffuse = False; o.visible_glossy = False
     except Exception: pass
@@ -230,7 +238,7 @@ mask_spot.parent = H; mask_spot.location = (2.0, -14, 4.0)
 
 # ---------------- animation ----------------
 TK = [(0, -262), (4.6, -212), (8, -172), (9.6, -152), (14, -90), (19.6, -20), (22.4, 4), (24.4, 16), (27.0, 24), (31.0, 32),
-      (35.0, 40), (39.0, 50), (41.6, 56), (42.4, 57), (55.6, 57), (56.6, 59), (59.0, 72), (62.0, 96), (63.4, 112), (64.6, 124),
+      (35.0, 40), (39.0, 50), (41.6, 56), (42.4, 57), (55.6, 57), (56.6, 59), (59.0, 72), (62.0, 98), (62.8, 108), (64.0, 122),
       (66, 145), (70, 205), (76, 290), (80, 345), (83, 378), (84.6, 386), (100, 386)]
 def ip(K, t):
     for (ta, sa), (tb, sb) in zip(K, K[1:]):
@@ -325,7 +333,7 @@ cam("Cam_16", 48.4, (2.2, 2.4, 1.2), (0.6, 0, 1.3), 26, T)                      
 cam("Cam_17", 50.4, (70, -48, 26), (57, -8, 4), 24)                               # the fog rises over its face
 cam("Cam_18", 54.2, (110, 60, 40), (60, -5, 4), 24)                               # high: only white, its eyes lost in it
 cam("Cam_19", 55.6, (2.6, -1.7, 1.4), (0.6, 0, 1.35), 24, T)                      # Rook: now. go.
-cam("Cam_20", 58.4, (130, -40, 16), (90, 0, 1.5), 24)                             # the dark train creeps out under the fog
+cam("Cam_20", 58.4, (122, -22, 5), (80, -3, 2.5), 26)                             # the dark train creeps out under the fog
 cam("Cam_21", 62.2, (2.6, -1.7, 1.4), (0.6, 0, 1.35), 24, T)                      # Rook: lights on, full steam
 cam("Cam_22", 64.8, (170, -36, 10), (70, -8, 14), 22)                             # we run, it stands up out of the fog behind
 cam("Cam_23", 68.6, (6, -3.0, 3.5), (0, 0, 1.5), 24, T)                           # side: keep the fire hot
