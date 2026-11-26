@@ -1,5 +1,19 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-26 (Film 27 The Storm, 3D, set for 20:33 on 7 networks; vault step finished; stock now 0, Film 28 The Fog Sea rendering)
+| Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / 3 s skip / comments |
+|---|---|---|---|
+| 19-21 | 39 / 27 / 25 %, 54 / 18 / 17 %, 74 / 19 / 18 % | 332 / 139 / 137 | 123-174 / 15.8-27.6 s / 30-47 % / 0 each |
+| 22 The Needle (TikTok horror tags) | no row yet | **197 / 17 (3)** | 119 / 20.4 s / 50 % / 1 |
+| 24 The Windmills (2D, TikTok horror tags) | 13 / 16 / 15 % | 140 / 17 (4) | 127 / 26.9 s / 35 % / 1 |
+| 25 The Glass Roof (TikTok + IG horror tags) | no row yet | 55 + 57 = 112 / 11 (2), split over 2 copies | 124 / 21.4 s / 40 % / 1 |
+| 26 The Spiral (all horror tags, YT tags test) | no row yet | 26 / 0 (1) | **162 / 24.4 s / 26.5 % / 1** (day 1) |
+YouTube subscribers 53 (flat 6 days). TikTok comments are 0 on every film; IG/YouTube get 1 per film since the first-comment question.
+- TikTok horror-tags test (22 / 24 / 25) CLOSED, KEEP: 197 / 140 / 112 views and 17 / 17 / 11 likes vs 139 / 137 views and 9 / 11 likes for 20-21 with the old tags (19 = 332 was the outlier).
+- Film 26 has the lowest IG 3 s skip ever (26.5 %) and the best IG day-1 views since Film 20 (162), before the cold-open hook text even starts (Film 27 is the first with it). IG horror-tags test: 124 / 162 so far vs baseline avg 146; needs Film 27.
+- TikTok is the only network where the either/or question is missing (no first comment there), and it is the only one still at 0 comments.
+- Change (description text, TikTok only, posting run, new films from Film 28; vault and other networks unchanged): the TikTok caption gets the film's either/or question as its own line right before "Full ride link in bio." (e.g. "Would you hide in the dark, or run for it?"). Judge on TikTok comments + likes of films 28-30 vs films 22 / 24 / 25 / 26 (0 comments; 17 / 17 / 11 / 0 likes); roll back if not better.
+
 ## 2026-11-25 (Film 26 The Spiral, 3D, set for 20:33 on 7 networks; vault step finished; stock now 0, Film 27 rendering)
 | Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / 3 s skip / comments |
 |---|---|---|---|

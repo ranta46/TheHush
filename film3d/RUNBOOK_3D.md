@@ -131,3 +131,7 @@ One change at a time, keep it if numbers improve over the next 3 films, otherwis
   finished (Film 27). Judge on IG 3 s skip of the next 3 new films vs films 20-25 (~39 % avg); roll back if not lower.
 - 2026-11-25 (ops fix, not a test): Metricool can say "Tiktok internal error" while the video still goes up (Film 25 is on TikTok twice). Before re-sending a TikTok post
   marked ERROR, wait ~10 min and check TikTok posts (getAnalyticsDataByMetrics TKPO02, TKPO05) or the account for that film; re-send only if it is not there.
+- 2026-11-26: TikTok horror-tags test (22 / 24 / 25) CLOSED, KEEP (197 / 140 / 112 views, 17 / 17 / 11 likes vs 139 / 137 and 9 / 11 for 20-21). New (description text, TikTok only, posting
+  run, new films from Film 28; vault and other networks unchanged): TikTok has no first comment and 0 comments on every film, so the TikTok caption gets the film's either/or
+  "question" as its own line right before "Full ride link in bio.". Judge on TikTok comments + likes of films 28-30 vs 22 / 24 / 25 / 26 (0 comments; 17 / 17 / 11 / 0 likes);
+  roll back if not better. Still running: IG horror tags (25 / 26 / 27), YouTube tags (26-28), cold-open hook text (27-29).
