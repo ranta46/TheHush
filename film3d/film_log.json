@@ -701,6 +701,7 @@
    "Mist Town and station"
   ],
   "hook": "It's in the fog. It's bending down.",
-  "render_started": "2026-11-26 11:00 JST (~17 s/frame + 3 s rest, ~20 s/frame incl. rest, done ~00:30-01:30 JST 11-27)"
+  "render_started": "2026-11-26 11:00 JST (~17 s/frame + 3 s rest, ~20 s/frame incl. rest, done ~00:30-01:30 JST 11-27)",
+  "progress": "2026-11-26 15:42 JST: 869/2400 frames (~20.6 s/frame + rest, ~19.5 s/frame avg), est. done ~00:00-01:00 JST 11-27"
  }
 ]
