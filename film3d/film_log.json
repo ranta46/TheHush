@@ -684,5 +684,23 @@
   "finished": "2026-11-26 10:55 JST (render done 21:45 11-25; 108 s with cold open + end card)",
   "duration": 108.0,
   "media_commit": "a385715fe40b7bae1f6b28581d81c23b925db042"
+ },
+ {
+  "film_no": 28,
+  "folder": "films/film23",
+  "title": "The Fog Sea",
+  "date_made": "2026-11-26",
+  "frames": 2400,
+  "status": "rendering",
+  "clever_move": "The Hush is faster on the high moor, so Rook puts out every light, lowers the fire and takes the dark train down UNDER the fog that fills the valley (the fog sea); the Hush stands at the edge and sees only white ('It sees only fog.'). When it wades in and bends down beside the stopped train, the fog rises over its face and the dark train creeps out the far side.",
+  "fear": "It comes right beside the stopped train and bends down, its mask just over the fog. '...Don't move. Not a sound.'",
+  "surprise": "The fog rises over its face; it is lost in the white, only its eyes glow faintly.",
+  "places": [
+   "the high moor with stone walls",
+   "the valley full of fog (the fog sea) with dark pines",
+   "Mist Town and station"
+  ],
+  "hook": "It's in the fog. It's bending down.",
+  "render_started": "2026-11-26 11:00 JST (~17 s/frame + 3 s rest, ~20 s/frame incl. rest, done ~00:30-01:30 JST 11-27)"
  }
 ]
