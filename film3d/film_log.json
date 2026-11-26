@@ -666,7 +666,7 @@
   "title": "The Storm",
   "date_made": "2026-11-25",
   "frames": 2400,
-  "status": "stock",
+  "status": "posted",
   "clever_move": "The Hush is faster on the open heath, but a dry storm comes and it stops to eat every flash of lightning; Rook puts out every light and moves the dark train ONLY while the sky flashes, standing still between ('We go only when it flashes.').",
   "fear": "No flash for a long time; it walks right up beside the dark train. '...Don't move. Not a sound.'",
   "surprise": "The lightning hits the old iron signal right behind it; it bends down to eat the fire, and the train runs.",
@@ -683,7 +683,18 @@
   "poster": "gloamrun/films/gloamrun_film27_poster.jpg",
   "finished": "2026-11-26 10:55 JST (render done 21:45 11-25; 108 s with cold open + end card)",
   "duration": 108.0,
-  "media_commit": "a385715fe40b7bae1f6b28581d81c23b925db042"
+  "media_commit": "a385715fe40b7bae1f6b28581d81c23b925db042",
+  "posted": "2026-11-26 20:33 JST",
+  "synopsis": "The Hush is faster on the open heath. But a dry storm comes, and it stops to eat every flash of lightning. Rook puts out every light and moves the dark train only when the sky flashes.",
+  "question": "Would you move in the flash, or stay still in the dark?",
+  "youtube_post_id": 442963442,
+  "facebook_post_id": 442963523,
+  "tiktok_post_id": 442963542,
+  "instagram_post_id": 442963587,
+  "threads_post_id": 442963619,
+  "bluesky_post_id": 442963645,
+  "pinterest_post_id": 442963670,
+  "media_url_sha": "a385715fe40b7bae1f6b28581d81c23b925db042"
  },
  {
   "film_no": 28,
