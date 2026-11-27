@@ -1,6 +1,8 @@
 # GLOAMRUN 3D FILMS — made on the owner's PC (Blender), posted daily on the Hush channel
-Owner 森 approved the 3D look on 2026-10-31 (hush_lookdev.blend, look_05.png). ChatGPT makes the shorts/comics;
-Claude makes ONE horizontal 3D film per day (90-120 s, not a Short) and posts it (YouTube video + Facebook).
+Owner 森 approved the 3D look on 2026-10-31 (hush_lookdev.blend, look_05.png). ChatGPT makes the 2D Ep shorts/comics.
+FROM 2026-11-27 (owner's order: "make every single video to go BIG viral, care about results"): Claude makes VERTICAL 3D
+shorts (9:16, 22-35 s) built to go viral - see "VIRAL FORMAT" below. It overrides every older rule that conflicts
+(horizontal 90-120 s, calm start, end card, 3 s cold open + film from 0).
 
 ## Canon
 Read ../film_kit/CANON.md every time (Rook / the Hush: thoughts, personality, voice, never-does; the Hush never
@@ -20,7 +22,43 @@ Fetch repo files inside Blender with the GitHub API (no cache):
   urllib Request("https://api.github.com/repos/ranta46/TheHush/contents/<path>", headers {Accept: application/vnd.github.raw})
 Open the base file in one execute_blender_code call, run the build in the NEXT call (context is empty right after open).
 
-## Making a new film (filmNN)
+## VIRAL FORMAT (from 2026-11-27) - read this first, it beats every rule below
+Why: Nov 2026 data. Horizontal 108 s films: YouTube 10-160 views each, subs flat at 53 for 4 weeks. Vertical ~23 s Gloamrun
+Shorts on the same channel: 1,000-1,400 YouTube views EVERY time, subs +4-6/day while they ran daily. TikTok/IG stuck at
+100-450 = the feed's free test pool; nothing broke out because people swipe in 3-8 s. The goal now is a HIT on every post
+(target: 10,000+ views on one network within 7 days), not "one more film".
+1. Shape: 720x1280 render (same pixel count as 1280x720 = same GPU load; GPU safety unchanged), camera sensor_fit
+   VERTICAL, 24 fps, 22-35 s (END 528-840 frames = about 1/3 of the old render time). No title card, no end card,
+   no calm start. post3d.py sees the vertical raw and finishes it (hook top 3.2 s, then "ask", Rook's lines, score).
+2. ONE premise you can say in one sentence, built on a proven viral pattern. Pick from this library, never the same
+   pattern two films in a row; use the best-scoring pattern most (film3d/patterns.md keeps the score):
+   P1 SCALE REVEAL - what looked like a hill / tower / tree / cloud is the Hush ("That is not a hill.").
+   P2 SPOT IT - the Hush is hidden in the frame from frame 1; text "Can you find it?"; it moves at the end -> rewatch + comments.
+   P3 POV - the camera is YOUR eyes (a passenger); Rook talks to you ("Don't look out the window.").
+   P4 THE RULE - one rule ("If the lamps go out, don't move."), then the rule is tested / broken.
+   P5 CLOSE CALL - the Hush's finger closes on the last lantern; 3..2..1 in Rook's voice.
+   P6 WRONG SAFE PLACE - the hiding place / tunnel / station is the Hush itself.
+   P7 PART 2 - answer last film's cliffhanger in the first 2 s, end on a new one (series hook).
+3. Second 0 = the money shot: the Hush big (>= 1/3 of the frame height), face LIT and readable on a phone, high contrast
+   (the old films were too dark navy - add a rim light / moon light on the Hush, brighter sky gradient). Hook text on
+   top: 4-7 easy words, a fact that makes you need the answer ("That is not a hill."). Never start on Rook alone.
+4. Something changes every 2-4 s (cut, camera push, reveal, sound). 3-6 lines of Rook, max 7 words / 36 chars each.
+   "ask" (film.json) = the question shown on top after the hook ("Can you see its face?").
+5. Ending: either a LOOP (the last 0.5 s cuts back to the first shot, same sound, so it replays without a seam) or a
+   CLIFFHANGER that the next film answers (then the next film is P7). Never a quiet ending, never a card.
+6. Sound: near silence, Rook's whisper, then ONE loud sting at the reveal (gloamrun_sound cues), Hush hum under it.
+7. Gate before render (write it in film.json "gate"): premise sentence, pattern, why a stranger stops scrolling at frame 0,
+   the moment people will comment about. Preview frames at 0 s, 1.5 s, 3 s, the reveal and the last frame (40 %, 8 samples)
+   and LOOK: if frame 0 is not instantly readable on a phone (dark / small / unclear), fix it before rendering.
+8. film.json keys: film_no, title, pattern, hook, ask, question (first comment, either/or), synopsis, poster_t, lines, gate.
+   Canon is unchanged (CANON.md, approved models, the Hush never speaks / never flies / can't be defeated).
+
+## Old horizontal films still in the pipeline (Film 28 The Fog Sea)
+Finish them as before (post3d.py makes the 16:9 film). Then the posting run makes the vertical cut with vcut.py.
+
+## (old, horizontal) Making a new film
+
+0. SUPERSEDED by VIRAL FORMAT for every new film. Kept for reference.
 1. Story (90-120 s, 9-12 shots): calm start -> the Hush appears -> chase (distance changes) -> Rook's clever move
    (NEW each film; see film_log + ../film_kit/films/film_log.json) -> fear in the dark -> surprise -> escape -> closing line.
    Newcomers must understand it. Lines: Rook only, max 9 words / 44 chars, simple English, 10-15 lines.
@@ -58,7 +96,18 @@ allowed = cold open choice, story pace (when the Hush appears), shot length, lin
 choice, description text. Never change: canon, the approved 3D models, GPU safety, one film per day, posting time.
 One change at a time, keep it if numbers improve over the next 3 films, otherwise roll it back.
 
+## Review (from 2026-11-27, replaces the old hashtag-by-hashtag tests)
+Every posting run: Metricool views / avg watch / likes / comments / shares of every Gloamrun short on YouTube (YTVP), TikTok
+(TKPO) and Instagram reels, at 48 h and 7 d. Write film3d/patterns.md: per pattern the median 48 h views and best result,
+and the list of HITS (>= 5,000 views on any network). Then ONE big lever per review, not hashtags: which pattern next,
+hook wording style, first-frame look, length, loop vs cliffhanger. Double down on hits: a hit's pattern goes again within
+2 days, and its footage gets a "Part 2" or a new cut. A pattern with 3 misses in a row (< 1,000 views everywhere) is dropped
+for 2 weeks. Write the change under "Current rules" with the date.
+
 ## Current rules (auto-updated)
+- 2026-11-27 (owner's order, big change): VIRAL FORMAT replaces horizontal films. The older entries below were tests on
+  108 s horizontal films; keep only what still fits a vertical short (hook wording = a new threat line from this film's
+  place, not "Don't move."; first-comment either/or question; horror hashtags on TikTok/IG/YouTube).
 - 2026-11-07: films 1-4 kept only 14-27 s of 105 s on average. Start with a ~3 s cold open of the Hush close to
   Rook (see Making a new film step 5). The Hush must be on screen within the first 10 s of the film itself.
 - 2026-11-10: cold open KEEP (Film 8: 41 % retention vs 14-28 % for films 2-7). New test = title hook: every film.json

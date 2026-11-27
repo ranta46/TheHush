@@ -1,0 +1,48 @@
+{
+ "cuts": [
+  {
+   "film_no": 18,
+   "date": "2026-11-27",
+   "video": "gloamrun/shorts/gloamrun_vshort_film18.mp4",
+   "segs": [
+    [
+     49.0,
+     52.0
+    ],
+    [
+     39.0,
+     42.4
+    ],
+    [
+     43.6,
+     46.2
+    ],
+    [
+     46.2,
+     49.0
+    ],
+    [
+     52.4,
+     56.0
+    ],
+    [
+     59.0,
+     62.2
+    ],
+    [
+     63.0,
+     66.6
+    ]
+   ],
+   "hook": "It's right over the train.",
+   "metricool_ids": {
+    "youtube": 444172447,
+    "tiktok": 444172569,
+    "instagram": 444172587,
+    "facebook": 444172710,
+    "threads": 444172733,
+    "bluesky": 444172741
+   }
+  }
+ ]
+}

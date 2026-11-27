@@ -26,8 +26,40 @@ def burn_hook(poster, hook, corner="left"):
         y += int(size * 1.18)
     if isinstance(poster, str): im.save(poster, quality=92)
     return im
+def main_v(fd, raw, meta):
+    """RUNBOOK_3D "Viral format" (2026-11-27): vertical 720x1280 raw -> 1080x1920 short, no end card, hook on top
+    for the first 3.2 s, "ask" after it, Rook's lines in the vertical style, sound from score.py. Ends hard (loop)."""
+    sys.path.insert(0, HERE); import vcut
+    tmp = os.path.join(fd, "tmp"); out = os.path.join(fd, "out"); os.makedirs(tmp, exist_ok=True); os.makedirs(out, exist_ok=True)
+    dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", raw]).decode().strip())
+    ins, flt, last = ["-i", raw], "[0:v]scale=1080:1920:flags=lanczos[s0];", "[s0]"
+    for i, (t0, t1, txt) in enumerate(meta["lines"]):
+        img = Image.new("RGBA", (1080, 1920), (0, 0, 0, 0)); E.draw_line(img, (t0 + t1) / 2, [(t0, t1, txt)], "v")
+        p = os.path.join(tmp, f"vline{i}.png"); img.save(p); ins += ["-i", p]
+        flt += f"{last}[{i+1}:v]overlay=0:0:enable='between(t,{t0},{t1})'[v{i}];"; last = f"[v{i}]"
+    n = len(meta["lines"]) + 1
+    vcut.text_png(os.path.join(tmp, "hook.png"), vcut.split2(meta["hook"]), 104, 150)
+    vcut.text_png(os.path.join(tmp, "ask.png"), vcut.split2(meta.get("ask", meta.get("question", "Would you stay still?"))), 80, 150, (255, 226, 140))
+    ins += ["-i", os.path.join(tmp, "hook.png"), "-i", os.path.join(tmp, "ask.png")]
+    flt += f"{last}[{n}:v]overlay=0:0:enable='lt(t,3.2)'[h];[h][{n+1}:v]overlay=0:0:enable='gte(t,3.2)',format=yuv420p[vo]"
+    body = os.path.join(tmp, "vbody.mp4")
+    run(["ffmpeg", "-y", "-loglevel", "error", *ins, "-filter_complex", flt, "-map", "[vo]", "-r", "24", "-c:v", "libx264", "-crf", "18", "-preset", "medium", body])
+    sc = S.Score(dur); spec = importlib.util.spec_from_file_location("score", os.path.join(fd, "score.py"))
+    m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); m.score(sc, dur)
+    wav = os.path.join(tmp, "vaudio.wav"); sc.write(wav)
+    tag = f"gloamrun_film{meta['film_no']:02d}"; final = os.path.join(out, f"{tag}_9x16.mp4")
+    run(["ffmpeg", "-y", "-loglevel", "error", "-i", body, "-i", wav, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", final])
+    poster = os.path.join(out, f"{tag}_poster.jpg")
+    run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(min(1.0, dur / 2)), "-i", final, "-frames:v", "1", "-q:v", "3", poster])
+    info = dict(meta, duration=round(dur, 1), video=os.path.basename(final), poster=os.path.basename(poster), vertical=True, size_mb=round(os.path.getsize(final) / 1e6, 1))
+    info.pop("lines", None); json.dump(info, open(os.path.join(out, f"{tag}_meta.json"), "w"), indent=1); print(json.dumps(info))
 def main():
     fd, raw = sys.argv[1], sys.argv[2]; meta = json.load(open(os.path.join(fd, "film.json")))
+    wh = subprocess.check_output(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", raw]).decode().strip().split(",")
+    if int(wh[1]) > int(wh[0]):
+        for _, _, t in meta["lines"]:
+            E.check_english(t); assert len(t) <= 36 and len(t.split()) <= 7, t
+        return main_v(fd, raw, meta)
     for _, _, t in meta["lines"]:
         E.check_english(t); assert len(t) <= 44 and len(t.split()) <= 9, t
     tmp = os.path.join(fd, "tmp"); out = os.path.join(fd, "out"); os.makedirs(tmp, exist_ok=True); os.makedirs(out, exist_ok=True)
