@@ -1,5 +1,14 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-27 (vertical era day 1: tonight 20:33 = Film 18 cut "It's right over the train." (7 networks, set earlier today); tomorrow 12:33 = Film 16 The Falls cut "It's looking through the waterfall." (7 networks))
+| Short | YT 48h | TikTok 48h | IG 48h |
+|---|---|---|---|
+| vcut Film 18 (11-27 20:33) | not out yet | not out yet | not out yet |
+Reference (old formats, latest): 3D horizontal films 22-27 = YT 10-34, TikTok 31-197, IG 116-203. ChatGPT 2D vertical Ep.33/35 = YT 1205 / 1383. YouTube subs 53 (flat 7 days). Film 26 IG 203 (best since Film 18's 1207).
+- No vertical 3D short has 48 h data yet, so no lever moved this run (one lever per review starts when the first 3 cuts have 48 h numbers: 11-29 20:33 run).
+- Film 16 cut tests a CLIFFHANGER end on the Hush's face close-up (Film 18 cut ended on a close call). Compare these two first.
+- Ops: ranta-videos clone was on a detached HEAD in this container, so the first push silently went nowhere (raw URL 404). Always `git checkout main && git pull` before committing.
+
 ## 2026-11-26 (Film 27 The Storm, 3D, set for 20:33 on 7 networks; vault step finished; stock now 0, Film 28 The Fog Sea rendering)
 | Film | YT views / avg (s) / ret. | TikTok views / likes (age d) | IG views / avg watch (s) / 3 s skip / comments |
 |---|---|---|---|

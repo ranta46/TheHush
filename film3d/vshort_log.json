@@ -41,7 +41,68 @@
     "instagram": 444172587,
     "facebook": 444172710,
     "threads": 444172733,
-    "bluesky": 444172741
+    "bluesky": 444172741,
+    "pinterest": 444202431
+   }
+  },
+  {
+   "film_no": 16,
+   "date": "2026-11-28 12:33 JST",
+   "folder": "films/film13",
+   "video": "gloamrun/shorts/gloamrun_vshort_film16.mp4",
+   "cover": "gloamrun/shorts/gloamrun_vshort_film16_cover.jpg",
+   "cut": "film3d/films/film13/vcut16.json",
+   "segs": [
+    [
+     48.0,
+     50.8
+    ],
+    [
+     10.0,
+     12.6
+    ],
+    [
+     30.0,
+     32.8
+    ],
+    [
+     34.0,
+     36.8
+    ],
+    [
+     43.0,
+     45.4
+    ],
+    [
+     45.4,
+     47.6
+    ],
+    [
+     52.0,
+     55.8
+    ],
+    [
+     56.0,
+     57.6
+    ],
+    [
+     58.0,
+     60.6
+    ]
+   ],
+   "length_s": 23.6,
+   "hook": "It's looking through the waterfall.",
+   "ask": "Can it see the train?",
+   "question": "Would you stay behind the water, or run for it?",
+   "pattern": "P6 wrong safe place / P5 close call, cliffhanger end (face close-up)",
+   "metricool_ids": {
+    "youtube": 444228897,
+    "tiktok": 444228924,
+    "instagram": 444228952,
+    "facebook": 444228977,
+    "threads": 444229004,
+    "bluesky": 444229029,
+    "pinterest": 444229051
    }
   }
  ]
