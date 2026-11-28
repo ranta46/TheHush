@@ -704,7 +704,7 @@
   "title": "The Fog Sea",
   "date_made": "2026-11-26",
   "frames": 2400,
-  "status": "rendering",
+  "status": "stock",
   "clever_move": "The Hush is faster on the high moor, so Rook puts out every light, lowers the fire and takes the dark train down UNDER the fog that fills the valley (the fog sea); the Hush stands at the edge and sees only white ('It sees only fog.'). When it wades in and bends down beside the stopped train, the fog rises over its face and the dark train creeps out the far side.",
   "fear": "It comes right beside the stopped train and bends down, its mask just over the fog. '...Don't move. Not a sound.'",
   "surprise": "The fog rises over its face; it is lost in the white, only its eyes glow faintly.",
@@ -715,6 +715,11 @@
   ],
   "hook": "It's in the fog. It's bending down.",
   "render_started": "2026-11-26 11:00 JST (~17 s/frame + 3 s rest, ~20 s/frame incl. rest, done ~00:30-01:30 JST 11-27)",
-  "progress": "2026-11-26 15:42 JST: 869/2400 frames (~20.6 s/frame + rest, ~19.5 s/frame avg), est. done ~00:00-01:00 JST 11-27"
+  "progress": "2026-11-26 15:42 JST: 869/2400 frames (~20.6 s/frame + rest, ~19.5 s/frame avg), est. done ~00:00-01:00 JST 11-27",
+  "video": "gloamrun/films/gloamrun_film28_16x9.mp4",
+  "poster": "gloamrun/films/gloamrun_film28_poster.jpg",
+  "video_commit": "b1f0c5e27638b18195b5bd992606b2dfc6542468",
+  "finished": "2026-11-28 11:50 JST (render stalled at 1711 since 11-26 21:08, resumed 11-28 10:39, done 11:28; 108 s with cold open + end card)",
+  "duration": 108.0
  }
 ]
