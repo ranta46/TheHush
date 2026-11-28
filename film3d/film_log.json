@@ -728,7 +728,7 @@
   "title": "Not a Hill",
   "date_made": "2026-11-28",
   "frames": 624,
-  "status": "stock",
+  "status": "posted",
   "vertical": true,
   "pattern": "P1 scale reveal (loop)",
   "hook": "That is not a hill. It's awake.",
@@ -743,6 +743,7 @@
   "poster": "gloamrun/films/gloamrun_film29_poster.jpg",
   "video_commit": "63717e30294a6559eab6084644aaffe896df9604",
   "finished": "2026-11-28 15:50 JST (render done 12:32; 26 s vertical 1080x1920, loop)",
-  "duration": 26.0
+  "duration": 26.0,
+  "posted": "2026-11-28 20:33 JST (vertical short, 7 networks)"
  }
 ]

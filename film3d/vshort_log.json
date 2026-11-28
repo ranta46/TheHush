@@ -104,6 +104,95 @@
     "bluesky": 444229029,
     "pinterest": 444229051
    }
+  },
+  {
+   "film_no": 29,
+   "date": "2026-11-28 20:33 JST",
+   "source": "PC vertical film (no cut)",
+   "video": "gloamrun/films/gloamrun_film29_9x16.mp4",
+   "cover": "gloamrun/shorts/gloamrun_vshort_film29_cover.jpg",
+   "length_s": 26.0,
+   "hook": "That is not a hill. It's awake.",
+   "ask": "Can you see its eyes?",
+   "question": "Would you keep driving, or freeze?",
+   "pattern": "P1 scale reveal (loop), made vertical on PC",
+   "metricool_ids": {
+    "youtube": 445345840,
+    "tiktok": 445345856,
+    "instagram": 445345864,
+    "facebook": 445345883,
+    "threads": 445345897,
+    "bluesky": 445345906,
+    "pinterest": 445345918
+   }
+  },
+  {
+   "film_no": 17,
+   "date": "2026-11-29 12:33 JST",
+   "folder": "films/film14",
+   "video": "gloamrun/shorts/gloamrun_vshort_film17.mp4",
+   "cover": "gloamrun/shorts/gloamrun_vshort_film17_cover.jpg",
+   "cut": "film3d/films/film14/vcut17.json",
+   "segs": [
+    [
+     49.0,
+     52.0
+    ],
+    [
+     6.0,
+     8.6
+    ],
+    [
+     15.0,
+     17.6
+    ],
+    [
+     21.0,
+     23.4
+    ],
+    [
+     27.0,
+     29.6
+    ],
+    [
+     33.0,
+     35.0
+    ],
+    [
+     39.2,
+     41.6
+    ],
+    [
+     43.0,
+     45.6
+    ],
+    [
+     53.0,
+     55.6
+    ],
+    [
+     56.0,
+     58.6
+    ],
+    [
+     59.0,
+     61.6
+    ]
+   ],
+   "length_s": 28.3,
+   "hook": "It stands under a thousand lights.",
+   "ask": "Will it look down?",
+   "question": "Would you hide in the dark, or run for it?",
+   "pattern": "P5 close call, cliffhanger end (face close-up 'One came back')",
+   "metricool_ids": {
+    "youtube": 445347704,
+    "tiktok": 445347724,
+    "instagram": 445347744,
+    "facebook": 445347758,
+    "threads": 445347769,
+    "bluesky": 445347787,
+    "pinterest": 445347802
+   }
   }
  ]
 }

@@ -1,0 +1,38 @@
+{
+ "note": "taken 2026-11-28 20:20 JST. YouTube rows for the vertical shorts (11-27 20:33, 11-28 12:33) not in Metricool yet. Film 16 cut (11-28 12:33) not in TikTok/IG yet.",
+ "youtube_subs": 53,
+ "vshorts": {
+  "vcut Film 18 (11-27 20:33, ~24h)": {
+   "youtube": null,
+   "tiktok": {
+    "views": 24,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0
+   },
+   "instagram": {
+    "views": 139,
+    "likes": 3,
+    "reach_or_plays": 111,
+    "comments": 0,
+    "avg_watch_s": 8.9
+   }
+  },
+  "vcut Film 16 (11-28 12:33, ~8h)": {
+   "youtube": null,
+   "tiktok": null,
+   "instagram": null
+  }
+ },
+ "youtube_old": {
+  "Film26": 16,
+  "Film25": 10,
+  "Film22": 34,
+  "Ep.35": 1383,
+  "Ep.34": 2,
+  "Film24": 14,
+  "Film23": 21,
+  "Ep.33": 1205,
+  "Film21": 84
+ }
+}

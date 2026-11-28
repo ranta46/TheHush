@@ -1,5 +1,16 @@
 # Gloamrun 3D films: insights (newest first)
 
+## 2026-11-28 (tonight 20:33 = Film 29 Not a Hill, first PC-made vertical film, 7 networks; tomorrow 12:33 = Film 17 The Sky Lanterns cut "It stands under a thousand lights.", 7 networks)
+| Short | YT | TikTok | IG |
+|---|---|---|---|
+| vcut Film 18 (11-27 20:33) ~24 h | no row yet | 24 views / 1 like | 139 views / 3 likes / avg 8.9 s |
+| vcut Film 16 (11-28 12:33) ~8 h | no row yet | no row yet | no row yet |
+YouTube subs 53 (flat). No short has 48 h data yet -> no lever moved (first lever decision at the 11-29 run, when Film 18 / 16 / 29 have 48 h numbers).
+- Early warning: TikTok day 1 = 24 for the Film 18 cut vs 450 for the old horizontal Film 18 and 85-197 for films 22-26. IG avg watch 8.9 s of ~27 s (old horizontal Film 18 IG: 31 s). If 48 h confirms, the next lever is the FIRST FRAME (start on motion + face, not a slow push-in) or length (cut to ~20 s).
+- Three formats now running side by side: cut + close-call end (Film 18), cut + face cliffhanger (Film 16, Film 17), PC-made vertical loop (Film 29). Compare these at 48 h.
+- Film 17 cut: two 16:9 subtitles ("The lamps went out. It's here! Full steam!", "It's coming over the hill. Hold the bar!") are wider than the 720 px crop -> dropped those shots. PC run: keep subtitle lines <= ~38 characters so vertical cuts can use every shot.
+- Ops: raw.githubusercontent caches a 404 for a sha URL fetched before the push lands (~5 min). Never curl the new sha URL before `git push` finishes; if it 404s, use the same file from an older commit or the main URL.
+
 ## 2026-11-27 (vertical era day 1: tonight 20:33 = Film 18 cut "It's right over the train." (7 networks, set earlier today); tomorrow 12:33 = Film 16 The Falls cut "It's looking through the waterfall." (7 networks))
 | Short | YT 48h | TikTok 48h | IG 48h |
 |---|---|---|---|
