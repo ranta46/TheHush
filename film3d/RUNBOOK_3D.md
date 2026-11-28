@@ -105,6 +105,7 @@ hook wording style, first-frame look, length, loop vs cliffhanger. Double down o
 for 2 weeks. Write the change under "Current rules" with the date.
 
 ## Current rules (auto-updated)
+- 2026-11-28: subtitle lines must fit the centre 720 px of a 1280 frame (about 38 characters max, split longer lines into two shots) so every shot can be used in vertical cuts. Vertical (9:16) films from the PC are preferred over horizontal ones.
 - 2026-11-27 (owner's order, big change): VIRAL FORMAT replaces horizontal films. The older entries below were tests on
   108 s horizontal films; keep only what still fits a vertical short (hook wording = a new threat line from this film's
   place, not "Don't move."; first-comment either/or question; horror hashtags on TikTok/IG/YouTube).
