@@ -243,7 +243,7 @@ cam("Cam_02", 3.2, (34, 34, 16), (30, -12, 3), 20)                              
 cam("Cam_03", 6.4, (2.4, -1.9, 1.3), (0.6, 0, 1.35), 30, T)                        # Rook: the lamps die when we pass it
 cam("Cam_04", 9.2, (-1.6, 1.0, 2.0), "H_Mask", 40, T)                             # over Rook, back at the hill: its eyes flare
 cam("Cam_05", 13.2, (-14, 6, 1.0), "H_Mask", 18, T)                               # low behind the last car: the hill STANDS UP
-cam("Cam_06", 16.4, (190, 28, 16), (120, -6, 8), 20)                             # front high: full steam, it strides after us
+cam("Cam_06", 16.4, (150, 20, 8), (105, -8, 10), 18)                             # front high: full steam, it strides after us
 cam("Cam_07", 18.8, (-4.0, 2.2, 0.7), "H_Mask", 14, T)                            # low at the last car: it bends over us
 cam("Cam_08", 22.4, (2.4, -1.9, 1.3), (0.6, 0, 1.35), 30, T)                       # Rook: wait. that hill wasn't there.
 cam("Cam_09", LOOP, A_LOC, (HX1, A_LOOK[1], A_LOOK[2]), A_LENS, T, world_look=True)           # = Cam_01 (the loop)
