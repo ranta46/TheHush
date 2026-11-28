@@ -145,27 +145,27 @@ def lamp(tag, x, y, td, e=55, z=None):
     hm = newM(f"L_{tag}", (1, 0.62, 0.25), emit=8); mk(f"L_{tag}", sph(0.2, 12, 8), hm, (x, y, z + 3.45))
     lo = light(f"L_{tag}L", "POINT", e, (1, 0.6, 0.3), (x, y, z + 3.2)); RLAMP.append((hm, lo, td)); return hm, lo
 # ---------------- timing ----------------
-TK = [(0, 0), (13.0, 120), (13.6, 125), (22.4, 270), (26.0, 303)]      # creep, full steam, ease at the end (loop speed = start speed)
+TK = [(0, 0), (13.0, 60), (13.6, 64), (22.4, 209), (26.0, 225.6)]      # creep, full steam, ease at the end (loop speed = start speed)
 def ip(K, t):
     for (ta, sa), (tb, sb) in zip(K, K[1:]):
         if ta <= t <= tb:
             u = (t - ta) / (tb - ta) if tb > ta else 0; return sa + (sb - sa) * u
     return K[-1][1] if t > K[0][0] else K[0][1]
 def tpos(t): return Vector((ip(TK, t), 0, 0))
-HX0, HY, HDZ = 30.0, -26.0, -22.0                                       # the "hill": lying low, 30 m ahead-right of the train at t=0
+HX0, HY, HDZ = 30.0, -26.0, -19.0                                       # the "hill": lying low, 30 m ahead-right of the train at t=0
 LOOP = 24.8; HX1 = ip(TK, LOOP) + (HX0 - ip(TK, 0))                    # the new "hill" ahead at the loop cut, same place relative to us
-HP_ = [(0, HX0, HY, HDZ), (13.4, HX0, HY, HDZ), (15.0, HX0, HY + 2, 0), (16.4, 62, -20, 0), (18.8, 190, -10, 0)]
+HP_ = [(0, HX0, HY, HDZ), (13.4, HX0, HY, HDZ), (15.0, HX0, HY + 2, 0), (16.4, 50, -18, 0), (18.8, ip(TK, 18.8) - 20, -10, 0)]
 for t in (19.4, 19.8, 20.2, 20.6, 21.0, 21.4, 21.8, 22.2):              # bent over the last car
     HP_.append((t, ip(TK, t) - 9.0, -5.0, -19.0))
 HP_ += [(22.5, ip(TK, 22.5) - 6, -14, -30), (24.2, HX1, HY, -30), (24.6, HX1, HY, HDZ), (26.0, HX1, HY, HDZ)]
 # the grassy mound around its shoulders (the "hill"); one at the start and one at the loop
 for k, hx in enumerate((HX0, HX1)):
-    mk(f"S_Mound{k}", sph(1.0, 24, 12), grassM, (hx, HY, gh(hx, HY) - 1.2), scl=(19, 19, 5.0), smooth=True)
+    mk(f"S_Mound{k}", sph(1.0, 24, 12), grassM, (hx, HY, gh(hx, HY) - 2.0), scl=(14, 14, 7.5), smooth=True)
 # line lamps: near the hill they die as we pass; ahead they live (the last shot = the first shot)
-for i, x in enumerate((8, 22, 36, 50)): lamp(f"A{i}", x, 3.2, 3.8 + i * 0.7)
+for i, x in enumerate((8, 22, 36, 50)): lamp(f"A{i}", x, 3.2, 2.0 + i * 0.9)
 for i, x in enumerate((150, 175, 200, 225)): lamp(f"C{i}", x, 3.2, 999)
 for i, x in enumerate((-30, -12)): lamp(f"Z{i}", x, 3.2, 0.6 + i * 0.6)
-for i, x in enumerate((285, 300, 315, 330)): lamp(f"E{i}", x, 3.2, 999)
+for i, x in enumerate((215, 230, 245, 260)): lamp(f"E{i}", x, 3.2, 999)
 # the moon low over the lake, behind the hill (it shows the round shape), plus a cold key on the Hush's face from our side
 EL = math.radians(14.0); AZ = math.radians(-78)
 moonM = newM("S_Moon", (0.95, 0.95, 0.9), emit=6)
@@ -237,13 +237,13 @@ def cam(name, start_s, loc, look, lens=28, parent=None, world_look=False, free=F
         if parent and not world_look: tgt.parent = parent
     k = c.constraints.new("TRACK_TO"); k.target = tgt; k.track_axis = "TRACK_NEGATIVE_Z"; k.up_axis = "UP_Y"
     m = sc.timeline_markers.new(name, frame=F(start_s)); m.camera = c; return c
-A_LOC, A_LOOK, A_LENS = (-3.2, 2.6, 1.5), (HX0, HY, 4.5), 22                       # the money shot: Rook small below, the hill and its eyes above
+A_LOC, A_LOOK, A_LENS = (-3.2, 2.6, 1.5), (HX0, HY, 7.0), 30                       # the money shot: Rook small below, the hill and its eyes above
 cam("Cam_01", 0, A_LOC, A_LOOK, A_LENS, T, world_look=True)
 cam("Cam_02", 3.2, (34, 34, 16), (30, -12, 3), 20)                                # high side: the train creeps past it, the lamps die
 cam("Cam_03", 6.4, (2.4, -1.9, 1.3), (0.6, 0, 1.35), 30, T)                        # Rook: the lamps die when we pass it
 cam("Cam_04", 9.2, (-1.6, 1.0, 2.0), "H_Mask", 40, T)                             # over Rook, back at the hill: its eyes flare
-cam("Cam_05", 13.2, (-16, 5, 1.0), "H_Mask", 14, T)                               # low behind the last car: the hill STANDS UP
-cam("Cam_06", 16.4, (240, 30, 20), (170, -6, 10), 20)                             # front high: full steam, it strides after us
+cam("Cam_05", 13.2, (-14, 6, 1.0), "H_Mask", 18, T)                               # low behind the last car: the hill STANDS UP
+cam("Cam_06", 16.4, (190, 28, 16), (120, -6, 8), 20)                             # front high: full steam, it strides after us
 cam("Cam_07", 18.8, (-4.0, 2.2, 0.7), "H_Mask", 14, T)                            # low at the last car: it bends over us
 cam("Cam_08", 22.4, (2.4, -1.9, 1.3), (0.6, 0, 1.35), 30, T)                       # Rook: wait. that hill wasn't there.
 cam("Cam_09", LOOP, A_LOC, (HX1, A_LOOK[1], A_LOOK[2]), A_LENS, T, world_look=True)           # = Cam_01 (the loop)
