@@ -152,12 +152,15 @@ def ip(K, t):
             u = (t - ta) / (tb - ta) if tb > ta else 0; return sa + (sb - sa) * u
     return K[-1][1] if t > K[0][0] else K[0][1]
 def tpos(t): return Vector((ip(TK, t), 0, 0))
-HX0, HY, HDZ = 30.0, -26.0, -16.0                                       # the "hill": lying low, 30 m ahead-right of the train at t=0
+HX0, HY, HDZ = 30.0, -26.0, -22.0                                       # the "hill": lying low, 30 m ahead-right of the train at t=0
 LOOP = 24.8; HX1 = ip(TK, LOOP) + (HX0 - ip(TK, 0))                    # the new "hill" ahead at the loop cut, same place relative to us
 HP_ = [(0, HX0, HY, HDZ), (13.4, HX0, HY, HDZ), (15.0, HX0, HY + 2, 0), (16.4, 62, -20, 0), (18.8, 190, -10, 0)]
 for t in (19.4, 19.8, 20.2, 20.6, 21.0, 21.4, 21.8, 22.2):              # bent over the last car
     HP_.append((t, ip(TK, t) - 9.0, -5.0, -19.0))
 HP_ += [(22.5, ip(TK, 22.5) - 6, -14, -30), (24.2, HX1, HY, -30), (24.6, HX1, HY, HDZ), (26.0, HX1, HY, HDZ)]
+# the grassy mound around its shoulders (the "hill"); one at the start and one at the loop
+for k, hx in enumerate((HX0, HX1)):
+    mk(f"S_Mound{k}", sph(1.0, 24, 12), grassM, (hx, HY, gh(hx, HY) - 1.2), scl=(19, 19, 5.0), smooth=True)
 # line lamps: near the hill they die as we pass; ahead they live (the last shot = the first shot)
 for i, x in enumerate((8, 22, 36, 50)): lamp(f"A{i}", x, 3.2, 3.8 + i * 0.7)
 for i, x in enumerate((150, 175, 200, 225)): lamp(f"C{i}", x, 3.2, 999)
@@ -234,8 +237,8 @@ def cam(name, start_s, loc, look, lens=28, parent=None, world_look=False, free=F
         if parent and not world_look: tgt.parent = parent
     k = c.constraints.new("TRACK_TO"); k.target = tgt; k.track_axis = "TRACK_NEGATIVE_Z"; k.up_axis = "UP_Y"
     m = sc.timeline_markers.new(name, frame=F(start_s)); m.camera = c; return c
-A_LOC, A_LOOK, A_LENS = (-3.2, 2.6, 1.5), (HX0 - 0.0, HY, 7.0), 22                # the money shot: Rook small below, the hill and its eyes above
-cam("Cam_01", 0, A_LOC, A_LOOK, A_LENS, T)
+A_LOC, A_LOOK, A_LENS = (-3.2, 2.6, 1.5), (HX0, HY, 4.5), 22                       # the money shot: Rook small below, the hill and its eyes above
+cam("Cam_01", 0, A_LOC, A_LOOK, A_LENS, T, world_look=True)
 cam("Cam_02", 3.2, (34, 34, 16), (30, -12, 3), 20)                                # high side: the train creeps past it, the lamps die
 cam("Cam_03", 6.4, (2.4, -1.9, 1.3), (0.6, 0, 1.35), 30, T)                        # Rook: the lamps die when we pass it
 cam("Cam_04", 9.2, (-1.6, 1.0, 2.0), "H_Mask", 40, T)                             # over Rook, back at the hill: its eyes flare
@@ -243,7 +246,7 @@ cam("Cam_05", 13.2, (-16, 5, 1.0), "H_Mask", 14, T)                             
 cam("Cam_06", 16.4, (240, 30, 20), (170, -6, 10), 20)                             # front high: full steam, it strides after us
 cam("Cam_07", 18.8, (-4.0, 2.2, 0.7), "H_Mask", 14, T)                            # low at the last car: it bends over us
 cam("Cam_08", 22.4, (2.4, -1.9, 1.3), (0.6, 0, 1.35), 30, T)                       # Rook: wait. that hill wasn't there.
-cam("Cam_09", LOOP, A_LOC, (A_LOOK[0], A_LOOK[1], A_LOOK[2]), A_LENS, T)           # = Cam_01 (the loop)
+cam("Cam_09", LOOP, A_LOC, (HX1, A_LOOK[1], A_LOOK[2]), A_LENS, T, world_look=True)           # = Cam_01 (the loop)
 sc.camera = O["Cam_01"]
 sc.render.resolution_x = 720; sc.render.resolution_y = 1280; sc.render.resolution_percentage = 100
 sc.eevee.taa_render_samples = 24
