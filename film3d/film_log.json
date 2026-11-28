@@ -728,7 +728,7 @@
   "title": "Not a Hill",
   "date_made": "2026-11-28",
   "frames": 624,
-  "status": "rendering",
+  "status": "stock",
   "vertical": true,
   "pattern": "P1 scale reveal (loop)",
   "hook": "That is not a hill. It's awake.",
@@ -738,6 +738,11 @@
    "the lone round hill by the black lake"
   ],
   "render_started": "2026-11-28 11:40 JST (720x1280 vertical, ~4.2 s/frame + rest, done ~12:40-13:00 JST)",
-  "encode_note": "VERTICAL: blender_encode.py sets 1280x720 - after encode() setup set ENC scene to 720x1280 (or patch s.render.resolution) before rendering raw.mp4; post3d.py then takes the vertical path"
+  "encode_note": "VERTICAL: blender_encode.py sets 1280x720 - after encode() setup set ENC scene to 720x1280 (or patch s.render.resolution) before rendering raw.mp4; post3d.py then takes the vertical path",
+  "video": "gloamrun/films/gloamrun_film29_9x16.mp4",
+  "poster": "gloamrun/films/gloamrun_film29_poster.jpg",
+  "video_commit": "63717e30294a6559eab6084644aaffe896df9604",
+  "finished": "2026-11-28 15:50 JST (render done 12:32; 26 s vertical 1080x1920, loop)",
+  "duration": 26.0
  }
 ]
