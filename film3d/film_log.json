@@ -721,5 +721,23 @@
   "video_commit": "b1f0c5e27638b18195b5bd992606b2dfc6542468",
   "finished": "2026-11-28 11:50 JST (render stalled at 1711 since 11-26 21:08, resumed 11-28 10:39, done 11:28; 108 s with cold open + end card)",
   "duration": 108.0
+ },
+ {
+  "film_no": 29,
+  "folder": "films/film24",
+  "title": "Not a Hill",
+  "date_made": "2026-11-28",
+  "frames": 624,
+  "status": "rendering",
+  "vertical": true,
+  "pattern": "P1 scale reveal (loop)",
+  "hook": "That is not a hill. It's awake.",
+  "clever_move": "Rook creeps the train past a dark round hill by the lake without looking at it; when the hill stands up he runs at full steam, then goes still under it.",
+  "places": [
+   "the lake line on the night moor",
+   "the lone round hill by the black lake"
+  ],
+  "render_started": "2026-11-28 11:40 JST (720x1280 vertical, ~4.2 s/frame + rest, done ~12:40-13:00 JST)",
+  "encode_note": "VERTICAL: blender_encode.py sets 1280x720 - after encode() setup set ENC scene to 720x1280 (or patch s.render.resolution) before rendering raw.mp4; post3d.py then takes the vertical path"
  }
 ]
