@@ -1,0 +1,20 @@
+{"film_no": 29, "title": "Not a Hill", "pattern": "P1 scale reveal", "loop": true,
+ "hook": "That is not a hill. It's awake.",
+ "ask": "Can you see its eyes?",
+ "question": "Would you look at the hill, or close your eyes?",
+ "synopsis": "The last train creeps past a dark round hill by the lake. The lamps die near it. Then the hill stands up.",
+ "poster_t": 1.0,
+ "lines": [
+  [0.5, 2.9, "Don't look at that hill."],
+  [6.8, 9.0, "The lamps die when we pass it."],
+  [9.6, 11.8, "...Its eyes. They opened!"],
+  [13.8, 16.0, "It's standing up! Full steam!"],
+  [19.6, 21.9, "...Don't move. Not a sound."],
+  [22.7, 24.7, "...Wait. That hill wasn't there."]
+ ],
+ "gate": {
+  "premise": "A dark hill by the line has eyes; it stands up and it is the Hush.",
+  "pattern": "P1 scale reveal (not used by the last two posts: P4/P5, P6/P5)",
+  "frame0": "A huge dark round hill fills the top of the phone screen with two lit pale green eyes, Rook small below, hook 'That is not a hill.'",
+  "comment_moment": "The hill standing up at 13.4 s, and the new hill at the end (loop: was it there at the start?)"
+ }}
